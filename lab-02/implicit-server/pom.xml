@@ -10,7 +10,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>authorization-code-server</artifactId>
+    <artifactId>implicit-server</artifactId>
 
     <dependencies>
         <!-- for Spring MVC -->

@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.labs.lab01.resource;
+package lab01.resource;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

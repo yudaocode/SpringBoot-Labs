@@ -10,7 +10,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>authorization-code-server</artifactId>
+    <artifactId>client-credentials-server</artifactId>
 
     <dependencies>
         <!-- for Spring MVC -->
@@ -32,5 +32,6 @@
         </dependency>
 
     </dependencies>
+
 
 </project>

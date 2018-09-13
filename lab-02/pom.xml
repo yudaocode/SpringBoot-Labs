@@ -13,6 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>authorization-code-server</module>
+        <module>resource-owner-password-credentials-server</module>
+        <module>implicit-server</module>
+        <module>client-credentials-server</module>
     </modules>
 
 
