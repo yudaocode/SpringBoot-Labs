@@ -16,6 +16,7 @@
         <module>resource-owner-password-credentials-server</module>
         <module>implicit-server</module>
         <module>client-credentials-server</module>
+        <module>resource-owner-password-credentials-server-with-refresh-token</module>
     </modules>
 
 
