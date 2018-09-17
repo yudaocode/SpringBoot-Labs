@@ -17,6 +17,8 @@
         <module>implicit-server</module>
         <module>client-credentials-server</module>
         <module>resource-owner-password-credentials-server-with-refresh-token</module>
+        <module>resource-owner-password-credentials-server-with-revoke-token</module>
+        <module>resource-owner-password-credentials-server-by-jdbc-token-store</module>
     </modules>
 
 
