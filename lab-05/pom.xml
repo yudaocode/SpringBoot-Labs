@@ -18,6 +18,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-05-tomcat</module>
+        <module>lab-05-tomcat-apr</module>
         <module>lab-05-jetty</module>
         <module>lab-05-undertow</module>
     </modules>
