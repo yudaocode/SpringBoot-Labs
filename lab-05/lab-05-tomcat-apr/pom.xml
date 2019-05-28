@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<!--    <parent>-->
-<!--        <artifactId>lab-05</artifactId>-->
-<!--        <groupId>cn.iocoder.springboot.labs</groupId>-->
-<!--        <version>1.0-SNAPSHOT</version>-->
-<!--    </parent>-->
+    <parent>
+        <artifactId>lab-05</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
 <!--    <parent>-->
 <!--        <groupId>org.springframework.boot</groupId>-->
@@ -15,16 +15,17 @@
 <!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
 <!--    </parent>-->
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.3.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--        <version>2.1.3.RELEASE</version>-->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+<!--    </parent>-->
 
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-05-tomcat-apr</artifactId>
+<!--    <version>1.0.0</version>-->
 
     <dependencies>
         <dependency>
@@ -38,5 +39,18 @@
 <!--            <version>9.0.20</version>-->
 <!--        </dependency>-->
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 提供给 mapstruct 使用 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-05-undertow</artifactId>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
@@ -28,5 +29,18 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 提供给 mapstruct 使用 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
