@@ -2,20 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.iocoder.springboot.labs</groupId>
-    <artifactId>labs-parent</artifactId>
+    <artifactId>lab-07</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>lab-01</module>
-        <module>lab-02</module>
-        <module>lab-03</module>
-        <module>lab-04</module>
-        <module>lab-05</module>
-        <module>lab-06</module>
-        <module>lab-07</module>
+        <module>lab-07-spring-cloud-gateway</module>
+        <module>lab-07-zuul</module>
     </modules>
 
 

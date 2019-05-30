@@ -11,4 +11,18 @@
 
 # lab-05
 
+测试 Tomcat、Jetty、Undertow 的基准性能
 
+文章见：[《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/)
+
+# lab-06
+
+测试 SpringMVC、Webflux 的基准性能
+
+文章见：[《性能测试 —— SpringMVC、Webflux 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringMVC-Webflux-benchmark/)
+
+# lab-07
+
+测试 Spring Cloud Gateway、Zuul 的基准性能
+
+文章见：[《》]()
