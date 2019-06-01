@@ -11,4 +11,10 @@ public class Controller {
         return "world";
     }
 
+    @GetMapping("/sleep")
+    public String sleep() throws InterruptedException {
+        Thread.sleep(100L);
+        return "sleep";
+    }
+
 }
