@@ -3,7 +3,11 @@ package cn.iocoder.springboot.labs.lab09.search;
 import java.util.Random;
 
 /**
- * 参考 {@link SkipList} ，自己实现一遍跳表
+ * 参考 {@link SkipList} ，自己实现一遍跳表。
+ *
+ * 通过 {@link Node} 的 forwards 数组实现，确实挺巧妙，代码量也非常精简。
+ *
+ * 目前，网络上找到的 Java 跳表实现，主要是 https://sylvanassun.github.io/2017/12/31/2017-12-31-skip_list/ 这种。实现方式略有差别。
  *
  * @author yunai
  */
