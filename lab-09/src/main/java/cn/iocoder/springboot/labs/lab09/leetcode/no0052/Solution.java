@@ -1,45 +1,27 @@
-package cn.iocoder.springboot.labs.lab09.leetcode.n0035;
-
-import java.util.ArrayList;
-import java.util.List;
+package cn.iocoder.springboot.labs.lab09.leetcode.no0052;
 
 class Solution {
 
-    public List<List<String>> solveNQueens(int n) {
-        if (n == 0) {
-            return new ArrayList<>();
-        }
+    private int total = 0;
 
+    public int totalNQueens(int n) {
         // 初始化变量
-        List<List<String>> results = new ArrayList<>();
         int[] used = new int[n]; // 标记，指定层，使用的位置
         for (int i = 0; i < n; i++) {
             used[i] = -1;
         }
 
         // 递归
-        gen(results, used, 0, n);
+        gen(used, 0, n);
 
         // 返回结果
-        return results;
+        return total;
     }
 
-    private void gen(List<List<String>> results, int[] used, int index, int max) {
+    private void gen(int[] used, int index, int max) {
         // 到达最大值，结束递归
         if (index == max) {
-            List<String> result = new ArrayList<>();
-            for (int i = 0; i < max; i++) {
-                StringBuilder str = new StringBuilder();
-                for (int j = 0; j < max; j++) {
-                    if (used[i] == j) {
-                        str.append("Q");
-                    } else {
-                        str.append(".");
-                    }
-                }
-                result.add(str.toString());
-            }
-            results.add(result);
+            total++;
             return;
         }
 
@@ -67,7 +49,7 @@ class Solution {
             // 标记已使用
             used[index] = i;
             // 递归
-            gen(results, used, index + 1, max);
+            gen(used, index + 1, max);
             // 标记未使用，继续循环
             used[index] = -1;
         }
