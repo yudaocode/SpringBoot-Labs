@@ -21,6 +21,7 @@ public class Solution01 {
 
     public static void main(String[] args) {
         System.out.println(new Solution01().hammingWeight(Integer.MAX_VALUE));
+        System.out.println(new Solution01().hammingWeight(Integer.MIN_VALUE));
         System.out.println(new Solution01().hammingWeight(-3));
     }
 

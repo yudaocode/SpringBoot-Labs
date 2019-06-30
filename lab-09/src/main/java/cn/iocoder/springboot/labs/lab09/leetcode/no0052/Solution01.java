@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.labs.lab09.leetcode.no0052;
 
-class Solution {
+class Solution01 {
 
     private int total = 0;
 
