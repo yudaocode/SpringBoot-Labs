@@ -2,6 +2,9 @@ package cn.iocoder.springboot.labs.lab09.leetcode.no0069;
 
 import java.util.Arrays;
 
+/**
+ * TODO 题号不对。
+ */
 class Solution01 {
 
     public int majorityElement(int[] nums) {
