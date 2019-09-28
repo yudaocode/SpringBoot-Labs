@@ -10,7 +10,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)
+@SpringBootTest
 public class Test01 {
 
     @Autowired
@@ -22,6 +22,11 @@ public class Test01 {
     @Test
     public void testStringSetKey() {
         stringRedisTemplate.opsForValue().set("yunai", "shuai");
+    }
+
+    @Test
+    public void testStringSetKey02() {
+        redisTemplate.opsForValue().set("yunai", "shuai");
     }
 
     @Test

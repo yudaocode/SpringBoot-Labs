@@ -12,8 +12,6 @@ public class UserCacheDao {
 
     private static final String KEY_PATTERN = "user:%d"; // user:用户编号
 
-//    @Autowired
-//    private StringRedisTemplate template;
     @Resource(name = "redisTemplate")
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     private ValueOperations<String, String> operations;
@@ -24,7 +22,6 @@ public class UserCacheDao {
 
     public UserCacheObject get(Integer id) {
         String key = buildKey(id);
-//        String value = template.opsForValue().get(key);
         String value = operations.get(key);
         return JSONUtil.parseObject(value, UserCacheObject.class);
     }
@@ -32,7 +29,6 @@ public class UserCacheDao {
     public void set(Integer id, UserCacheObject object) {
         String key = buildKey(id);
         String value = JSONUtil.toJSONString(object);
-//        template.opsForValue().set(key, value);
         operations.set(key, value);
     }
 

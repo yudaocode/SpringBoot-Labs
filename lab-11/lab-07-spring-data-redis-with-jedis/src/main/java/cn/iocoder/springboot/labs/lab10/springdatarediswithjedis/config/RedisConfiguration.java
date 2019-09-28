@@ -11,19 +11,25 @@ public class RedisConfiguration {
 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
+        // 创建 RedisTemplate 对象
         RedisTemplate<String, Object> template = new RedisTemplate<>();
+        // 设置 RedisConnection 工厂。😈 它就是实现多种 Java Redis 客户端接入的秘密工厂。感兴趣的胖友，可以自己去撸下。
         template.setConnectionFactory(factory);
-        template.setKeySerializer(RedisSerializer.string());
-        template.setValueSerializer(RedisSerializer.json());
 
-//        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
+        // 使用 String 序列化方式，序列化 KEY 。
+        template.setKeySerializer(RedisSerializer.string());
+
+        // 使用 JSON 序列化方式（库是 Jackson ），序列化 VALUE 。
+        template.setValueSerializer(RedisSerializer.json());
+        return template;
+    }
+
+    //        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
 //        ObjectMapper objectMapper = new ObjectMapper();// <1>
 ////        objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
 ////        objectMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
 //
 //        jackson2JsonRedisSerializer.setObjectMapper(objectMapper);
 //        template.setValueSerializer(jackson2JsonRedisSerializer);
-        return template;
-    }
 
 }
