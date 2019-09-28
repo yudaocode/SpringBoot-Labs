@@ -113,14 +113,20 @@ public class SkipList2 {
 //        return level;
 //    }
 
+    /**
+     * 节点
+     *
+     * 通过 {@link #forwards} 属性，记录在每一层的指向。
+     *
+     * 注意，相同 {@link #data} ，在多层，通过 {@link #forwards} 属性来实现，而不是指向。
+     */
     public class Node {
 
+        // TODO 芋艿，如果想实现类似 HashMap 的功能，可以把 data 改成 key + value 。
         /**
          * 数值
          */
         private Integer data;
-
-        // TODO 芋艿，如果想实现类似 HashMap 的功能，可以把 data 改成 key + value 。
 
         /**
          * 最高层级

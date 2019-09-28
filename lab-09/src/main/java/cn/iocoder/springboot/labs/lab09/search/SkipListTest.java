@@ -16,7 +16,7 @@ public class SkipListTest {
 
     public static void main(String[] args) {
         for (int i = 0; i < 10000; i++) {
-        SkipList2 skipList = new SkipList2();
+            SkipList2 skipList = new SkipList2();
 //            SkipList skipList = new SkipList();
             // 测试添加
             skipList.insert(2);
