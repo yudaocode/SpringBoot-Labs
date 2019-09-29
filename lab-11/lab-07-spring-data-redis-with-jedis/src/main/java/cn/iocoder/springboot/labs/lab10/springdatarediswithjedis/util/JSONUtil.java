@@ -15,4 +15,8 @@ public class JSONUtil {
         return JSON.toJSONString(javaObject);
     }
 
+    public static byte[] toJSONBytes(Object javaObject) {
+        return JSON.toJSONBytes(javaObject);
+    }
+
 }
