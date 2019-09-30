@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.labs.lab10.springdatarediswithjedis.config;
 
-import cn.iocoder.springboot.labs.lab10.springdatarediswithjedis.listener.TopicMessageListener;
+import cn.iocoder.springboot.labs.lab10.springdatarediswithjedis.listener.TestChannelTopicMessageListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -11,8 +11,6 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 
 @Configuration
 public class RedisConfiguration {
-
-
 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
@@ -46,8 +44,12 @@ public class RedisConfiguration {
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();
         container.setConnectionFactory(factory);
 
-        container.addMessageListener(new TopicMessageListener(), new ChannelTopic("TEST"));
+        container.addMessageListener(new TestChannelTopicMessageListener(), new ChannelTopic("TEST"));
+//        container.addMessageListener(new TestChannelTopicMessageListener(), new ChannelTopic("AOTEMAN"));
+//        container.addMessageListener(new TestPatternTopicMessageListener(), new PatternTopic("TEST"));
         return container;
     }
+
+
 
 }
