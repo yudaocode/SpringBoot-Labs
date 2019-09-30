@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-07-spring-data-redis-with-jedis</module>
+        <module>lab-07-spring-data-redis-with-redisson</module>
     </modules>
 
 
