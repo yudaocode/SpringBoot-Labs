@@ -1,6 +1,18 @@
 艿艿 SpringBoot Lab 实验室。
 
 
+# 数据访问
+
+* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Performance-Testing/Redis-benchmark/?github)
+
+# 安全控制
+
+* [《芋道 Spring Security OAuth2 入门》](http://www.iocoder.cn/Spring-Security/OAuth2-learning/?github)
+
+---------
+
+如下是草稿目录，未来需要整理下
+
 # lab-01
 
 # lab-02
@@ -36,5 +48,6 @@
 记录阅读极客时间《数据结构与算法之美》的题目。
 
 # lab-10
+
 
 
