@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-12-mybatis-xml</module>
+        <module>lab-12-mybatis-annotation</module>
     </modules>
 
 

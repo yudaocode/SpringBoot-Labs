@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.iocoder.springboot.lab12.mybatis.mapper.UserMapper">
+
+    <sql id="FIELDS">
+        id, username, password, create_time
+    </sql>
+
+    <insert id="insert" parameterType="UserDO" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO users (
+          username, password, create_time
+        ) VALUES (
+          #{username}, #{password}, #{createTime}
+        )
+    </insert>
+
+    <update id="updateById" parameterType="UserDO">
+        UPDATE users
+        <set>
+            <if test="username != null">
+                , username = #{username}
+            </if>
+            <if test="password != null">
+                , password = #{password}
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Integer">
+        DELETE FROM users
+        WHERE id = #{id}
+    </delete>
+
+    <select id="selectById" parameterType="Integer" resultType="UserDO">
+        SELECT
+            <include refid="FIELDS" />
+        FROM users
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectByUsername" parameterType="String" resultType="UserDO">
+        SELECT
+            <include refid="FIELDS" />
+        FROM users
+        WHERE username = #{username}
+        LIMIT 1
+    </select>
+
+    <select id="selectByIds" resultType="UserDO">
+        SELECT
+            <include refid="FIELDS" />
+        FROM users
+        WHERE id IN
+            <foreach item="id" collection="ids" separator="," open="(" close=")" index="">
+                #{id}
+            </foreach>
+    </select>
+
+</mapper>
