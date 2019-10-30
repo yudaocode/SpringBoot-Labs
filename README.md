@@ -2,7 +2,7 @@
 
 # 数据访问
 
-* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Performance-Testing/Redis-benchmark/?github) 对应 [lab-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-10) 。
+* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Performance-Testing/Redis-benchmark/?github) 对应 [lab-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11) 。
 
 # 安全控制
 
