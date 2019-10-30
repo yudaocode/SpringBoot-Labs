@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: user-application
+  # jpa
+  redis:
+    password:
+    database: 0
+    port: 6379
+    host: 127.0.0.1
+    timeout: 0
+    jedis:
+      pool:
+        max-wait:
+        max-idle: 8
+        min-idle: 0
+
+
+# server
+server:
+  port: 16003
+  servlet:
+    context-path: /user-api/

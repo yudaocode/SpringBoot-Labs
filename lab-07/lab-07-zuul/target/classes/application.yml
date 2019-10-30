@@ -1,0 +1,13 @@
+zuul:
+  routes:
+    static:
+      path: /hello.txt
+      url: http://127.0.0.1:8000/
+      stripPrefix: false
+    api:
+      path: /**
+      url: http://127.0.0.1:8080
+  include-debug-header: true
+
+server:
+  port: 8081
