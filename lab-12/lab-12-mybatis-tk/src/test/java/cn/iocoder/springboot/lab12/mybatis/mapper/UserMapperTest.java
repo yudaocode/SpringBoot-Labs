@@ -2,8 +2,8 @@ package cn.iocoder.springboot.lab12.mybatis.mapper;
 
 import cn.iocoder.springboot.lab12.mybatis.Application;
 import cn.iocoder.springboot.lab12.mybatis.dataobject.UserDO;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,26 +22,26 @@ public class UserMapperTest {
     @Test
     public void testInsert() {
         UserDO user = new UserDO().setUsername(UUID.randomUUID().toString())
-                .setPassword("nicai").setCreateTime(new Date())
-                .setDeleted(0); // 一般情况下，是否删除，可以全局枚举下。
+                .setPassword("nicai").setCreateTime(new Date());
         userMapper.insert(user);
+        System.out.println(user.getId());
     }
 
     @Test
     public void testUpdateById() {
         UserDO updateUser = new UserDO().setId(1)
                 .setPassword("wobucai");
-        userMapper.updateById(updateUser);
+        userMapper.updateByPrimaryKey(updateUser);
     }
 
     @Test
     public void testDeleteById() {
-        userMapper.deleteById(2);
+        userMapper.deleteByPrimaryKey(2);
     }
 
     @Test
     public void testSelectById() {
-        userMapper.selectById(1);
+        userMapper.selectByPrimaryKey(1);
     }
 
     @Test
@@ -55,12 +55,17 @@ public class UserMapperTest {
         System.out.println("users：" + users.size());
     }
 
-    @Test
+    @Test // 更多使用，可以参考 https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
     public void testSelectPageByCreateTime() {
-        IPage<UserDO> page = new Page<>(1, 10);
+        // 设置分页
+        PageHelper.startPage(1, 10);
         Date createTime = new Date(2018 - 1990, Calendar.FEBRUARY, 24); // 临时 Demo ，实际不建议这么写
-        page = userMapper.selectPageByCreateTime(page, createTime);
-        System.out.println("users：" + page.getRecords().size());
+        // 执行列表查询
+        // PageHelper 会自动发起分页的数量查询，设置到 PageHelper 中
+        List<UserDO> users = userMapper.selectListByCreateTime(createTime); // 实际返回的是 com.github.pagehelper.Page 代理对象
+        // 转换成 PageInfo 对象，并输出分页
+        PageInfo<UserDO> page = new PageInfo<>(users);
+        System.out.println(page.getTotal());
     }
 
 }

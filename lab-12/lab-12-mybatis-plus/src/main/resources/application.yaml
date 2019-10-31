@@ -16,4 +16,15 @@ mybatis-plus:
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
   mapper-locations: classpath*:mapper/*.xml
-  type-aliases-package: cn.iocoder.mall.admin.dataobject
+  type-aliases-package: cn.iocoder.springboot.lab12.mybatis.dataobject
+
+# logging
+logging:
+  level:
+    # dao 开启 debug 模式 mybatis 输入 sql
+    cn:
+      iocoder:
+        springboot:
+          lab12:
+            mybatis:
+              mapper: debug

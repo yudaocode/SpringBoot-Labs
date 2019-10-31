@@ -1,0 +1,37 @@
+spring:
+  # datasource 数据源配置内容
+  datasource:
+    url: jdbc:mysql://47.112.193.81:3306/testb5f4?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: testb5f4
+    password: F4df4db0ed86@11
+
+# mybatis 配置内容
+mybatis:
+  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/*.xml # 配置 Mapper XML 地址
+  type-aliases-package: cn.iocoder.springboot.lab12.mybatis.dataobject # 配置数据库实体包路径
+
+# mapper 配置内容
+mapper:
+  mappers: cn.iocoder.springboot.lab12.mybatis.util.BaseMapper # 设置基础 Mapper 接口
+  not-empty: true # 在 INSERT 和 UPDATE 操作时，是否会判断字段是否为空。即 <if test='xxx != null' />
+  identity: MYSQL
+
+# PageHelper 配置内容
+# 具体的参数作用，看 https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
+pagehelper:
+  helperDialect: mysql # 分页插件会自动检测当前的数据库链接，自动选择合适的分页方式。 你可以配置helperDialect属性来指定分页插件使用哪种方言。
+  reasonable: true # 分页合理化参数，默认值为false。当该参数设置为 true 时，pageNum<=0 时会查询第一页， pageNum>pages（超过总数时），会查询最后一页。默认false 时，直接根据参数进行查询。
+  supportMethodsArguments: true # 支持通过 Mapper 接口参数来传递分页参数，默认值false，分页插件会从查询方法的参数值中，自动根据上面 params 配置的字段中取值，查找到合适的值时就会自动分页。 使用方法可以参考测试代码中的 com.github.pagehelper.test.basic 包下的 ArgumentsMapTest 和 ArgumentsObjTest。
+
+# logging
+logging:
+  level:
+    # dao 开启 debug 模式 mybatis 输入 sql
+    cn:
+      iocoder:
+        springboot:
+          lab12:
+            mybatis:
+              mapper: debug

@@ -22,7 +22,9 @@ public interface UserMapper extends BaseMapper<UserDO> {
 
     default IPage<UserDO> selectPageByCreateTime(IPage<UserDO> page, @Param("createTime") Date createTime) {
         return selectPage(page,
-                new QueryWrapper<UserDO>().gt("create_time", createTime));
+                new QueryWrapper<UserDO>().gt("create_time", createTime)
+//                new QueryWrapper<UserDO>().like("username", "46683d9d")
+        );
     }
 
 }
