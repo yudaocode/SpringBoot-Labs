@@ -5,6 +5,9 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: testb5f4
     password: F4df4db0ed86@11
-  # JPA 配置内容
+  # JPA 配置内容，对应 JpaProperties 类
   jpa:
     show-sql: true # 打印 SQL 。生产环境，建议关闭
+    # Hibernate 配置内容，对应 HibernateProperties 类
+    hibernate:
+      ddl-auto: none
