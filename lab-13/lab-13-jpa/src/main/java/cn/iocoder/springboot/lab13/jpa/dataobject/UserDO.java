@@ -6,7 +6,8 @@ import java.util.Date;
 /**
  * 用户 DO
  */
-@Entity(name = "users")
+@Entity
+@Table(name = "users")
 public class UserDO {
 
     /**
