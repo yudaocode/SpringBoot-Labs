@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-15-spring-data-jest</module>
+        <module>lab-15-spring-data-elasticsearch</module>
     </modules>
 
 

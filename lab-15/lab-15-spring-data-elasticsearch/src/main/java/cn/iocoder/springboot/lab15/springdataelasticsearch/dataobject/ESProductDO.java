@@ -1,6 +1,6 @@
-package cn.iocoder.springboot.lab15.springdatajest.dataobject;
+package cn.iocoder.springboot.lab15.springdataelasticsearch.dataobject;
 
-import cn.iocoder.springboot.lab15.springdatajest.constant.FieldAnalyzer;
+import cn.iocoder.springboot.lab15.springdataelasticsearch.constant.FieldAnalyzer;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
