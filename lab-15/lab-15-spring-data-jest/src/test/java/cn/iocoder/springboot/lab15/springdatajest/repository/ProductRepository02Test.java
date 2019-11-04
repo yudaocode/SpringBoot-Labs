@@ -33,7 +33,7 @@ public class ProductRepository02Test {
         }
 
         // 创建排序条件
-        Sort sort = new Sort(Sort.Direction.DESC, "id");
+        Sort sort = new Sort(Sort.Direction.DESC, "id"); // ID 倒序
         // 创建分页条件。
         Pageable pageable = PageRequest.of(0, 10, sort);
         // 执行分页操作
