@@ -7,6 +7,7 @@
 * [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13) 。
 * [《芋道 Spring Boot JdbcTemplate 入门》](http://www.iocoder.cn/Spring-Boot/JdbcTemplate/?github) 对应 [lab-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-14) 。
 * [《芋道 Spring Boot Elasticsearch 入门》](http://www.iocoder.cn/Spring-Boot/Elasticsearch/?github) 对应 [lab-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-15) 。
+* [《芋道 Spring Boot MongoDB 入门》](http://www.iocoder.cn/Spring-Boot/MongoDB/?github) 对应 [lab-16](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-16) 。
 
 # 安全控制
 

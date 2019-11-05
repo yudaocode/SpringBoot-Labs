@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * 商品 DO
  */
 @Document(collection = "Product")
-public class ProductDO  extends IncIdEntity<Integer> {
+public class ProductDO extends IncIdEntity<Integer> {
 
     /**
      * 商品名
