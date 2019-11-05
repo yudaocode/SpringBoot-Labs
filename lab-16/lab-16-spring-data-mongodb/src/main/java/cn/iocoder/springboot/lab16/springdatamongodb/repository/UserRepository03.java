@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface UserRepository03 extends MongoRepository<UserDO, Integer> {
 
+    // 使用 username 精准匹配
     default UserDO findByUsername01(String username) {
         // 创建 Example 对象，使用 username 查询
         UserDO probe = new UserDO();
@@ -17,6 +18,7 @@ public interface UserRepository03 extends MongoRepository<UserDO, Integer> {
                 .orElse(null); // 如果为空，则返回 null
     }
 
+    // 使用 username 模糊匹配
     default UserDO findByUsernameLike01(String username) {
         // 创建 Example 对象，使用 username 查询
         UserDO probe = new UserDO();
