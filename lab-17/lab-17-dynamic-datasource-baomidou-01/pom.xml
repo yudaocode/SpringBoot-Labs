@@ -37,8 +37,7 @@
             <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
             <version>2.5.7</version>
         </dependency>
-
-        <!-- TODO 测试 -->
+        <!-- 不造为啥 dynamic-datasource-spring-boot-starter 会依赖这个 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
