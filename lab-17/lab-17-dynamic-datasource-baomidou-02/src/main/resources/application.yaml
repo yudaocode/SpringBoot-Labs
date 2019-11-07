@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    # dynamic-datasource-spring-boot-starter 动态数据源的配置内容
+    dynamic:
+      primary: master # 设置默认的数据源或者数据源组，默认值即为 master
+      datasource:
+        # 订单 orders 主库的数据源配置
+        master:
+          url: jdbc:mysql://127.0.0.1:3306/test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          driver-class-name: com.mysql.jdbc.Driver
+          username: root
+          password:
+        # 订单 orders 从库数据源配置
+        slave_1:
+          url: jdbc:mysql://127.0.0.1:3306/test_orders_01?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          driver-class-name: com.mysql.jdbc.Driver
+          username: root
+          password:
+        # 订单 orders 从库数据源配置
+        slave_2:
+          url: jdbc:mysql://127.0.0.1:3306/test_orders_02?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          driver-class-name: com.mysql.jdbc.Driver
+          username: root
+          password:
+
+# mybatis 配置内容
+mybatis:
+  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/*.xml # 配置 Mapper XML 地址
+  type-aliases-package: cn.iocoder.springboot.lab17.dynamicdatasource.dataobject # 配置数据库实体包路径

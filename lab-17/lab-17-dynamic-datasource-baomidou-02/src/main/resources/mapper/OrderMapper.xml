@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.iocoder.springboot.lab17.dynamicdatasource.mapper.OrderMapper">
+
+    <sql id="FIELDS">
+        id, user_id
+    </sql>
+
+    <select id="selectById" parameterType="Integer" resultType="OrderDO">
+        SELECT
+            <include refid="FIELDS" />
+        FROM orders
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="OrderDO" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO orders (
+          user_id
+        ) VALUES (
+          #{userId}
+        )
+    </insert>
+
+</mapper>

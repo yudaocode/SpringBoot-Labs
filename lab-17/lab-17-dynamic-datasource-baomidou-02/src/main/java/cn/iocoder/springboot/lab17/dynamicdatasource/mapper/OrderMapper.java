@@ -7,9 +7,12 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@DS(DBConstants.DATASOURCE_ORDERS)
 public interface OrderMapper {
 
+    @DS(DBConstants.DATASOURCE_SLAVE)
     OrderDO selectById(@Param("id") Integer id);
+
+    @DS(DBConstants.DATASOURCE_MASTER)
+    int insert(OrderDO entity);
 
 }
