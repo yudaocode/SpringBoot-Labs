@@ -1,0 +1,42 @@
+spring:
+  shardingsphere:
+    datasource:
+      names: orders, users
+      orders:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+      users:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_users?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+    sharding:
+      tables:
+        orders:
+          defaultDataSourceName: orders
+          default-database-strategy:
+#            inline:
+#              algorithm-expression: orders
+#              sharding-column: id
+            none:
+          default-table-strategy:
+            none:
+        users:
+          defaultDataSourceName: users
+          default-database-strategy:
+            none:
+          default-table-strategy:
+            none:
+#            inline:
+#              algorithm-expression: users
+#              sharding-column: id
+
+# mybatis 配置内容
+mybatis:
+  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/*.xml # 配置 Mapper XML 地址
+  type-aliases-package: cn.iocoder.springboot.lab17.dynamicdatasource.dataobject # 配置数据库实体包路径

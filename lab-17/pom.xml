@@ -17,6 +17,7 @@
         <module>lab-17-dynamic-datasource-mybatis</module>
         <module>lab-17-dynamic-datasource-springdatajpa</module>
         <module>lab-17-dynamic-datasource-jdbctemplate</module>
+        <module>lab-17-dynamic-datasource-sharding-jdbc-01</module>
     </modules>
 
 
