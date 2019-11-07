@@ -24,4 +24,11 @@ public class OrderMapperTest {
         }
     }
 
+    @Test
+    public void testInsert() {
+        OrderDO order = new OrderDO();
+        order.setUserId(10);
+        orderMapper.insert(order);
+    }
+
 }

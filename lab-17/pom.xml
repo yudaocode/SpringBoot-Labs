@@ -15,6 +15,7 @@
         <module>lab-17-dynamic-datasource-baomidou-01</module>
         <module>lab-17-dynamic-datasource-baomidou-02</module>
         <module>lab-17-dynamic-datasource-mybatis</module>
+        <module>lab-17-dynamic-datasource-springdatajpa</module>
     </modules>
 
 

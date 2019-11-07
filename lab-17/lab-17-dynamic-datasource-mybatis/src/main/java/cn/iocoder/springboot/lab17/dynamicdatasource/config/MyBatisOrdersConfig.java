@@ -57,7 +57,7 @@ public class MyBatisOrdersConfig {
      * 创建 orders 数据源的 TransactionManager 事务管理器
      */
     @Bean(name = DBConstants.TX_MANAGER_ORDERS)
-    public PlatformTransactionManager usersTransactionManager() {
+    public PlatformTransactionManager transactionManager() {
         return new DataSourceTransactionManager(this.dataSource());
     }
 

@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-17-dynamic-datasource-mybatis</artifactId>
+    <artifactId>lab-17-dynamic-datasource-springdatajpa</artifactId>
 
     <dependencies>
         <!-- 实现对数据库连接池的自动化配置 -->
@@ -24,17 +24,10 @@
             <version>5.1.48</version>
         </dependency>
 
-        <!-- MyBatis 相关依赖 -->
+        <!-- JPA 相关依赖 -->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.1</version>
-        </dependency>
-
-        <!-- 保证 Spring AOP 相关的依赖包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
         <!-- 方便等会写单元测试 -->
