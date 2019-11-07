@@ -12,13 +12,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.annotation.Resource;
-import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 import java.util.Map;
 
 @Configuration
-// @EnableTransactionManagement
-//@EnableConfigurationProperties(HibernateProperties.class)
 @EnableJpaRepositories(
         entityManagerFactoryRef = DBConstants.ENTITY_MANAGER_FACTORY_USERS,
         transactionManagerRef = DBConstants.TX_MANAGER_USERS,
@@ -41,7 +38,7 @@ public class JpaUsersConfig {
      * 创建 LocalContainerEntityManagerFactoryBean
      */
     @Bean(name = DBConstants.ENTITY_MANAGER_FACTORY_USERS)
-    public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary(EntityManagerFactoryBuilder builder) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(this.dataSource()) // 数据源
                 .properties(hibernateVendorProperties) // 获取并注入 Hibernate Vendor 相关配置
@@ -51,20 +48,11 @@ public class JpaUsersConfig {
     }
 
     /**
-     * 创建 EntityManager
-     */
-    @Bean(name = "entityManagerSecondary")
-    public EntityManager entityManager(EntityManagerFactoryBuilder builder) {
-        return entityManagerFactoryPrimary(builder).getObject() // 获得 EntityManagerFactory 对象
-                .createEntityManager(); // 创建 EntityManager 对象
-    }
-
-    /**
      * 创建 PlatformTransactionManager
      */
     @Bean(name = DBConstants.TX_MANAGER_USERS)
     public PlatformTransactionManager transactionManager(EntityManagerFactoryBuilder builder) {
-        return new JpaTransactionManager(entityManagerFactoryPrimary(builder).getObject());
+        return new JpaTransactionManager(entityManagerFactory(builder).getObject());
     }
 
 }

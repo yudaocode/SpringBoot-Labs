@@ -17,8 +17,6 @@ import javax.sql.DataSource;
 import java.util.Map;
 
 @Configuration
-// @EnableTransactionManagement
-//@EnableConfigurationProperties(HibernateProperties.class)
 @EnableJpaRepositories(
         entityManagerFactoryRef = DBConstants.ENTITY_MANAGER_FACTORY_ORDERS,
         transactionManagerRef = DBConstants.TX_MANAGER_ORDERS,
@@ -33,7 +31,7 @@ public class JpaOrdersConfig {
      */
     @Bean(name = "ordersDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.orders")
-    @Primary
+    @Primary // 需要特殊添加，否则初始化会有问题
     public DataSource dataSource() {
         return DataSourceBuilder.create().build();
     }
@@ -42,8 +40,7 @@ public class JpaOrdersConfig {
      * 创建 LocalContainerEntityManagerFactoryBean
      */
     @Bean(name = DBConstants.ENTITY_MANAGER_FACTORY_ORDERS)
-//    @Primary
-    public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary(EntityManagerFactoryBuilder builder) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(this.dataSource()) // 数据源
                 .properties(hibernateVendorProperties) // 获取并注入 Hibernate Vendor 相关配置
@@ -52,22 +49,12 @@ public class JpaOrdersConfig {
                 .build();
     }
 
-//    /**
-//     * 创建 EntityManager
-//     */
-//    @Bean(name = "entityManagerPrimary")
-//    public EntityManager entityManager(EntityManagerFactoryBuilder builder) {
-//        return entityManagerFactoryPrimary(builder).getObject() // 获得 EntityManagerFactory 对象
-//                .createEntityManager(); // 创建 EntityManager 对象
-//    }
-
     /**
      * 创建 PlatformTransactionManager
      */
     @Bean(name = DBConstants.TX_MANAGER_ORDERS)
-//    @Primary
     public PlatformTransactionManager transactionManager(EntityManagerFactoryBuilder builder) {
-        return new JpaTransactionManager(entityManagerFactoryPrimary(builder).getObject());
+        return new JpaTransactionManager(entityManagerFactory(builder).getObject());
     }
 
 }
