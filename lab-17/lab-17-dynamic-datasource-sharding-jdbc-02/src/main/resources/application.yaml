@@ -1,0 +1,39 @@
+spring:
+  # ShardingSphere 配置项
+  shardingsphere:
+    # 数据源配置
+    datasource:
+      # 所有数据源的名字
+      names: ds-master, ds-slave-1, ds-slave-2
+      # 订单 orders 主库的数据源配置
+      ds-master:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+      # 订单 orders 从库数据源配置
+      ds-slave-1:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders_01?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+      # 订单 orders 从库数据源配置
+      ds-slave-2:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders_02?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+    # 读写分离配置，对应 YamlMasterSlaveRuleConfiguration 配置类
+    masterslave:
+      name: ms # 名字，任意，需要保证唯一
+      master-data-source-name: ds-master # 主库数据源
+      slave-data-source-names: ds-slave-1, ds-slave-2 # 从库数据源
+
+# mybatis 配置内容
+mybatis:
+  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/*.xml # 配置 Mapper XML 地址
+  type-aliases-package: cn.iocoder.springboot.lab17.dynamicdatasource.dataobject # 配置数据库实体包路径

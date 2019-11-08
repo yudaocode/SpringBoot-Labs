@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-17-dynamic-datasource-sharding-jdbc-01</artifactId>
+    <artifactId>lab-17-dynamic-datasource-sharding-jdbc-02</artifactId>
 
     <dependencies>
         <!-- 实现对数据库连接池的自动化配置 -->
