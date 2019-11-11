@@ -2,13 +2,12 @@ package cn.iocoder.springboot.lab18.shardingdatasource.mapper;
 
 import cn.iocoder.springboot.lab18.shardingdatasource.Application;
 import cn.iocoder.springboot.lab18.shardingdatasource.dataobject.OrderDO;
+import org.apache.shardingsphere.api.hint.HintManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
@@ -18,21 +17,28 @@ public class OrderMapperTest {
     private OrderMapper orderMapper;
 
     @Test
-    public void testSelectById() {
-        OrderDO order = orderMapper.selectById(1);
-        System.out.println(order);
+    public void testSelectById() { // 测试从库的负载均衡
+        for (int i = 0; i < 10; i++) {
+            OrderDO order = orderMapper.selectById(1);
+            System.out.println(order);
+        }
     }
 
     @Test
-    public void testSelectListByUserId() {
-        List<OrderDO> orders = orderMapper.selectListByUserId(1);
-        System.out.println(orders.size());
+    public void testSelectById02() { // 测试强制访问主库
+        try (HintManager hintManager = HintManager.getInstance()) {
+            // 设置强制访问主库
+            hintManager.setMasterRouteOnly();
+            // 执行查询
+            OrderDO order = orderMapper.selectById(1);
+            System.out.println(order);
+        }
     }
 
     @Test
-    public void testInsert() {
+    public void testInsert() { // 插入
         OrderDO order = new OrderDO();
-        order.setUserId(1);
+        order.setUserId(10);
         orderMapper.insert(order);
     }
 

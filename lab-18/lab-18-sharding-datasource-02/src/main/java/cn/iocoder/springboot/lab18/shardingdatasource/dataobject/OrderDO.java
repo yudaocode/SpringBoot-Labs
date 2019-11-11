@@ -1,8 +1,11 @@
 package cn.iocoder.springboot.lab18.shardingdatasource.dataobject;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 /**
  * 订单 DO
  */
+@TableName(value = "orders")
 public class OrderDO {
 
     /**

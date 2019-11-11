@@ -1,0 +1,49 @@
+spring:
+  # ShardingSphere 配置项
+  shardingsphere:
+    # 数据源配置
+    datasource:
+      # 所有数据源的名字
+      names: ds-master, ds-slave-1, ds-slave-2
+      # 订单 orders 主库的数据源配置
+      ds-master:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+      # 订单 orders 从库数据源配置
+      ds-slave-1:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders_01?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+      # 订单 orders 从库数据源配置
+      ds-slave-2:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders_02?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+    # 读写分离配置，对应 YamlMasterSlaveRuleConfiguration 配置类
+    masterslave:
+      name: ms # 名字，任意，需要保证唯一
+      master-data-source-name: ds-master # 主库数据源
+      slave-data-source-names: ds-slave-1, ds-slave-2 # 从库数据源
+    # 拓展属性配置
+    props:
+      sql:
+        show: true # 打印 SQL
+
+# mybatis-plus 配置内容
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 虽然默认为 true ，但是还是显示去指定下。
+  global-config:
+    db-config:
+      id-type: none # 虽然 MyBatis Plus 也提供 ID 生成策略，但是还是使用 Sharding-JDBC 的
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: cn.iocoder.springboot.lab18.shardingdatasource.dataobject
