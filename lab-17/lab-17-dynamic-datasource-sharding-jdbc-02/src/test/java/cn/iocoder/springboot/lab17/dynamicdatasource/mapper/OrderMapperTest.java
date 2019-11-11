@@ -26,14 +26,12 @@ public class OrderMapperTest {
 
     @Test
     public void testSelectById02() { // 测试强制访问主库
-        try {
+        try (HintManager hintManager = HintManager.getInstance()) {
             // 设置强制访问主库
-            HintManager.getInstance().setMasterRouteOnly();
+            hintManager.setMasterRouteOnly();
             // 执行查询
             OrderDO order = orderMapper.selectById(1);
             System.out.println(order);
-        } finally {
-            HintManager.clear();
         }
     }
 
