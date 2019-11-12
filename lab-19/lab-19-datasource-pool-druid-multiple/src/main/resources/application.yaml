@@ -7,6 +7,7 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password:
+      type: com.alibaba.druid.pool.DruidDataSource # 设置类型为 DruidDataSource
       # Druid 自定义配置，对应 DruidDataSource 中的 setting 方法的属性
       min-idle: 0 # 池中维护的最小空闲连接数，默认为 0 个。
       max-active: 20 # 池中最大连接数，包括闲置和使用中的连接，默认为 8 个。
@@ -16,6 +17,7 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password:
+      type: com.alibaba.druid.pool.DruidDataSource # 设置类型为 DruidDataSource
       # Druid 自定义配置，对应 DruidDataSource 中的 setting 方法的属性
       min-idle: 0 # 池中维护的最小空闲连接数，默认为 0 个。
       max-active: 20 # 池中最大连接数，包括闲置和使用中的连接，默认为 8 个。

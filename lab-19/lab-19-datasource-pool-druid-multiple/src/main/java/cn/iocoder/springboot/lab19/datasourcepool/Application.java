@@ -8,8 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
@@ -30,20 +28,10 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) {
         // orders 数据源
-        try (Connection conn = ordersDataSource.getConnection()) {
-            // 这里，可以做点什么
-            logger.info("[run][ordersDataSource 获得连接：{}]", conn);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        logger.info("[run][获得数据源：{}]", ordersDataSource.getClass());
 
         // users 数据源
-        try (Connection conn = usersDataSource.getConnection()) {
-            // 这里，可以做点什么
-            logger.info("[run][usersDataSource 获得连接：{}]", conn);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        logger.info("[run][获得数据源：{}]", usersDataSource.getClass());
     }
 
 }

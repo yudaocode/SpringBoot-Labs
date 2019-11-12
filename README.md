@@ -3,6 +3,7 @@
 # 数据访问
 
 * [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11) 。
+* [《芋道 Spring Boot 数据库连接池入门》](http://www.iocoder.cn/Spring-Boot/datasource-pool/?github) 对应 [lab-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-19) 。
 * [《芋道 Spring Boot MyBatis 入门》](http://www.iocoder.cn/Spring-Boot/MyBatis/?github) 对应 [lab-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-12) 。
 * [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13) 。
 * [《芋道 Spring Boot JdbcTemplate 入门》](http://www.iocoder.cn/Spring-Boot/JdbcTemplate/?github) 对应 [lab-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-14) 。
