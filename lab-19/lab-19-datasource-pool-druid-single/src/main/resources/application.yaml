@@ -1,0 +1,20 @@
+spring:
+  # datasource 数据源配置内容，对应 DataSourceProperties 配置属性类
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root # 数据库账号
+    password: # 数据库密码
+    type: com.alibaba.druid.pool.DruidDataSource # 设置类型为 DruidDataSource
+    # Druid 自定义配置，对应 DruidDataSource 中的 setting 方法的属性
+    druid:
+      min-idle: 0 # 池中维护的最小空闲连接数，默认为 0 个。
+      max-active: 20 # 池中最大连接数，包括闲置和使用中的连接，默认为 8 个。
+      filter:
+        stat: # 配置 StatFilter ，对应文档 https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_StatFilter
+          log-slow-sql: true # 开启慢查询记录
+          slow-sql-millis: 5000 # 慢 SQL 的标准，单位：毫秒
+      stat-view-servlet: # 配置 StatViewServlet ，对应文档 https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_StatViewServlet%E9%85%8D%E7%BD%AE
+        enabled: true # 是否开启 StatViewServlet
+        login-username: yudaoyuanma # 账号
+        login-password: javaniubi # 密码

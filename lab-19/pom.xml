@@ -12,9 +12,10 @@
     <artifactId>lab-19</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-18-hikaricp-single</module>
-        <module>lab-18-datasource-pool-hikaricp-single</module>
         <module>lab-19-datasource-pool-hikaricp-single</module>
+        <module>lab-19-datasource-pool-hikaricp-multiple</module>
+        <module>lab-19-datasource-pool-druid-single</module>
+        <module>lab-19-datasource-pool-druid-multiple</module>
     </modules>
 
 
