@@ -1,0 +1,14 @@
+spring:
+  # datasource 数据源配置内容，对应 DataSourceProperties 配置属性类
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/lab-20-liquibase?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root # 数据库账号
+    password: # 数据库密码
+  # Liquibase 配置内容，对应 LiquibaseProperties 配置项
+  liquibase:
+    enabled: true # 开启 Liquibase 功能。默认为 true 。
+    change-log: classpath:/db/changelog/db.changelog-master.yaml # Liquibase 配置文件地址
+    url: jdbc:mysql://127.0.0.1:3306/lab-20-liquibase?useSSL=false&useUnicode=true&characterEncoding=UTF-8 # 数据库地址
+    user: root # 数据库账号
+    password: # 数据库密码

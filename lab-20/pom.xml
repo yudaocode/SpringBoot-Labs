@@ -14,6 +14,7 @@
     <modules>
         <module>lab-20-database-version-control</module>
         <module>lab-20-database-version-control-flyway</module>
+        <module>lab-20-database-version-control-liquibase</module>
     </modules>
 
 

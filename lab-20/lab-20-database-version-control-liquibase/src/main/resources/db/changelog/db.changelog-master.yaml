@@ -1,0 +1,62 @@
+databaseChangeLog:
+  - changeSet: # 对应一个 ChangeSet 对象
+      id: 0 # ChangeSet 编号
+      author: yunai # 作者
+      comments: 空 # 备注
+  - changeSet: # 对应一个 ChangeSet 对象
+      id: 1 # ChangeSet 编号
+      author: yunai # 作者
+      comments: 初始化 users 表 # 备注
+      changes: # 对应 Change 数组。Change 是一个接口，每种操作对应一种 Change 实现类
+        - createTable: # 创建表，对应 CreateTableChange 对象。
+            tableName: users # 表名
+            remarkds: 用户表 # 表注释
+            columns: # 对应 ColumnConfig 数组
+              - column:
+                  name: id # 字段名
+                  type: int # 字段类型
+                  autoIncrement: true # 自增
+                  constraints: # 限制条件，对应一个 ConstraintsConfig 对象
+                    primaryKey: true # 主键
+                    nullable: false # 不允许空
+              - column:
+                  name: username
+                  type: varchar(64)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: password
+                  type: varchar(32)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: create_time
+                  type: datetime
+                  constraints:
+                    nullable: false
+        - insert: # 插入记录，对应 InsertDataChange 对象。
+            tableName: users # 表名
+            columns: # 对应 ColumnConfig 数组
+              - column:
+                  name: username # 字段名
+                  value: yudaoyuanma # 值
+              - column:
+                  name: password
+                  value: password
+              - column:
+                  name: create_time
+                  value: now()
+  - changeSet: # 对应一个 ChangeSet 对象
+      id: 2 # ChangeSet 编号
+      author: yunai # 作者
+      comments: 初始化 users2 表 # 备注
+      changes: # 对应 Change 数组。Change 是一个接口，每种操作对应一种 Change 实现类
+        - sqlFile: # 使用 SQL 文件，对应 SQLFileChange 对象
+            encoding: utf8
+            path: classpath:db/changelog/sqlfile/CHAGE_SET_2_INIT_DB.sql
+  - changeSet: # 对应一个 ChangeSet 对象
+      id: 3 # ChangeSet 编号
+      author: yunai # 作者
+      comments: 修复 `users` 的用户名 # 备注
+      changes: # 对应 Change 数组。Change 是一个接口，每种操作对应一种 Change 实现类
+        - customChange: {class: cn.iocoder.springboot.lab20.databaseversioncontrol.migration.CHANGE_SET_3_FixUsername} # 对应 CustomTaskChange
