@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-21-cache-demo</module>
+        <module>lab-21-cache-ehcache</module>
+        <module>lab-21-cache-redis</module>
     </modules>
 
 

@@ -1,0 +1,47 @@
+spring:
+  # datasource 数据源配置内容
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/lab-21-cache-demo?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+  # 对应 RedisProperties 类
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: # Redis 服务器密码，默认为空。生产中，一定要设置 Redis 密码！
+    database: 0 # Redis 数据库号，默认为 0 。
+    timeout: 0 # Redis 连接超时时间，单位：毫秒。
+    # 对应 RedisProperties.Jedis 内部类
+    jedis:
+      pool:
+        max-active: 8 # 连接池最大连接数，默认为 8 。使用负数表示没有限制。
+        max-idle: 8 # 默认连接数最小空闲的连接数，默认为 8 。使用负数表示没有限制。
+        min-idle: 0 # 默认连接池最小空闲的连接数，默认为 0 。允许设置 0 和 正数。
+        max-wait: -1 # 连接池最大阻塞等待时间，单位：毫秒。默认为 -1 ，表示不限制。
+  # cache 缓存配置内容
+  cache:
+    type: redis
+
+# mybatis-plus 配置内容
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 虽然默认为 true ，但是还是显示去指定下。
+  global-config:
+    db-config:
+      id-type: auto # ID 主键自增
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: cn.iocoder.springboot.lab21.cache.dataobject
+
+# logging
+logging:
+  level:
+    # dao 开启 debug 模式 mybatis 输入 sql
+    cn:
+      iocoder:
+        springboot:
+          lab21:
+            cache:
+              mapper: debug
