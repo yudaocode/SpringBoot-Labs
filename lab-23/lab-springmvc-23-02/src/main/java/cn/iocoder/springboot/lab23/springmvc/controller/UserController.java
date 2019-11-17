@@ -6,10 +6,8 @@ import cn.iocoder.springboot.lab23.springmvc.core.vo.CommonResult;
 import cn.iocoder.springboot.lab23.springmvc.vo.UserVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -18,6 +16,7 @@ import java.util.UUID;
  */
 @RestController
 @RequestMapping("/users")
+//@CrossOrigin(value = "*")
 public class UserController {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
@@ -53,6 +52,20 @@ public class UserController {
     }
 
     /**
+     * 获得指定用户编号的用户
+     *
+     * 测试个问题
+     *
+     * @param id 用户编号
+     * @return 用户
+     */
+    @PostMapping("/get")
+    public UserVO get3(@RequestParam("id") Integer id) {
+        // 查询并返回用户
+        return new UserVO().setId(id).setUsername(UUID.randomUUID().toString());
+    }
+
+    /**
      * 测试抛出 NullPointerException 异常
      */
     @GetMapping("/exception-01")
@@ -83,6 +96,16 @@ public class UserController {
     public void exception03() {
         logger.info("[exception03]");
         throw new ServiceException(ServiceExceptionEnum.USER_NOT_FOUND);
+    }
+
+    @PostMapping(value = "/add",
+            // ↓ 增加 "application/xml"、"application/json" ，针对 Content-Type 请求头
+            consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
+            // ↓ 增加 "application/xml"、"application/json" ，针对 Accept 请求头
+            produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE}
+    )
+    public UserVO add(@RequestBody UserVO user) {
+        return user;
     }
 
 }

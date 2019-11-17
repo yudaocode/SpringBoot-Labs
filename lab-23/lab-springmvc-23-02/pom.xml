@@ -26,6 +26,19 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 引入 jackson 对 xml 的转换器，实现对 XML 的序列化 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
+
+        <!-- 引入 Fastjson ，实现对 JSON 的序列化 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+
     </dependencies>
 
 </project>
