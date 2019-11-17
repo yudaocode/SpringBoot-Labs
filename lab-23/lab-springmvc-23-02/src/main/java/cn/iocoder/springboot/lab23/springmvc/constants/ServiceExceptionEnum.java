@@ -4,6 +4,7 @@ package cn.iocoder.springboot.lab23.springmvc.constants;
  * 业务异常枚举
  */
 public enum ServiceExceptionEnum {
+
     // ========== 系统级别 ==========
     SUCCESS(0, "成功"),
     SYS_ERROR(2001001000, "服务端发生异常"),
@@ -20,11 +21,11 @@ public enum ServiceExceptionEnum {
     /**
      * 错误码
      */
-    private int code;
+    private final int code;
     /**
      * 错误提示
      */
-    private String message;
+    private final String message;
 
     ServiceExceptionEnum(int code, String message) {
         this.code = code;
@@ -35,18 +36,8 @@ public enum ServiceExceptionEnum {
         return code;
     }
 
-    public ServiceExceptionEnum setCode(int code) {
-        this.code = code;
-        return this;
-    }
-
     public String getMessage() {
         return message;
-    }
-
-    public ServiceExceptionEnum setMessage(String message) {
-        this.message = message;
-        return this;
     }
 
 }

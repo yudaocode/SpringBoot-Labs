@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
-@ControllerAdvice
+@ControllerAdvice(basePackages = "cn.iocoder.springboot.lab23.springmvc.controller")
 public class GlobalExceptionHandler {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
