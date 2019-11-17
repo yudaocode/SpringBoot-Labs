@@ -1,5 +1,9 @@
 艿艿 SpringBoot Lab 实验室。
 
+# Web 开发
+
+* [《芋道 Spring Boot SpringMVC 入门》](http://www.iocoder.cn/Spring-Boot/SpringMVC/?github) 对应 [lab-23](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-23) 。
+
 # 数据访问
 
 * [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11) 。
