@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-22</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-22-validation-01</module>
+    </modules>
 
 
 </project>

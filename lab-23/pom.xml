@@ -12,8 +12,6 @@
     <artifactId>lab-23</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-23-01</module>
-        <module>lab-springmvc-23</module>
         <module>lab-springmvc-23-01</module>
         <module>lab-springmvc-23-02</module>
     </modules>
