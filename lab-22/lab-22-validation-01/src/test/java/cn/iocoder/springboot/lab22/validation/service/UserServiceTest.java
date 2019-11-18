@@ -47,6 +47,9 @@ public class UserServiceTest {
 
     @Test
     public void testValidator() {
+        // 打印，查看 validator 的类型
+        System.out.println(validator);
+
         // 创建 UserAddDTO 对象
         UserAddDTO addDTO = new UserAddDTO();
         // 校验
