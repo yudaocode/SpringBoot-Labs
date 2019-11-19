@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-24-apidoc-swagger</module>
+        <module>lab-24-apidoc-swagger-knife4j</module>
     </modules>
 
 
