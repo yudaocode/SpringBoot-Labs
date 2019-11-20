@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-websocket-25-01</artifactId>
+    <artifactId>lab-websocket-25-02</artifactId>
 
     <dependencies>
         <!-- 实现对 WebSocket 相关依赖的引入，方便~ -->

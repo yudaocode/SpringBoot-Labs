@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-websocket-25-01</module>
+        <module>lab-websocket-25-02</module>
     </modules>
 
 
