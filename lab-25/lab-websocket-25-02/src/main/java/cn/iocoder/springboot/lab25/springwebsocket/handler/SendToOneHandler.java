@@ -5,14 +5,13 @@ import cn.iocoder.springboot.lab25.springwebsocket.message.SendToOneRequest;
 import cn.iocoder.springboot.lab25.springwebsocket.message.SendToUserRequest;
 import cn.iocoder.springboot.lab25.springwebsocket.util.WebSocketUtil;
 import org.springframework.stereotype.Component;
-
-import javax.websocket.Session;
+import org.springframework.web.socket.WebSocketSession;
 
 @Component
 public class SendToOneHandler implements MessageHandler<SendToOneRequest> {
 
     @Override
-    public void execute(Session session, SendToOneRequest message) {
+    public void execute(WebSocketSession session, SendToOneRequest message) {
         // 这里，假装直接成功
         SendResponse sendResponse = new SendResponse().setMsgId(message.getMsgId()).setCode(0);
         WebSocketUtil.send(session, SendResponse.TYPE, sendResponse);
