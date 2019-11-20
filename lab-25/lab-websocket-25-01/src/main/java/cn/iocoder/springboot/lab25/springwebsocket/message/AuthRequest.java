@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab25.springwebsocket.message;
 
 /**
- * 认证 Message
+ * 用户认证请求
  */
 public class AuthRequest implements Message {
 

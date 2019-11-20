@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab25.springwebsocket.message;
 
 /**
- * 用户加入通知 Message
+ * 用户加入群聊的通知 Message
  */
 public class UserJoinNoticeRequest implements Message {
 

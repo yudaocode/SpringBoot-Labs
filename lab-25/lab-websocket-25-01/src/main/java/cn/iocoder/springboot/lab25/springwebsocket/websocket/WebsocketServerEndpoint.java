@@ -1,6 +1,7 @@
 package cn.iocoder.springboot.lab25.springwebsocket.websocket;
 
 import cn.iocoder.springboot.lab25.springwebsocket.handler.MessageHandler;
+import cn.iocoder.springboot.lab25.springwebsocket.message.AuthRequest;
 import cn.iocoder.springboot.lab25.springwebsocket.message.Message;
 import cn.iocoder.springboot.lab25.springwebsocket.util.WebSocketUtil;
 import com.alibaba.fastjson.JSON;
@@ -12,12 +13,14 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.CollectionUtils;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -28,9 +31,9 @@ public class WebsocketServerEndpoint implements InitializingBean {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     /**
-     * 设置成静态变量
+     * 消息类型与 MessageHandler 的映射
      *
-     * 虽然说 WebsocketServerEndpoint 是单例，但是 Spring Boot 还是会为每个 WebSocket 创建一个 WebsocketServerEndpoint Bean 。
+     * 注意，这里设置成静态变量。虽然说 WebsocketServerEndpoint 是单例，但是 Spring Boot 还是会为每个 WebSocket 创建一个 WebsocketServerEndpoint Bean 。
      */
     private static final Map<String, MessageHandler> HANDLERS = new HashMap<>();
 
@@ -40,8 +43,18 @@ public class WebsocketServerEndpoint implements InitializingBean {
     @OnOpen
     public void onOpen(Session session, EndpointConfig config) {
         logger.info("[onOpen][session({}) 接入]", session);
-        // 添加到在线缓存
-        WebSocketUtil.addSession(session);
+        // 解析 accessToken
+        List<String> accessTokenValues = session.getRequestParameterMap().get("accessToken");
+        String accessToken = !CollectionUtils.isEmpty(accessTokenValues) ? accessTokenValues.get(0) : null;
+        // 创建 AuthRequest 消息类型
+        AuthRequest authRequest = new AuthRequest().setAccessToken(accessToken);
+        // 获得消息处理器
+        MessageHandler<AuthRequest> messageHandler = HANDLERS.get(AuthRequest.TYPE);
+        if (messageHandler == null) {
+            logger.error("[onOpen][认证消息类型，不存在消息处理器]");
+            return;
+        }
+        messageHandler.execute(session, authRequest);
     }
 
     @OnMessage

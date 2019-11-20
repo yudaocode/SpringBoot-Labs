@@ -1,5 +1,8 @@
 package cn.iocoder.springboot.lab25.springwebsocket.message;
 
+/**
+ * 发送消息给一个用户的 Message
+ */
 public class SendToUserRequest implements Message {
 
     public static final String TYPE = "SEND_TO_USER_REQUEST";

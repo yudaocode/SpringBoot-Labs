@@ -18,6 +18,8 @@ public class WebSocketUtil {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WebSocketUtil.class);
 
+    // ========== 会话相关 ==========
+
     /**
      * Session 与用户的映射
      */
@@ -27,10 +29,24 @@ public class WebSocketUtil {
      */
     private static final Map<String, Session> USER_SESSION_MAP = new ConcurrentHashMap<>();
 
-    public static void addSession(Session session) {
-        SESSION_USER_MAP.put(session, ""); // 使用 "" 占位，因为 ConcurrentHashMap 不允许 value 为空
+    /**
+     * 添加 Session 。在这个方法中，会添加用户和 Session 之间的映射
+     *
+     * @param session Session
+     * @param user 用户
+     */
+    public static void addSession(Session session, String user) {
+        // 更新 USER_SESSION_MAP
+        USER_SESSION_MAP.put(user, session);
+        // 更新 SESSION_USER_MAP
+        SESSION_USER_MAP.put(session, user);
     }
 
+    /**
+     * 移除 Session 。
+     *
+     * @param session Session
+     */
     public static void removeSession(Session session) {
         // 从 SESSION_USER_MAP 中移除
         String user = SESSION_USER_MAP.remove(session);
@@ -40,13 +56,15 @@ public class WebSocketUtil {
         }
     }
 
-    public static void addUser(Session session, String user) {
-        // 更新 USER_SESSION_MAP
-        USER_SESSION_MAP.put(user, session);
-        // 更新 SESSION_USER_MAP
-        SESSION_USER_MAP.put(session, user);
-    }
+    // ========== 消息相关 ==========
 
+    /**
+     * 广播发送消息给所有在线用户
+     *
+     * @param type 消息类型
+     * @param message 消息体
+     * @param <T> 消息类型
+     */
     public static <T extends Message> void broadcast(String type, T message) {
         // 创建消息
         String messageText = buildTextMessage(type, message);
@@ -56,6 +74,14 @@ public class WebSocketUtil {
         }
     }
 
+    /**
+     * 发送消息给单个用户的 Session
+     *
+     * @param session Session
+     * @param type 消息类型
+     * @param message 消息体
+     * @param <T> 消息类型
+     */
     public static <T extends Message> void send(Session session, String type, T message) {
         // 创建消息
         String messageText = buildTextMessage(type, message);
@@ -63,6 +89,15 @@ public class WebSocketUtil {
         sendTextMessage(session, messageText);
     }
 
+    /**
+     * 发送消息给指定用户
+     *
+     * @param user 指定用户
+     * @param type 消息类型
+     * @param message 消息体
+     * @param <T> 消息类型
+     * @return 发送是否成功你那个
+     */
     public static <T extends Message> boolean send(String user, String type, T message) {
         // 获得用户对应的 Session
         Session session = USER_SESSION_MAP.get(user);
@@ -75,6 +110,14 @@ public class WebSocketUtil {
         return true;
     }
 
+    /**
+     * 构建完整的消息
+     *
+     * @param type 消息类型
+     * @param message 消息体
+     * @param <T> 消息类型
+     * @return 消息
+     */
     private static <T extends Message> String buildTextMessage(String type, T message) {
         JSONObject messageObject = new JSONObject();
         messageObject.put("type", type);
@@ -82,6 +125,12 @@ public class WebSocketUtil {
         return messageObject.toString();
     }
 
+    /**
+     * 真正发送消息
+     *
+     * @param session Session
+     * @param messageText 消息
+     */
     private static void sendTextMessage(Session session, String messageText) {
         if (session == null) {
             LOGGER.error("[sendTextMessage][session 为 null]");

@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab25.springwebsocket.message;
 
 /**
- * 发送给单个人消息的 Message
+ * 发送给指定人的私聊消息的 Message
  */
 public class SendToOneRequest implements Message {
 

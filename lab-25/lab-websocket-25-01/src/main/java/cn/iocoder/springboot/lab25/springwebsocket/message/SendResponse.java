@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab25.springwebsocket.message;
 
 /**
- * 发送给单个人消息的成功结果的 Message
+ * 发送消息响应结果的 Message
  */
 public class SendResponse implements Message {
 
@@ -15,6 +15,10 @@ public class SendResponse implements Message {
      * 响应状态码
      */
     private Integer code;
+    /**
+     * 响应提示
+     */
+    private String message;
 
     public String getMsgId() {
         return msgId;
@@ -31,6 +35,15 @@ public class SendResponse implements Message {
 
     public SendResponse setCode(Integer code) {
         this.code = code;
+        return this;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public SendResponse setMessage(String message) {
+        this.message = message;
         return this;
     }
 

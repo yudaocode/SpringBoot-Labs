@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab25.springwebsocket.message;
 
 /**
- * 发送给所有人消息的 Message
+ * 发送给所有人的群聊消息的 Message
  */
 public class SendToAllRequest implements Message {
 
