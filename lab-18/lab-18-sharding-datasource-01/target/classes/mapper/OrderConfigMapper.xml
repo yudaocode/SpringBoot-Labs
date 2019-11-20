@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.iocoder.springboot.lab18.shardingdatasource.mapper.OrderConfigMapper">
+
+    <sql id="FIELDS">
+        id, pay_timeout
+    </sql>
+
+    <select id="selectById" parameterType="Integer" resultType="OrderConfigDO">
+        SELECT
+            <include refid="FIELDS" />
+        FROM order_config
+        WHERE id = #{id}
+    </select>
+
+</mapper>

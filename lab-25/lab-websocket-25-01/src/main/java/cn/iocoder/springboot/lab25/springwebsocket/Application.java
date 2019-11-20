@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab24.springwebsocket;
+package cn.iocoder.springboot.lab25.springwebsocket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

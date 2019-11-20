@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+    <!-- users 缓存 -->
+    <!-- name：缓存名 -->
+    <!-- maxElementsInMemory：最大缓存 key 数量 -->
+    <!-- timeToLiveSeconds：缓存过期时长，单位：秒 -->
+    <!-- memoryStoreEvictionPolicy：缓存淘汰策略 -->
+    <cache name="users"
+           maxElementsInMemory="1000"
+           timeToLiveSeconds="60"
+           memoryStoreEvictionPolicy="LRU"/>  <!-- 缓存淘汰策略 -->
+
+</ehcache>

@@ -1,0 +1,5 @@
+spring:
+  # i18 message 配置，对应 MessageSourceProperties 配置类
+  messages:
+    basename: i18n/messages # 文件路径基础名
+    encoding: UTF-8 # 使用 UTF-8 编码

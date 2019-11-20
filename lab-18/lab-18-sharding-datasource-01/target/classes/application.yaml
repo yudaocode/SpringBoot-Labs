@@ -1,0 +1,52 @@
+spring:
+  # ShardingSphere 配置项
+  shardingsphere:
+    datasource:
+      # 所有数据源的名字
+      names: ds-orders-0, ds-orders-1
+      # 订单 orders 数据源配置 00
+      ds-orders-0:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/lab18_orders_0?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+      # 订单 orders 数据源配置 01
+      ds-orders-1:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/lab18_orders_1?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password:
+    # 分片规则
+    sharding:
+      tables:
+        # orders 表配置
+        orders:
+#          actualDataNodes: ds-orders-$->{0..1}.orders_$->{0..4} # 映射到 ds-orders 数据源的 orders 表
+#          actualDataNodes: ds-orders-0.orders_0, ds-orders-0.orders_2, ds-orders-0.orders_4, ds-orders-0.orders_6, ds-orders-1.orders_1, ds-orders-1.orders_3, ds-orders-1.orders_5, ds-orders-1.orders_7
+          actualDataNodes: ds-orders-0.orders_$->{[0,2,4,6]}, ds-orders-1.orders_$->{[1,3,5,7]} # 映射到 ds-orders-0 和 ds-orders-1 数据源的 orders 表们
+          key-generator: # 主键生成策略
+            column: id
+            type: SNOWFLAKE
+          database-strategy:
+            inline:
+              algorithm-expression: ds-orders-$->{user_id % 2}
+              sharding-column: user_id
+          table-strategy:
+            inline:
+              algorithm-expression: orders_$->{user_id % 8}
+              sharding-column: user_id
+        # order_config 表配置
+        order_config:
+          actualDataNodes: ds-orders-0.order_config # 仅映射到 ds-orders-0 数据源的 order_config 表
+    # 拓展属性配置
+    props:
+      sql:
+        show: true # 打印 SQL
+
+# mybatis 配置内容
+mybatis:
+  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/*.xml # 配置 Mapper XML 地址
+  type-aliases-package: cn.iocoder.springboot.lab18.shardingdatasource.dataobject # 配置数据库实体包路径

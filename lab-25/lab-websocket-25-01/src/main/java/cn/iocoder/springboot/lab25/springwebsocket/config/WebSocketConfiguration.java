@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab24.springwebsocket.config;
+package cn.iocoder.springboot.lab25.springwebsocket.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

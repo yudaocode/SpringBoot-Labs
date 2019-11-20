@@ -1,0 +1,13 @@
+spring:
+  # datasource 数据源配置内容
+  datasource:
+    url: jdbc:mysql://47.112.193.81:3306/testb5f4?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: testb5f4
+    password: F4df4db0ed86@11
+  # JPA 配置内容，对应 JpaProperties 类
+  jpa:
+    show-sql: true # 打印 SQL 。生产环境，建议关闭
+    # Hibernate 配置内容，对应 HibernateProperties 类
+    hibernate:
+      ddl-auto: none
