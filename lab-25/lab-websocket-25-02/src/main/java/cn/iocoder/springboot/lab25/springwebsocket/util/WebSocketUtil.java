@@ -4,9 +4,9 @@ import cn.iocoder.springboot.lab25.springwebsocket.message.Message;
 import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.socket.TextMessage;
+import org.springframework.web.socket.WebSocketSession;
 
-import javax.websocket.RemoteEndpoint;
-import javax.websocket.Session;
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -23,11 +23,11 @@ public class WebSocketUtil {
     /**
      * Session 与用户的映射
      */
-    private static final Map<Session, String> SESSION_USER_MAP = new ConcurrentHashMap<>();
+    private static final Map<WebSocketSession, String> SESSION_USER_MAP = new ConcurrentHashMap<>();
     /**
      * 用户与 Session 的映射
      */
-    private static final Map<String, Session> USER_SESSION_MAP = new ConcurrentHashMap<>();
+    private static final Map<String, WebSocketSession> USER_SESSION_MAP = new ConcurrentHashMap<>();
 
     /**
      * 添加 Session 。在这个方法中，会添加用户和 Session 之间的映射
@@ -35,7 +35,7 @@ public class WebSocketUtil {
      * @param session Session
      * @param user 用户
      */
-    public static void addSession(Session session, String user) {
+    public static void addSession(WebSocketSession session, String user) {
         // 更新 USER_SESSION_MAP
         USER_SESSION_MAP.put(user, session);
         // 更新 SESSION_USER_MAP
@@ -47,7 +47,7 @@ public class WebSocketUtil {
      *
      * @param session Session
      */
-    public static void removeSession(Session session) {
+    public static void removeSession(WebSocketSession session) {
         // 从 SESSION_USER_MAP 中移除
         String user = SESSION_USER_MAP.remove(session);
         // 从 USER_SESSION_MAP 中移除
@@ -67,10 +67,10 @@ public class WebSocketUtil {
      */
     public static <T extends Message> void broadcast(String type, T message) {
         // 创建消息
-        String messageText = buildTextMessage(type, message);
+        TextMessage textMessage = buildTextMessage(type, message);
         // 遍历 SESSION_USER_MAP ，进行逐个发送
-        for (Session session : SESSION_USER_MAP.keySet()) {
-            sendTextMessage(session, messageText);
+        for (WebSocketSession session : SESSION_USER_MAP.keySet()) {
+            sendTextMessage(session, textMessage);
         }
     }
 
@@ -82,11 +82,11 @@ public class WebSocketUtil {
      * @param message 消息体
      * @param <T> 消息类型
      */
-    public static <T extends Message> void send(Session session, String type, T message) {
+    public static <T extends Message> void send(WebSocketSession session, String type, T message) {
         // 创建消息
-        String messageText = buildTextMessage(type, message);
+        TextMessage textMessage = buildTextMessage(type, message);
         // 遍历给单个 Session ，进行逐个发送
-        sendTextMessage(session, messageText);
+        sendTextMessage(session, textMessage);
     }
 
     /**
@@ -100,7 +100,7 @@ public class WebSocketUtil {
      */
     public static <T extends Message> boolean send(String user, String type, T message) {
         // 获得用户对应的 Session
-        Session session = USER_SESSION_MAP.get(user);
+        WebSocketSession session = USER_SESSION_MAP.get(user);
         if (session == null) {
             LOGGER.error("[send][user({}) 不存在对应的 session]", user);
             return false;
@@ -118,34 +118,29 @@ public class WebSocketUtil {
      * @param <T> 消息类型
      * @return 消息
      */
-    private static <T extends Message> String buildTextMessage(String type, T message) {
+    private static <T extends Message> TextMessage buildTextMessage(String type, T message) {
         JSONObject messageObject = new JSONObject();
         messageObject.put("type", type);
         messageObject.put("body", message);
-        return messageObject.toString();
+        return new TextMessage(messageObject.toString());
     }
 
     /**
      * 真正发送消息
      *
      * @param session Session
-     * @param messageText 消息
+     * @param textMessage 消息
      */
-    private static void sendTextMessage(Session session, String messageText) {
+    private static void sendTextMessage(WebSocketSession session, TextMessage textMessage) {
         if (session == null) {
             LOGGER.error("[sendTextMessage][session 为 null]");
             return;
         }
-        RemoteEndpoint.Basic basic = session.getBasicRemote();
-        if (basic == null) {
-            LOGGER.error("[sendTextMessage][session 的  为 null]");
-            return;
-        }
         try {
-            basic.sendText(messageText);
+            session.sendMessage(textMessage);
         } catch (IOException e) {
             LOGGER.error("[sendTextMessage][session({}) 发送消息{}) 发生异常",
-                    session, messageText, e);
+                    session, textMessage, e);
         }
     }
 
