@@ -14,7 +14,7 @@ public class SendController {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @MessageMapping("/send_to_all")
-    @SendTo(value = "/topic/send_to_all")
+    @SendTo(value = "/topic/send_to_all") // TODO https://blog.csdn.net/fly_leopard/article/details/78664409 暂时先跳过
     public SendToUserRequest sendToAll(SendToAllRequest message) {
         logger.info("[sendToAll][SendToAllRequest({})]", message);
 //        // 创建转发的消息
