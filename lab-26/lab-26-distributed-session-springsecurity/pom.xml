@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-26-distributed-session-01</artifactId>
+    <artifactId>lab-26-distributed-session-springsecurity</artifactId>
 
     <dependencies>
         <!-- 实现对 Spring MVC 的自动化配置 -->
@@ -41,6 +41,12 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
+        </dependency>
+
+        <!-- 实现对 Spring Security 的自动化配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
     </dependencies>

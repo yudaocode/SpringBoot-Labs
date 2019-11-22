@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-26-distributed-session-01</artifactId>
+    <artifactId>lab-26-distributed-session-02</artifactId>
 
     <dependencies>
         <!-- 实现对 Spring MVC 的自动化配置 -->
@@ -19,28 +19,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 实现对 Spring Session 使用 Redis 作为数据源的自动化配置 -->
+        <!-- 实现对 Spring Session 使用 MongoDB 作为数据源的自动化配置 -->
         <dependency>
             <groupId>org.springframework.session</groupId>
-            <artifactId>spring-session-data-redis</artifactId>
+            <artifactId>spring-session-data-mongodb</artifactId>
         </dependency>
 
-        <!-- 实现对 Spring Data Redis 的自动化配置 -->
+        <!-- 自动化配置 Spring Data Mongodb -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-            <exclusions>
-                <!-- 去掉对 Lettuce 的依赖，因为 Spring Boot 优先使用 Lettuce 作为 Redis 客户端 -->
-                <exclusion>
-                    <groupId>io.lettuce</groupId>
-                    <artifactId>lettuce-core</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- 引入 Jedis 的依赖，这样 Spring Boot 实现对 Jedis 的自动化配置 -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
     </dependencies>
