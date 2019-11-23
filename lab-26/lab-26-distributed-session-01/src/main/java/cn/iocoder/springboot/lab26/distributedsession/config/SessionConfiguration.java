@@ -24,4 +24,24 @@ public class SessionConfiguration {
         return RedisSerializer.json();
     }
 
+//    @Bean
+//    public CookieHttpSessionIdResolver sessionIdResolver() {
+//        // 创建 CookieHttpSessionIdResolver 对象
+//        CookieHttpSessionIdResolver sessionIdResolver = new CookieHttpSessionIdResolver();
+//
+//        // 创建 DefaultCookieSerializer 对象
+//        DefaultCookieSerializer cookieSerializer = new DefaultCookieSerializer();
+//        sessionIdResolver.setCookieSerializer(cookieSerializer); // 设置到 sessionIdResolver 中
+//        cookieSerializer.setCookieName("JSESSIONID");
+//
+//        return sessionIdResolver;
+//    }
+
+//    @Bean
+//    public HeaderHttpSessionIdResolver sessionIdResolver() {
+////        return HeaderHttpSessionIdResolver.xAuthToken();
+////        return HeaderHttpSessionIdResolver.authenticationInfo();
+//        return new HeaderHttpSessionIdResolver("token");
+//    }
+
 }
