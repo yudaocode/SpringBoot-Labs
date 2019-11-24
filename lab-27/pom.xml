@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-27-webflux-01</module>
+        <module>lab-27-webflux-02</module>
     </modules>
 
 
