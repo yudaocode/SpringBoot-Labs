@@ -3,6 +3,7 @@ package cn.iocoder.springboot.lab27.springwebflux.controller;
 import cn.iocoder.springboot.lab27.springwebflux.dto.UserAddDTO;
 import cn.iocoder.springboot.lab27.springwebflux.dto.UserUpdateDTO;
 import cn.iocoder.springboot.lab27.springwebflux.vo.UserVO;
+import org.reactivestreams.Publisher;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -55,7 +56,7 @@ public class UserController {
      * @return 添加成功的用户编号
      */
     @PostMapping("add")
-    public Mono<Integer> add(UserAddDTO addDTO) {
+    public Mono<Integer> add(@RequestBody Publisher<UserAddDTO> addDTO) {
         // 插入用户记录，返回编号
         Integer returnId = UUID.randomUUID().hashCode();
         // 返回用户编号
@@ -69,7 +70,7 @@ public class UserController {
      * @return 是否修改成功
      */
     @PostMapping("/update")
-    public Mono<Boolean> update(UserUpdateDTO updateDTO) {
+    public Mono<Boolean> update(@RequestBody Publisher<UserUpdateDTO> updateDTO) {
         // 更新用户记录
         Boolean success = true;
         // 返回更新是否成功

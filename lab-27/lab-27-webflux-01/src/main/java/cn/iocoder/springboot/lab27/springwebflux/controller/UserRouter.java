@@ -1,8 +1,8 @@
-package cn.iocoder.springboot.lab27.springwebflux.config;
+package cn.iocoder.springboot.lab27.springwebflux.controller;
 
 import cn.iocoder.springboot.lab27.springwebflux.vo.UserVO;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.reactive.function.server.*;
 import reactor.core.publisher.Mono;
@@ -15,8 +15,8 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
-@Configuration
-public class WebFluxRouteConfiguration {
+@Component
+public class UserRouter {
 
     @Bean
     public RouterFunction<ServerResponse> userListRouterFunction() {
