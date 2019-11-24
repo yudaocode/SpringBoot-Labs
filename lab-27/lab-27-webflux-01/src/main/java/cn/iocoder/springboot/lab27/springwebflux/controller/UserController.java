@@ -64,6 +64,20 @@ public class UserController {
     }
 
     /**
+     * 添加用户
+     *
+     * @param addDTO 添加用户信息 DTO
+     * @return 添加成功的用户编号
+     */
+    @PostMapping("add2")
+    public Mono<Integer> add2(Mono<UserAddDTO> addDTO) {
+        // 插入用户记录，返回编号
+        Integer returnId = UUID.randomUUID().hashCode();
+        // 返回用户编号
+        return Mono.just(returnId);
+    }
+
+    /**
      * 更新指定用户编号的用户
      *
      * @param updateDTO 更新用户信息 DTO

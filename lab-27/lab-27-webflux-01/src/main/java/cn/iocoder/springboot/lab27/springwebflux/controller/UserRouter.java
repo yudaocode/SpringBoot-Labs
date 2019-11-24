@@ -2,7 +2,7 @@ package cn.iocoder.springboot.lab27.springwebflux.controller;
 
 import cn.iocoder.springboot.lab27.springwebflux.vo.UserVO;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 import org.springframework.web.reactive.function.server.*;
 import reactor.core.publisher.Mono;
@@ -11,11 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
-import static org.springframework.web.reactive.function.server.RouterFunctions.route;
-import static org.springframework.web.reactive.function.server.ServerResponse.ok;
+import static org.springframework.web.reactive.function.server.RequestPredicates.*;
+import static org.springframework.web.reactive.function.server.RouterFunctions.*;
+import static org.springframework.web.reactive.function.server.ServerResponse.*;
 
-@Component
+/**
+ * 用户 Router
+ */
+@Configuration
 public class UserRouter {
 
     @Bean
