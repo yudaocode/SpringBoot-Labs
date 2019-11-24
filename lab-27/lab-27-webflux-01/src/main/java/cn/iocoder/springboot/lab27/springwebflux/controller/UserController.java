@@ -2,15 +2,16 @@ package cn.iocoder.springboot.lab27.springwebflux.controller;
 
 import cn.iocoder.springboot.lab27.springwebflux.dto.UserAddDTO;
 import cn.iocoder.springboot.lab27.springwebflux.dto.UserUpdateDTO;
+import cn.iocoder.springboot.lab27.springwebflux.service.UserService;
 import cn.iocoder.springboot.lab27.springwebflux.vo.UserVO;
 import org.reactivestreams.Publisher;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * 用户 Controller
@@ -18,6 +19,9 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+
+    @Autowired
+    private UserService userService;
 
     /**
      * 查询用户列表
@@ -44,7 +48,21 @@ public class UserController {
     @GetMapping("/get")
     public Mono<UserVO> get(@RequestParam("id") Integer id) {
         // 查询用户
-        UserVO user = new UserVO().setId(id).setUsername(UUID.randomUUID().toString());
+        UserVO user = new UserVO().setId(id).setUsername("username:" + id);
+        // 返回
+        return Mono.just(user);
+    }
+
+    /**
+     * 获得指定用户编号的用户
+     *
+     * @param id 用户编号
+     * @return 用户
+     */
+    @GetMapping("/v2/get")
+    public Mono<UserVO> get2(@RequestParam("id") Integer id) {
+        // 查询用户
+        UserVO user = userService.get(id);
         // 返回
         return Mono.just(user);
     }
@@ -58,7 +76,7 @@ public class UserController {
     @PostMapping("add")
     public Mono<Integer> add(@RequestBody Publisher<UserAddDTO> addDTO) {
         // 插入用户记录，返回编号
-        Integer returnId = UUID.randomUUID().hashCode();
+        Integer returnId = 1;
         // 返回用户编号
         return Mono.just(returnId);
     }
@@ -72,7 +90,7 @@ public class UserController {
     @PostMapping("add2")
     public Mono<Integer> add2(Mono<UserAddDTO> addDTO) {
         // 插入用户记录，返回编号
-        Integer returnId = UUID.randomUUID().hashCode();
+        Integer returnId = 1;
         // 返回用户编号
         return Mono.just(returnId);
     }
@@ -100,7 +118,7 @@ public class UserController {
     @PostMapping("/delete") // URL 修改成 /delete ，RequestMethod 改成 DELETE
     public Mono<Boolean> delete(@RequestParam("id") Integer id) {
         // 删除用户记录
-        Boolean success = false;
+        Boolean success = true;
         // 返回是否更新成功
         return Mono.just(success);
     }
