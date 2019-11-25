@@ -15,6 +15,7 @@
         <module>lab-27-webflux-01</module>
         <module>lab-27-webflux-02</module>
         <module>lab-27-webflux-03</module>
+        <module>lab-27-webflux-mongodb</module>
     </modules>
 
 
