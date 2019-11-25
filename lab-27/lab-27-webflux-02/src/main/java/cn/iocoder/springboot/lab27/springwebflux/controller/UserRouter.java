@@ -1,6 +1,8 @@
 package cn.iocoder.springboot.lab27.springwebflux.controller;
 
 import cn.iocoder.springboot.lab27.springwebflux.vo.UserVO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
@@ -10,16 +12,19 @@ import reactor.core.publisher.Mono;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.function.Consumer;
 
-import static org.springframework.web.reactive.function.server.RequestPredicates.*;
-import static org.springframework.web.reactive.function.server.RouterFunctions.*;
-import static org.springframework.web.reactive.function.server.ServerResponse.*;
+import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
+import static org.springframework.web.reactive.function.server.RouterFunctions.route;
+import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
 /**
  * 用户 Router
  */
 @Configuration
 public class UserRouter {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Bean
     public RouterFunction<ServerResponse> userListRouterFunction() {
@@ -62,6 +67,26 @@ public class UserRouter {
     @Bean
     public RouterFunction<ServerResponse> demoRouterFunction() {
         return route(GET("/users2/demo"), request -> ok().bodyValue("demo"));
+    }
+
+    @Bean
+    public RouterFunction<ServerResponse> demo2RouterFunction() {
+        return route(GET("/users2/demo2"), request -> ok().bodyValue("demo"))
+                .filter(new HandlerFilterFunction<ServerResponse, ServerResponse>() {
+
+                    @Override
+                    public Mono<ServerResponse> filter(ServerRequest request, HandlerFunction<ServerResponse> next) {
+                        return next.handle(request).doOnSuccess(new Consumer<ServerResponse>() { // 执行成功后回调
+
+                            @Override
+                            public void accept(ServerResponse serverResponse) {
+                                logger.info("[accept][执行成功]");
+                            }
+
+                        });
+                    }
+
+                });
     }
 
 }

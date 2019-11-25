@@ -47,16 +47,19 @@ public class GlobalResponseBodyHandler extends ResponseBodyResultHandler {
     @SuppressWarnings("unchecked")
     public Mono<Void> handleResult(ServerWebExchange exchange, HandlerResult result) {
         Object returnValue = result.getReturnValue();
-        Object body = null;
+        Object body;
+        // 处理返回结果为 Mono 的情况
         if (returnValue instanceof Mono) {
             body = ((Mono<Object>) result.getReturnValue())
                     .map((Function<Object, Object>) GlobalResponseBodyHandler::wrapCommonResult)
                     .defaultIfEmpty(COMMON_RESULT_SUCCESS);
+        // 处理返回结果为 Flux 的情况
         } else if (returnValue instanceof Flux) {
             body = ((Flux<Object>) result.getReturnValue())
                     .collectList()
                     .map((Function<Object, Object>) GlobalResponseBodyHandler::wrapCommonResult)
                     .defaultIfEmpty(COMMON_RESULT_SUCCESS);
+        // 处理结果为其它类型
         } else {
             body = wrapCommonResult(returnValue);
         }

@@ -1,11 +1,8 @@
 package cn.iocoder.springboot.lab27.springwebflux.vo;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
  * 用户 VO
  */
-@XmlRootElement
 public class UserVO {
 
     /**

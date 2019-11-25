@@ -10,19 +10,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-27-webflux-02</artifactId>
+    <artifactId>lab-27-webflux-03</artifactId>
+    <description>测试在 WebFlux 中，使用 Java Servlet 相关的 Servlet、Filter、Listener</description>
 
     <dependencies>
         <!-- 实现对 Spring WebFlux 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-netty</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
-        <!-- 引入 jackson 对 xml 的转换器，实现对 XML 的序列化 -->
         <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
         </dependency>
 
         <!-- 方便等会写单元测试 -->

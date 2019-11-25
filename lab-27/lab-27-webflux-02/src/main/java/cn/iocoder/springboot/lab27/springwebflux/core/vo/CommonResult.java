@@ -3,6 +3,7 @@ package cn.iocoder.springboot.lab27.springwebflux.core.vo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.util.Assert;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
@@ -10,6 +11,7 @@ import java.io.Serializable;
  *
  * @param <T> 结果泛型
  */
+@XmlRootElement
 public class CommonResult<T> implements Serializable {
 
     public static Integer CODE_SUCCESS = 0;
