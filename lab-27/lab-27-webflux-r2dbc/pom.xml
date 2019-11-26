@@ -27,6 +27,7 @@
             <version>0.1.0.M2</version>
         </dependency>
 
+        <!-- jasync 的 r2dbc-mysql 驱动 -->
         <dependency>
             <groupId>com.github.jasync-sql</groupId>
             <artifactId>jasync-r2dbc-mysql</artifactId>
