@@ -6,6 +6,7 @@ import cn.iocoder.springboot.lab27.springwebflux.dto.UserAddDTO;
 import cn.iocoder.springboot.lab27.springwebflux.dto.UserUpdateDTO;
 import cn.iocoder.springboot.lab27.springwebflux.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -58,7 +59,7 @@ public class UserController {
      * @return 添加成功的用户编号
      */
     @PostMapping("add")
-//    @Transactional
+    @Transactional
     public Mono<Integer> add(UserAddDTO addDTO) {
         // 查询用户
         Mono<UserDO> user = userRepository.findByUsername(addDTO.getUsername());
@@ -80,7 +81,18 @@ public class UserController {
                                 .setPassword(addDTO.getPassword())
                                 .setCreateTime(new Date());
                         // 插入数据库
-                        return userRepository.save(userDO).map(UserDO::getId);
+                        return userRepository.save(userDO).flatMap(new Function<UserDO, Mono<Integer>>() {
+                            @Override
+                            public Mono<Integer> apply(UserDO userDO) {
+                                // 如果编号为偶数，抛出异常。
+                                if (userDO.getId() % 2 == 0) {
+                                    throw new RuntimeException("我就是故意抛出一个异常，测试下事务回滚");
+                                }
+
+                                // 返回编号
+                                return Mono.just(userDO.getId());
+                            }
+                        });
                     }
 
                 });
