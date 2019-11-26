@@ -18,7 +18,7 @@
         <module>lab-27-webflux-mongodb</module>
         <module>lab-27-webflux-redis</module>
         <module>lab-27-webflux-elasticsearch</module>
-        <module>lab-27-webflux-jpa</module>
+        <module>lab-27-webflux-r2dbc</module>
     </modules>
 
 

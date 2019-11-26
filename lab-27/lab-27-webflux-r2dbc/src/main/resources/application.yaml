@@ -1,0 +1,10 @@
+spring:
+  jasync:
+    r2dbc:
+      host: 47.112.193.81
+      port: 3306
+      database: lab-27-webflux-r2dbc
+      username: lab-27-webflux-r2dbc
+      password: 0ed86@11-r2Dbc123
+
+
