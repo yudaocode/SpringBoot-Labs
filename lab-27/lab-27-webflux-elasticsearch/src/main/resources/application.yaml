@@ -1,0 +1,8 @@
+spring:
+  data:
+    # Elasticsearch 配置项
+    elasticsearch:
+      client:
+        # 对应 ReactiveRestClientProperties 配置类
+        reactive:
+          endpoints: 127.0.0.1:9200 # ES Restful API 地址

@@ -26,6 +26,7 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+
     /**
      * 查询用户列表
      *
@@ -79,7 +80,7 @@ public class UserController {
                                 .setPassword(addDTO.getPassword())
                                 .setCreateTime(new Date());
                         // 插入数据库
-                        return userRepository.insert(userDO).map(UserDO::getId);
+                        return userRepository.save(userDO).map(UserDO::getId);
                     }
 
                 });
