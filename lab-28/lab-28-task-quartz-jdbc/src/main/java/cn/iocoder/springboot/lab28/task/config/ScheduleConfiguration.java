@@ -1,7 +1,7 @@
-package cn.iocoder.springboot.lab27.task.config;
+package cn.iocoder.springboot.lab28.task.config;
 
-import cn.iocoder.springboot.lab27.task.job.DemoJob01;
-import cn.iocoder.springboot.lab27.task.job.DemoJob02;
+import cn.iocoder.springboot.lab28.task.job.DemoJob01;
+import cn.iocoder.springboot.lab28.task.job.DemoJob02;
 import org.quartz.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

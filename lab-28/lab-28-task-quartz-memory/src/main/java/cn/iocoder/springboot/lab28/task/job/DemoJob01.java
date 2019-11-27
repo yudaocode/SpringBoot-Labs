@@ -1,6 +1,6 @@
-package cn.iocoder.springboot.lab27.task.job;
+package cn.iocoder.springboot.lab28.task.job;
 
-import cn.iocoder.springboot.lab27.task.service.DemoService;
+import cn.iocoder.springboot.lab28.task.service.DemoService;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.slf4j.Logger;

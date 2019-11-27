@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab27.task.job;
+package cn.iocoder.springboot.lab28.task.job;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

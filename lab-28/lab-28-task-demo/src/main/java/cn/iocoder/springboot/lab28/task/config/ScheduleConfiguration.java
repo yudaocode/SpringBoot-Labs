@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab27.task.config;
+package cn.iocoder.springboot.lab28.task.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;

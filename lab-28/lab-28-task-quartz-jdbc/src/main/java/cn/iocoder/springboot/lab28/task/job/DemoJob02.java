@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab27.task.job;
+package cn.iocoder.springboot.lab28.task.job;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
