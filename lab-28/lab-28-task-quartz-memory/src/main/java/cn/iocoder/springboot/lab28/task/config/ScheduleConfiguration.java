@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//@EnableScheduling
 public class ScheduleConfiguration {
 
     @Configuration
@@ -50,7 +49,7 @@ public class ScheduleConfiguration {
 
         @Bean
         public Trigger demoJob02Trigger() {
-            // 简单的调度计划的构造器
+            //  基于 Quartz Cron 表达式的调度计划的构造器
             CronScheduleBuilder scheduleBuilder = CronScheduleBuilder.cronSchedule("0/10 * * * * ? *");
             // Trigger 构造器
             return TriggerBuilder.newTrigger()
