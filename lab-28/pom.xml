@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-28-task-demo</module>
+        <module>lab-28-task-quartz-memory</module>
+        <module>lab-28-task-quartz-jdbc</module>
     </modules>
 
 

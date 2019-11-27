@@ -10,13 +10,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-28-task-demo</artifactId>
+    <artifactId>lab-28-task-quartz-memory</artifactId>
 
     <dependencies>
         <!-- 实现对 Spring MVC 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 实现对 Quartz 的自动化配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
         </dependency>
     </dependencies>
 

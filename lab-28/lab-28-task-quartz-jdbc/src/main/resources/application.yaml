@@ -1,0 +1,4 @@
+spring:
+  quartz:
+    auto-startup: true # Quartz 是否自动启动
+    startup-delay: 0 # 延迟 N 秒启动
