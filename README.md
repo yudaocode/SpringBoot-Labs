@@ -31,6 +31,8 @@
 
 ## 定时任务与异步任务
 
+* [《芋道 Spring Boot 定时任务入门》](http://www.iocoder.cn/Spring-Boot/Job/?github) 对应 [lab-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-28) 。
+
 ## 性能测试
 
 * [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05) 。
