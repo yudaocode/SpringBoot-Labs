@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labs-parent</artifactId>
+        <artifactId>lab-28</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-28</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>lab-28-task-demo</module>
-        <module>lab-28-task-quartz-memory</module>
-        <module>lab-28-task-quartz-jdbc</module>
-        <module>lab-28-task-xxl-job</module>
-    </modules>
+    <artifactId>lab-28-task-xxl-job</artifactId>
 
 
 </project>

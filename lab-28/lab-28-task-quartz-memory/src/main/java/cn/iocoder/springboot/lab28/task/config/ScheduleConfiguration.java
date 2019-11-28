@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ScheduleConfiguration {
 
-    @Configuration
     public static class DemoJob01Configuration {
 
         @Bean
@@ -36,7 +35,6 @@ public class ScheduleConfiguration {
 
     }
 
-    @Configuration
     public static class DemoJob02Configuration {
 
         @Bean

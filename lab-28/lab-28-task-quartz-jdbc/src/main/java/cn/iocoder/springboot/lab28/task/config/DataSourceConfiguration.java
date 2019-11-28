@@ -2,6 +2,7 @@ package cn.iocoder.springboot.lab28.task.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.autoconfigure.quartz.QuartzDataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +27,7 @@ public class DataSourceConfiguration {
     /**
      * 创建 user 数据源
      */
+    @Primary
     @Bean(name = "userDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.user.hikari") // 读取 spring.datasource.user 配置到 HikariDataSource 对象
     public DataSource userDataSource() {
@@ -49,6 +51,7 @@ public class DataSourceConfiguration {
      */
     @Bean(name = "quartzDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.quartz.hikari")
+    @QuartzDataSource
     public DataSource quartzDataSource() {
         // 获得 DataSourceProperties 对象
         DataSourceProperties properties =  this.quartzDataSourceProperties();
