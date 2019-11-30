@@ -104,5 +104,12 @@ public class DemoServiceTest {
         logger.info("[task04][结束执行，消耗时长 {} 毫秒]", System.currentTimeMillis() - now);
     }
 
+    @Test
+    public void testZhaoDaoNvPengYou() throws InterruptedException {
+        demoService.zhaoDaoNvPengYou(1, 2);
+
+        // sleep 1 秒，保证异步调用的执行
+        Thread.sleep(1000);
+    }
 
 }

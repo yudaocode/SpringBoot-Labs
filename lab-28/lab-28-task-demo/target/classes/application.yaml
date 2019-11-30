@@ -1,0 +1,10 @@
+spring:
+  task:
+    # Spring Task 调度任务的配置，对应 TaskSchedulingProperties 配置类
+    scheduling:
+      thread-name-prefix: pikaqiu-demo- # 线程池的线程名的前缀。默认为 scheduling- ，建议根据自己应用来设置
+      pool:
+        size: 10 # 线程池大小。默认为 1 ，根据自己应用来设置
+      shutdown:
+        await-termination: true # 应用关闭时，是否等待定时任务执行完成。默认为 false ，建议设置为 true
+        await-termination-period: 60 # 等待任务完成的最大时长，单位为秒。默认为 0 ，根据自己应用来设置
