@@ -32,6 +32,7 @@
 ## 定时任务与异步任务
 
 * [《芋道 Spring Boot 定时任务入门》](http://www.iocoder.cn/Spring-Boot/Job/?github) 对应 [lab-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-28) 。
+* [《芋道 Spring Boot 异步任务入门》](http://www.iocoder.cn/Spring-Boot/Async-Job/?github) 对应 [lab-29](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-29) 。
 
 ## 性能测试
 
