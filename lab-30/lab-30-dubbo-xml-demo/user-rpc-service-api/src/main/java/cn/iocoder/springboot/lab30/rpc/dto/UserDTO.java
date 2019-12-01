@@ -2,6 +2,9 @@ package cn.iocoder.springboot.lab30.rpc.dto;
 
 import java.io.Serializable;
 
+/**
+ * 用户信息 DTO
+ */
 public class UserDTO implements Serializable {
 
     /**

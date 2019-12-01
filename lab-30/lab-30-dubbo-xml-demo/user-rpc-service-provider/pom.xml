@@ -10,9 +10,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>user-rpc-service</artifactId>
+    <artifactId>user-rpc-service-provider</artifactId>
 
     <dependencies>
+        <!-- 引入定义的 Dubbo API 接口 -->
         <dependency>
             <groupId>cn.iocoder.springboot.labs</groupId>
             <artifactId>user-rpc-service-api</artifactId>

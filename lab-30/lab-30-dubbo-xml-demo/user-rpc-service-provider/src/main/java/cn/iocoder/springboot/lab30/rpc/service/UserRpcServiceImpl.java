@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserRpcServiceImpl implements UserRpcService {
 
+    @Override
     public UserDTO get(Integer id) {
         return new UserDTO().setId(id)
                 .setName("没有昵称：" + id)
