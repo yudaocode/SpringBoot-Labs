@@ -12,7 +12,7 @@
     <artifactId>lab-30</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-29-dubbo-xml-demo</module>
+        <module>lab-30-dubbo-xml-demo</module>
     </modules>
 
 

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-29-dubbo-xml-demo</artifactId>
+    <artifactId>lab-30-dubbo-xml-demo</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>user-rpc-service-api</module>
