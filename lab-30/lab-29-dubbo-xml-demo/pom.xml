@@ -13,7 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>user-rpc-service-api</module>
-        <module>user-rpc-service</module>
+        <module>user-rpc-service-provider</module>
+        <module>user-rpc-service-consumer</module>
     </modules>
 
 

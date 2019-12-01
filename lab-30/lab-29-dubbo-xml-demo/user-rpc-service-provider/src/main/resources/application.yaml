@@ -1,0 +1,12 @@
+# dubbo
+dubbo:
+  application:
+    name: user-service
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    port: -1
+    name: dubbo
+  provider:
+    UserRpcService:
+      version: 1.0.0

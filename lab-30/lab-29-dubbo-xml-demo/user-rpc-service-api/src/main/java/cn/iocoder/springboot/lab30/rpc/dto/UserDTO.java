@@ -1,6 +1,8 @@
 package cn.iocoder.springboot.lab30.rpc.dto;
 
-public class DemoUserDTO {
+import java.io.Serializable;
+
+public class UserDTO implements Serializable {
 
     /**
      * 用户编号
@@ -19,7 +21,7 @@ public class DemoUserDTO {
         return id;
     }
 
-    public DemoUserDTO setId(Integer id) {
+    public UserDTO setId(Integer id) {
         this.id = id;
         return this;
     }
@@ -28,7 +30,7 @@ public class DemoUserDTO {
         return name;
     }
 
-    public DemoUserDTO setName(String name) {
+    public UserDTO setName(String name) {
         this.name = name;
         return this;
     }
@@ -37,7 +39,7 @@ public class DemoUserDTO {
         return gender;
     }
 
-    public DemoUserDTO setGender(Integer gender) {
+    public UserDTO setGender(Integer gender) {
         this.gender = gender;
         return this;
     }
