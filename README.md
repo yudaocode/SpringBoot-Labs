@@ -11,6 +11,12 @@
 * [《芋道 Spring Boot 参数校验 Validation 入门》](http://www.iocoder.cn/Spring-Boot/Validation/?github) 对应 [lab-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-22) 。
 * [《芋道 Spring Boot WebSocket 入门》](http://www.iocoder.cn/Spring-Boot/WebSocket/?github) 对应 [lab-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-25) 。
 
+## RPC 开发
+
+* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30) 。
+* 《芋道 Spring Boot Motan 入门》计划中...
+* 《芋道 Spring Boot SOFARPC 入门》计划中...
+
 ## 数据访问
 
 * [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11) 。

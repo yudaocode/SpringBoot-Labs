@@ -13,5 +13,6 @@ dubbo:
   # Dubbo 服务提供者配置
   provider:
     timeout: 1000 # 【重要】远程服务调用超时时间，单位：毫秒。默认为 1000 毫秒，胖友可以根据自己业务修改
+    filter: -exception # 去掉 ExceptionFilter
     UserRpcService:
       version: 1.0.0

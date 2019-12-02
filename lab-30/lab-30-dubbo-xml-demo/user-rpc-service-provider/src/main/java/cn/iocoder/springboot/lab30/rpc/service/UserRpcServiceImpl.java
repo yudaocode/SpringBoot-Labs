@@ -2,6 +2,8 @@ package cn.iocoder.springboot.lab30.rpc.service;
 
 
 import cn.iocoder.springboot.lab30.rpc.api.UserRpcService;
+import cn.iocoder.springboot.lab30.rpc.core.ServiceException;
+import cn.iocoder.springboot.lab30.rpc.core.ServiceExceptionEnum;
 import cn.iocoder.springboot.lab30.rpc.dto.UserAddDTO;
 import cn.iocoder.springboot.lab30.rpc.dto.UserDTO;
 import org.springframework.stereotype.Service;
@@ -18,7 +20,11 @@ public class UserRpcServiceImpl implements UserRpcService {
 
     @Override
     public Integer add(UserAddDTO addDTO) {
-        return null;
+        // 这里，模拟用户已经存在的情况
+        if ("yudaoyuanma".equals(addDTO.getName())) {
+            throw new ServiceException(ServiceExceptionEnum.USER_EXISTS);
+        }
+        return (int) (System.currentTimeMillis() / 1000); // 嘿嘿，随便返回一个 id
     }
 
 }

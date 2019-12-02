@@ -13,7 +13,6 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-import javax.validation.ConstraintViolationException;
 
 @SpringBootApplication
 @ImportResource("classpath:dubbo.xml")
@@ -55,7 +54,7 @@ public class ConsumerApplication {
                 // 发起调用
                 UserDTO user = userRpcService.get(null); // 故意传入空的编号，为了校验编号不通过
                 logger.info("[run][发起一次 Dubbo RPC 请求，获得用户为({})]", user);
-            } catch (ConstraintViolationException e) {
+            } catch (Exception e) {
                 logger.error("[run][获得用户发生异常，信息为:[{}]", e.getMessage());
             }
 
@@ -68,8 +67,34 @@ public class ConsumerApplication {
                 // 发起调用
                 userRpcService.add(addDTO);
                 logger.info("[run][发起一次 Dubbo RPC 请求，添加用户为({})]", addDTO);
-            } catch (ConstraintViolationException e) {
+            } catch (Exception e) {
                 logger.error("[run][添加用户发生异常，信息为:[{}]", e.getMessage());
+            }
+        }
+
+    }
+
+    @Component
+    public class UserRpcServiceTest03 implements CommandLineRunner {
+
+        private final Logger logger = LoggerFactory.getLogger(getClass());
+
+        @Resource
+        private UserRpcService userRpcService;
+
+        @Override
+        public void run(String... args) {
+            // 添加用户
+            try {
+                // 创建 UserAddDTO
+                UserAddDTO addDTO = new UserAddDTO();
+                addDTO.setName("yudaoyuanma"); // 设置为 yudaoyuanma ，触发 ServiceException 异常
+                addDTO.setGender(1);
+                // 发起调用
+                userRpcService.add(addDTO);
+                logger.info("[run][发起一次 Dubbo RPC 请求，添加用户为({})]", addDTO);
+            } catch (Exception e) {
+                logger.error("[run][添加用户发生异常({})，信息为:[{}]", e.getClass().getSimpleName(), e.getMessage());
             }
         }
 
