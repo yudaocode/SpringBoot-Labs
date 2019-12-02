@@ -11,4 +11,23 @@
 
     <artifactId>user-rpc-service-api</artifactId>
 
+    <dependencies>
+        <!-- 参数校验相关依赖 -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId> <!-- JSR 参数校验规范 API -->
+            <version>2.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId> <!-- JSR 参数校验规范实现，我们使用 hibernate-validator -->
+            <version>6.0.18.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId> <!-- 可能涉及到 EL 表达，所以引入，否则 hibernate-validator 在初始化会报错 -->
+            <version>3.0.1-b11</version>
+        </dependency>
+    </dependencies>
+
 </project>
