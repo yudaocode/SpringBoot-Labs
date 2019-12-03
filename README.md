@@ -40,6 +40,10 @@
 * [《芋道 Spring Boot 定时任务入门》](http://www.iocoder.cn/Spring-Boot/Job/?github) 对应 [lab-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-28) 。
 * [《芋道 Spring Boot 异步任务入门》](http://www.iocoder.cn/Spring-Boot/Async-Job/?github) 对应 [lab-29](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-29) 。
 
+## 消息队列
+
+* [《芋道 Spring Boot 分布式消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 对应 [lab-31](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-31) 。
+
 ## 性能测试
 
 * [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05) 。
