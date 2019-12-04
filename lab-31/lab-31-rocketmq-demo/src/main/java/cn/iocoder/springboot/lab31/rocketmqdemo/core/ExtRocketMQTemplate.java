@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab31.rocketmqdemo;
+package cn.iocoder.springboot.lab31.rocketmqdemo.core;
 
 import org.apache.rocketmq.spring.annotation.ExtRocketMQTemplateConfiguration;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
