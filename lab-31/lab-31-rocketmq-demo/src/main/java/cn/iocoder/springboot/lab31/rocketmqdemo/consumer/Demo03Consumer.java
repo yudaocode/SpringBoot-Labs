@@ -1,7 +1,6 @@
 package cn.iocoder.springboot.lab31.rocketmqdemo.consumer;
 
-import cn.iocoder.springboot.lab31.rocketmqdemo.message.Demo01Message;
-import org.apache.rocketmq.common.message.MessageExt;
+import cn.iocoder.springboot.lab31.rocketmqdemo.message.Demo03Message;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.slf4j.Logger;
@@ -10,15 +9,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RocketMQMessageListener(
-        topic = Demo01Message.TOPIC,
-        consumerGroup = "demo01-A-consumer-group-" + Demo01Message.TOPIC
+        topic = Demo03Message.TOPIC,
+        consumerGroup = "demo03-consumer-group-" + Demo03Message.TOPIC
 )
-public class Demo01AConsumer implements RocketMQListener<MessageExt> {
+public class Demo03Consumer implements RocketMQListener<Demo03Message> {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
-    public void onMessage(MessageExt message) {
+    public void onMessage(Demo03Message message) {
         logger.info("[onMessage][线程编号:{} 消息内容：{}]", Thread.currentThread().getId(), message);
     }
 

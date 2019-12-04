@@ -33,7 +33,7 @@ public class Demo01Producer {
         // 创建 Demo01Message 消息
         Demo01Message message = new Demo01Message();
         message.setId(id);
-        // 异步发送消息
+        // oneway 发送消息
         rocketMQTemplate.sendOneWay(Demo01Message.TOPIC, message);
     }
 
