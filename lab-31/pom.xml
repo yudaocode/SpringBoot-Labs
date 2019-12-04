@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-31-rocketmq-demo</module>
+        <module>lab-31-rocketmq-ons</module>
     </modules>
 
 
