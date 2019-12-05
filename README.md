@@ -43,6 +43,7 @@
 ## 消息队列
 
 * [《芋道 Spring Boot 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 对应 [lab-31](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-31) 。
+* [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03) 。
 
 ## 性能测试
 
@@ -77,6 +78,10 @@ RabbitMQ 示例，已经废弃
 # lab-05
 
 TODOs
+
+# lab-06
+
+# lab-07
 
 # lab-08
 
