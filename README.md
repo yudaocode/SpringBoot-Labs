@@ -62,9 +62,21 @@
 
 空
 
+# lab-02
+
+TODO
+
 # lab-03
 
-Kafka
+Kafka 示例，已经废弃
+
+# lab-04
+
+RabbitMQ 示例，已经废弃
+
+# lab-05
+
+TODOs
 
 # lab-08
 

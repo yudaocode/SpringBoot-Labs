@@ -11,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-03</artifactId>
+    <packaging>pom</packaging>
     <build>
         <plugins>
             <plugin>
@@ -23,6 +24,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>lab-03-kafka-native</module>
+    </modules>
 
     <dependencies>
         <dependency>
