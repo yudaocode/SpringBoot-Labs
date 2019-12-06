@@ -15,7 +15,7 @@ public class Demo02Producer {
     private KafkaTemplate<Object, Object> kafkaTemplate;
 
     public ListenableFuture<SendResult<Object, Object>> asyncSend(Integer id) {
-        // 创建 Demo01Message 消息
+        // 创建 Demo02Message 消息
         Demo02Message message = new Demo02Message();
         message.setId(id);
         // 异步发送消息
