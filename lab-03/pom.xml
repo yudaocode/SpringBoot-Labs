@@ -27,6 +27,7 @@
     <modules>
         <module>lab-03-kafka-native</module>
         <module>lab-03-kafka-demo</module>
+        <module>lab-03-kafka-demo-batch</module>
     </modules>
 
     <dependencies>

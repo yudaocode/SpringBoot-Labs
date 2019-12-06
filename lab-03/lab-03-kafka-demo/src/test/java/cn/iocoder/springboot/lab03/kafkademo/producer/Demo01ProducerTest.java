@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
@@ -32,26 +33,26 @@ public class Demo01ProducerTest {
         new CountDownLatch(1).await();
     }
 
-//    @Test
-//    public void testASyncSend() throws InterruptedException {
-//        int id = (int) (System.currentTimeMillis() / 1000);
-//        producer.asyncSend(id, new SendCallback() {
-//
-//            @Override
-//            public void onSuccess(SendResult result) {
-//                logger.info("[testASyncSend][发送编号：[{}] 发送成功，结果为：[{}]]", id, result);
-//            }
-//
-//            @Override
-//            public void onException(Throwable e) {
-//                logger.info("[testASyncSend][发送编号：[{}] 发送异常]]", id, e);
-//            }
-//
-//        });
-//
-//        // 阻塞等待，保证消费
-//        new CountDownLatch(1).await();
-//    }
+    @Test
+    public void testASyncSend() throws InterruptedException {
+        int id = (int) (System.currentTimeMillis() / 1000);
+        producer.asyncSend(id).addCallback(new ListenableFutureCallback<SendResult<Object, Object>>() {
+
+            @Override
+            public void onFailure(Throwable e) {
+                logger.info("[testASyncSend][发送编号：[{}] 发送异常]]", id, e);
+            }
+
+            @Override
+            public void onSuccess(SendResult<Object, Object> result) {
+                logger.info("[testASyncSend][发送编号：[{}] 发送成功，结果为：[{}]]", id, result);
+            }
+
+        });
+
+        // 阻塞等待，保证消费
+        new CountDownLatch(1).await();
+    }
 //
 //    @Test
 //    public void testOnewaySend() throws InterruptedException {
@@ -59,6 +60,25 @@ public class Demo01ProducerTest {
 //        producer.onewaySend(id);
 //        logger.info("[testOnewaySend][发送编号：[{}] 发送完成]", id);
 //
+//        // 阻塞等待，保证消费
+//        new CountDownLatch(1).await();
+//    }
+
+//    @Test
+//    public void testSyncSendMore() throws ExecutionException, InterruptedException {
+//        for (int i = 0; i < 1000; i++) {
+//            int id = (int) (System.currentTimeMillis() / 1000);
+//            SendResult result = producer.syncSend(id);
+//            logger.info("[testSyncSend][发送编号：[{}] 发送结果：[{}]]", id, result);
+//            Thread.sleep(10);
+//        }
+//
+//        // 阻塞等待，保证消费
+//        new CountDownLatch(1).await();
+//    }
+//
+//    @Test
+//    public void block() throws InterruptedException {
 //        // 阻塞等待，保证消费
 //        new CountDownLatch(1).await();
 //    }

@@ -4,6 +4,7 @@ import cn.iocoder.springboot.lab03.kafkademo.message.Demo01Message;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Component;
+import org.springframework.util.concurrent.ListenableFuture;
 
 import javax.annotation.Resource;
 import java.util.concurrent.ExecutionException;
@@ -22,20 +23,12 @@ public class Demo01Producer {
         return kafkaTemplate.send(Demo01Message.TOPIC, message).get();
     }
 
-//    public void asyncSend(Integer id, SendCallback callback) {
-//        // 创建 Demo01Message 消息
-//        Demo01Message message = new Demo01Message();
-//        message.setId(id);
-//        // 异步发送消息
-//        rocketMQTemplate.asyncSend(Demo01Message.TOPIC, message, callback);
-//    }
-//
-//    public void onewaySend(Integer id) {
-//        // 创建 Demo01Message 消息
-//        Demo01Message message = new Demo01Message();
-//        message.setId(id);
-//        // oneway 发送消息
-//        rocketMQTemplate.sendOneWay(Demo01Message.TOPIC, message);
-//    }
+    public ListenableFuture<SendResult<Object, Object>> asyncSend(Integer id) {
+        // 创建 Demo01Message 消息
+        Demo01Message message = new Demo01Message();
+        message.setId(id);
+        // 异步发送消息
+        return kafkaTemplate.send(Demo01Message.TOPIC, message);
+    }
 
 }

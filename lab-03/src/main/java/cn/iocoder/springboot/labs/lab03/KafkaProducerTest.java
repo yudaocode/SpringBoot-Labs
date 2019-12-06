@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.labs.lab03;
 
 import cn.iocoder.springboot.labs.lab03.pojo.User;
-import cn.iocoder.springboot.labs.lab03.serialize.JSONSerializer;
+import com.alibaba.fastjson.serializer.JSONSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
