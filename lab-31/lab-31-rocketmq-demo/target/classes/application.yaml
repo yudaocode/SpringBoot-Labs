@@ -1,0 +1,21 @@
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  name-server: 127.0.0.1:9876 # RocketMQ Namesrv
+  # Producer 配置项
+  producer:
+    group: demo-producer-group # 生产者分组
+    send-message-timeout: 3000 # 发送消息超时时间，单位：毫秒。默认为 3000 。
+    compress-message-body-threshold: 4096 # 消息压缩阀值，当消息体的大小超过该阀值后，进行消息压缩。默认为 4 * 1024B
+    max-message-size: 4194304 # 消息体的最大允许大小。。默认为 4 * 1024 * 1024B
+    retry-times-when-send-failed: 2 # 同步发送消息时，失败重试次数。默认为 2 次。
+    retry-times-when-send-async-failed: 2 # 异步发送消息时，失败重试次数。默认为 2 次。
+    retry-next-server: false # 发送消息给 Broker 时，如果发送失败，是否重试另外一台 Broker 。默认为 false
+    access-key: # Access Key ，可阅读 https://github.com/apache/rocketmq/blob/master/docs/cn/acl/user_guide.md 文档
+    secret-key: # Secret Key
+    enable-msg-trace: true # 是否开启消息轨迹功能。默认为 true 开启。可阅读 https://github.com/apache/rocketmq/blob/master/docs/cn/msg_trace/user_guide.md 文档
+    customized-trace-topic: RMQ_SYS_TRACE_TOPIC # 自定义消息轨迹的 Topic 。默认为 RMQ_SYS_TRACE_TOPIC 。
+  # Consumer 配置项
+  consumer:
+    listeners: # 配置某个消费分组，是否监听指定 Topic 。结构为 Map<消费者分组, <Topic, Boolean>> 。默认情况下，不配置表示监听。
+      test-consumer-group:
+        topic1: false # 关闭 test-consumer-group 对 topic1 的监听消费
