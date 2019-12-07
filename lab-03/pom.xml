@@ -32,6 +32,7 @@
         <module>lab-03-kafka-demo-broadcast</module>
         <module>lab-03-kafka-demo-concurrency</module>
         <module>lab-03-kafka-demo-transaction</module>
+        <module>lab-03-kafka-demo-ack</module>
     </modules>
 
     <dependencies>
