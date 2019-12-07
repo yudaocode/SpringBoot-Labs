@@ -15,18 +15,12 @@ import java.util.concurrent.ExecutionException;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
-public class Demo05ProducerTest {
+public class Demo06ProducerTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private Demo05Producer producer;
-
-    @Test
-    public void test() throws InterruptedException {
-        // 阻塞等待，保证消费
-        new CountDownLatch(1).await();
-    }
+    private Demo06Producer producer;
 
     @Test
     public void testSyncSend() throws ExecutionException, InterruptedException {

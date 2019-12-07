@@ -30,6 +30,7 @@
         <module>lab-03-kafka-demo-batch</module>
         <module>lab-03-kafka-demo-batch-consume</module>
         <module>lab-03-kafka-demo-broadcast</module>
+        <module>lab-03-kafka-demo-concurrency</module>
     </modules>
 
     <dependencies>
