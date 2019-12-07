@@ -25,9 +25,10 @@ public class Demo08ProducerTest {
 
     @Test
     public void testSyncSend() throws ExecutionException, InterruptedException {
-        int id = (int) (System.currentTimeMillis() / 1000);
-        SendResult result = producer.syncSend(id);
-        logger.info("[testSyncSend][发送编号：[{}] 发送结果：[{}]]", id, result);
+        for (int id = 1; id <= 2; id++) {
+            SendResult result = producer.syncSend(id);
+            logger.info("[testSyncSend][发送编号：[{}] 发送结果：[{}]]", id, result);
+        }
 
         // 阻塞等待，保证消费
         new CountDownLatch(1).await();
