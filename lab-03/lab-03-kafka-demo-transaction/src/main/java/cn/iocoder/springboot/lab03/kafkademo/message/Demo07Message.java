@@ -1,18 +1,18 @@
 package cn.iocoder.springboot.lab03.kafkademo.message;
 
 /**
- * 示例 04 的 Message 消息
+ * 示例 07 的 Message 消息
  */
-public class Demo04Message {
+public class Demo07Message {
 
-    public static final String TOPIC = "DEMO_04";
+    public static final String TOPIC = "DEMO_07";
 
     /**
      * 编号
      */
     private Integer id;
 
-    public Demo04Message setId(Integer id) {
+    public Demo07Message setId(Integer id) {
         this.id = id;
         return this;
     }
@@ -23,7 +23,7 @@ public class Demo04Message {
 
     @Override
     public String toString() {
-        return "Demo04Message{" +
+        return "Demo07Message{" +
                 "id=" + id +
                 '}';
     }

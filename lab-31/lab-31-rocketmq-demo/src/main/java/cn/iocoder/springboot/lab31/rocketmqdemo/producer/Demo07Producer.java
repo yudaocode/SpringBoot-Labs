@@ -23,7 +23,7 @@ public class Demo07Producer {
 
     public TransactionSendResult sendMessageInTransaction(Integer id) {
         // 创建 Demo07Message 消息
-        Message message = MessageBuilder.withPayload(new Demo07Message().setId(id))
+        Message<Demo07Message> message = MessageBuilder.withPayload(new Demo07Message().setId(id))
                 .build();
         // 发送事务消息
         return rocketMQTemplate.sendMessageInTransaction(TX_PRODUCER_GROUP, Demo07Message.TOPIC, message,
