@@ -14,7 +14,7 @@ public class Demo02Consumer {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @KafkaListener(topics = Demo02Message.TOPIC,
-            groupId = "demo02-B-consumer-group-" + Demo02Message.TOPIC)
+            groupId = "demo02-consumer-group-" + Demo02Message.TOPIC)
     public void onMessage(List<Demo02Message> messages) {
         logger.info("[onMessage][线程编号:{} 消息数量：{}]", Thread.currentThread().getId(), messages.size());
     }
