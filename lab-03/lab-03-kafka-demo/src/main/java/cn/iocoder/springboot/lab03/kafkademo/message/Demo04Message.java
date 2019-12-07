@@ -23,7 +23,7 @@ public class Demo04Message {
 
     @Override
     public String toString() {
-        return "Demo01Message{" +
+        return "Demo04Message{" +
                 "id=" + id +
                 '}';
     }

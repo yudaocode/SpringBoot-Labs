@@ -23,20 +23,4 @@ public class Demo04Consumer {
         throw new RuntimeException("我就是故意抛出一个异常");
     }
 
-//    @Bean
-//    public ConsumerAwareListenerErrorHandler listenErrorHandler() {
-//        return new ConsumerAwareListenerErrorHandler() {
-//
-//            @Override
-//            public Object handleError(Message<?> message,
-//                                      ListenerExecutionFailedException e,
-//                                      Consumer<?, ?> consumer) {
-//                System.out.println("message:" + message.getPayload());
-//                System.out.println("exception:" + e.getMessage());
-//                return null;
-//            }
-//
-//        };
-//    }
-
 }

@@ -4,10 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.listener.ConsumerRecordRecoverer;
-import org.springframework.kafka.listener.DeadLetterPublishingRecoverer;
-import org.springframework.kafka.listener.ErrorHandler;
-import org.springframework.kafka.listener.SeekToCurrentErrorHandler;
+import org.springframework.kafka.listener.*;
 import org.springframework.util.backoff.BackOff;
 import org.springframework.util.backoff.FixedBackOff;
 
@@ -24,5 +21,17 @@ public class KafkaConfiguration {
         // 创建 SeekToCurrentErrorHandler 对象
         return new SeekToCurrentErrorHandler(recoverer, backOff);
     }
+
+//    @Bean
+//    @Primary
+//    public BatchErrorHandler kafkaBatchErrorHandler() {
+//        // 创建 SeekToCurrentBatchErrorHandler 对象
+//        SeekToCurrentBatchErrorHandler batchErrorHandler = new SeekToCurrentBatchErrorHandler();
+//        // 创建 FixedBackOff 对象
+//        BackOff backOff = new FixedBackOff(10 * 1000L, 3L);
+//        batchErrorHandler.setBackOff(backOff);
+//        // 返回
+//        return batchErrorHandler;
+//    }
 
 }
