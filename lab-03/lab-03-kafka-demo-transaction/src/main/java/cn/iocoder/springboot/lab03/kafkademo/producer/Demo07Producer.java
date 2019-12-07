@@ -28,18 +28,16 @@ public class Demo07Producer {
         return kafkaTemplate.send(Demo07Message.TOPIC, message).get();
     }
 
-    public SendResult<Object, Object> syncSendInTransaction(Integer id, Runnable runner) throws ExecutionException, InterruptedException {
-        return kafkaTemplate.executeInTransaction(new KafkaOperations.OperationsCallback<Object, Object, SendResult<Object, Object>>() {
+    public String syncSendInTransaction(Integer id, Runnable runner) throws ExecutionException, InterruptedException {
+        return kafkaTemplate.executeInTransaction(new KafkaOperations.OperationsCallback<Object, Object, String>() {
 
             @Override
-            public SendResult<Object, Object> doInOperations(KafkaOperations<Object, Object> kafkaOperations) {
+            public String doInOperations(KafkaOperations<Object, Object> kafkaOperations) {
                 // 创建 Demo07Message 消息
-                SendResult<Object, Object> sendResult;
                 Demo07Message message = new Demo07Message();
                 message.setId(id);
                 try {
-//                    sendResult = kafkaOperations.send(Demo07Message.TOPIC, message).get();
-                    sendResult = kafkaOperations.send(Demo07Message.TOPIC, message).get();
+                    SendResult<Object, Object> sendResult = kafkaOperations.send(Demo07Message.TOPIC, message).get();
                     logger.info("[doInOperations][发送编号：[{}] 发送结果：[{}]]", id, sendResult);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
@@ -48,8 +46,8 @@ public class Demo07Producer {
                 // 本地业务逻辑... biubiubiu
                 runner.run();
 
-                // 返回发送结果
-                return sendResult;
+                // 返回结果
+                return "success";
             }
 
         });
