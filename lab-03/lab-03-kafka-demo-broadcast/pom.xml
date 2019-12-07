@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lab-03-kafka-demo-broadcast</artifactId>
+
+    <dependencies>
+        <!-- 引入 Spring-Kafka 依赖 -->
+        <!-- 已经内置 kafka-clients 依赖，所以无需重复引入 -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>2.3.3.RELEASE</version>
+        </dependency>
+
+        <!-- 实现对 JSON 的自动化配置 -->
+        <!-- 因为，Kafka 对复杂对象的 Message 序列化时，我们会使用到 JSON -->
+        <!--
+            同时，spring-boot-starter-json 引入了 spring-boot-starter ，而 spring-boot-starter 又引入了 spring-boot-autoconfigure 。
+            spring-boot-autoconfigure 实现了 Spring-Kafka 的自动化配置
+         -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-json</artifactId>
+        </dependency>
+
+        <!-- 方便等会写单元测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
