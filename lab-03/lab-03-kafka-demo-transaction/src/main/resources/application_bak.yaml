@@ -1,0 +1,35 @@
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+    # Kafka Producer 配置项
+    producer:
+      acks: 1 # 0-不应答。1-leader 应答。all-所有 leader 和 follower 应答。
+      retries: 3 # 发送失败时，重试发送的次数
+      batch-size: 16384 # 每次批量发送消息的最大数量
+      buffer-memory: 33554432 # 每次批量发送消息的最大内存
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer # 消息的 key 的序列化
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer # 消息的 value 的序列化
+    # Kafka Consumer 配置项
+    consumer:
+      enable-auto-commit: false # true-使用 kafka 默认自带的提交模式。false-使用 Spring-Kafka 的自动提交 offset 机制。建议设置为 false 使用 kafka-spring 的机制，分析见 https://juejin.im/entry/5a6e8dea518825732472710c 。
+      auto-commit-interval: 1000 # 在开启 enable-auto-commit 时，自动提交消费进度频率，单位：毫秒。如果 enable-auto-commit 为 false 时候，可以不设置
+      auto-offset-reset: earliest # 设置消费者分组最初的消费进度为 earliest 。可参考博客 https://blog.csdn.net/lishuangzhe7047/article/details/74530417 理解
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: cn.iocoder.springboot.lab03.kafkademo.message
+    # Kafka Consumer Listener 监听器配置
+    listener:
+      concurrency: 10 # 每个消费者监听器最大并发数，默认为 1 。可以通过设置 n ，这样对于每个监听器就会使用 n 个线程消费消息，提高整体消费速度。详细可参考博客 https://www.jianshu.com/p/ad0e5424edbd 理解。
+    # Producer 配置项
+
+logging:
+  level:
+    org:
+      springframework:
+        kafka: ERROR # spring-kafka INFO 日志太多了，所以我们限制只打印 ERROR 级别
+      apache:
+        kafka: ERROR # kafka INFO 日志太多了，所以我们限制只打印 ERROR 级别

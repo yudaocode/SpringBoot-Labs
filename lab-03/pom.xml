@@ -31,6 +31,7 @@
         <module>lab-03-kafka-demo-batch-consume</module>
         <module>lab-03-kafka-demo-broadcast</module>
         <module>lab-03-kafka-demo-concurrency</module>
+        <module>lab-03-kafka-demo-transaction</module>
     </modules>
 
     <dependencies>
