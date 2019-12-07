@@ -22,4 +22,13 @@ public class Demo06Producer {
         return kafkaTemplate.send(Demo06Message.TOPIC, message).get();
     }
 
+    public SendResult syncSendOrderly(Integer id) throws ExecutionException, InterruptedException {
+        // 创建 Demo01Message 消息
+        Demo06Message message = new Demo06Message();
+        message.setId(id);
+        // 同步发送消息
+        // 因为我们使用 String 的方式序列化 key ，所以需要将 id 转换成 String
+        return kafkaTemplate.send(Demo06Message.TOPIC, String.valueOf(id), message).get();
+    }
+
 }
