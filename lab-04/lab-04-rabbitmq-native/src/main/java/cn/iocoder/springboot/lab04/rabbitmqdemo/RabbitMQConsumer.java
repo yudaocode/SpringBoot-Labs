@@ -22,7 +22,8 @@ public class RabbitMQConsumer {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                 // 打印日志
-                System.out.println("线程：" + Thread.currentThread() +  "：消息：" + new String(body));
+                System.out.println(String.format("[线程：%s][路由键：%s][消息内容：%s]",
+                        Thread.currentThread(), envelope.getRoutingKey(), new String(body)));
                 // ack 消息已经消费
                 channel.basicAck(envelope.getDeliveryTag(), false);
             }

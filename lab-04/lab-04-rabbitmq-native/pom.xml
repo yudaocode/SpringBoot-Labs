@@ -12,6 +12,7 @@
     <artifactId>lab-04-rabbitmq-native</artifactId>
 
     <dependencies>
+        <!-- 引入 RabbitMQ 客户端依赖 -->
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
