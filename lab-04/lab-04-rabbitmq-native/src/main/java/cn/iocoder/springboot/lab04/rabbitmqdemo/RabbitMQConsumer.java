@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.labs.lab04;
+package cn.iocoder.springboot.lab04.rabbitmqdemo;
 
 import com.rabbitmq.client.*;
 

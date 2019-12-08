@@ -3,23 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labs-parent</artifactId>
+        <artifactId>lab-04</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-04</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>lab-04-rabbitmq-native</module>
-    </modules>
+    <artifactId>lab-04-rabbitmq-native</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>5.5.3</version>
+            <version>5.7.3</version>
         </dependency>
     </dependencies>
 
