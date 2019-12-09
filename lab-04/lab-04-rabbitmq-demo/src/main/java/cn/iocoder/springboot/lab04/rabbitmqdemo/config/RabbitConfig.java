@@ -11,7 +11,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitConfig {
 
-    public static class DirectorExchangeDemoConfiguration {
+    /**
+     * Direct Exchange 示例的配置类
+     */
+    public static class DirectExchangeDemoConfiguration {
 
         // 创建 Queue
         @Bean
@@ -40,8 +43,5 @@ public class RabbitConfig {
         }
 
     }
-
-
-
 
 }

@@ -42,7 +42,7 @@ public class Demo01ProducerTest {
     }
 
     @Test
-    public void testASyncSend() throws InterruptedException {
+    public void testAsyncSend() throws InterruptedException {
         int id = (int) (System.currentTimeMillis() / 1000);
         producer.asyncSend(id).addCallback(new ListenableFutureCallback<Void>() {
 
