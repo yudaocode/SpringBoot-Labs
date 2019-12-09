@@ -64,21 +64,11 @@
 
 空
 
-# lab-02
+# lab-05
 
 TODO
 
-# lab-04
-
-RabbitMQ 示例，已经废弃
-
-# lab-05
-
-TODOs
-
-# lab-06
-
-# lab-07
+WEB 容器，后续优化掉
 
 # lab-08
 
