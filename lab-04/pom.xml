@@ -14,6 +14,9 @@
     <modules>
         <module>lab-04-rabbitmq-native</module>
         <module>lab-04-rabbitmq-demo</module>
+        <module>lab-04-rabbitmq-demo-batch</module>
+        <module>lab-04-rabbitmq-demo-batch-consume</module>
+        <module>lab-04-rabbitmq-demo-batch-consume-02</module>
     </modules>
 
     <dependencies>
