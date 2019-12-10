@@ -8,7 +8,7 @@ public class Demo01Message implements Serializable {
 
     public static final String EXCHANGE = "EXCHANGE_DEMO_01";
 
-    public static final String ROUTING_KEY = "#.yu.nai";
+    public static final String ROUTING_KEY = "ROUTING_KEY_01";
 
     /**
      * 编号

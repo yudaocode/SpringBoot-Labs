@@ -70,9 +70,8 @@ public class RabbitConfig {
         // Queue：Demo02Message.QUEUE
         @Bean
         public Binding demo02Binding() {
-            return BindingBuilder.bind(demo02Queue()).to(demo02Exchange()).with(Demo01Message.ROUTING_KEY);
+            return BindingBuilder.bind(demo02Queue()).to(demo02Exchange()).with(Demo02Message.ROUTING_KEY);
         }
-
 
     }
 

@@ -40,5 +40,4 @@ public class Demo02ProducerTest {
         new CountDownLatch(1).await();
     }
 
-
 }
