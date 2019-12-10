@@ -56,7 +56,7 @@ public class RabbitConfig {
         // 额外添加批量消费的属性
         factory.setBatchListener(true);
         factory.setBatchSize(10);
-        factory.setReceiveTimeout(10 * 1000L);
+        factory.setReceiveTimeout(30 * 1000L);
         factory.setConsumerBatchEnabled(true);
         return factory;
     }

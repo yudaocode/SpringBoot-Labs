@@ -21,15 +21,23 @@ public class Demo06ProducerTest {
     private Demo06Producer producer;
 
     @Test
-    public void testSyncSend() throws InterruptedException {
-        for (int i = 0; i < 3; i++) {
+    public void testSyncSend01() throws InterruptedException {
+        // 发送 3 条消息
+        this.testSyncSend(3);
+    }
+
+    @Test
+    public void testSyncSen02() throws InterruptedException {
+        // 发送 10 条消息
+        this.testSyncSend(10);
+    }
+
+    private void testSyncSend(int n) throws InterruptedException {
+        for (int i = 0; i < n; i++) {
             // 同步发送消息
             int id = (int) (System.currentTimeMillis() / 1000);
             producer.syncSend(id);
-
-            // 故意每条消息之间，隔离 10 秒
-            logger.info("[testASyncSend][发送编号：[{}] 发送成功]", id);
-//            Thread.sleep(10 * 1000L);
+            logger.info("[testSyncSendMore][发送编号：[{}] 发送成功]", id);
         }
 
         // 阻塞等待，保证消费

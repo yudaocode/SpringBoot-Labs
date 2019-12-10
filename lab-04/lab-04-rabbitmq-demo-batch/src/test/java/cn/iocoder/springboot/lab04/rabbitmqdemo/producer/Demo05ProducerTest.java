@@ -28,7 +28,7 @@ public class Demo05ProducerTest {
             producer.syncSend(id);
 
             // 故意每条消息之间，隔离 10 秒
-            logger.info("[testASyncSend][发送编号：[{}] 发送成功]", id);
+            logger.info("[testSyncSend][发送编号：[{}] 发送成功]", id);
             Thread.sleep(10 * 1000L);
         }
 
