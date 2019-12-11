@@ -63,4 +63,23 @@ public class Demo01ProducerTest {
         new CountDownLatch(1).await();
     }
 
+    @Test
+    public void nothing() throws InterruptedException {
+        // 阻塞等待，保证消费
+        new CountDownLatch(1).await();
+    }
+
+    @Test
+    public void nothing02() throws InterruptedException {
+        for (int i = 0; i < 1000; i++) {
+            int id = (int) (System.currentTimeMillis() / 1000);
+            producer.syncSend(id);
+            logger.info("[testSyncSend][发送编号：[{}] 发送成功]", id);
+            Thread.sleep(5000L);
+        }
+
+        // 阻塞等待，保证消费
+        new CountDownLatch(1).await();
+    }
+
 }
