@@ -17,6 +17,7 @@
         <module>lab-04-rabbitmq-demo-batch</module>
         <module>lab-04-rabbitmq-demo-batch-consume</module>
         <module>lab-04-rabbitmq-demo-batch-consume-02</module>
+        <module>lab-04-rabbitmq-consume-retry</module>
     </modules>
 
     <dependencies>
