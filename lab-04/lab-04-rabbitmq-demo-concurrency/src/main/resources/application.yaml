@@ -11,4 +11,4 @@ spring:
         concurrency: 2
         max-concurrency: 10
 #      direct:
-#        consumers-per-queue: 1
+#        consumers-per-queue: 2 # 对于每一个 @RabbitListener ，一个 Queue ，对应创建几个 Consumer 。

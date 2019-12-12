@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RabbitListener(queues = Demo09Message.QUEUE)
+//@RabbitListener(queues = {"QUEUE_DEMO_01", "QUEUE_DEMO_02"})
 public class Demo09Consumer {
 
     private Logger logger = LoggerFactory.getLogger(getClass());

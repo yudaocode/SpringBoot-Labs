@@ -10,5 +10,5 @@ spring:
       simple:
         concurrency: 2
         max-concurrency: 10
-#      direct:
-#        consumers-per-queue: 1
+      direct:
+        consumers-per-queue: 2
