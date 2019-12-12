@@ -13,19 +13,20 @@ import java.util.concurrent.CountDownLatch;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
-public class Demo09ProducerTest {
+public class Demo10ProducerTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private Demo09Producer producer;
+    private Demo10Producer producer;
 
     @Test
     public void testSyncSend() throws InterruptedException {
-        for (int i = 0; i < 10; i++) {
-            int id = (int) (System.currentTimeMillis() / 1000);
-            producer.syncSend(id);
+        for (int i = 0; i < 2; i++) {
+            for (int id = 0; id < 4; id++) {
+                producer.syncSend(id);
 //            logger.info("[testSyncSend][发送编号：[{}] 发送成功]", id);
+            }
         }
 
         // 阻塞等待，保证消费

@@ -21,6 +21,8 @@
         <module>lab-04-rabbitmq-demo-delay</module>
         <module>lab-04-rabbitmq-demo-message-model</module>
         <module>lab-04-rabbitmq-demo-concurrency</module>
+        <module>lab-04-rabbitmq-demo-orderly</module>
+        <module>lab-04-rabbitmq-demo-transaction</module>
     </modules>
 
     <dependencies>
