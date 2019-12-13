@@ -16,7 +16,7 @@ public class RabbitListenerErrorHandlerImpl implements RabbitListenerErrorHandle
     public Object handleError(Message amqpMessage, org.springframework.messaging.Message<?> message,
                               ListenerExecutionFailedException exception) {
         // 打印异常日志
-        logger.error("[handleError][]");
+        logger.error("[handleError][amqpMessage:[{}] message:[{}]]", amqpMessage, message, exception);
 
         // 直接继续抛出异常
         throw exception;

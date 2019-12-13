@@ -13,7 +13,7 @@ import java.util.concurrent.CountDownLatch;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
-public class Demo15ProducerTest {
+public class Demo16ProducerTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
