@@ -5,4 +5,5 @@ spring:
     port: 5672 # RabbitMQ 服务的端口
     username: guest # RabbitMQ 服务的账号
     password: guest # RabbitMQ 服务的密码
-    publisher-confirm-type: simple # 设置 Confirm 类型为 SIMPLE 。
+    publisher-confirm-type: correlated # 设置 Confirm 类型为 CORRELATED 。
+    publisher-returns: true #

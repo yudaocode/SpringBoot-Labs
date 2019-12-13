@@ -25,6 +25,10 @@
         <module>lab-04-rabbitmq-demo-transaction</module>
         <module>lab-04-rabbitmq-demo-ack</module>
         <module>lab-04-rabbitmq-demo-confirm</module>
+        <module>lab-04-rabbitmq-demo-confirm-async</module>
+        <module>lab-04-rabbitmq-demo-rpc</module>
+        <module>lab-04-rabbitmq-demo-json</module>
+        <module>lab-04-rabbitmq-demo-error-handler</module>
     </modules>
 
     <dependencies>

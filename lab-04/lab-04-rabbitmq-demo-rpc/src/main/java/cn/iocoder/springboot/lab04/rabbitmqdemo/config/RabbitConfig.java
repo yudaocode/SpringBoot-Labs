@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab04.rabbitmqdemo.config;
 
-import cn.iocoder.springboot.lab04.rabbitmqdemo.message.Demo13Message;
+import cn.iocoder.springboot.lab04.rabbitmqdemo.message.Demo14Message;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
@@ -18,28 +18,28 @@ public class RabbitConfig {
 
         // 创建 Queue
         @Bean
-        public Queue demo13Queue() {
-            return new Queue(Demo13Message.QUEUE, // Queue 名字
-                    true, // durable: 是否持久化
+        public Queue demo01Queue() {
+            return new Queue(Demo14Message.QUEUE, // Queue 名字
+                    false, // durable: 是否持久化
                     false, // exclusive: 是否排它
                     false); // autoDelete: 是否自动删除
         }
 
         // 创建 Direct Exchange
         @Bean
-        public DirectExchange demo13Exchange() {
-            return new DirectExchange(Demo13Message.EXCHANGE,
-                    true,  // durable: 是否持久化
-                    false);  // exclusive: 是否排它
+        public DirectExchange demo01Exchange() {
+            return new DirectExchange(Demo14Message.EXCHANGE,
+                    false,  // durable: 是否持久化
+                    false);  // autoDelete: 是否自动删除
         }
 
         // 创建 Binding
-        // Exchange：Demo13Message.EXCHANGE
-        // Routing key：Demo13Message.ROUTING_KEY
-        // Queue：Demo13Message.QUEUE
+        // Exchange：Demo01Message.EXCHANGE
+        // Routing key：Demo01Message.ROUTING_KEY
+        // Queue：Demo01Message.QUEUE
         @Bean
-        public Binding demo13Binding() {
-            return BindingBuilder.bind(demo13Queue()).to(demo13Exchange()).with(Demo13Message.ROUTING_KEY);
+        public Binding demo01Binding() {
+            return BindingBuilder.bind(demo01Queue()).to(demo01Exchange()).with(Demo14Message.ROUTING_KEY);
         }
 
     }
