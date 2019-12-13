@@ -1,12 +1,10 @@
 package cn.iocoder.springboot.lab04.rabbitmqdemo.config;
 
-import cn.iocoder.springboot.lab04.rabbitmqdemo.core.RabbitListenerErrorHandlerImpl;
-import cn.iocoder.springboot.lab04.rabbitmqdemo.message.Demo15Message;
+import cn.iocoder.springboot.lab04.rabbitmqdemo.message.Demo16Message;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.listener.api.RabbitListenerErrorHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,8 +18,8 @@ public class RabbitConfig {
 
         // 创建 Queue
         @Bean
-        public Queue demo15Queue() {
-            return new Queue(Demo15Message.QUEUE, // Queue 名字
+        public Queue demo16Queue() {
+            return new Queue(Demo16Message.QUEUE, // Queue 名字
                     true, // durable: 是否持久化
                     false, // exclusive: 是否排它
                     false); // autoDelete: 是否自动删除
@@ -29,26 +27,21 @@ public class RabbitConfig {
 
         // 创建 Direct Exchange
         @Bean
-        public DirectExchange demo15Exchange() {
-            return new DirectExchange(Demo15Message.EXCHANGE,
+        public DirectExchange demo16Exchange() {
+            return new DirectExchange(Demo16Message.EXCHANGE,
                     true,  // durable: 是否持久化
                     false);  // exclusive: 是否排它
         }
 
         // 创建 Binding
-        // Exchange：Demo15Message.EXCHANGE
-        // Routing key：Demo15Message.ROUTING_KEY
-        // Queue：Demo15Message.QUEUE
+        // Exchange：Demo16Message.EXCHANGE
+        // Routing key：Demo16Message.ROUTING_KEY
+        // Queue：Demo16Message.QUEUE
         @Bean
-        public Binding demo15Binding() {
-            return BindingBuilder.bind(demo15Queue()).to(demo15Exchange()).with(Demo15Message.ROUTING_KEY);
+        public Binding demo16Binding() {
+            return BindingBuilder.bind(demo16Queue()).to(demo16Exchange()).with(Demo16Message.ROUTING_KEY);
         }
 
-    }
-
-    @Bean(name = "rabbitListenerErrorHandler")
-    public RabbitListenerErrorHandler errorHandler() {
-        return new RabbitListenerErrorHandlerImpl();
     }
 
 }

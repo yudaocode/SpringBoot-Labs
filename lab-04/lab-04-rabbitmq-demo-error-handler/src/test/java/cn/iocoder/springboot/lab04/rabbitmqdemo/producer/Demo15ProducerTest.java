@@ -18,7 +18,7 @@ public class Demo15ProducerTest {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private Demo01Producer producer;
+    private Demo16Producer producer;
 
     @Test
     public void testSyncSend() throws InterruptedException {
