@@ -1,6 +1,7 @@
 package cn.iocoder.springboot.lab32.activemqdemo;
 
-import javax.jms.*;
+import javax.jms.*; // 使用 JMS API
+
 import java.util.concurrent.TimeUnit;
 
 public class ActiveMQConsumer {

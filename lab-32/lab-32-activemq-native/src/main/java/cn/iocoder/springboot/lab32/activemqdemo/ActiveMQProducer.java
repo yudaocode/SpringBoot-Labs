@@ -1,8 +1,8 @@
 package cn.iocoder.springboot.lab32.activemqdemo;
 
-import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.activemq.ActiveMQConnectionFactory; // 使用 ActiveMQ 的客户端实现
 
-import javax.jms.*;
+import javax.jms.*; // 使用 JMS API
 
 public class ActiveMQProducer {
 
