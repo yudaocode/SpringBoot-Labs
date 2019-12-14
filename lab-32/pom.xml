@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-32-activemq-native</module>
+        <module>lab-32-activemq-demo</module>
     </modules>
 
 
