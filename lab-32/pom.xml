@@ -18,6 +18,7 @@
         <module>lab-32-activemq-demo-delay</module>
         <module>lab-32-activemq-demo-concurrency</module>
         <module>lab-32-activemq-demo-orderly</module>
+        <module>lab-32-activemq-demo-consume-retry</module>
     </modules>
 
 
