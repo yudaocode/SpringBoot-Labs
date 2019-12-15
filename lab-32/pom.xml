@@ -15,6 +15,7 @@
         <module>lab-32-activemq-native</module>
         <module>lab-32-activemq-demo</module>
         <module>lab-32-activemq-demo-message-model</module>
+        <module>lab-32-activemq-demo-delay</module>
     </modules>
 
 
