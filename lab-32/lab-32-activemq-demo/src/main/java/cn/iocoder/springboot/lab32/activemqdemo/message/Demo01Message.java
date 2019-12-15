@@ -22,7 +22,7 @@ public class Demo01Message implements Serializable {
 
     @Override
     public String toString() {
-        return "ClusteringtMessage{" +
+        return "Demo01Message{" +
                 "id=" + id +
                 '}';
     }
