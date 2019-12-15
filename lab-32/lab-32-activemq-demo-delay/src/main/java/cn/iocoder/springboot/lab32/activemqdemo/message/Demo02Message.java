@@ -22,7 +22,7 @@ public class Demo02Message implements Serializable {
 
     @Override
     public String toString() {
-        return "Demo01Message{" +
+        return "Demo02Message{" +
                 "id=" + id +
                 '}';
     }

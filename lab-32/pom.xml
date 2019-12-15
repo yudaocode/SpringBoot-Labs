@@ -17,6 +17,7 @@
         <module>lab-32-activemq-demo-message-model</module>
         <module>lab-32-activemq-demo-delay</module>
         <module>lab-32-activemq-demo-concurrency</module>
+        <module>lab-32-activemq-demo-orderly</module>
     </modules>
 
 
