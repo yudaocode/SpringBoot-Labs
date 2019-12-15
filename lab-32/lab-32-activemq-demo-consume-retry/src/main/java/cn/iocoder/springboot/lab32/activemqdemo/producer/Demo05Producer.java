@@ -6,7 +6,7 @@ import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Demo01Producer {
+public class Demo05Producer {
 
     @Autowired
     private JmsMessagingTemplate jmsTemplate;

@@ -7,7 +7,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Demo01Consumer {
+public class Demo05Consumer {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 

@@ -13,12 +13,12 @@ import java.util.concurrent.CountDownLatch;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
-public class Demo01ProducerTest {
+public class Demo05ProducerTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private Demo01Producer producer;
+    private Demo05Producer producer;
 
     @Test
     public void testSyncSend() throws InterruptedException {
