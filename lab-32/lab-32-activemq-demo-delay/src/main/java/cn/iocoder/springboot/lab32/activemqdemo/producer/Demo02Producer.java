@@ -16,7 +16,7 @@ public class Demo02Producer {
     private JmsMessagingTemplate jmsTemplate;
 
     public void syncSend(Integer id, Integer delay) {
-        // 创建 ClusteringMessage 消息
+        // 创建 Demo02Message 消息
         Demo02Message message = new Demo02Message();
         message.setId(id);
         // 创建 Header
