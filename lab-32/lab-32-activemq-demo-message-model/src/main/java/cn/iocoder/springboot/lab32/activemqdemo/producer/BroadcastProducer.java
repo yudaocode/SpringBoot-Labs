@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab32.activemqdemo.producer;
 
-import cn.iocoder.springboot.lab32.activemqdemo.config.RabbitConfig;
+import cn.iocoder.springboot.lab32.activemqdemo.config.ActiveMQConfig;
 import cn.iocoder.springboot.lab32.activemqdemo.message.BroadcastMessage;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 @Component
 public class BroadcastProducer {
 
-    @Resource(name = RabbitConfig.BROADCAST_JMS_TEMPLATE_BEAN_NAME)
+    @Resource(name = ActiveMQConfig.BROADCAST_JMS_TEMPLATE_BEAN_NAME)
     private JmsMessagingTemplate jmsMessagingTemplate;
 
     public void syncSend(Integer id) {
