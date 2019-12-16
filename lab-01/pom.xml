@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-01</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-01-springsecurity-demo</module>
+        <module>lab-01-springsecurity-demo-role</module>
+    </modules>
 
 
 </project>
