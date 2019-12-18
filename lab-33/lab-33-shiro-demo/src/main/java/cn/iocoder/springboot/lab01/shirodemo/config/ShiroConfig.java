@@ -15,14 +15,19 @@ public class ShiroConfig {
 
     @Bean
     public Realm realm() {
+        // 创建 SimpleAccountRealm 对象
         SimpleAccountRealm realm = new SimpleAccountRealm();
+        // 添加两个用户。参数分别是 username、password、roles 。
         realm.addAccount("admin", "admin", "ADMIN");
+        realm.addAccount("normal", "normal", "NORMAL");
         return realm;
     }
 
     @Bean
     public DefaultWebSecurityManager securityManager() {
+        // 创建 DefaultWebSecurityManager 对象
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
+        // 设置其使用的 Realm
         securityManager.setRealm(this.realm());
         return securityManager;
     }
