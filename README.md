@@ -37,7 +37,7 @@
 
 * [《芋道 Spring Boot 安全框架 Spring Security 入门》](http://www.iocoder.cn/Spring-Boot/Spring-Security/?github) 对应 [lab-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-01) 。
 * [《芋道 Spring Boot 授权框架 Spring Security OAuth2 入门》](http://www.iocoder.cn/Spring-Security/OAuth2-learning/?github) 对应 [lab-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-02) 。
-* 《芋道 Spring Boot Shiro 入门》计划中...
+* [《芋道 Spring Boot 安全框架 Shiro 入门》](http://www.iocoder.cn/Spring-Boot/Shiro/?github) 对应 [lab-33](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-33) 。
 
 ## 定时任务与异步任务
 
@@ -50,6 +50,10 @@
 * [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03) 。
 * [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04) 。
 * [《芋道 Spring Boot 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Boot/ActiveMQ/?github) 对应 [lab-32](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-32) 。
+
+## 监控管理
+
+
 
 ## 性能测试
 
@@ -64,10 +68,6 @@
 ---------
 
 如下是草稿目录，未来需要整理下
-
-# lab-01
-
-空
 
 # lab-05
 
