@@ -9,7 +9,7 @@ public class DemoHealthIndicator extends AbstractHealthIndicator {
 
     @Override
     protected void doHealthCheck(Health.Builder builder) {
-        // 较差是否健康
+        // 判断是否健康
         boolean success = checkSuccess();
 
         // 如果健康，则标记状态为 UP
