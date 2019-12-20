@@ -14,6 +14,7 @@
     <modules>
         <module>lab-34-actuator-demo</module>
         <module>lab-34-actuator-demo-health</module>
+        <module>lab-34-actuator-demo-info</module>
     </modules>
 
 
