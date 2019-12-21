@@ -16,7 +16,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 // 配置请求地址的权限
                 .authorizeRequests()
-                    .antMatchers("/test/echo").permitAll() // 所有用户可访问
+                    .antMatchers("/test/demo").permitAll() // 所有用户可访问
                     .antMatchers("/test/admin").hasRole("ADMIN") // 需要 ADMIN 角色
                     .antMatchers("/test/normal").access("hasRole('ROLE_NORMAL')") // 需要 NORMAL 角色。
                     // 任何请求，访问的用户都需要经过认证
