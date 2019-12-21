@@ -1,0 +1,19 @@
+management:
+  endpoint:
+    # HttpTrace 端点配置项
+    httptrace:
+      enabled: true # 是否开启。默认为 true 开启
+  # HttpTrace 的具体配置项，对应 HttpTraceProperties 配置类
+  trace:
+    http:
+      enabled: true # 是否开启。默认为 true 开启。
+      include: # 包含的 trace 项的数组。默认不包含 COOKIE_HEADERS、AUTHORIZATION_HEADER 项。
+
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      base-path: /actuator # Actuator 提供的 API 接口的根目录。默认为 /actuator
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+        exclude: # 在 include 的基础上，需要排除的端点。通过设置 * ，可以排除所有端点。
+
