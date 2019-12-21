@@ -15,11 +15,6 @@ management:
     # 通用 tag
     tags:
       application: demo-application
-    web:
-      server:
-        request:
-          autotime:
-            enabled: false
 
   endpoints:
     # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
