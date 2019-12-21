@@ -1,11 +1,17 @@
 management:
   endpoint:
+    # Info 端点配置项
     info:
-      enabled: true
+      enabled: true # 是否开启。默认为 true 开启。
   info:
+    #
     git:
       enabled: true
-      mode: simple
+      mode: full
+    build:
+      enabled: true
+    env:
+      enabled: true
 
   endpoints:
     # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
@@ -14,15 +20,12 @@ management:
       exposure:
         include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
         exclude: # 在 include 的基础上，需要排除的端点。通过设置 * ，可以排除所有端点。
-
+#
 info:
   app:
     java:
-      source: 1.8
-      target: 1.8
-    encoding: UTF-8
-  build:
-    java:
       source: 1.8.0_144
       target: 1.8.0_144
+    encoding: UTF-8
     version: 2.2.2.RELEASE
+
