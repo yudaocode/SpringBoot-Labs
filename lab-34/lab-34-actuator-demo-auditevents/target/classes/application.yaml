@@ -1,4 +1,9 @@
 management:
+  endpoint:
+    # AuditEventsEndpoint 端点配置项
+    auditevents:
+      enabled: true # 是否开启。默认为 true 开启
+
   endpoints:
     # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
     web:

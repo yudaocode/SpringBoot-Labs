@@ -10,14 +10,4 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-
-//    public class Test implements ApplicationRunner {
-//
-//        @Override
-//        public void run(ApplicationArguments args) throws Exception {
-//
-//        }
-//
-//    }
-
 }
