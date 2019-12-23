@@ -9,17 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-34</artifactId>
+    <artifactId>lab-35</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-34-actuator-demo</module>
-        <module>lab-34-actuator-demo-health</module>
-        <module>lab-34-actuator-demo-info</module>
-        <module>lab-34-actuator-demo-metrics</module>
-        <module>lab-34-actuator-demo-httptrace</module>
-        <module>lab-34-actuator-demo-auditevents</module>
-        <module>lab-34-actuator-demo-custom-endpoint</module>
-        <module>lab-34-actuator-demo-security</module>
+        <module>lab-35-admin-01-adminserver</module>
+        <module>lab-35-admin-01-demo-application</module>
     </modules>
 
 
