@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab34.actuatordemo;
+package cn.iocoder.springboot.lab35.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

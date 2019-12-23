@@ -14,6 +14,10 @@
     <modules>
         <module>lab-35-admin-01-adminserver</module>
         <module>lab-35-admin-01-demo-application</module>
+
+        <module>lab-35-admin-02-adminserver</module>
+        <module>lab-35-admin-02-demo-application</module>
+        <module>lab-35-admin-02-eurekaserver</module>
     </modules>
 
 
