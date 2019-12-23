@@ -18,6 +18,7 @@
         <module>lab-34-actuator-demo-metrics</module>
         <module>lab-34-actuator-demo-httptrace</module>
         <module>lab-34-actuator-demo-auditevents</module>
+        <module>lab-34-actuator-demo-custom-endpoint</module>
     </modules>
 
 
