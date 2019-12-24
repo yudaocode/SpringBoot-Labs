@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class Demo02Application {
 
     public static void main(String[] args) {
-        System.setProperty("server.port", "18082");
+        System.setProperty("server.port", "18082");  // 端口 18082
         SpringApplication.run(Demo02Application.class, args);
     }
 

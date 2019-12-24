@@ -1,0 +1,13 @@
+spring:
+  mail:
+    host: smtp.126.com
+    username: wwbmlhh@126.com
+    password: wwb3743
+    default-encoding: UTF-8
+
+  boot:
+    admin:
+      notify:
+        mail:
+          from: wwbmlhh@126.com
+          to: 7685413@qq.com

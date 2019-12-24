@@ -10,14 +10,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-35-admin-02-eurekaserver</artifactId>
+    <artifactId>lab-35-admin-05-adminserver</artifactId>
 
     <dependencies>
-        <!-- 实现对 Eureka Server 的自动化配置 -->
+        <!-- 实现对 Spring Boot Admin Server 的自动化配置 -->
+        <!--
+            包含 1. spring-boot-admin-server ：Server 端
+                2. spring-boot-admin-server-ui ：UI 界面
+                3. spring-boot-admin-server-cloud ：对 Spring Cloud 的接入
+        -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-            <version>2.2.1.RELEASE</version>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+            <version>2.2.0</version>
         </dependency>
     </dependencies>
 

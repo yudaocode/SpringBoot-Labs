@@ -1,0 +1,13 @@
+spring:
+  mail: # 配置发送告警的邮箱
+    host: smtp.126.com
+    username: wwbmlhh@126.com
+    password: '******'
+    default-encoding: UTF-8
+
+  boot:
+    admin:
+      notify:
+        mail:
+          from: ${spring.mail.username} # 告警发件人
+          to: 7685413@qq.com # 告警收件人
