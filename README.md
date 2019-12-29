@@ -71,8 +71,8 @@
 
 ## 日志管理
 
-* Logger
-* ELK
+* [《芋道 Spring Boot 日志集成 Logging 入门》](http://www.iocoder.cn/Spring-Boot/Logging/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37) 。
+* [《芋道 Spring Boot 日志平台 ELK 入门》](http://www.iocoder.cn/Spring-Boot/ELK/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
 
 ## 链路追踪
 
