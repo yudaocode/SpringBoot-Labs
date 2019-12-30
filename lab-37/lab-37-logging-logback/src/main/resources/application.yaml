@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: demo-application # 应用名
+

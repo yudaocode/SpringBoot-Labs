@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-application # 应用名
+
+logging:
+  # 日志文件配置
+  file:
+#    path: /Users/yunai/logs/ # 日志文件路径。
+    name: /Users/yunai/logs/${spring.application.name}.log # 日志文件名。
+    max-history: 7 # 日志文件要保留的归档的最大天数。默认为 7 天。
+    max-size: 10MB # 日志文件的最大大小。默认为 10MB 。
+
+# 调试模式
+debug: true
