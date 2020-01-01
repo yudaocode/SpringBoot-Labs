@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: demo-application # 应用名
+
+logging:
+  # 日志文件配置
+  file:
+    name: /Users/yunai/logs/${spring.application.name}.log # 日志文件名。
