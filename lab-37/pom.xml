@@ -18,6 +18,7 @@
         <module>lab-37-logging-debug</module>
         <module>lab-37-logging-multi-env</module>
         <module>lab-37-logging-log4j2</module>
+        <module>lab-37-logging-aop</module>
     </modules>
 
 
