@@ -18,6 +18,7 @@
         <module>lab-39-redis</module>
         <module>lab-39-mongodb</module>
         <module>lab-39-elasticsearch</module>
+        <module>lab-39-elasticsearch-jest</module>
     </modules>
 
 </project>

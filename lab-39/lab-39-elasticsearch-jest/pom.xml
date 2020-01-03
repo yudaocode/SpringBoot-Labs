@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-39-elasticsearch</artifactId>
+    <artifactId>lab-39-elasticsearch-jest</artifactId>
 
     <dependencies>
         <!-- 实现对 SpringMVC 的自动化配置 -->
@@ -19,10 +19,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 自动化配置 Spring Data Elasticsearch -->
+        <!-- 自动化配置 Spring Data Jest -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <groupId>com.github.vanroy</groupId>
+            <artifactId>spring-boot-starter-data-jest</artifactId>
+            <version>3.3.0.RELEASE</version>
         </dependency>
     </dependencies>
 

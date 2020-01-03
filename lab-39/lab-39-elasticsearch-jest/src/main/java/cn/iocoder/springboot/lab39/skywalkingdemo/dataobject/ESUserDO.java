@@ -28,6 +28,42 @@ public class ESUserDO {
      */
     private Date createTime;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public ESUserDO setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public ESUserDO setUsername(String username) {
+        this.username = username;
+        return this;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public ESUserDO setPassword(String password) {
+        this.password = password;
+        return this;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public ESUserDO setCreateTime(Date createTime) {
+        this.createTime = createTime;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "UserDO{" +
