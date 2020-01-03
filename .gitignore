@@ -27,6 +27,7 @@ hs_err_pid*
 SpringBoot-Labs.ipr
 SpringBoot-Labs.iws
 target/**
+*.lst
 *.iml
 *ipr
 *.iws

@@ -14,6 +14,10 @@
     <modules>
         <module>lab-39-demo</module>
         <module>lab-39-springmvc</module>
+        <module>lab-39-mysql</module>
+        <module>lab-39-redis</module>
+        <module>lab-39-mongodb</module>
+        <module>lab-39-elasticsearch</module>
     </modules>
 
 </project>
