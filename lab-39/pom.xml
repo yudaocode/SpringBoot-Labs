@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-39-demo</module>
+        <module>lab-39-springmvc</module>
     </modules>
 
 </project>
