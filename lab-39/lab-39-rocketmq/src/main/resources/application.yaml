@@ -1,0 +1,10 @@
+server:
+  port: 8079
+
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  name-server: 127.0.0.1:9876 # RocketMQ Namesrv
+  # Producer 配置项
+  producer:
+    group: demo-producer-group # 生产者分组
+    send-message-timeout: 3000 # 发送消息超时时间，单位：毫秒。默认为 3000 。

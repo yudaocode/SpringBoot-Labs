@@ -11,7 +11,7 @@ import java.util.Date;
 
 @RestController
 @RequestMapping("/demo")
-    public class DemoController {
+public class DemoController {
 
     @Autowired
     private ESUserRepository userRepository;
