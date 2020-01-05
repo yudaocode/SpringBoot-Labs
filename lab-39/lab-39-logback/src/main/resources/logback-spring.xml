@@ -6,12 +6,12 @@
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
 
     <!-- 控制台 Appender -->
-    <property name="CONSOLE_LOG_X_PATTERN" value="%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %tid %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %tid %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <!-- 日志的格式化 -->
         <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
             <layout class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout">
-                <Pattern>${CONSOLE_LOG_X_PATTERN}</Pattern>
+                <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>
             </layout>
         </encoder>
     </appender>
@@ -31,9 +31,10 @@
             <maxFileSize>10MB</maxFileSize>
         </rollingPolicy>
         <!-- 日志的格式化 -->
-        <encoder>
-            <pattern>${FILE_LOG_PATTERN}</pattern>
-            <charset>utf8</charset>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout">
+                <Pattern>${FILE_LOG_PATTERN}</Pattern>
+            </layout>
         </encoder>
     </appender>
 
