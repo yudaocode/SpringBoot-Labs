@@ -10,7 +10,7 @@ public class ActiveMQProducer {
     private static final String USERNAME = "admin";
     private static final String PASSWORD = "admin";
 
-    private static final String QUEUE_NAME = "queue_demo"; // 只有 QUEUE_NAME 需要共享给 RabbitMQConsumer
+    private static final String QUEUE_NAME = "queue_demo"; // 只有 QUEUE_NAME 需要共享给 ActiveMQConsumer
 
     public static void main(String[] args) throws JMSException {
         // 创建连接
