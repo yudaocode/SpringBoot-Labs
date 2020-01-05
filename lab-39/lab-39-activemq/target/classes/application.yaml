@@ -1,0 +1,11 @@
+server:
+  port: 8079
+
+spring:
+  # ActiveMQ 配置项，对应 ActiveMQProperties 配置类
+  activemq:
+    broker-url: tcp://127.0.0.1:61616 # Activemq Broker 的地址
+    user: admin # 账号
+    password: admin # 密码
+    packages:
+      trust-all: true # 可信任的反序列化包

@@ -1,0 +1,9 @@
+server:
+  port: 8079
+
+spring:
+  data:
+    # Jest 配置项
+    jest:
+      uri: http://127.0.0.1:9400
+

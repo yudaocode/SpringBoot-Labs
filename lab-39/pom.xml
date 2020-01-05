@@ -22,6 +22,7 @@
         <module>lab-39-rocketmq</module>
         <module>lab-39-kafka</module>
         <module>lab-39-rabbitmq-demo</module>
+        <module>lab-39-activemq</module>
     </modules>
 
 </project>
