@@ -25,6 +25,7 @@
         <module>lab-39-activemq</module>
         <module>lab-39-logback</module>
         <module>lab-39-trace-annotations</module>
+        <module>lab-39-opentracing</module>
     </modules>
 
 </project>
