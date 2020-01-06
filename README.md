@@ -76,7 +76,7 @@
 
 ## 链路追踪
 
-* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37) 。
+* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-39) 。
 * [《芋道 Spring Boot 链路追踪 Zipkin 入门》](http://www.iocoder.cn/Spring-Boot/Zipkin/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
 * [《芋道 Spring Boot 链路追踪 Pinpoint 入门》](http://www.iocoder.cn/Spring-Boot/Pinpoint/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
 
