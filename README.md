@@ -68,6 +68,7 @@
 * [《芋道 Spring Boot 监控端点 Actuator 入门》](http://www.iocoder.cn/Spring-Boot/Actuator/?github) 对应 [lab-34](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-34) 。
 * [《芋道 Spring Boot 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Boot/Admin/?github) 对应 [lab-35](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-35) 。
 * [《芋道 Spring Boot 监控平台 Prometheus + Grafana 入门》](http://www.iocoder.cn/Spring-Boot/Prometheus-and-Grafana/?github) 对应 [lab-36](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-36) 。
+* 《芋道 Spring Boot 监控平台 CAT 入门》计划中...
 
 ## 日志管理
 
@@ -77,8 +78,9 @@
 ## 链路追踪
 
 * [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-39) 。
-* [《芋道 Spring Boot 链路追踪 Zipkin 入门》](http://www.iocoder.cn/Spring-Boot/Zipkin/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
-* [《芋道 Spring Boot 链路追踪 Pinpoint 入门》](http://www.iocoder.cn/Spring-Boot/Pinpoint/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
+* [《芋道 Spring Boot 链路追踪 Zipkin 入门》](http://www.iocoder.cn/Spring-Boot/Zipkin/?github) 对应 [lab-40](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-40) 。
+* 《芋道 Spring Boot 链路追踪 Pinpoint 入门》计划中...
+* 《芋道 Spring Boot 链路追踪 Elastic APM 入门》计划中...
 
 ## 性能测试
 

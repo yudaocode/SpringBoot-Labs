@@ -10,8 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-40-demo</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>lab-40-redis</artifactId>
 
     <dependencies>
         <!-- 实现对 SpringMVC 的自动化配置 -->
@@ -20,10 +19,23 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- HttpClient 库  -->
+        <!-- 实现对 Spring Data Redis 的自动化配置 -->
         <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <exclusions>
+                <!-- 去掉对 Lettuce 的依赖，因为 Spring Boot 优先使用 Lettuce 作为 Redis 客户端 -->
+                <exclusion>
+                    <groupId>io.lettuce</groupId>
+                    <artifactId>lettuce-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 引入 Jedis 的依赖，这样 Spring Boot 实现对 Jedis 的自动化配置 -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
 
         <!-- Brave 核心库 -->
@@ -43,17 +55,24 @@
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-instrumentation-spring-webmvc</artifactId>
         </dependency>
-        <!-- Instruments the underlying HttpClient requests that call the backend -->
-        <!-- Brave 对 HttpClient 的支持 -->
+
+        <!--  Brave 对 Opentracing 的实现 -->
         <dependency>
-            <groupId>io.zipkin.brave</groupId>
-            <artifactId>brave-instrumentation-httpclient</artifactId>
+            <groupId>io.opentracing.brave</groupId>
+            <artifactId>brave-opentracing</artifactId>
+            <version>0.35.0</version>
         </dependency>
-        <!-- Integrates so you can use log patterns like %X{traceId}/%X{spanId} -->
-        <!-- Brave 对 SLF4J 的支持 -->
+
+        <!-- Opentracing 对 Redis 的支持 -->
         <dependency>
-            <groupId>io.zipkin.brave</groupId>
-            <artifactId>brave-context-slf4j</artifactId>
+            <groupId>io.opentracing.contrib</groupId>
+            <artifactId>opentracing-redis-jedis3</artifactId>
+            <version>0.1.14</version>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib</groupId>
+            <artifactId>opentracing-redis-spring-data</artifactId>
+            <version>0.1.14</version>
         </dependency>
 
     </dependencies>
@@ -70,17 +89,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

@@ -4,15 +4,17 @@ import brave.CurrentSpanCustomizer;
 import brave.SpanCustomizer;
 import brave.Tracing;
 import brave.http.HttpTracing;
-import brave.httpclient.TracingHttpClientBuilder;
+import brave.opentracing.BraveTracer;
 import brave.servlet.TracingFilter;
-import org.apache.http.impl.client.CloseableHttpClient;
+import io.opentracing.Tracer;
+import io.opentracing.contrib.redis.common.TracingConfiguration;
+import io.opentracing.contrib.redis.spring.data.connection.TracingRedisConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateCustomizer;
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import zipkin2.Span;
 import zipkin2.reporter.AsyncReporter;
 import zipkin2.reporter.Sender;
@@ -48,11 +50,12 @@ public class ZipkinConfiguration {
     public Tracing tracing(@Value("${spring.application.name}") String serviceName) {
         return Tracing.newBuilder()
                 .localServiceName(serviceName)
-//                .currentTraceContext(ThreadLocalCurrentTraceContext.newBuilder()
-//                        .addScopeDecorator(MDCScopeDecorator.create()) // puts trace IDs into logs
-//                        .build()
-//                )
                 .spanReporter(spanReporter()).build();
+    }
+
+    @Bean
+    public Tracer openTracer(Tracing tracing) {
+        return BraveTracer.create(tracing);
     }
 
     /**
@@ -84,19 +87,18 @@ public class ZipkinConfiguration {
     // ==================== SpringMVC 相关 ====================
     // @see SpringMvcConfiguration 类上的，@Import(SpanCustomizingAsyncHandlerInterceptor.class)
 
-    // ==================== HttpClient 相关 ====================
-
+    // ==================== Redis 相关 ====================
     @Bean
-    public RestTemplateCustomizer useTracedHttpClient(HttpTracing httpTracing) {
-        // 创建 CloseableHttpClient 对象，内置 HttpTracing 进行 HTTP 链路追踪。
-        final CloseableHttpClient httpClient = TracingHttpClientBuilder.create(httpTracing).build();
-        // 创建 RestTemplateCustomizer 对象
-        return new RestTemplateCustomizer() {
-            @Override
-            public void customize(RestTemplate restTemplate) {
-                restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory(httpClient));
-            }
-        };
+    public RedisConnectionFactory redisConnectionFactory(Tracer tracer, RedisProperties redisProperties) {
+        // 创建 JedisConnectionFactory 对象
+        RedisConnectionFactory connectionFactory = new JedisConnectionFactory();
+        // 创建 TracingConfiguration 对象
+        TracingConfiguration tracingConfiguration = new TracingConfiguration.Builder(tracer)
+                // 设置拓展 Tag ，设置 Redis 服务器地址。因为默认情况下，不会在操作 Redis 链路的 Span 上记录 Redis 服务器的地址，所以这里需要设置。
+                .extensionTag("Server Address", redisProperties.getHost() + ":" + redisProperties.getPort())
+                .build();
+        // 创建 TracingRedisConnectionFactory 对象
+        return new TracingRedisConnectionFactory(connectionFactory, tracingConfiguration);
     }
 
 }

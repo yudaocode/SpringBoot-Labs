@@ -3,16 +3,13 @@ package cn.iocoder.springboot.lab40.zipkindemo.config;
 import brave.CurrentSpanCustomizer;
 import brave.SpanCustomizer;
 import brave.Tracing;
+import brave.context.slf4j.MDCScopeDecorator;
 import brave.http.HttpTracing;
-import brave.httpclient.TracingHttpClientBuilder;
+import brave.propagation.ThreadLocalCurrentTraceContext;
 import brave.servlet.TracingFilter;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.web.client.RestTemplate;
 import zipkin2.Span;
 import zipkin2.reporter.AsyncReporter;
 import zipkin2.reporter.Sender;
@@ -48,10 +45,10 @@ public class ZipkinConfiguration {
     public Tracing tracing(@Value("${spring.application.name}") String serviceName) {
         return Tracing.newBuilder()
                 .localServiceName(serviceName)
-//                .currentTraceContext(ThreadLocalCurrentTraceContext.newBuilder()
-//                        .addScopeDecorator(MDCScopeDecorator.create()) // puts trace IDs into logs
-//                        .build()
-//                )
+                .currentTraceContext(ThreadLocalCurrentTraceContext.newBuilder()
+                        .addScopeDecorator(MDCScopeDecorator.create()) // puts trace IDs into logs
+                        .build()
+                )
                 .spanReporter(spanReporter()).build();
     }
 
@@ -83,20 +80,5 @@ public class ZipkinConfiguration {
 
     // ==================== SpringMVC 相关 ====================
     // @see SpringMvcConfiguration 类上的，@Import(SpanCustomizingAsyncHandlerInterceptor.class)
-
-    // ==================== HttpClient 相关 ====================
-
-    @Bean
-    public RestTemplateCustomizer useTracedHttpClient(HttpTracing httpTracing) {
-        // 创建 CloseableHttpClient 对象，内置 HttpTracing 进行 HTTP 链路追踪。
-        final CloseableHttpClient httpClient = TracingHttpClientBuilder.create(httpTracing).build();
-        // 创建 RestTemplateCustomizer 对象
-        return new RestTemplateCustomizer() {
-            @Override
-            public void customize(RestTemplate restTemplate) {
-                restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory(httpClient));
-            }
-        };
-    }
 
 }

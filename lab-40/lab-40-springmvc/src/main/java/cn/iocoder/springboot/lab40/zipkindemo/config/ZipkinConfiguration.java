@@ -4,15 +4,10 @@ import brave.CurrentSpanCustomizer;
 import brave.SpanCustomizer;
 import brave.Tracing;
 import brave.http.HttpTracing;
-import brave.httpclient.TracingHttpClientBuilder;
 import brave.servlet.TracingFilter;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.web.client.RestTemplate;
 import zipkin2.Span;
 import zipkin2.reporter.AsyncReporter;
 import zipkin2.reporter.Sender;
@@ -29,7 +24,7 @@ public class ZipkinConfiguration {
      * Configuration for how to send spans to Zipkin
      */
     @Bean
-    public Sender sender() {
+    public Sender sender() { // Sender 采用 HTTP 通信方式
         return OkHttpSender.create("http://127.0.0.1:9411/api/v2/spans");
     }
 
@@ -37,7 +32,7 @@ public class ZipkinConfiguration {
      * Configuration for how to buffer spans into messages for Zipkin
      */
     @Bean
-    public AsyncReporter<Span> spanReporter() {
+    public AsyncReporter<Span> spanReporter() { // 异步 Reporter
         return AsyncReporter.create(sender());
     }
 
@@ -47,12 +42,8 @@ public class ZipkinConfiguration {
     @Bean
     public Tracing tracing(@Value("${spring.application.name}") String serviceName) {
         return Tracing.newBuilder()
-                .localServiceName(serviceName)
-//                .currentTraceContext(ThreadLocalCurrentTraceContext.newBuilder()
-//                        .addScopeDecorator(MDCScopeDecorator.create()) // puts trace IDs into logs
-//                        .build()
-//                )
-                .spanReporter(spanReporter()).build();
+                .localServiceName(serviceName) // 应用名
+                .spanReporter(this.spanReporter()).build();
     }
 
     /**
@@ -77,26 +68,11 @@ public class ZipkinConfiguration {
      * Creates server spans for http requests
      */
     @Bean
-    public Filter tracingFilter(HttpTracing httpTracing) {
+    public Filter tracingFilter(HttpTracing httpTracing) { // 拦截请求，记录 HTTP 请求的链路信息
         return TracingFilter.create(httpTracing);
     }
 
     // ==================== SpringMVC 相关 ====================
-    // @see SpringMvcConfiguration 类上的，@Import(SpanCustomizingAsyncHandlerInterceptor.class)
-
-    // ==================== HttpClient 相关 ====================
-
-    @Bean
-    public RestTemplateCustomizer useTracedHttpClient(HttpTracing httpTracing) {
-        // 创建 CloseableHttpClient 对象，内置 HttpTracing 进行 HTTP 链路追踪。
-        final CloseableHttpClient httpClient = TracingHttpClientBuilder.create(httpTracing).build();
-        // 创建 RestTemplateCustomizer 对象
-        return new RestTemplateCustomizer() {
-            @Override
-            public void customize(RestTemplate restTemplate) {
-                restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory(httpClient));
-            }
-        };
-    }
+    // @see SpringMvcConfiguration 类上的，@Import(SpanCustomizingAsyncHandlerInterceptor.class) 。因为 SpanCustomizingAsyncHandlerInterceptor 未提供 public 构造方法
 
 }

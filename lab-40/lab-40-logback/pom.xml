@@ -10,20 +10,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-40-demo</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>lab-40-logback</artifactId>
 
     <dependencies>
         <!-- 实现对 SpringMVC 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- HttpClient 库  -->
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
         </dependency>
 
         <!-- Brave 核心库 -->
@@ -42,12 +35,6 @@
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-instrumentation-spring-webmvc</artifactId>
-        </dependency>
-        <!-- Instruments the underlying HttpClient requests that call the backend -->
-        <!-- Brave 对 HttpClient 的支持 -->
-        <dependency>
-            <groupId>io.zipkin.brave</groupId>
-            <artifactId>brave-instrumentation-httpclient</artifactId>
         </dependency>
         <!-- Integrates so you can use log patterns like %X{traceId}/%X{spanId} -->
         <!-- Brave 对 SLF4J 的支持 -->
@@ -70,17 +57,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
