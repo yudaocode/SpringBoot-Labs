@@ -1,10 +1,14 @@
-package cn.iocoder.springboot.lab39.skywalkingdemo.message;
+package cn.iocoder.springboot.lab40.zipkindemo.message;
 
 import java.io.Serializable;
 
 public class DemoMessage implements Serializable {
 
     public static final String QUEUE = "QUEUE_DEMO_";
+
+    public static final String EXCHANGE = "EXCHANGE_DEMO_";
+
+    public static final String ROUTING_KEY = "ROUTING_KEY_";
 
     /**
      * 编号

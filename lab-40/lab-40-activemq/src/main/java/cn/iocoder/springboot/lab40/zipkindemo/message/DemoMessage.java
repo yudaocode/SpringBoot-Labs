@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab39.skywalkingdemo.message;
+package cn.iocoder.springboot.lab40.zipkindemo.message;
 
 import java.io.Serializable;
 

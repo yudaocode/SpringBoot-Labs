@@ -1,6 +1,6 @@
-package cn.iocoder.springboot.lab39.skywalkingdemo.consumer;
+package cn.iocoder.springboot.lab40.zipkindemo.consumer;
 
-import cn.iocoder.springboot.lab39.skywalkingdemo.message.DemoMessage;
+import cn.iocoder.springboot.lab40.zipkindemo.message.DemoMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jms.annotation.JmsListener;

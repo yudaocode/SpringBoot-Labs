@@ -4,25 +4,20 @@ import brave.CurrentSpanCustomizer;
 import brave.SpanCustomizer;
 import brave.Tracing;
 import brave.http.HttpTracing;
-import brave.kafka.clients.KafkaTracing;
+import brave.jms.JmsTracing;
 import brave.servlet.TracingFilter;
-import org.apache.kafka.clients.consumer.Consumer;
-import org.apache.kafka.clients.producer.Producer;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.kafka.core.ConsumerFactory;
-import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
-import org.springframework.kafka.core.DefaultKafkaProducerFactory;
-import org.springframework.kafka.core.ProducerFactory;
 import zipkin2.Span;
 import zipkin2.reporter.AsyncReporter;
 import zipkin2.reporter.Sender;
 import zipkin2.reporter.okhttp3.OkHttpSender;
 
+import javax.jms.ConnectionFactory;
 import javax.servlet.Filter;
-import java.util.Properties;
 
 @Configuration
 public class ZipkinConfiguration {
@@ -84,55 +79,31 @@ public class ZipkinConfiguration {
     // ==================== SpringMVC 相关 ====================
     // @see SpringMvcConfiguration 类上的，@Import(SpanCustomizingAsyncHandlerInterceptor.class) 。因为 SpanCustomizingAsyncHandlerInterceptor 未提供 public 构造方法
 
-    // ==================== Kafka 相关 ====================
+    // ==================== RabbitMQ 相关 ====================
 
     @Bean
-    public KafkaTracing kafkaTracing(Tracing tracing) {
-        return KafkaTracing.newBuilder(tracing)
-                .remoteServiceName("demo-mq-kafka") // 远程 Kafka 服务名，可自定义
+    public JmsTracing jmsTracing(Tracing tracing) {
+        return JmsTracing.newBuilder(tracing)
+                .remoteServiceName("demo-mq-activemq") // 远程 ActiveMQ 服务名，可自定义
                 .build();
     }
 
     @Bean
-    public ProducerFactory<?, ?> kafkaProducerFactory(KafkaProperties properties, KafkaTracing kafkaTracing) {
-        // 创建 DefaultKafkaProducerFactory 对象
-        DefaultKafkaProducerFactory<?, ?> factory = new DefaultKafkaProducerFactory(properties.buildProducerProperties()) {
+    public BeanPostProcessor activeMQBeanPostProcessor(JmsTracing jmsTracing) {
+        return new BeanPostProcessor() {
 
             @Override
-            public Producer createProducer() {
-                // 创建默认的 Producer
-                Producer<?, ?> producer = super.createProducer();
-                // 创建可链路追踪的 Producer
-                return kafkaTracing.producer(producer);
-            }
-
-        };
-
-        // 设置事务前缀
-        String transactionIdPrefix = properties.getProducer().getTransactionIdPrefix();
-        if (transactionIdPrefix != null) {
-            factory.setTransactionIdPrefix(transactionIdPrefix);
-        }
-
-        return factory;
-    }
-
-    @Bean
-    public ConsumerFactory<?, ?> kafkaConsumerFactory(KafkaProperties properties, KafkaTracing kafkaTracing) {
-        // 创建 DefaultKafkaConsumerFactory 对象
-        return new DefaultKafkaConsumerFactory(properties.buildConsumerProperties()) {
-
-            @Override
-            public Consumer<?, ?> createConsumer(String groupId, String clientIdPrefix,  String clientIdSuffix) {
-                return this.createConsumer(groupId, clientIdPrefix, clientIdSuffix, null);
+            public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+                return bean;
             }
 
             @Override
-            public Consumer<?, ?> createConsumer(String groupId, String clientIdPrefix, final String clientIdSuffixArg, Properties properties) {
-                // 创建默认的 Consumer
-                Consumer<?, ?> consumer = super.createConsumer(groupId, clientIdPrefix, clientIdSuffixArg, properties);
-                // 创建可链路追踪的 Consumer
-                return kafkaTracing.consumer(consumer);
+            public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+                // 如果是 ConnectionFactory ，针对 ActiveMQ Producer 和 Consumer
+                if (bean instanceof ConnectionFactory) {
+                    return jmsTracing.connectionFactory((ConnectionFactory) bean);
+                }
+                return bean;
             }
 
         };

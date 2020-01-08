@@ -1,17 +1,19 @@
-package cn.iocoder.springboot.lab39.skywalkingdemo.consumer;
+package cn.iocoder.springboot.lab40.zipkindemo.consumer;
 
-import cn.iocoder.springboot.lab39.skywalkingdemo.message.DemoMessage;
+import cn.iocoder.springboot.lab40.zipkindemo.message.DemoMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.jms.annotation.JmsListener;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
+@RabbitListener(queues = DemoMessage.QUEUE)
 public class DemoConsumer {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @JmsListener(destination = DemoMessage.QUEUE)
+    @RabbitHandler
     public void onMessage(DemoMessage message) {
         logger.info("[onMessage][线程编号:{} 消息内容：{}]", Thread.currentThread().getId(), message);
     }
