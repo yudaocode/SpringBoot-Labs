@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab40.skywalkingdemo.config;
+package cn.iocoder.springboot.lab40.zipkindemo.config;
 
 import brave.CurrentSpanCustomizer;
 import brave.SpanCustomizer;

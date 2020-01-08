@@ -1,6 +1,6 @@
-package cn.iocoder.springboot.lab40.skywalkingdemo.controller;
+package cn.iocoder.springboot.lab40.zipkindemo.controller;
 
-import cn.iocoder.springboot.lab40.skywalkingdemo.producer.DemoProducer;
+import cn.iocoder.springboot.lab40.zipkindemo.producer.DemoProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

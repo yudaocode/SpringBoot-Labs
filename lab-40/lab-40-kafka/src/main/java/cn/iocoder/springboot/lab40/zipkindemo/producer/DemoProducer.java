@@ -1,6 +1,6 @@
-package cn.iocoder.springboot.lab40.skywalkingdemo.producer;
+package cn.iocoder.springboot.lab40.zipkindemo.producer;
 
-import cn.iocoder.springboot.lab40.skywalkingdemo.message.DemoMessage;
+import cn.iocoder.springboot.lab40.zipkindemo.message.DemoMessage;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Component;

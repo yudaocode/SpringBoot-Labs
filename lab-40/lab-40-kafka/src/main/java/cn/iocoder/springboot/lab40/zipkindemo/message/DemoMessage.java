@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab40.skywalkingdemo.message;
+package cn.iocoder.springboot.lab40.zipkindemo.message;
 
 /**
  * 示例 Message 消息

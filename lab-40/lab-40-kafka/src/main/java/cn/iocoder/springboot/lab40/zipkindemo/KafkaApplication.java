@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab40.skywalkingdemo;
+package cn.iocoder.springboot.lab40.zipkindemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

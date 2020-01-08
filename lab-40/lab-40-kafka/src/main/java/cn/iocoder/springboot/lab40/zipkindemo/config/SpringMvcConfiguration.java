@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab40.skywalkingdemo.config;
+package cn.iocoder.springboot.lab40.zipkindemo.config;
 
 import brave.spring.webmvc.SpanCustomizingAsyncHandlerInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
