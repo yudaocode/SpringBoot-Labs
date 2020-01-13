@@ -30,7 +30,7 @@
 
     <build>
         <!-- 设置构建的 jar 包名 -->
-        <finalName>${artifactId}</finalName>
+        <finalName>${project.artifactId}</finalName>
         <!-- 使用 spring-boot-maven-plugin 插件打包 -->
         <plugins>
             <plugin>

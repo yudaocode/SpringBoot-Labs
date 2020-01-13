@@ -43,12 +43,6 @@
             <artifactId>brave-opentracing</artifactId>
             <version>0.35.0</version>
         </dependency>
-
-        <!-- 实现对 SpringMVC 的自动化配置 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>
