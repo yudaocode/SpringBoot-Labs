@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-38</artifactId>
+    <packaging>pom</packaging>
     <modules>
         <module>lab-38-elk-demo</module>
     </modules>
