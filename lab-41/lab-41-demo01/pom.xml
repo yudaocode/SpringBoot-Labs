@@ -11,7 +11,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lab-41-demo01</artifactId>
-    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -30,7 +29,7 @@
 
     <build>
         <!-- 设置构建的 jar 包名 -->
-        <finalName>${artifactId}</finalName>
+        <finalName>${project.artifactId}</finalName>
         <!-- 使用 spring-boot-maven-plugin 插件打包 -->
         <plugins>
             <plugin>
