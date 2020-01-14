@@ -57,7 +57,7 @@ public class ServerHealthIndicator extends AbstractHealthIndicator implements Ap
         this.inService = false;
 
         // sleep 等待负载均衡完成健康检查
-        for (int i = 0; i < 5; i++) { // TODO 20 需要配置
+        for (int i = 0; i < 20; i++) { // TODO 20 需要配置
             logger.info("[handleContextClosedEvent][优雅关闭，第 {} sleep 等待负载均衡完成健康检查]", i);
             try {
                 Thread.sleep(1000L);

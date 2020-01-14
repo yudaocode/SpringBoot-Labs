@@ -2,7 +2,6 @@ package cn.iocoder.springboot.lab40.jenkinsdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
@@ -20,10 +19,7 @@ public class Application {
 
         @Override
         public void onApplicationEvent(ApplicationEvent event) {
-            if (event instanceof ApplicationReadyEvent) {
-                this.sleep(5);
-            // 用于模拟关闭比较慢。
-            } else if (event instanceof ContextClosedEvent) {
+            if (event instanceof ContextClosedEvent) {
                 this.sleep(10);
             }
         }
