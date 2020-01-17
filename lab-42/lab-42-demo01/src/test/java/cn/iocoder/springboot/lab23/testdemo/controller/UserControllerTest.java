@@ -7,7 +7,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -19,7 +20,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
  * UserController 单元测试
  */
 @RunWith(SpringRunner.class)
-@WebMvcTest(UserController.class)
+@SpringBootTest
+@AutoConfigureMockMvc
 public class UserControllerTest {
 
     @Autowired
@@ -37,7 +39,7 @@ public class UserControllerTest {
         // 查询用户
         ResultActions resultActions = mvc.perform(MockMvcRequestBuilders.get("/user/get?id=1"));
 
-        // 校验妆容泰马
+        // 校验响应状态码
         resultActions.andExpect(MockMvcResultMatchers.status().isOk()); // 响应状态码 200
 
         // 校验响应内容方式一：直接全部匹配
