@@ -66,7 +66,7 @@
 ## 持续交付
 
 * [《芋道 Spring Boot 持续交付 Jenkins 入门》](http://www.iocoder.cn/Spring-Boot/Jenkins/?github) 对应 [lab-41](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-41) 。
-* 《芋道 Spring Boot 单元测试 Test 入门》计划中...
+* [《芋道 Spring Boot 单元测试 Test 入门》](http://www.iocoder.cn/Spring-Boot/Unit-Test/?github) 对应 [lab-42](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-42) 。
 * 《芋道 Spring Boot 容器 Docker 入门》计划中...
 
 ## 监控管理

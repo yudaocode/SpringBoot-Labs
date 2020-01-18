@@ -1,7 +1,4 @@
 spring:
-  application:
-    name: demo-application
-
   # datasource 数据源配置内容
   datasource:
     url: jdbc:h2:mem:testdb
