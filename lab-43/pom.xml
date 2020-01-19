@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-43-demo</module>
+        <module>lab-43-demo-profiles</module>
     </modules>
 
 
