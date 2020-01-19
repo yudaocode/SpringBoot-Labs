@@ -63,11 +63,26 @@
 * [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04) 。
 * [《芋道 Spring Boot 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Boot/ActiveMQ/?github) 对应 [lab-32](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-32) 。
 
+## 配置中心
+
+* [《芋道 Spring Boot 配置文件》]()计划中...
+* [《芋道 Spring Boot 配置中心 Apollo》]()计划中...
+* [《芋道 Spring Boot 配置中心 Nacos》]()计划中...
+
+## 注册中心
+
+* [《芋道 Spring Boot 注册中心 Nacos》]()计划中...
+
 ## 持续交付
 
 * [《芋道 Spring Boot 持续交付 Jenkins 入门》](http://www.iocoder.cn/Spring-Boot/Jenkins/?github) 对应 [lab-41](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-41) 。
 * [《芋道 Spring Boot 单元测试 Test 入门》](http://www.iocoder.cn/Spring-Boot/Unit-Test/?github) 对应 [lab-42](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-42) 。
 * 《芋道 Spring Boot 容器 Docker 入门》计划中...
+
+## 服务保障
+
+* [《芋道 Spring Boot Sentinel》]()计划中...
+* [《芋道 Spring Boot Hystrix》]()计划中...
 
 ## 监控管理
 
