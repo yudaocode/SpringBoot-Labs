@@ -37,11 +37,14 @@ public class Application {
 
         private final Logger logger = LoggerFactory.getLogger(getClass());
 
-        @Value("${order.pay_timeout_seconds}")
+        @Value("${order.pay-timeout-seconds}")
         private Integer payTimeoutSeconds;
 
-        @Value("${order.create_frequency_seconds}")
+        @Value("${order.create-frequency-seconds}")
         private Integer createFrequencySeconds;
+
+//        @Value("${order.desc}")
+//        private String desc;
 
         @Override
         public void run(String... args) {
