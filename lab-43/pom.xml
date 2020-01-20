@@ -14,6 +14,8 @@
     <modules>
         <module>lab-43-demo</module>
         <module>lab-43-demo-profiles</module>
+        <module>lab-43-demo-jasypt</module>
+        <module>lab-43-demo-configname</module>
     </modules>
 
 
