@@ -7,4 +7,4 @@ nacos:
     data-id: example # 使用的 Nacos 配置集的 dataId。
     type: YAML # 使用的 Nacos 配置集的配置格式。默认为 PROPERTIES。
     group: DEFAULT_GROUP # 使用的 Nacos 配置分组，默认为 DEFAULT_GROUP。
-    namespace: fe5e7b1f-bc42-47b5-ba8e-6d8685be6e7f  # 使用的 Nacos 的命名空间，默认为 null。
+    namespace: f1686f3b-a984-4cdf-8298-7caee3455d14  # 使用的 Nacos 的命名空间，默认为 null。
