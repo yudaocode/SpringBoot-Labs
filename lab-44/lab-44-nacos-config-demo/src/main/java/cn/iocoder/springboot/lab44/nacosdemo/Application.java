@@ -3,7 +3,6 @@ package cn.iocoder.springboot.lab44.nacosdemo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -39,11 +38,11 @@ public class Application {
         private final Logger logger = LoggerFactory.getLogger(getClass());
 
 //        @NacosValue(value = "${order.pay-timeout-seconds}")
-        @Value(value = "${order.pay-timeout-seconds}")
+//        @Value(value = "${order.pay-timeout-seconds}")
         private Integer payTimeoutSeconds;
 
 //        @NacosValue(value = "${order.pay-timeout-seconds}")
-        @Value(value = "${order.pay-timeout-seconds}")
+//        @Value(value = "${order.pay-timeout-seconds}")
         private Integer createFrequencySeconds;
 
         @Override

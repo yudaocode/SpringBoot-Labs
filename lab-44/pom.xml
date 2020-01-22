@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-44-nacos-config-demo</module>
+        <module>lab-44-nacos-config-demo-profiles</module>
     </modules>
 
 
