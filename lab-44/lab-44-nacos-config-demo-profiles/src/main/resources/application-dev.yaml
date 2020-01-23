@@ -4,6 +4,7 @@ nacos:
     server-addr: 127.0.0.1:18848 # Nacos 服务器地址
     bootstrap:
       enable: true # 是否开启 Nacos 配置预加载功能。默认为 false。
+      log-enable: true # 是否开启 Nacos 支持日志级别的加载时机。默认为 false。
     data-id: example # 使用的 Nacos 配置集的 dataId。
     type: YAML # 使用的 Nacos 配置集的配置格式。默认为 PROPERTIES。
     group: DEFAULT_GROUP # 使用的 Nacos 配置分组，默认为 DEFAULT_GROUP。
