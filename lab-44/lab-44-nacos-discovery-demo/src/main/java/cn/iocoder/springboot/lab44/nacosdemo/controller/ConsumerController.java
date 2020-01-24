@@ -12,28 +12,28 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @RestController
-@RequestMapping("/demo")
-public class DemoController {
+@RequestMapping("/consumer")
+public class ConsumerController {
 
     @NacosInjected
     private NamingService namingService;
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    @GetMapping("/provider")
-    public String provider() {
-        return "echo";
-    }
-
-    @GetMapping("/consumer")
+    @GetMapping("/demo")
     public String consumer() throws IllegalStateException, NacosException {
         // 获得实例
-        List<Instance> instances = namingService.getAllInstances("demo-application");
-        // 获得首个实例，进行调用
-        Instance instance = instances.stream().findFirst()
-                .orElseThrow(() -> new IllegalStateException("未找到对应的 Instance"));
+        Instance instance = null;
+        if (false) {
+            List<Instance> instances = namingService.getAllInstances("demo-application");
+            // 获得首个实例，进行调用
+            instance = instances.stream().findFirst()
+                    .orElseThrow(() -> new IllegalStateException("未找到对应的 Instance"));
+        } else {
+            instance = namingService.selectOneHealthyInstance("demo-application");
+        }
         // 执行请求
-        return restTemplate.getForObject("http://" + instance.toInetAddr() + "/demo/provider",
+        return restTemplate.getForObject("http://" + instance.toInetAddr() + "/provider/demo",
                 String.class);
     }
 
