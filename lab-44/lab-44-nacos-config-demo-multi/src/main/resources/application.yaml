@@ -19,3 +19,4 @@ nacos:
         group: DEFAULT_GROUP # 使用的 Nacos 配置分组，默认为 DEFAULT_GROUP。
         namespace: # 使用的 Nacos 的命名空间，默认为 null。
         auto-refresh: true # 是否自动刷新，默认为 false。
+#      - # 这里，可以继续添加。
