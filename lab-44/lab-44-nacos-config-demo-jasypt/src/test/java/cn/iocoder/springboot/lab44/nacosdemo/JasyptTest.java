@@ -21,9 +21,9 @@ public class JasyptTest {
         String applicationName = "demo-application";
         System.out.println(encryptor.encrypt(applicationName));
 
-        // 第二个加密
-        applicationName = "demo-app";
-        System.out.println(encryptor.encrypt(applicationName));
+//        // 第二个加密
+//        applicationName = "demo-app";
+//        System.out.println(encryptor.encrypt(applicationName));
     }
 
     @Value("${spring.application.name}")

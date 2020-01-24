@@ -16,6 +16,7 @@
         <module>lab-44-nacos-config-demo-profiles</module>
         <module>lab-44-nacos-config-demo-auto-refresh</module>
         <module>lab-44-nacos-config-demo-jasypt</module>
+        <module>lab-44-nacos-config-demo-actuator</module>
     </modules>
 
 
