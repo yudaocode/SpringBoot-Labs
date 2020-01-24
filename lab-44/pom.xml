@@ -18,6 +18,7 @@
         <module>lab-44-nacos-config-demo-jasypt</module>
         <module>lab-44-nacos-config-demo-actuator</module>
         <module>lab-44-nacos-config-demo-multi</module>
+        <module>lab-44-nacos-discovery-demo</module>
     </modules>
 
 
