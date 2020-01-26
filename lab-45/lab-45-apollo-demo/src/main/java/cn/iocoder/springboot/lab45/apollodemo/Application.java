@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab44.nacosdemo;
+package cn.iocoder.springboot.lab45.apollodemo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

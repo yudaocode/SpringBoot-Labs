@@ -1,0 +1,9 @@
+app:
+  id: demo-application
+apollo:
+  meta: http://127.0.0.1:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enable: true
+    namespace: application
