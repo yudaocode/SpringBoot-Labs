@@ -15,6 +15,7 @@
         <module>lab-45-apollo-demo</module>
         <module>lab-45-apollo-demo-profiles</module>
         <module>lab-45-apollo-demo-auto-refresh</module>
+        <module>lab-45-apollo-demo-jasypt</module>
     </modules>
 
 
