@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-45-apollo-demo</module>
+        <module>lab-45-apollo-demo-profiles</module>
     </modules>
 
 

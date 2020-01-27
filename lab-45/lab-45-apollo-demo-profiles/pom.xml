@@ -10,14 +10,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-45-apollo-demo</artifactId>
+    <artifactId>lab-45-apollo-demo-profiles</artifactId>
 
 
     <dependencies>
-        <!-- Spring Boot Starter 基础依赖 -->
+        <!-- 实现对 SpringMVC 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!--  引入 Apollo 客户端，内置对 Apollo 的自动化配置 -->

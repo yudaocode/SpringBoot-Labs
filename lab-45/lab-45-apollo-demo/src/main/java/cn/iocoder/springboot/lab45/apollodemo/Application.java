@@ -38,12 +38,10 @@ public class Application {
 
         private final Logger logger = LoggerFactory.getLogger(getClass());
 
-//        @NacosValue(value = "${order.pay-timeout-seconds}")
         @Value(value = "${order.pay-timeout-seconds}")
         private Integer payTimeoutSeconds;
 
-//        @NacosValue(value = "${order.pay-timeout-seconds}")
-        @Value(value = "${order.pay-timeout-seconds}")
+        @Value(value = "${order.create-frequency-seconds}")
         private Integer createFrequencySeconds;
 
         @Override

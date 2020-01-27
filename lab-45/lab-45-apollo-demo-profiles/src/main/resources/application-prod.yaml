@@ -1,7 +1,7 @@
 app:
-  id: demo-application # 使用的 Apollo 的项目（应用）编号
+  id: demo-application-profiles # 使用的 Apollo 的项目（应用）编号
 apollo:
-  meta: http://127.0.0.1:8080 # Apollo Meta Server 地址
+  meta: http://127.0.0.1:18080 # Apollo Meta Server 地址
   bootstrap:
     enabled: true # 是否开启 Apollo 配置预加载功能。默认为 false。
     eagerLoad:

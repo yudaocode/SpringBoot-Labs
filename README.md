@@ -66,7 +66,7 @@
 ## 配置中心
 
 * [《芋道 Spring Boot 配置文件》](http://www.iocoder.cn/Spring-Boot/config-file/?github) 对应 [lab-43](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-43) 。
-* [《芋道 Spring Boot 配置中心 Apollo》]()计划中...
+* [《芋道 Spring Boot 配置中心 Apollo》](http://www.iocoder.cn/Spring-Boot/config-apollo/?github) 对应 [lab-45](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-45) 。
 * [《芋道 Spring Boot 配置中心 Nacos》](http://www.iocoder.cn/Spring-Boot/config-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44) 。
 
 ## 注册中心
