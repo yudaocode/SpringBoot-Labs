@@ -79,10 +79,10 @@
 * [《芋道 Spring Boot 单元测试 Test 入门》](http://www.iocoder.cn/Spring-Boot/Unit-Test/?github) 对应 [lab-42](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-42) 。
 * 《芋道 Spring Boot 容器 Docker 入门》计划中...
 
-## 服务保障
+## 服务容错
 
-* [《芋道 Spring Boot Sentinel》]()计划中...
-* [《芋道 Spring Boot Hystrix》]()计划中...
+* [《芋道 Spring Boot 服务容错 Sentinel》](http://www.iocoder.cn/Spring-Boot/Sentinel/?github) 对应 [lab-46](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-46) 。
+* [《芋道 Spring Boot 服务容错 Hystrix》]()计划中...
 
 ## 监控管理
 

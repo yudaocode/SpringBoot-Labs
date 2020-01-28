@@ -37,6 +37,18 @@
             <artifactId>sentinel-spring-webmvc-adapter</artifactId>
             <version>1.7.1</version>
         </dependency>
+        <!-- Sentinel 对【热点参数限流】的支持 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-parameter-flow-control</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+        <!-- Sentinel 对 Spring AOP 的支持 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-annotation-aspectj</artifactId>
+            <version>1.7.1</version>
+        </dependency>
     </dependencies>
 
 </project>
