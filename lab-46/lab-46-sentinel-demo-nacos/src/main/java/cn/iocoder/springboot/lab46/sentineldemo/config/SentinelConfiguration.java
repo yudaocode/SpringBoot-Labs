@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab46.sentineldemo.config;
 
-import com.alibaba.boot.nacos.config.properties.NacosConfigProperties;
+import com.alibaba.csp.sentinel.annotation.aspectj.SentinelResourceAspect;
 import com.alibaba.csp.sentinel.datasource.Converter;
 import com.alibaba.csp.sentinel.datasource.nacos.NacosDataSource;
 import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
@@ -19,13 +19,25 @@ import java.util.Properties;
 public class SentinelConfiguration {
 
     @Bean
-    public NacosDataSource nacosDataSource(NacosConfigProperties nacosConfigProperties, ObjectMapper objectMapper) {
+    public SentinelResourceAspect sentinelResourceAspect() {
+        return new SentinelResourceAspect();
+    }
+
+    @Bean
+    public NacosDataSource nacosDataSource(ObjectMapper objectMapper) {
+        // Nacos 配置。这里先写死，推荐后面写到 application.yaml 配置文件中。
+        String serverAddress = "127.0.0.1:8848"; // Nacos 服务器地址
+        String namespace = ""; // Nacos 命名空间
+        String dataId = "demo-application-flow-rule"; // Nacos 配置集编号
+//        String dataId = "example-sentinel"; // Nacos 配置集编号
+        String group = "DEFAULT_GROUP"; // Nacos 配置分组
+
+        // 创建 NacosDataSource 对象
         Properties properties = new Properties();
-        properties.setProperty(PropertyKeyConst.SERVER_ADDR, nacosConfigProperties.getServerAddr());
-        properties.setProperty(PropertyKeyConst.NAMESPACE, nacosConfigProperties.getNamespace());
-        NacosDataSource<List<FlowRule>> nacosDataSource = new NacosDataSource<>(properties,
-                nacosConfigProperties.getGroup(), nacosConfigProperties.getDataId(),
-                new Converter<String, List<FlowRule>>() {
+        properties.setProperty(PropertyKeyConst.SERVER_ADDR, serverAddress);
+        properties.setProperty(PropertyKeyConst.NAMESPACE, namespace);
+        NacosDataSource<List<FlowRule>> nacosDataSource = new NacosDataSource<>(properties, group, dataId,
+                new Converter<String, List<FlowRule>>() { // 转换器，将读取的 Nacos 配置，转换成 FlowRule 数组
                     @Override
                     public List<FlowRule> convert(String value) {
                         try {
@@ -35,6 +47,8 @@ public class SentinelConfiguration {
                         }
                     }
                 });
+
+        // 注册到 FlowRuleManager 中
         FlowRuleManager.register2Property(nacosDataSource.getProperty());
         return nacosDataSource;
     }
