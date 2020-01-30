@@ -43,7 +43,7 @@
             <artifactId>sentinel-parameter-flow-control</artifactId>
             <version>1.7.1</version>
         </dependency>
-        <!-- Sentinel 对 Spring AOP 的支持 -->
+        <!-- Sentinel 对 Spring AOP 的拓展 -->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-annotation-aspectj</artifactId>
