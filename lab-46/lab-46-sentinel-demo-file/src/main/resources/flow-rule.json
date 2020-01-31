@@ -1,0 +1,11 @@
+[
+  {
+    "resource": "GET:/demo/echo",
+    "limitApp": "default",
+    "grade": 1,
+    "count": 5,
+    "strategy": 0,
+    "controlBehavior": 0,
+    "clusterMode": false
+  }
+]
