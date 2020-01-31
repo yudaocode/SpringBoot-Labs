@@ -49,6 +49,12 @@
             <artifactId>sentinel-annotation-aspectj</artifactId>
             <version>1.7.1</version>
         </dependency>
+        <!-- Sentinel 对数据源的拓展的基础库，内置了 File 数据源 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-extension</artifactId>
+            <version>1.7.1</version>
+        </dependency>
     </dependencies>
 
 </project>
