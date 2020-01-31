@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo-application
+
+server:
+  port: 18080 # 避免和 Apollo 使用到的 8080 端口冲突

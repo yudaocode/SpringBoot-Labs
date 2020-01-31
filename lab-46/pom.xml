@@ -14,6 +14,7 @@
     <modules>
         <module>lab-46-sentinel-demo</module>
         <module>lab-46-sentinel-demo-nacos</module>
+        <module>lab-46-sentinel-demo-apollo</module>
     </modules>
 
 
