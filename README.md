@@ -65,13 +65,13 @@
 
 ## 配置中心
 
-* [《芋道 Spring Boot 配置文件》](http://www.iocoder.cn/Spring-Boot/config-file/?github) 对应 [lab-43](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-43) 。
-* [《芋道 Spring Boot 配置中心 Apollo》](http://www.iocoder.cn/Spring-Boot/config-apollo/?github) 对应 [lab-45](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-45) 。
-* [《芋道 Spring Boot 配置中心 Nacos》](http://www.iocoder.cn/Spring-Boot/config-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44) 。
+* [《芋道 Spring Boot 配置文件入门》](http://www.iocoder.cn/Spring-Boot/config-file/?github) 对应 [lab-43](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-43) 。
+* [《芋道 Spring Boot 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Boot/config-apollo/?github) 对应 [lab-45](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-45) 。
+* [《芋道 Spring Boot 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Boot/config-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44) 。
 
 ## 注册中心
 
-* [《芋道 Spring Boot 注册中心 Nacos》](http://www.iocoder.cn/Spring-Boot/registry-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44) 。
+* [《芋道 Spring Boot 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Boot/registry-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44) 。
 
 ## 持续交付
 
@@ -81,8 +81,8 @@
 
 ## 服务容错
 
-* [《芋道 Spring Boot 服务容错 Sentinel》](http://www.iocoder.cn/Spring-Boot/Sentinel/?github) 对应 [lab-46](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-46) 。
-* [《芋道 Spring Boot 服务容错 Hystrix》]()计划中...
+* [《芋道 Spring Boot 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Boot/Sentinel/?github) 对应 [lab-46](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-46) 。
+* 《芋道 Spring Boot 服务容错 Hystrix 入门》计划中...
 
 ## 监控管理
 

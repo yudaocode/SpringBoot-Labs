@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.iocoder.springboot.lab47.yunaiserver.autoconfigure.YunaiServerAutoConfiguration
