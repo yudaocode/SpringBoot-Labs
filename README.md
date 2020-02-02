@@ -13,6 +13,10 @@
 
 让我们一起愉快的挖坑，挖深坑，哇哈哈。
 
+## 打好基础
+
+* [《芋道 Spring Boot 自动配置原理》](http://www.iocoder.cn/Spring-Boot/autoconfigure/?github) 对应 [lab-47](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-47) 。
+
 ## Web 开发
 
 * [《芋道 Spring Boot SpringMVC 入门》](http://www.iocoder.cn/Spring-Boot/SpringMVC/?github) 对应 [lab-23](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-23) 。

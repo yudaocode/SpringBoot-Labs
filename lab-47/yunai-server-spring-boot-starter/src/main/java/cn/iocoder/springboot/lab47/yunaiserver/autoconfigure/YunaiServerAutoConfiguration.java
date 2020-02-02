@@ -15,7 +15,7 @@ import java.net.InetSocketAddress;
 @EnableConfigurationProperties(YunaiServerProperties.class) // 使 YunaiServerProperties 配置属性类生效
 public class YunaiServerAutoConfiguration {
 
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    private Logger logger = LoggerFactory.getLogger(YunaiServerAutoConfiguration.class);
 
     @Bean // 声明创建 Bean
     @ConditionalOnClass(HttpServer.class) // 需要项目中存在 com.sun.net.httpserver.HttpServer 类。该类为 JDK 自带，所以一定成立。
