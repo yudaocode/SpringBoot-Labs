@@ -11,14 +11,14 @@ import org.springframework.context.annotation.Configuration;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 
-@Configuration
-@EnableConfigurationProperties(YunaiServerProperties.class)
+@Configuration // 声明配置类
+@EnableConfigurationProperties(YunaiServerProperties.class) // 使 YunaiServerProperties 配置属性类生效
 public class YunaiServerAutoConfiguration {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Bean
-    @ConditionalOnClass(HttpServer.class)
+    @Bean // 声明创建 Bean
+    @ConditionalOnClass(HttpServer.class) // 需要项目中存在 com.sun.net.httpserver.HttpServer 类。该类为 JDK 自带，所以一定成立。
     public HttpServer httpServer(YunaiServerProperties serverProperties) throws IOException {
         // 创建 HttpServer 对象，并启动
         HttpServer server = HttpServer.create(new InetSocketAddress(serverProperties.getPort()), 0);

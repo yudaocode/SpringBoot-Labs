@@ -12,6 +12,7 @@
     <artifactId>lab-47-demo</artifactId>
 
     <dependencies>
+        <!-- 引入自定义 Starter -->
         <dependency>
             <groupId>cn.iocoder.springboot.labs</groupId>
             <artifactId>yunai-server-spring-boot-starter</artifactId>

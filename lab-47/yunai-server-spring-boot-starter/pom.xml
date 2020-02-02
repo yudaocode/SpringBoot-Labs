@@ -12,6 +12,7 @@
     <artifactId>yunai-server-spring-boot-starter</artifactId>
 
     <dependencies>
+        <!-- 引入 Spring Boot Starter 基础库 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
