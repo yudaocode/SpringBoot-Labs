@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-09</artifactId>
+    <artifactId>lab-48</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-48-demo</module>
+    </modules>
 
-    <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-    </properties>
 
 </project>

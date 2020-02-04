@@ -13,7 +13,6 @@
     <artifactId>lab-46-sentinel-demo-nacos</artifactId>
 
     <dependencies>
-
         <!-- 实现对 SpringMVC 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

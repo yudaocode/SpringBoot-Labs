@@ -15,7 +15,14 @@
 
 ## 打好基础
 
+* [《芋道 Spring Boot 快速入门》](http://www.iocoder.cn/Spring-Boot/quick-start/?github)
 * [《芋道 Spring Boot 自动配置原理》](http://www.iocoder.cn/Spring-Boot/autoconfigure/?github) 对应 [lab-47](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-47) 。
+
+## 开发工具
+
+* [《芋道 Spring Boot 热部署入门》](http://www.iocoder.cn/Spring-Boot/hot-swap/?github) 对应 [lab-48](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-48) 。
+* [《芋道 Spring Boot 消除冗余代码 Lombok 入门》](http://www.iocoder.cn/Spring-Boot/Lombok/?github) 对应 [lab-49](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-49) 。
+* 《芋道 Spring Boot 对象转换 MapStruct 入门》计划中...
 
 ## Web 开发
 
