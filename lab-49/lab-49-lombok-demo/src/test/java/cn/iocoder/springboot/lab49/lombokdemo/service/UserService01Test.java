@@ -9,8 +9,8 @@ public class UserService01Test {
     private UserService01 userService01 = new UserService01();
 
     @Test
-    public void test02() {
-        userService01.test02(null, null);
+    public void test() {
+        userService01.test(null, null);
     }
 
 }
