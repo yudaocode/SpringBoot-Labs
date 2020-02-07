@@ -9,18 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-01</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>labx-02</artifactId>
 
     <modules>
-        <module>labx-01-sca-nacos-discovery-demo01-provider</module>
-        <module>labx-01-sca-nacos-discovery-demo01-consumer</module>
-
-        <module>labx-01-sca-nacos-discovery-demo02-provider</module>
-        <module>labx-01-sca-nacos-discovery-demo02-consumer</module>
-
-        <module>labx-01-sca-nacos-discovery-demo03-consumer</module>
+        <module>labx-02-scn-ribbon-demo01-provider</module>
+        <module>labx-02-scn-ribbon-demo01-consumer</module>
     </modules>
-
 
 </project>
