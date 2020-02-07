@@ -16,6 +16,9 @@
         <module>labx-01-sca-nacos-discovery-demo01-consumer</module>
 
         <module>labx-01-sca-nacos-discovery-demo02-provider</module>
+        <module>labx-01-sca-nacos-discovery-demo02-consumer</module>
+
+        <module>labx-01-sca-nacos-discovery-demo03-consumer</module>
     </modules>
 
 

@@ -123,7 +123,7 @@
 # Spring Cloud Alibaba 专栏
 
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
-* 《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》
+* [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
 * 《芋道 Spring Cloud 声明式调用 OpenFeign 入门》
 * 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
 * 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
@@ -145,7 +145,7 @@
 ## 服务调用
 
 * 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
-* 《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》
+* [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
 * 《芋道 Spring Cloud 声明式调用 OpenFeign 入门》
 
 ## 服务容错
