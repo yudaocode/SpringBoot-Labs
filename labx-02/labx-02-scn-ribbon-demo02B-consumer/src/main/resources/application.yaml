@@ -9,10 +9,3 @@ spring:
 
 server:
   port: 28080 # 服务器端口。默认为 8080
-
-# 设置 Ribbon 客户端的自定义配置
-#ribbon:
-#  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-demo-provider:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 负载均衡规则全类名
