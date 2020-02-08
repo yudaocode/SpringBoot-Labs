@@ -9,3 +9,9 @@ spring:
 
 server:
   port: 28080 # 服务器端口。默认为 8080
+
+#demo-provider:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#ribbon:
+#  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

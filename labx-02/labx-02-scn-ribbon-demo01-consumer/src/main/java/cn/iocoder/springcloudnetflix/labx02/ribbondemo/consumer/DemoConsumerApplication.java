@@ -43,9 +43,6 @@ public class DemoConsumerApplication {
             // 获得服务 `demo-provider` 的一个实例
             ServiceInstance instance = loadBalancerClient.choose("demo-provider");
             // 发起调用
-            if (instance == null) {
-                throw new IllegalStateException("获取不到实例");
-            }
             String targetUrl = instance.getUri() + "/echo?name=" + name;
             String response = restTemplate.getForObject(targetUrl, String.class);
             // 返回结果
