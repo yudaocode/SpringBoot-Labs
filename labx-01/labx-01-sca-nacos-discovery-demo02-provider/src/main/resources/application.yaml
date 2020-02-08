@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo-provider # Spring 应用名
+
+server:
+  port: 18080 # 服务器端口。默认为 8080

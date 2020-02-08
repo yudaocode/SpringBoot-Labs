@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-application # 应用名
+
+nacos:
+  # Nacos 配置中心的配置项，对应 NacosDiscoveryProperties 配置类
+  discovery:
+    server-addr: 127.0.0.1:18848 # Nacos 服务器地址
+    auto-register: true # 是否自动注册到 Nacos 中。默认为 false。
+    namespace: # 使用的 Nacos 的命名空间，默认为 null。
+    register:
+      service-name: ${spring.application.name} # 注册到 Nacos 的服务名
+      group-name: DEFAULT_GROUP # 使用的 Nacos 服务分组，默认为 DEFAULT_GROUP。
+      cluster-name: # 集群名，默认为空。

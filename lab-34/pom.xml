@@ -20,7 +20,8 @@
         <module>lab-34-actuator-demo-auditevents</module>
         <module>lab-34-actuator-demo-custom-endpoint</module>
         <module>lab-34-actuator-demo-security</module>
-    </modules>
 
+        <module>lab-34-actuator-test</module>
+    </modules>
 
 </project>

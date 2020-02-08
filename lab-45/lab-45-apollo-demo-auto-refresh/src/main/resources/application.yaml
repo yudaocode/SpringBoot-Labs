@@ -1,0 +1,13 @@
+server:
+  port: 7070 # 避免和本地的 Apollo Portal 端口冲突
+
+app:
+  id: demo-application # 使用的 Apollo 的项目（应用）编号
+apollo:
+  meta: http://127.0.0.1:8080 # Apollo Meta Server 地址
+  bootstrap:
+    enabled: true # 是否开启 Apollo 配置预加载功能。默认为 false。
+    eagerLoad:
+      enable: true # 是否开启 Apollo 支持日志级别的加载时机。默认为 false。
+    namespaces: application # 使用的 Apollo 的命名空间，默认为 application。
+

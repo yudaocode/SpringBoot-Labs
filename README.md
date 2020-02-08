@@ -13,18 +13,29 @@
 
 让我们一起愉快的挖坑，挖深坑，哇哈哈。
 
+## 打好基础
+
+* [《芋道 Spring Boot 快速入门》](http://www.iocoder.cn/Spring-Boot/quick-start/?github)
+* [《芋道 Spring Boot 自动配置原理》](http://www.iocoder.cn/Spring-Boot/autoconfigure/?github) 对应 [lab-47](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-47)
+
+## 开发工具
+
+* [《芋道 Spring Boot 热部署入门》](http://www.iocoder.cn/Spring-Boot/hot-swap/?github) 对应 [lab-48](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-48)
+* [《芋道 Spring Boot 消除冗余代码 Lombok 入门》](http://www.iocoder.cn/Spring-Boot/Lombok/?github) 对应 [lab-49](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-49)
+* 《芋道 Spring Boot 对象转换 MapStruct 入门》计划中...
+
 ## Web 开发
 
-* [《芋道 Spring Boot SpringMVC 入门》](http://www.iocoder.cn/Spring-Boot/SpringMVC/?github) 对应 [lab-23](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-23) 。
-* [《芋道 Spring Boot WebFlux 入门》](http://www.iocoder.cn/Spring-Boot/WebFlux/?github) 对应 [lab-27](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-27) 。
-* [《芋道 Spring Boot 分布式 Session 入门》](http://www.iocoder.cn/Spring-Boot/Distributed-Session/?github) 对应 [lab-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-26) 。
-* [《芋道 Spring Boot API 接口文档 Swagger 入门》](http://www.iocoder.cn/Spring-Boot/Swagger/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24) 。
-* [《芋道 Spring Boot 参数校验 Validation 入门》](http://www.iocoder.cn/Spring-Boot/Validation/?github) 对应 [lab-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-22) 。
-* [《芋道 Spring Boot WebSocket 入门》](http://www.iocoder.cn/Spring-Boot/WebSocket/?github) 对应 [lab-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-25) 。
+* [《芋道 Spring Boot SpringMVC 入门》](http://www.iocoder.cn/Spring-Boot/SpringMVC/?github) 对应 [lab-23](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-23)
+* [《芋道 Spring Boot WebFlux 入门》](http://www.iocoder.cn/Spring-Boot/WebFlux/?github) 对应 [lab-27](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-27)
+* [《芋道 Spring Boot 分布式 Session 入门》](http://www.iocoder.cn/Spring-Boot/Distributed-Session/?github) 对应 [lab-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-26)
+* [《芋道 Spring Boot API 接口文档 Swagger 入门》](http://www.iocoder.cn/Spring-Boot/Swagger/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
+* [《芋道 Spring Boot 参数校验 Validation 入门》](http://www.iocoder.cn/Spring-Boot/Validation/?github) 对应 [lab-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-22)
+* [《芋道 Spring Boot WebSocket 入门》](http://www.iocoder.cn/Spring-Boot/WebSocket/?github) 对应 [lab-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-25)
 
 ## RPC 开发
 
-* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30) 。
+* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * 《芋道 Spring Boot Motan 入门》计划中...
 * 《芋道 Spring Boot WebService 入门》计划中...
 * 《芋道 Spring Boot SOFARPC 入门》计划中...
@@ -33,62 +44,111 @@
 
 ## 数据访问
 
-* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11) 。
-* [《芋道 Spring Boot 缓存 Cache 入门》](http://www.iocoder.cn/Spring-Boot/Cache/?github) 对应 [lab-21](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-21) 。
-* [《芋道 Spring Boot 数据库连接池入门》](http://www.iocoder.cn/Spring-Boot/datasource-pool/?github) 对应 [lab-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-19) 。
-* [《芋道 Spring Boot MyBatis 入门》](http://www.iocoder.cn/Spring-Boot/MyBatis/?github) 对应 [lab-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-12) 。
-* [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13) 。
-* [《芋道 Spring Boot JdbcTemplate 入门》](http://www.iocoder.cn/Spring-Boot/JdbcTemplate/?github) 对应 [lab-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-14) 。
-* [《芋道 Spring Boot Elasticsearch 入门》](http://www.iocoder.cn/Spring-Boot/Elasticsearch/?github) 对应 [lab-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-15) 。
-* [《芋道 Spring Boot MongoDB 入门》](http://www.iocoder.cn/Spring-Boot/MongoDB/?github) 对应 [lab-16](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-16) 。
-* [《芋道 Spring Boot 多数据源（读写分离）入门》](http://www.iocoder.cn/Spring-Boot/dynamic-datasource/?github) 对应 [lab-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-17) 。
-* [《芋道 Spring Boot 分库分表入门》](http://www.iocoder.cn/Spring-Boot/sharding-datasource/?github) 对应 [lab-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-18) 。
-* [《芋道 Spring Boot 数据库版本管理入门》](http://www.iocoder.cn/Spring-Boot/database-version-control/?github) 对应 [lab-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-20) 。
+* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11)
+* [《芋道 Spring Boot 缓存 Cache 入门》](http://www.iocoder.cn/Spring-Boot/Cache/?github) 对应 [lab-21](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-21)
+* [《芋道 Spring Boot 数据库连接池入门》](http://www.iocoder.cn/Spring-Boot/datasource-pool/?github) 对应 [lab-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-19)
+* [《芋道 Spring Boot MyBatis 入门》](http://www.iocoder.cn/Spring-Boot/MyBatis/?github) 对应 [lab-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-12)
+* [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13)
+* [《芋道 Spring Boot JdbcTemplate 入门》](http://www.iocoder.cn/Spring-Boot/JdbcTemplate/?github) 对应 [lab-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-14)
+* [《芋道 Spring Boot Elasticsearch 入门》](http://www.iocoder.cn/Spring-Boot/Elasticsearch/?github) 对应 [lab-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-15)
+* [《芋道 Spring Boot MongoDB 入门》](http://www.iocoder.cn/Spring-Boot/MongoDB/?github) 对应 [lab-16](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-16)
+* [《芋道 Spring Boot 多数据源（读写分离）入门》](http://www.iocoder.cn/Spring-Boot/dynamic-datasource/?github) 对应 [lab-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-17)
+* [《芋道 Spring Boot 分库分表入门》](http://www.iocoder.cn/Spring-Boot/sharding-datasource/?github) 对应 [lab-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-18)
+* [《芋道 Spring Boot 数据库版本管理入门》](http://www.iocoder.cn/Spring-Boot/database-version-control/?github) 对应 [lab-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-20)
 
 ## 安全控制
 
-* [《芋道 Spring Boot 安全框架 Spring Security 入门》](http://www.iocoder.cn/Spring-Boot/Spring-Security/?github) 对应 [lab-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-01) 。
-* [《芋道 Spring Boot 授权框架 Spring Security OAuth2 入门》](http://www.iocoder.cn/Spring-Security/OAuth2-learning/?github) 对应 [lab-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-02) 。
-* [《芋道 Spring Boot 安全框架 Shiro 入门》](http://www.iocoder.cn/Spring-Boot/Shiro/?github) 对应 [lab-33](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-33) 。
+* [《芋道 Spring Boot 安全框架 Spring Security 入门》](http://www.iocoder.cn/Spring-Boot/Spring-Security/?github) 对应 [lab-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-01)
+* [《芋道 Spring Boot 授权框架 Spring Security OAuth2 入门》](http://www.iocoder.cn/Spring-Security/OAuth2-learning/?github) 对应 [lab-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-02)
+* [《芋道 Spring Boot 安全框架 Shiro 入门》](http://www.iocoder.cn/Spring-Boot/Shiro/?github) 对应 [lab-33](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-33)
 
 ## 定时任务与异步任务
 
-* [《芋道 Spring Boot 定时任务入门》](http://www.iocoder.cn/Spring-Boot/Job/?github) 对应 [lab-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-28) 。
-* [《芋道 Spring Boot 异步任务入门》](http://www.iocoder.cn/Spring-Boot/Async-Job/?github) 对应 [lab-29](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-29) 。
+* [《芋道 Spring Boot 定时任务入门》](http://www.iocoder.cn/Spring-Boot/Job/?github) 对应 [lab-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-28)
+* [《芋道 Spring Boot 异步任务入门》](http://www.iocoder.cn/Spring-Boot/Async-Job/?github) 对应 [lab-29](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-29)
 
 ## 消息队列
 
-* [《芋道 Spring Boot 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 对应 [lab-31](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-31) 。
-* [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03) 。
-* [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04) 。
-* [《芋道 Spring Boot 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Boot/ActiveMQ/?github) 对应 [lab-32](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-32) 。
+* [《芋道 Spring Boot 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 对应 [lab-31](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-31)
+* [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03)
+* [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04)
+* [《芋道 Spring Boot 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Boot/ActiveMQ/?github) 对应 [lab-32](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-32)
+
+## 配置中心
+
+* [《芋道 Spring Boot 配置文件入门》](http://www.iocoder.cn/Spring-Boot/config-file/?github) 对应 [lab-43](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-43)
+* [《芋道 Spring Boot 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Boot/config-apollo/?github) 对应 [lab-45](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-45)
+* [《芋道 Spring Boot 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Boot/config-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44)
+
+## 注册中心
+
+* [《芋道 Spring Boot 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Boot/registry-nacos/?github) 对应 [lab-44](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-44)
+
+## 持续交付
+
+* [《芋道 Spring Boot 持续交付 Jenkins 入门》](http://www.iocoder.cn/Spring-Boot/Jenkins/?github) 对应 [lab-41](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-41)
+* [《芋道 Spring Boot 单元测试 Test 入门》](http://www.iocoder.cn/Spring-Boot/Unit-Test/?github) 对应 [lab-42](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-42)
+* 《芋道 Spring Boot 容器 Docker 入门》计划中...
+
+## 服务容错
+
+* [《芋道 Spring Boot 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Boot/Sentinel/?github) 对应 [lab-46](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-46)
+* 《芋道 Spring Boot 服务容错 Hystrix 入门》计划中...
 
 ## 监控管理
 
-* [《芋道 Spring Boot 监控端点 Actuator 入门》](http://www.iocoder.cn/Spring-Boot/Actuator/?github) 对应 [lab-34](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-34) 。
-* [《芋道 Spring Boot 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Boot/Admin/?github) 对应 [lab-35](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-35) 。
-* [《芋道 Spring Boot 监控平台 Prometheus + Grafana 入门》](http://www.iocoder.cn/Spring-Boot/Prometheus-and-Grafana/?github) 对应 [lab-36](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-36) 。
+* [《芋道 Spring Boot 监控端点 Actuator 入门》](http://www.iocoder.cn/Spring-Boot/Actuator/?github) 对应 [lab-34](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-34)
+* [《芋道 Spring Boot 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Boot/Admin/?github) 对应 [lab-35](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-35)
+* [《芋道 Spring Boot 监控平台 Prometheus + Grafana 入门》](http://www.iocoder.cn/Spring-Boot/Prometheus-and-Grafana/?github) 对应 [lab-36](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-36)
+* 《芋道 Spring Boot 监控平台 CAT 入门》计划中...
 
 ## 日志管理
 
-* [《芋道 Spring Boot 日志集成 Logging 入门》](http://www.iocoder.cn/Spring-Boot/Logging/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37) 。
-* [《芋道 Spring Boot 日志平台 ELK + Filebeat 入门》](http://www.iocoder.cn/Spring-Boot/ELK/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
+* [《芋道 Spring Boot 日志集成 Logging 入门》](http://www.iocoder.cn/Spring-Boot/Logging/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37)
+* [《芋道 Spring Boot 日志平台 ELK + Filebeat 入门》](http://www.iocoder.cn/Spring-Boot/ELK/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38)
 
 ## 链路追踪
 
-* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37) 。
-* [《芋道 Spring Boot 链路追踪 Zipkin 入门》](http://www.iocoder.cn/Spring-Boot/Zipkin/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
-* [《芋道 Spring Boot 链路追踪 Pinpoint 入门》](http://www.iocoder.cn/Spring-Boot/Pinpoint/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38) 。
+* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-39)
+* [《芋道 Spring Boot 链路追踪 Zipkin 入门》](http://www.iocoder.cn/Spring-Boot/Zipkin/?github) 对应 [lab-40](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-40)
+* 《芋道 Spring Boot 链路追踪 Pinpoint 入门》计划中...
+* 《芋道 Spring Boot 链路追踪 Elastic APM 入门》计划中...
 
 ## 性能测试
 
-* [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05) 。
-* [《性能测试 —— SpringMVC、Webflux 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringMVC-Webflux-benchmark/?github) 对应 [lab-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-06) 。
-* [《性能测试 —— Spring Cloud Gateway、Zuul 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringCloudGateway-Zuul-benchmark/?github) 对应 [lab-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-07) 。
+* [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05)
+* [《性能测试 —— SpringMVC、Webflux 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringMVC-Webflux-benchmark/?github) 对应 [lab-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-06)
+* [《性能测试 —— Spring Cloud Gateway、Zuul 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringCloudGateway-Zuul-benchmark/?github) 对应 [lab-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-07)
 
-# Spring Cloud 入门
+# Spring Cloud Alibaba 专栏
 
-未来可期，不要着急。
+* [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
+* [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
+* 《芋道 Spring Cloud 声明式调用 OpenFeign 入门》
+* 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
+* 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
+* 《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》
+* 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》
+* 《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》
+* 《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》
+* 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》
+* 《芋道 Spring Cloud 链路追踪 Sleuth 入门》
+* 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
+* TODO 监控
+
+# Spring Cloud 专栏
+
+## 注册中心
+
+* [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
+
+## 服务调用
+
+* 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
+* [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
+* 《芋道 Spring Cloud 声明式调用 OpenFeign 入门》
+
+## 服务容错
 
 ---------
 
@@ -102,7 +162,7 @@ WEB 容器，后续优化掉
 
 # lab-08
 
-简单测试，Tomcat + Redis 提供最小接口，看看 QPS 。
+简单测试，Tomcat + Redis 提供最小接口，看看 QPS
 
 # lab-9
 

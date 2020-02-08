@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-application-mysql
+
+  # datasource 数据源配置内容
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/lab-39-mysql?useSSL=false&useUnicode=true&characterEncoding=UTF-8&statementInterceptors=brave.mysql.TracingStatementInterceptor&zipkinServiceName=demo-db-mysql
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:

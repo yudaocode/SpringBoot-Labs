@@ -20,6 +20,13 @@
         <module>lab-39-elasticsearch</module>
         <module>lab-39-elasticsearch-jest</module>
         <module>lab-39-rocketmq</module>
+        <module>lab-39-kafka</module>
+        <module>lab-39-rabbitmq-demo</module>
+        <module>lab-39-activemq</module>
+        <module>lab-39-logback</module>
+        <module>lab-39-trace-annotations</module>
+        <module>lab-39-opentracing</module>
+        <module>lab-39-async</module>
     </modules>
 
 </project>
