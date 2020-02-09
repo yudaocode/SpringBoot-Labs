@@ -15,15 +15,9 @@ server:
   port: 28080 # 服务器端口。默认为 8080
 
 ribbon:
-  ConnectTimeout: 1
-  ReadTimeout: 1
-  restclient:
-    enabled: true
-
-demo-provider:
-  ribbon:
-    ConnectTimeout: 1
-    ReadTimeout: 1
-    OkToRetryOnAllOperations: true
-    MaxAutoRetriesNextServer: 1
-    MaxAutoRetries: 1
+#  okhttp:
+#    enabled: true # 设置使用 OkHttp，对应 OkHttpRibbonConfiguration 配置类
+#  restclient:
+#    enabled: true # 设置使用 Jersey Client，对应 RestClientRibbonConfiguration 配置类
+  httpclient:
+    enabled: true # 设置使用 Apache HttpClient，对应 HttpClientRibbonConfiguration 配置类
