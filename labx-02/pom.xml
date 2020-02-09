@@ -19,6 +19,8 @@
         <module>labx-02-scn-ribbon-demo02B-consumer</module>
 
         <module>labx-02-scn-ribbon-demo03-consumer</module>
+
+        <module>labx-02-scn-ribbon-demo04-consumer</module>
     </modules>
 
 </project>
