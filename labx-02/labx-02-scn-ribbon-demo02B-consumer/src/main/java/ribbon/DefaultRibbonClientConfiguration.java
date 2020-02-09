@@ -5,7 +5,7 @@ import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration(proxyBeanMethods = false)
+@Configuration
 public class DefaultRibbonClientConfiguration {
 
     @Bean
