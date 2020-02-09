@@ -13,5 +13,5 @@ server:
 ribbon:
   # Ribbon 饥饿加载配置项，对应 RibbonEagerLoadProperties 配置类
   eager-load:
-    enabled: false # 是否开启饥饿加载。默认为 false 不开启
+    enabled: true # 是否开启饥饿加载。默认为 false 不开启
     clients: user-provider # 开启饥饿加载的 Ribbon 客户端名字。如果有多个，使用 , 逗号分隔。
