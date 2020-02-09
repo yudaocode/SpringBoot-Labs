@@ -22,8 +22,9 @@
 
         <module>labx-02-scn-ribbon-demo04-consumer</module>
 
-<!--        <module>labx-02-scn-ribbon-demo05-provider</module>-->
         <module>labx-02-scn-ribbon-demo05-consumer</module>
+
+        <module>labx-02-scn-ribbon-demo06-consumer</module>
     </modules>
 
 </project>
