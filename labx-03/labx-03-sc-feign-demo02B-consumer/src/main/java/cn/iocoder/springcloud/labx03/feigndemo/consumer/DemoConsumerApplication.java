@@ -1,5 +1,6 @@
 package cn.iocoder.springcloud.labx03.feigndemo.consumer;
 
+import cn.iocoder.springcloud.labx03.feigndemo.consumer.config.DefaultFeignClientConfiguration;
 import cn.iocoder.springcloud.labx03.feigndemo.consumer.feign.DemoProviderFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -17,7 +18,7 @@ public class DemoConsumerApplication {
     }
 
     @Configuration
-    @EnableFeignClients
+    @EnableFeignClients(defaultConfiguration = DefaultFeignClientConfiguration.class)
     public class OpenFeignConfiguration {
 
     }

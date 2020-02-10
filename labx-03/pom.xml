@@ -14,6 +14,9 @@
     <modules>
         <module>labx-03-sc-feign-demo01-provider</module>
         <module>labx-03-sc-feign-demo01-consumer</module>
+
+        <module>labx-03-sc-feign-demo02A-consumer</module>
+        <module>labx-03-sc-feign-demo02B-consumer</module>
     </modules>
 
 </project>
