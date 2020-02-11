@@ -17,6 +17,10 @@
 
         <module>labx-03-sc-feign-demo02A-consumer</module>
         <module>labx-03-sc-feign-demo02B-consumer</module>
+
+        <module>labx-03-sc-feign-demo03-provider-api</module>
+        <module>labx-03-sc-feign-demo03-provider</module>
+        <module>labx-03-sc-feign-demo03-consumer</module>
     </modules>
 
 </project>
