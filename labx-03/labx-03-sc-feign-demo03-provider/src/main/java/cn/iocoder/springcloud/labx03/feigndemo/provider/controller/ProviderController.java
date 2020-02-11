@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-    public class ProviderController implements ProviderService {
+public class ProviderController implements ProviderService {
 
     private Logger logger = LoggerFactory.getLogger(ProviderController.class);
 
