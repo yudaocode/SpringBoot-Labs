@@ -4,6 +4,7 @@ import cn.iocoder.springcloud.labx03.feigndemo.consumer.dto.DemoDTO;
 import cn.iocoder.springcloud.labx03.feigndemo.consumer.feign.DemoProviderFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -24,8 +25,7 @@ public class ConsumerController {
     }
 
     @GetMapping("/test_get_demo")
-    public DemoDTO testGetDemo(DemoDTO demoDTO) {
-        int type = 3;
+    public DemoDTO testGetDemo(@RequestParam("type") int type, DemoDTO demoDTO) {
         // 方式一
         if (type == 1) {
             return demoProviderFeignClient.getDemo(demoDTO);
