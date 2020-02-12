@@ -126,10 +126,10 @@
 * [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 * 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
-* 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
-* 《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》
+* [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
 * 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》
 * 《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》
+* 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
 * 《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》
 * 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》
 * 《芋道 Spring Cloud 链路追踪 Sleuth 入门》
@@ -149,6 +149,8 @@
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 
 ## 服务容错
+
+* [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
 
 ---------
 
