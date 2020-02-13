@@ -122,18 +122,21 @@
 
 # Spring Cloud Alibaba 专栏
 
+## Spring Cloud Alibaba 全家桶
+
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
-* [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
-* [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 * 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
-* 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》
 * 《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》
 * 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
+
+## 推荐搭配食用
+
+* [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
+* [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 * 《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》
-* 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》
-* 《芋道 Spring Cloud 链路追踪 Sleuth 入门》
 * 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
+
 * TODO 监控
 
 # Spring Cloud 专栏
@@ -151,6 +154,22 @@
 ## 服务容错
 
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
+* 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》
+
+## API 网关
+
+* 《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》
+* 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》
+
+## 配置中心
+
+* 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
+* 《芋道 Spring Cloud 配置中心 Apollo 入门》
+
+## 链路追踪
+
+* 《芋道 Spring Cloud 链路追踪 Sleuth 入门》
+* 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
 
 ---------
 
