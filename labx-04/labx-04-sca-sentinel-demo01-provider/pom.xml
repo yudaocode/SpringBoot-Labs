@@ -10,6 +10,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>labx-04-sca-sentinel-demo01-provider</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
@@ -54,7 +66,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-
+        <!-- 引入 Spring Cloud Alibaba Sentinel 相关依赖，使用 Sentinel 提供服务保障，并实现对其的自动配置 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
