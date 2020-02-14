@@ -1,3 +1,6 @@
+server:
+  port: 18080
+
 spring:
   application:
     name: demo-provider
@@ -15,12 +18,18 @@ spring:
       datasource:
         ds1:
           # 对应 DataSourcePropertiesConfiguration 类
-          nacos:
-            server-addr: 127.0.0.1:8848 # Nacos 服务器地址
-#            data-id: demo-application-flow-rule
-#            data-id: demo-provider-flow-rule
-            namespace: # Nacos 命名空间
-            group-id: DEFAULT_GROUP # Nacos 分组
-            data-id: ${spring.application.name}-flow-rule # Nacos 配置集编号
+          apollo:
+            namespaceName: application # Nacos 命名空间
+            flowRulesKey: sentinel.flow-rule
             data-type: json # 数据格式
             rule-type: FLOW # 规则类型
+
+app:
+  id: demo-application # 使用的 Apollo 的项目（应用）编号
+apollo:
+  meta: http://127.0.0.1:8080 # Apollo Meta Server 地址
+  bootstrap:
+    enabled: true # 是否开启 Apollo 配置预加载功能。默认为 false。
+    eagerLoad:
+      enable: true # 是否开启 Apollo 支持日志级别的加载时机。默认为 false。
+    namespaces: application # 使用的 Apollo 的命名空间，默认为 application。
