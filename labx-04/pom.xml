@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>labx-04-sca-sentinel-demo01-provider</module>
+        <module>labx-04-sca-sentinel-nacos-provider</module>
     </modules>
 
 
