@@ -24,6 +24,7 @@ public class DemoProviderFeignClientFallbackFactory implements FallbackFactory<D
 
 	@Override
 	public DemoProviderFeignClientFallback create(Throwable throwable) {
+	    // 可以给 DemoProviderFeignClientFallback 提供具体的 throwable 异常
 		return new DemoProviderFeignClientFallback(throwable);
 	}
 

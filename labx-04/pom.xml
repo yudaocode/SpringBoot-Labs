@@ -19,6 +19,7 @@
         <module>labx-04-sca-sentinel-file-provider</module>
 
         <module>labx-04-sca-sentinel-feign-consumer</module>
+        <module>labx-04-sca-sentinel-resttemplate-consumer</module>
     </modules>
 
 
