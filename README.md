@@ -128,7 +128,8 @@
 * 《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
 * 《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》
-* 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
+* [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05)
+* 《芋道 Spring Cloud Alibaba 分布式事务 Seata 入门》
 
 ## 推荐搭配食用
 
@@ -163,7 +164,7 @@
 
 ## 配置中心
 
-* 《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》
+* [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05)
 * 《芋道 Spring Cloud 配置中心 Apollo 入门》
 
 ## 链路追踪
