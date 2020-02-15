@@ -14,3 +14,7 @@ spring:
 
 server:
   port: 8081
+
+resttemplate:
+  sentinel:
+    enabled: true # 开启 Sentinel 对 Feign 的支持，默认为 true 开启。
