@@ -13,9 +13,12 @@
     <packaging>pom</packaging>
     <modules>
         <module>labx-04-sca-sentinel-demo01-provider</module>
+
         <module>labx-04-sca-sentinel-nacos-provider</module>
         <module>labx-04-sca-sentinel-apollo-provider</module>
         <module>labx-04-sca-sentinel-file-provider</module>
+
+        <module>labx-04-sca-sentinel-feign-consumer</module>
     </modules>
 
 
