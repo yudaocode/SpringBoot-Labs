@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>labx-05-sca-nacos-config-demo</module>
+        <module>labx-05-sca-nacos-config-demo-profiles</module>
     </modules>
 
 
