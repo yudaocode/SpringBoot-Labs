@@ -14,6 +14,7 @@
     <modules>
         <module>labx-05-sca-nacos-config-demo</module>
         <module>labx-05-sca-nacos-config-demo-profiles</module>
+        <module>labx-05-sca-nacos-config-auto-refresh</module>
     </modules>
 
 
