@@ -2,11 +2,8 @@ package cn.iocoder.springcloudalibaba.labx5.nacosdemo.controller;
 
 import cn.iocoder.springcloudalibaba.labx5.nacosdemo.config.OrderProperties;
 import com.alibaba.fastjson.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +12,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/demo")
-@RefreshScope
 public class DemoController {
 
     @Autowired
@@ -29,9 +25,9 @@ public class DemoController {
         return orderProperties;
     }
 
-    @Value(value = "${order.pay-timeout-seconds}")
+    @Value(value = "${order.pay-timeout-seconds}") // @NacosValue(value = "${order.pay-timeout-seconds}")
     private Integer payTimeoutSeconds;
-    @Value(value = "${order.create-frequency-seconds}")
+    @Value(value = "${order.create-frequency-seconds}") // @NacosValue(value = "${order.create-frequency-seconds}")
     private Integer createFrequencySeconds;
 
     /**
@@ -41,13 +37,6 @@ public class DemoController {
     public Map<String, Object> test02() {
         return new JSONObject().fluentPut("payTimeoutSeconds", payTimeoutSeconds)
                 .fluentPut("createFrequencySeconds", createFrequencySeconds);
-    }
-
-    private Logger logger = LoggerFactory.getLogger(getClass());
-
-    @GetMapping("/logger")
-    public void logger() {
-        logger.debug("[logger][测试一下]");
     }
 
 }
