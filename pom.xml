@@ -63,6 +63,7 @@
         <module>labx-03</module>
         <module>labx-04</module>
         <module>labx-05</module>
+        <module>labx-06</module>
     </modules>
 
 </project>
