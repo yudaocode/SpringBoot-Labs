@@ -9,7 +9,7 @@ spring:
         demo01-input:
           destination: DEMO-TOPIC-01 # 目的地。这里使用 RocketMQ Topic
           content-type: application/json # 内容格式。这里使用 JSON
-          group: demo01-consumer-group-DEMO-TOPIC-01 # 消费者分组
+          group: demo01-consumer-group-DEMO-TOPIC-01-X # 消费者分组
       # Spring Cloud Stream RocketMQ 配置项
       rocketmq:
         # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
