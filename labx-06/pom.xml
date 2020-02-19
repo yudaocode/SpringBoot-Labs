@@ -14,6 +14,8 @@
     <modules>
         <module>labx-06-sca-stream-rocketmq-consumer-demo</module>
         <module>labx-06-sca-stream-rocketmq-producer-demo</module>
+
+        <module>labx-06-sca-stream-rocketmq-consumer-retry</module>
     </modules>
 
 
