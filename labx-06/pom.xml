@@ -17,6 +17,7 @@
 
         <module>labx-06-sca-stream-rocketmq-consumer-retry</module>
         <module>labx-06-sca-stream-rocketmq-consumer-error-handler</module>
+        <module>labx-06-sca-stream-rocketmq-consumer-broadcasting</module>
     </modules>
 
 
