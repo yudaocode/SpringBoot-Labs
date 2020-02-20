@@ -7,7 +7,6 @@ spring:
       # Binding 配置项，对应 BindingProperties Map
       bindings:
         demo01-output:
-#          destination: DEMO-TOPIC-01 # 目的地。这里使用 RocketMQ Topic
           destination: TOPIC_YUNAI_TEST # 目的地。这里使用 RocketMQ Topic
           content-type: application/json # 内容格式。这里使用 JSON
       # Spring Cloud Stream RocketMQ 配置项

@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <!-- Spring Boot 示例 -->
         <module>lab-01</module>
         <module>lab-02</module>
         <module>lab-03</module>
@@ -58,12 +59,15 @@
         <module>lab-47</module>
         <module>lab-48</module>
         <module>lab-49</module>
+        <!-- Spring Cloud 示例 -->
         <module>labx-01</module>
         <module>labx-02</module>
         <module>labx-03</module>
         <module>labx-04</module>
         <module>labx-05</module>
         <module>labx-06</module>
+        <module>labx-07</module>
+        <!-- Dubbo 示例 -->
     </modules>
 
 </project>
