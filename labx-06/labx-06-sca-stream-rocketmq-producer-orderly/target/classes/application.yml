@@ -9,8 +9,9 @@ spring:
         demo01-output:
           destination: DEMO-TOPIC-01 # 目的地。这里使用 RocketMQ Topic
           content-type: application/json # 内容格式。这里使用 JSON
+          # Producer 配置项，对应 ProducerProperties 类
           producer:
-            partitionKeyExpression: payload['id']
+            partition-key-expression: payload['id'] # 分区 key 表达式。该表达式基于 Spring EL，从消息中获得分区 key。
       # Spring Cloud Stream RocketMQ 配置项
       rocketmq:
         # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类

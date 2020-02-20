@@ -6,7 +6,6 @@ import org.apache.rocketmq.common.message.MessageConst;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.stream.binder.BinderHeaders;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -53,17 +52,18 @@ public class Demo01Controller {
 
     @GetMapping("/send_orderly")
     public boolean sendOrderly() {
-        // 创建 Message
-        Demo01Message message = new Demo01Message()
-                .setId(new Random().nextInt());
-        // 创建 Spring Message 对象
-        Message<Demo01Message> springMessage = MessageBuilder.withPayload(message)
-                .setHeader(BinderHeaders.PARTITION_HEADER, 1)
-                .build();
-        // 发送消息
-        boolean sendResult = mySource.demo01Output().send(springMessage);
-        logger.info("[sendDelay][发送消息完成, 结果 = {}]", sendResult);
-        return sendResult;
+        // 发送 3 条相同 id 的消息
+        int id = new Random().nextInt();
+        for (int i = 0; i < 3; i++) {
+            // 创建 Message
+            Demo01Message message = new Demo01Message().setId(id);
+            // 创建 Spring Message 对象
+            Message<Demo01Message> springMessage = MessageBuilder.withPayload(message)
+                    .build();
+            // 发送消息
+            mySource.demo01Output().send(springMessage);
+        }
+        return true;
     }
 
 }

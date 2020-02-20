@@ -22,6 +22,7 @@ spring:
             consumer:
               enabled: true # 是否开启消费，默认为 true
               broadcasting: false # 是否使用广播消费，默认为 false 使用集群消费
+              orderly: true # 是否顺序消费，默认为 false 并发消费。
 
 server:
   port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者
