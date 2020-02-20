@@ -26,6 +26,9 @@
         <module>labx-06-sca-stream-rocketmq-consumer-filter</module>
 
         <module>labx-06-sca-stream-rocketmq-producer-transaction</module>
+
+        <module>labx-06-sca-stream-rocketmq-producer-actuator</module>
+        <module>labx-06-sca-stream-rocketmq-consumer-actuator</module>
     </modules>
 
 

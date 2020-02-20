@@ -16,7 +16,7 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
 
     @Override
     public RocketMQLocalTransactionState executeLocalTransaction(Message msg, Object arg) {
-        // 从消息 Header 中解析到 args 参数
+        // 从消息 Header 中解析到 args 参数，并使用 JSON 反序列化
         Demo01Controller.Args args = JSON.parseObject(msg.getHeaders().get("args", String.class),
                 Demo01Controller.Args.class);
         // ... local transaction process, return rollback, commit or unknown
