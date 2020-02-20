@@ -17,4 +17,9 @@ public class Demo01Consumer {
         logger.info("[onMessage][线程编号:{} 消息内容：{}]", Thread.currentThread().getId(), message);
     }
 
+//    @StreamListener(value = MySink.DEMO01_INPUT, condition = "headers['rocketmq_TAGS'] == 'yunai'")
+//    public void onMessage(@Payload Demo01Message message) {
+//        logger.info("[onMessage][线程编号:{} 消息内容：{}]", Thread.currentThread().getId(), message);
+//    }
+
 }
