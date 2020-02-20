@@ -22,6 +22,8 @@
 
         <module>labx-06-sca-stream-rocketmq-producer-orderly</module>
         <module>labx-06-sca-stream-rocketmq-consumer-orderly</module>
+
+        <module>labx-06-sca-stream-rocketmq-consumer-filter</module>
     </modules>
 
 
