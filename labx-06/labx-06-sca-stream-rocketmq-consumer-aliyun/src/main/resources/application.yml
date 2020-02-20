@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: demo-consumer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-input:
+          destination: TOPIC_YUNAI_TEST # 目的地。这里使用 RocketMQ Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+          group: GID_PRODUCER_GROUP_YUNAI_TEST # 消费者分组
+      # Spring Cloud Stream RocketMQ 配置项
+      rocketmq:
+        # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
+        binder:
+          name-server: onsaddr.mq-internet-access.mq-internet.aliyuncs.com:80 # RocketMQ Namesrv 地址
+          access-key: ${ALIYUN_ACCESS_KEY} # 阿里云账号 AccessKey
+          secret-key: ${ALIYUN_SECRET_KEY} # 阿里云账号 SecretKey
+        # RocketMQ 自定义 Binding 配置项，对应 RocketMQBindingProperties Map
+        bindings:
+          demo01-input:
+            # RocketMQ Consumer 配置项，对应 RocketMQConsumerProperties 类
+            consumer:
+              enabled: true # 是否开启消费，默认为 true
+              broadcasting: false # 是否使用广播消费，默认为 false 使用集群消费
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者
