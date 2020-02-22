@@ -1,7 +1,7 @@
 package cn.iocoder.springcloudalibaba.labx7.consumerdemo.feign;
 
-import cn.iocoder.springcloudalibaba.labx7.consumerdemo.dto.UserAddDTO;
-import cn.iocoder.springcloudalibaba.labx7.consumerdemo.dto.UserDTO;
+import cn.iocoder.springcloudalibaba.labx7.dto.UserAddDTO;
+import cn.iocoder.springcloudalibaba.labx7.dto.UserDTO;
 import com.alibaba.cloud.dubbo.annotation.DubboTransported;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -74,6 +74,12 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>cn.iocoder.springboot.labs</groupId>
+            <artifactId>labx-07-sca-dubbo-demo02-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>

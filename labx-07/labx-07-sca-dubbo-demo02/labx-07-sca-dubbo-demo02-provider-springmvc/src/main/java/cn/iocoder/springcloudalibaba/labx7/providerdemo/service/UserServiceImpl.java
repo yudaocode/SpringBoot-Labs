@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 @org.apache.dubbo.config.annotation.Service(version = "1.0.0", protocol = {"dubbo"})
 @RestController
-@RequestMapping("/user")
 public class UserServiceImpl implements UserService {
 
     @Override
-    @GetMapping("/get")
+    @GetMapping("/user/get")
     public UserDTO get(@RequestParam("id") Integer id) {
         return new UserDTO().setId(id)
                 .setName("没有昵称：" + id)
@@ -19,7 +18,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @PostMapping("/add")
+    @PostMapping("/user/add")
     public Integer add(@RequestBody UserAddDTO addDTO) {
         return (int) (System.currentTimeMillis() / 1000); // 嘿嘿，随便返回一个 id
     }
