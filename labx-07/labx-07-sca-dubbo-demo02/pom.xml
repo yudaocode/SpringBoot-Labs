@@ -18,6 +18,7 @@
         <module>labx-07-sca-dubbo-demo02-provider-springmvc</module>
 
         <module>labx-07-sca-dubbo-demo02-consumer</module>
+        <module>labx-07-sca-dubbo-demo02-consumer-feign</module>
     </modules>
 
 

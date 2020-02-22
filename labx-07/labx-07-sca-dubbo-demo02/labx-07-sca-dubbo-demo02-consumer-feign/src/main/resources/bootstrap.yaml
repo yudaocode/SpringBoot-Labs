@@ -7,8 +7,8 @@ dubbo:
 spring:
   application:
     name: demo-connsumer
-  main:
-    allow-bean-definition-overriding: true
+#  main:
+#    allow-bean-definition-overriding: true
   cloud:
     nacos:
       discovery:

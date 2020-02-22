@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProviderApplication {
+public class RestProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class);
+        SpringApplication.run(RestProviderApplication.class);
     }
 
 }

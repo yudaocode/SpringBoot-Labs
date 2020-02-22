@@ -82,7 +82,7 @@
         <!-- 引入定义的 Dubbo API 接口 -->
         <dependency>
             <groupId>cn.iocoder.springboot.labs</groupId>
-            <artifactId>labx-07-sca-dubbo-demo01-api</artifactId>
+            <artifactId>labx-07-sca-dubbo-demo02-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -90,7 +90,7 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <exclusions> <!-- TODO 补充 -->
+            <exclusions> <!-- TODO 补充 https://stackoverflow.com/questions/48432225/nested-exception-is-java-lang-nosuchmethoderror-javax-ws-rs-clienterrorexceptio -->
                 <exclusion>
                     <artifactId>jsr311-api</artifactId>
                     <groupId>javax.ws.rs</groupId>

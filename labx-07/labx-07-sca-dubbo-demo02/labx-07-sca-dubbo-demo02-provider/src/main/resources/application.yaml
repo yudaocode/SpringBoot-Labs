@@ -10,7 +10,7 @@ dubbo:
       port: 9090
       server: netty
   registry:
-    address: spring-cloud://localhost
+    address: spring-cloud://127.0.0.1:8848
 
 spring:
   main:
