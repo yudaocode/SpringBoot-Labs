@@ -4,7 +4,7 @@ import cn.iocoder.springcloudalibaba.labx7.api.UserService;
 import cn.iocoder.springcloudalibaba.labx7.dto.UserAddDTO;
 import cn.iocoder.springcloudalibaba.labx7.dto.UserDTO;
 
-@org.apache.dubbo.config.annotation.Service(version = "1.0.0")
+@org.apache.dubbo.config.annotation.Service(protocol = "dubbo", version = "1.0.0")
 public class UserServiceImpl implements UserService {
 
     @Override
