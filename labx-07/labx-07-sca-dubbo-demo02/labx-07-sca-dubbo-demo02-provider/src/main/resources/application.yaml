@@ -1,0 +1,17 @@
+dubbo:
+  scan:
+    base-packages: cn.iocoder.springcloudalibaba.labx7.providerdemo.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+    rest:
+      name: rest
+      port: 9090
+      server: netty
+  registry:
+    address: spring-cloud://localhost
+
+spring:
+  main:
+    web-application-type: NONE

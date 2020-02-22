@@ -1,0 +1,12 @@
+dubbo:
+  scan:
+    base-packages: cn.iocoder.springcloudalibaba.labx7.providerdemo.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: spring-cloud://localhost
+
+server:
+  port: 18080
