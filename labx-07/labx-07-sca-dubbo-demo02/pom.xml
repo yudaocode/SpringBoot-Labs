@@ -13,9 +13,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>labx-07-sca-dubbo-demo02-api</module>
+
         <module>labx-07-sca-dubbo-demo02-provider</module>
         <module>labx-07-sca-dubbo-demo02-provider-springmvc</module>
-<!--        <module>labx-07-sca-dubbo-demo01-consumer</module>-->
+
+        <module>labx-07-sca-dubbo-demo02-consumer</module>
     </modules>
 
 

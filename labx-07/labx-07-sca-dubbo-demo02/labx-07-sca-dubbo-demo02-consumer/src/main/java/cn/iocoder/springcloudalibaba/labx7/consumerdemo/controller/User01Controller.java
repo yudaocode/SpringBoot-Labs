@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/demo")
-public class UserController {
+@RequestMapping("/user01")
+public class User01Controller {
 
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0.0", protocol = "dubbo")
     private UserService userService;
 
     @GetMapping("/get")
