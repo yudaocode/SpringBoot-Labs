@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(name = "demo-provider")
 @DubboTransported(protocol = "dubbo")
-//@DubboTransported(protocol = "rest")
+// @DubboTransported(protocol = "rest")
 public interface UserFeignClient {
 
     /**

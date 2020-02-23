@@ -10,12 +10,12 @@ import javax.ws.rs.core.MediaType;
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
 @org.apache.dubbo.config.annotation.Service(version = "1.0.0", protocol = {"dubbo", "rest"})
-@Path("/")
+@Path("/user")
 public class UserServiceImpl implements UserService {
 
     @Override
     @GET
-    @Path("/user/get")
+    @Path("/get")
     @Produces(APPLICATION_JSON_VALUE)
     public UserDTO get(@QueryParam("id") Integer id) {
         return new UserDTO().setId(id)
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @POST
-    @Path("/user/add")
+    @Path("/add")
     @Consumes(MediaType.APPLICATION_JSON)
     public Integer add(UserAddDTO addDTO) {
         return (int) (System.currentTimeMillis() / 1000); // 嘿嘿，随便返回一个 id

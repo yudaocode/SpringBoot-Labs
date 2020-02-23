@@ -77,7 +77,8 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <exclusions> <!-- TODO 补充 https://stackoverflow.com/questions/48432225/nested-exception-is-java-lang-nosuchmethoderror-javax-ws-rs-clienterrorexceptio -->
+            <exclusions>
+                <!-- 参考文章 https://stackoverflow.com/questions/48432225/nested-exception-is-java-lang-nosuchmethoderror-javax-ws-rs-clienterrorexceptio -->
                 <exclusion>
                     <artifactId>jsr311-api</artifactId>
                     <groupId>javax.ws.rs</groupId>
@@ -91,7 +92,7 @@
             <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
 
-        <!-- 引入 Dubbo Rest 协议相关的 依赖 -->
+        <!-- 引入 Dubbo Rest 协议相关的依赖 -->
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-netty4</artifactId>
