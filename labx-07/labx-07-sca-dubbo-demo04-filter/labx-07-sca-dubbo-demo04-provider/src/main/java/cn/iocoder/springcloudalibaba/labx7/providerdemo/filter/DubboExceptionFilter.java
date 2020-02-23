@@ -34,20 +34,21 @@ public class DubboExceptionFilter extends ListenableFilter {
             // 发生异常，并且非泛化调用
             if (appResponse.hasException() && GenericService.class != invoker.getInterface()) {
                 Throwable exception = appResponse.getException();
-                // 如果是 ServiceException 异常，直接返回
+                // <1> 如果是 ServiceException 异常，直接返回
                 if (exception instanceof ServiceException) {
                     return;
                 }
-                // 如果是参数校验的 ConstraintViolationException 异常，则封装返回
+                // <2> 如果是参数校验的 ConstraintViolationException 异常，则封装返回
                 if (exception instanceof ConstraintViolationException) {
                     appResponse.setException(this.handleConstraintViolationException((ConstraintViolationException) exception));
                     return;
                 }
             }
-            // 其它情况，继续使用父类处理
+            // <3> 其它情况，继续使用父类处理
             super.onResponse(appResponse, invoker, invocation);
         }
 
+        // 将 ConstraintViolationException 转换成 ServiceException
         private ServiceException handleConstraintViolationException(ConstraintViolationException ex) {
             // 拼接错误
             StringBuilder detailMessage = new StringBuilder();
@@ -60,8 +61,7 @@ public class DubboExceptionFilter extends ListenableFilter {
                 detailMessage.append(constraintViolation.getMessage());
             }
             // 返回异常
-            return new ServiceException(ServiceExceptionEnum.INVALID_REQUEST_PARAM_ERROR,
-                    detailMessage.toString());
+            return new ServiceException(ServiceExceptionEnum.INVALID_REQUEST_PARAM_ERROR, detailMessage.toString());
         }
 
     }
