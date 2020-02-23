@@ -160,7 +160,7 @@
 
 ## API 网关
 
-* 《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》
+* [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
 * 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》
 
 ## 配置中心
