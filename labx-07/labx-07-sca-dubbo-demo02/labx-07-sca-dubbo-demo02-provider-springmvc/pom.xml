@@ -50,12 +50,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- TODO xxx -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
         <!-- 引入定义的 Dubbo API 接口 -->
         <dependency>
             <groupId>cn.iocoder.springboot.labs</groupId>
@@ -73,6 +67,12 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-dubbo</artifactId>
+        </dependency>
+
+        <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 

@@ -10,13 +10,13 @@ import javax.ws.rs.core.MediaType;
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
 @org.apache.dubbo.config.annotation.Service(version = "1.0.0", protocol = {"dubbo", "rest"})
+@Path("/")
 public class UserServiceImpl implements UserService {
 
     @Override
     @GET
     @Path("/user/get")
     @Produces(APPLICATION_JSON_VALUE)
-    @Consumes(MediaType.APPLICATION_JSON)
     public UserDTO get(@QueryParam("id") Integer id) {
         return new UserDTO().setId(id)
                 .setName("没有昵称：" + id)
