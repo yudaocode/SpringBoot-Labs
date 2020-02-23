@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
 
-    @Reference(protocol = "dubbo", version = "1.0.0", validation = "false")
+    @Reference(protocol = "dubbo", version = "1.0.0", validation = "true")
     private UserService userService;
 
     @GetMapping("/get")
