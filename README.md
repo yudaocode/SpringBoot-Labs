@@ -1,3 +1,14 @@
+一个涵盖四个主流技术栈的**正经**仓库：
+* [《Spring Boot 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-boot-%E4%B8%93%E6%A0%8F)
+* [《Spring Cloud Alibaba 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-cloud-alibaba-%E4%B8%93%E6%A0%8F)
+* [《Spring Cloud 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-cloud-%E4%B8%93%E6%A0%8F)
+* [《Dubbo 专栏》](https://github.com/YunaiV/SpringBoot-Labs#Dubbo-%E4%B8%93%E6%A0%8F)
+
+作为一个热爱**深夜**撸码的 18 岁秃头的可爱小男孩，希望大佬能够**一间三连**。
+
+![一间三连](http://static.iocoder.cn/github-star.jpg)
+
+~~交流~~**装逼群**，请点击[传送门](http://www.iocoder.cn/mall-user-group/?vip&gitee)，进行引导加入。**亲，一间三连啊**
 
 # Spring Boot 专栏
 
@@ -136,9 +147,8 @@
 
 * [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
-* 《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》
+* [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
 * 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
-
 * TODO 监控
 
 # Spring Cloud 专栏
@@ -178,6 +188,11 @@
 
 * 《芋道 Spring Cloud 链路追踪 Sleuth 入门》
 * 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
+
+# Dubbo 专栏
+
+* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
+* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 
 ---------
 
