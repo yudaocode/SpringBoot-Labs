@@ -15,6 +15,8 @@
         <module>labx-08-sc-gateway-demo01</module>
         <module>labx-08-sc-gateway-demo02-registry</module>
 
+        <module>labx-08-sc-gateway-demo03-config-apollo</module>
+
         <module>labx-08-sc-user-service</module>
     </modules>
 
