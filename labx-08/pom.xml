@@ -18,6 +18,8 @@
         <module>labx-08-sc-gateway-demo03-config-apollo</module>
         <module>labx-08-sc-gateway-demo03-config-nacos</module>
 
+        <module>labx-08-sc-gateway-demo04</module>
+
         <module>labx-08-sc-user-service</module>
     </modules>
 
