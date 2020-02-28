@@ -24,6 +24,8 @@
 
         <module>labx-08-sc-gateway-demo06-rate-limiter</module>
 
+        <module>labx-08-sc-gateway-demo07-hystrix</module>
+
         <module>labx-08-sc-user-service</module>
     </modules>
 
