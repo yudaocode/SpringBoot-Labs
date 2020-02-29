@@ -31,6 +31,8 @@
 
         <module>labx-08-sc-gateway-demo08-custom-global-filter</module>
 
+        <module>labx-08-sc-gateway-demo09-actuator</module>
+
         <module>labx-08-sc-user-service</module>
     </modules>
 
