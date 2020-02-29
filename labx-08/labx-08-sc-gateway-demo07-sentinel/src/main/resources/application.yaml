@@ -1,0 +1,37 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+        - id: yudaoyuanma # 路由的编号
+          uri: http://www.iocoder.cn # 路由到的目标地址
+          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+            - Path=/**
+
+    sentinel:
+      eager: true # 是否饥饿加载。默认为 false 关闭
+      transport:
+        dashboard: localhost:7070
+      filter:
+        enabled: true
+      datasource:
+        ds2.file:
+          file: "classpath: sentinel-gw-flow.json"
+          ruleType: gw-flow
+        ds1.file:
+          file: "classpath: sentinel-gw-api-group.json"
+          ruleType: gw-api-group
+      scg:
+        order: -100
+        fallback:
+          mode: response
+          response-status: 444
+          response-body: 123
+
