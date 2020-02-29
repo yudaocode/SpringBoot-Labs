@@ -15,9 +15,9 @@ public class CustomBlockRequestHandler implements BlockRequestHandler {
 
     @Override
     public Mono<ServerResponse> handleRequest(ServerWebExchange exchange, Throwable ex) {
-        return ServerResponse.status(HttpStatus.TOO_MANY_REQUESTS)
-                .contentType(MediaType.TEXT_PLAIN)
-                .bodyValue(DEFAULT_BLOCK_MSG_PREFIX + ex.getClass().getSimpleName());
+        return ServerResponse.status(HttpStatus.TOO_MANY_REQUESTS) // 状态码
+                .contentType(MediaType.TEXT_PLAIN) // 内容类型为 text/plain 纯文本
+                .bodyValue(DEFAULT_BLOCK_MSG_PREFIX + ex.getClass().getSimpleName()); // 错误提示
     }
 
 }

@@ -19,17 +19,17 @@ spring:
       eager: true # 是否饥饿加载。默认为 false 关闭
       transport:
         dashboard: localhost:7070 # 是否饥饿加载。默认为 false 关闭
-      # 数据源的配置项
-      datasource:
-        ds1.file:
-          file: "classpath: sentinel-gw-flow.json"
-          ruleType: gw-flow
-        ds2.file:
-          file: "classpath: sentinel-gw-api-group.json"
-          ruleType: gw-api-group
+#      # 数据源的配置项
+#      datasource:
+#        ds1.file:
+#          file: "classpath: sentinel-gw-flow.json"
+#          ruleType: gw-flow
+#        ds2.file:
+#          file: "classpath: sentinel-gw-api-group.json"
+#          ruleType: gw-api-group
       # Sentinel 对 Spring Cloud Gateway 的专属配置项，对应 SentinelGatewayProperties 类
       scg:
-        order:
+        order: -2147483648 # 过滤器顺序，默认为 -2147483648 最高优先级
         fallback:
           mode: # fallback 模式，目前有三种：response、redirect、空
           # 专属 response 模式
