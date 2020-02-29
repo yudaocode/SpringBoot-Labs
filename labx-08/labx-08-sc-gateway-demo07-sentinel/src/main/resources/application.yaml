@@ -18,20 +18,23 @@ spring:
     sentinel:
       eager: true # 是否饥饿加载。默认为 false 关闭
       transport:
-        dashboard: localhost:7070
-      filter:
-        enabled: true
+        dashboard: localhost:7070 # 是否饥饿加载。默认为 false 关闭
+      # 数据源的配置项
       datasource:
-        ds2.file:
+        ds1.file:
           file: "classpath: sentinel-gw-flow.json"
           ruleType: gw-flow
-        ds1.file:
+        ds2.file:
           file: "classpath: sentinel-gw-api-group.json"
           ruleType: gw-api-group
+      # Sentinel 对 Spring Cloud Gateway 的专属配置项，对应 SentinelGatewayProperties 类
       scg:
-        order: -100
+        order:
         fallback:
-          mode: response
-          response-status: 444
-          response-body: 123
-
+          mode: # fallback 模式，目前有三种：response、redirect、空
+          # 专属 response 模式
+          response-status: 429 # 响应状态码，默认为 429
+          response-body: 你被 block 了... # 响应内容，默认为空
+          content-type: application/json # 内容类型，默认为 application/json
+          # 专属 redirect 模式
+          redirect: http://www.baidu.com
