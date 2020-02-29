@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-08-sc-gateway-demo06-rate-limiter</artifactId>
+    <artifactId>labx-08-sc-gateway-demo08-custom-global-filter</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -56,12 +56,24 @@
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
-        <!-- 实现对 Spring Data Redis 的自动化配置 -->
+        <!-- 引入 Spring Cloud Alibaba Nacos Discovery 相关依赖，将 Nacos 作为注册中心，并实现对其的自动配置 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
+        <!-- 引入定义的 Dubbo API 接口 -->
+<!--        <dependency>-->
+<!--            <groupId>cn.iocoder.springboot.labs</groupId>-->
+<!--            <artifactId>labx-07-sca-dubbo-demo02-api</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
+        <!-- 引入 Spring Cloud Alibaba Dubbo 相关依赖，实现呢 Dubbo 进行远程调用，并实现对其的自动配置 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-dubbo</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-08-sc-gateway-demo06-rate-limiter</artifactId>
+    <artifactId>labx-08-sc-gateway-demo01-test</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -55,13 +55,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
-
-        <!-- 实现对 Spring Data Redis 的自动化配置 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
     </dependencies>
 
 </project>
