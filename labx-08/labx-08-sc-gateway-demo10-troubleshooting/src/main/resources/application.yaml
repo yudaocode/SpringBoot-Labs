@@ -21,20 +21,15 @@ spring:
           predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
             - Path=/oschina
           filters: # 过滤器，对请求进行拦截，实现自定义的功能，对应 FilterDefinition 数组
-            - StripPrefix=100
-#            - StripPrefix=200
-#      default-filters:
-#        - StripPrefix=1
-#        - StripPrefix=2
-#        - StripPrefix=3
+            - StripPrefix=1
 
-#      httpserver:
-#        wiretap: true
-#      httpclient:
-#        wiretap: true
+      # Reactor Netty 相关配置
+      httpserver:
+        wiretap: true
+      httpclient:
+        wiretap: true
 
 logging:
   level:
     reactor.netty: DEBUG
     org.springframework.cloud.gateway: TRACE
-#    org.springframework.web.reactive: TRACE
