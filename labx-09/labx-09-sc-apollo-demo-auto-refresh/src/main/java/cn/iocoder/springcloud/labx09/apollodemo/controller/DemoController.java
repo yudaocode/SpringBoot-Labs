@@ -1,6 +1,8 @@
 package cn.iocoder.springcloud.labx09.apollodemo.controller;
 
 import cn.iocoder.springcloud.labx09.apollodemo.config.OrderProperties;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +15,8 @@ import java.util.Map;
 @RestController
 @RequestMapping("/demo")
 public class DemoController {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private OrderProperties orderProperties;
@@ -39,6 +43,11 @@ public class DemoController {
         result.put("payTimeoutSeconds", payTimeoutSeconds);
         result.put("createFrequencySeconds", createFrequencySeconds);
         return result;
+    }
+
+    @GetMapping("/logger")
+    public void logger() {
+        logger.debug("[logger][测试一下]");
     }
 
 }
