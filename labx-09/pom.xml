@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>labx-09-sc-apollo-demo</module>
+        <module>labx-09-sc-apollo-demo-profiles</module>
         <module>labx-09-sc-apollo-demo-auto-refresh</module>
     </modules>
 
