@@ -16,6 +16,7 @@
         <module>labx-09-sc-apollo-demo-profiles</module>
         <module>labx-09-sc-apollo-demo-auto-refresh</module>
         <module>labx-09-sc-apollo-demo-jasypt</module>
+        <module>labx-09-sc-apollo-demo-multi</module>
     </modules>
 
 </project>
