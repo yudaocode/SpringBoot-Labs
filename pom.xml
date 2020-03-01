@@ -68,6 +68,7 @@
         <module>labx-06</module>
         <module>labx-07</module>
         <module>labx-08</module>
+        <module>labx-09</module>
         <!-- Dubbo 示例 -->
     </modules>
 
