@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>labx-09</artifactId>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>labx-09-sc-apollo-demo</module>
+        <module>labx-09-sc-apollo-demo-auto-refresh</module>
+    </modules>
 
 </project>
