@@ -4,26 +4,24 @@ spring:
   cloud:
     # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
     stream:
+      # Binder 配置项，对应 BinderProperties Map
+      binders:
+        rabbit001:
+          type: rabbit # 设置 Binder 的类型
+          environment: # 设置 Binder 的环境配置
+            # 如果是 RabbitMQ 类型的时候，则对应的是 RabbitProperties 类
+            spring:
+              rabbitmq:
+                host: 127.0.0.1 # RabbitMQ 服务的地址
+                port: 5672 # RabbitMQ 服务的端口
+                username: guest # RabbitMQ 服务的账号
+                password: guest # RabbitMQ 服务的密码
       # Binding 配置项，对应 BindingProperties Map
       bindings:
         demo01-output:
-          destination: mqTestDefault # 目的地。这里使用 RabbitMQ Topic
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 RabbitMQ Exchange
           content-type: application/json # 内容格式。这里使用 JSON
-#      rabbit:
-#        binder:
-#          connection-name-prefix:
-#      # Spring Cloud Stream RocketMQ 配置项
-#      rocketmq:
-#        # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
-#        binder:
-#          name-server: 127.0.0.1:9876 # RocketMQ Namesrv 地址
-#        # RocketMQ 自定义 Binding 配置项，对应 RocketMQBindingProperties Map
-#        bindings:
-#          demo01-output:
-#            # RocketMQ Producer 配置项，对应 RocketMQProducerProperties 类
-#            producer:
-#              group: test # 生产者分组
-#              sync: true # 是否同步发送消息，默认为 false 异步。
+          binder: rabbit001 # 设置使用的 Binder 名字
 
 server:
   port: 18080
