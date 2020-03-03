@@ -182,8 +182,8 @@
 ## 消息队列
 
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
-* 《芋道 Spring Cloud Alibaba 消息队列 RabbitMQ 入门》
-* 《芋道 Spring Cloud Alibaba 消息队列 Kafka 入门》
+* [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [lab10-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
+* 《芋道 Spring Cloud 消息队列 Kafka 入门》
 
 ## 链路追踪
 

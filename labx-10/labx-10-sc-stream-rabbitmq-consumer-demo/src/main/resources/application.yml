@@ -21,7 +21,7 @@ spring:
         demo01-input:
           destination: DEMO-TOPIC-01 # 目的地。这里使用 RabbitMQ Exchange
           content-type: application/json # 内容格式。这里使用 JSON
-          group: demo01-consumer-group-DEMO-TOPIC-02 # 消费者分组
+          group: demo01-consumer-group-DEMO-TOPIC-01 # 消费者分组
           binder: rabbit001  # 设置使用的 Binder 名字
 
 server:
