@@ -14,6 +14,11 @@
     <modules>
         <module>labx-10-sc-stream-rabbitmq-producer-demo</module>
         <module>labx-10-sc-stream-rabbitmq-consumer-demo</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-delay</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-delay</module>
+
+        <module>labx-10-sc-stream-rabbitmq-consumer-retry</module>
     </modules>
 
 
