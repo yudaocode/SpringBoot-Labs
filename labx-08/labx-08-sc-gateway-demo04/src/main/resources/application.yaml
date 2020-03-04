@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+        - id: user-service-prod
+          uri: http://www.iocoder.cn
+          predicates:
+            - Path=/**
+            - Weight=user-service, 90
+        - id: user-service-canary
+          uri: https://www.oschina.net
+          predicates:
+            - Path=/**
+            - Weight=user-service, 10

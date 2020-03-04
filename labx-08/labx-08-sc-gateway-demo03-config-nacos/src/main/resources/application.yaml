@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+
+  cloud:
+    # Spring Cloud Gateway 配置项，全部配置在 Nacos 中
+#    gateway:
+
+    # Nacos 作为注册中心的配置项
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址

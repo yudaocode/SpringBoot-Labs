@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: demo-consumer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+      binders:
+        rabbit001:
+          type: rabbit # 设置 Binder 的类型
+          environment: # 设置 Binder 的环境配置
+            # 如果是 RabbitMQ 类型的时候，则对应的是 RabbitProperties 类
+            spring:
+              rabbitmq:
+                host: 127.0.0.1 # RabbitMQ 服务的地址
+                port: 5672 # RabbitMQ 服务的端口
+                username: guest # RabbitMQ 服务的账号
+                password: guest # RabbitMQ 服务的密码
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-input:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 RabbitMQ Exchange
+          content-type: application/json # 内容格式。这里使用 JSON
+          group: demo01-consumer-group-DEMO-TOPIC-01 # 消费者分组
+          binder: rabbit001  # 设置使用的 Binder 名字
+          # Consumer 配置项，对应 ConsumerProperties 类
+          consumer:
+            max-attempts: 3 # 重试次数，默认为 3 次。
+            back-off-initial-interval: 3000 # 重试间隔的初始值，单位毫秒，默认为 1000
+            back-off-multiplier: 2.0 # 重试间隔的递乘系数，默认为 2.0
+            back-off-max-interval: 10000 # 重试间隔的最大值，单位毫秒，默认为 10000
+      # RabbitMQ 自定义 Binding 配置项，对应 RabbitBindingProperties Map
+      rabbit:
+        bindings:
+          demo01-input:
+            # RabbitMQ Consumer 配置项，对应 RabbitConsumerProperties 类
+            consumer:
+              auto-bind-dlq: true # 是否创建对应的死信队列，并进行绑定，默认为 false。
+              republish-to-dlq: true # 消费失败的消息发布到对应的死信队列时，是否添加异常异常的信息到消息头
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者
