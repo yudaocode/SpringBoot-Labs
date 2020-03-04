@@ -4,7 +4,7 @@
 * [《Spring Cloud 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-cloud-%E4%B8%93%E6%A0%8F)
 * [《Dubbo 专栏》](https://github.com/YunaiV/SpringBoot-Labs#Dubbo-%E4%B8%93%E6%A0%8F)
 
-作为一个热爱**深夜**撸码的 18 岁秃头的可爱小男孩，希望大佬能够**一键三连**。
+作为一个热爱**深夜**撸码的 18 岁头发茂密的可爱小男孩，希望大佬能够**一键三连**。
 
 ![一间三连](http://static.iocoder.cn/github-star.jpg)
 
