@@ -15,7 +15,7 @@ public class Demo01Consumer {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @StreamListener(MySink.DEMO01_INPUT)
+    @StreamListener(MySink.DEMO01_INPUT) // 对应 DEMO-TOPIC-01.demo01-consumer-group-DEMO-TOPIC-01
     public void onMessage(@Payload Demo01Message message) {
         logger.info("[onMessage][线程编号:{} 消息内容：{}]", Thread.currentThread().getId(), message);
         // <X> 注意，此处抛出一个 RuntimeException 异常，模拟消费失败

@@ -18,8 +18,20 @@
         <module>labx-10-sc-stream-rabbitmq-producer-delay</module>
         <module>labx-10-sc-stream-rabbitmq-consumer-delay</module>
 
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为消费者-->
         <module>labx-10-sc-stream-rabbitmq-consumer-retry</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为消费者-->
         <module>labx-10-sc-stream-rabbitmq-consumer-error-handler</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为消费者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-broadcasting</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-partitioning</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-partitioning</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为消费者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-concurrency</module>
     </modules>
 
 
