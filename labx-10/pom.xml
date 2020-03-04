@@ -19,6 +19,7 @@
         <module>labx-10-sc-stream-rabbitmq-consumer-delay</module>
 
         <module>labx-10-sc-stream-rabbitmq-consumer-retry</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-error-handler</module>
     </modules>
 
 
