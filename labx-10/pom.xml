@@ -38,6 +38,9 @@
 
         <module>labx-10-sc-stream-rabbitmq-producer-transaction</module>
         <!--搭配 <module>labx-10-sc-stream-rabbitmq-consumer-demo</module> 作为消费者-->
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-ack</module>
     </modules>
 
 
