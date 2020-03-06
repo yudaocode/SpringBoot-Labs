@@ -16,9 +16,8 @@ spring:
                 port: 5672 # RabbitMQ 服务的端口
                 username: guest # RabbitMQ 服务的账号
                 password: guest # RabbitMQ 服务的密码
-                publisherConfirms: true
-                publisherReturns: true
-                publisher-confirm-type: simple # 设置 Confirm 类型为 SIMPLE 。
+                publisher-returns: true # 设置消息是否回退，默认为 false
+                publisher-confirm-type: simple # 设置开启消息确认模型，默认为 null 不进行确认
       # Binding 配置项，对应 BindingProperties Map
       bindings:
         demo01-output:
@@ -26,14 +25,14 @@ spring:
           content-type: application/json # 内容格式。这里使用 JSON
           binder: rabbit001 # 设置使用的 Binder 名字
           producer:
-            errorChannelEnabled: true
+            error-channel-enabled: true # 是否开启异常 Channel，默认为 false 关闭
       # RabbitMQ 自定义 Binding 配置项，对应 RabbitBindingProperties Map
       rabbit:
         bindings:
           demo01-output:
             # RabbitMQ Producer 配置项，对应 RabbitProducerProperties 类
             producer:
-              confirmAckChannel: publisher-confirm
+              confirm-ack-channel: demo01-producer-confirm # 设置发送确认的 Channel，默认为 null
 
 server:
   port: 18080
