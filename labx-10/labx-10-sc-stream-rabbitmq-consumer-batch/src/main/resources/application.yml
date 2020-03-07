@@ -19,10 +19,13 @@ spring:
       # Binding 配置项，对应 BindingProperties Map
       bindings:
         demo01-input:
-          destination: DEMO-TOPIC-04 # 目的地。这里使用 RabbitMQ Exchange
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 RabbitMQ Exchange
           content-type: application/json # 内容格式。这里使用 JSON
           group: demo01-consumer-group-DEMO-TOPIC-01 # 消费者分组
           binder: rabbit001  # 设置使用的 Binder 名字
+          # Consumer 配置项，对应 ConsumerProperties 类
+          consumer:
+            batch-mode: true # 是否批量消费默认，默认为 false
 
 server:
   port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者

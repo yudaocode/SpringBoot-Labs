@@ -23,7 +23,7 @@ public class Demo01Controller {
     private MySource mySource;
 
     @GetMapping("/send_batch")
-    public boolean send() throws InterruptedException {
+    public boolean sendBatch() throws InterruptedException {
         // 发送 3 条消息，每条中间间隔 10 秒
         for (int i = 0; i < 3; i++) {
             // 创建 Message
@@ -36,7 +36,7 @@ public class Demo01Controller {
             mySource.demo01Output().send(springMessage);
 
             // 故意每条消息之间，隔离 10 秒
-            logger.info("[testSyncSend][发送编号：[{}] 发送成功]", message.getId());
+            logger.info("[sendBatch][发送编号：[{}] 发送成功]", message.getId());
             Thread.sleep(10 * 1000L);
         }
         return true;
