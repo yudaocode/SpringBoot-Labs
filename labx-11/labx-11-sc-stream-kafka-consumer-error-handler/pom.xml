@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-11-sc-stream-kafka-consumer-demo</artifactId>
+    <artifactId>labx-11-sc-stream-kafka-consumer-error-handler</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
