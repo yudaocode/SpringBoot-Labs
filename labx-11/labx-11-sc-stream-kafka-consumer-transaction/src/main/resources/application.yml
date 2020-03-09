@@ -25,7 +25,7 @@ spring:
             consumer:
               configuration:
                 isolation:
-                  level: read_committed
+                  level: read_committed # 读取已提交的消息
 
 server:
   port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者

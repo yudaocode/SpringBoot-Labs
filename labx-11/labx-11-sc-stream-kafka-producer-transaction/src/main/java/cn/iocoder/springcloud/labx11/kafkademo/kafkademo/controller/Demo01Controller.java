@@ -23,18 +23,6 @@ public class Demo01Controller {
     @Autowired
     private MySource mySource;
 
-    @GetMapping("/send")
-    public boolean send() {
-        // 创建 Message
-        Demo01Message message = new Demo01Message()
-                .setId(new Random().nextInt());
-        // 创建 Spring Message 对象
-        Message<Demo01Message> springMessage = MessageBuilder.withPayload(message)
-                .build();
-        // 发送消息
-        return mySource.demo01Output().send(springMessage);
-    }
-
     @Transactional
     @GetMapping("/send_transaction")
     public void sendTransaction() throws InterruptedException {

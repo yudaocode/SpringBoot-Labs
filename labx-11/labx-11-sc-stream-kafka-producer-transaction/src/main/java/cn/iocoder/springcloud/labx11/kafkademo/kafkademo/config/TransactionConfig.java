@@ -14,18 +14,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class TransactionConfig {
 
-//    @Bean
-//    public KafkaTransactionManager transactionManager(ProducerFactory<byte[], byte[]> producerFactory) {
-//        return new KafkaTransactionManager<>(producerFactory);
-//    }
-
     @Bean
     public PlatformTransactionManager transactionManager(BinderFactory binders) {
+        // 获得 Kafka ProducerFactory 对象
         ProducerFactory<byte[], byte[]> pf = ((KafkaMessageChannelBinder) binders.getBinder(null,
                 MessageChannel.class)).getTransactionalProducerFactory();
+        // 创建 KafkaTransactionManager 事务管理器
+        assert pf != null;
         return new KafkaTransactionManager<>(pf);
     }
-
-
 
 }

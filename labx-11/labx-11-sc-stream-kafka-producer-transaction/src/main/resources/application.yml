@@ -17,11 +17,11 @@ spring:
         binder:
           brokers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
           transaction:
-            transaction-id-prefix: demo. # TODO
+            transaction-id-prefix: demo. # 事务编号前缀
             producer:
               configuration:
-                retries: 1
-                acks: all
+                retries: 1 # 发送失败时，重试发送的次数
+                acks: all # 0-不应答。1-leader 应答。all-所有 leader 和 follower 应答。
         # Kafka 自定义 Binding 配置项，对应 KafkaBindingProperties Map
         bindings:
           demo01-output:
