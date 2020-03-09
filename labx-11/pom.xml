@@ -21,7 +21,11 @@
         <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
         <module>labx-11-sc-stream-kafka-consumer-error-handler</module>
 
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
         <module>labx-11-sc-stream-kafka-consumer-broadcasting</module>
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-concurrency</module>
     </modules>
 
 </project>
