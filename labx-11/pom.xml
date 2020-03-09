@@ -26,6 +26,13 @@
 
         <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
         <module>labx-11-sc-stream-kafka-consumer-concurrency</module>
+
+        <module>labx-11-sc-stream-kafka-producer-partitioning</module>
+        <module>labx-11-sc-stream-kafka-consumer-concurrency</module>
+        <module>labx-11-sc-stream-kafka-consumer-partitioning</module> <!-- 暂时没用到 -->
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-filter</module>
     </modules>
 
 </project>
