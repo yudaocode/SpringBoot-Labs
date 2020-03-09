@@ -1,0 +1,39 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+#        - id: yudaoyuanma # 路由的编号
+#          uri: http://www.iocoder.cn # 路由到的目标地址
+#          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+#            - Path=/blog
+#          filters:
+#            - StripPrefix=1
+#        - id: oschina # 路由的编号
+#          uri: https://www.oschina.net # 路由的目标地址
+#          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+#            - Path=/oschina
+#          filters: # 过滤器，对请求进行拦截，实现自定义的功能，对应 FilterDefinition 数组
+#            - StripPrefix=1
+        - id: yudaoyuanma # 路由的编号
+          uri: dubbo://demo-provider # 路由到的目标地址
+          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+            - Path=/user/**
+#          filters:
+#            - StripPrefix=1
+
+# Dubbo 配置项，对应 DubboConfigurationProperties 类
+dubbo:
+  # Dubbo 服务注册中心配置，对应 RegistryConfig 类
+  registry:
+    address: spring-cloud://127.0.0.1:8848 # 指定 Dubbo 服务注册中心的地址
+  # Spring Cloud Alibaba Dubbo 专属配置项，对应 DubboCloudProperties 类
+  cloud:
+    subscribed-services: demo-provider # 设置订阅的应用列表，默认为 * 订阅所有应用。

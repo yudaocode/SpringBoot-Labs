@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: demo-consumer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+#      binders:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-input:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 Kafka Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+          group: demo01-consumer-group # 消费者分组
+          # Consumer 配置项，对应 ConsumerProperties 类
+          consumer:
+            max-attempts: 3 # 重试次数，默认为 3 次。
+            back-off-initial-interval: 3000 # 重试间隔的初始值，单位毫秒，默认为 1000
+            back-off-multiplier: 2.0 # 重试间隔的递乘系数，默认为 2.0
+            back-off-max-interval: 10000 # 重试间隔的最大值，单位毫秒，默认为 10000
+      # Spring Cloud Stream Kafka 配置项
+      kafka:
+        # Kafka Binder 配置项，对应 KafkaBinderConfigurationProperties 类
+        binder:
+          brokers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+        # Kafka Binding 配置项，对应 KafkaBindingProperties 类
+        bindings:
+          demo01-input:
+            # Kafka Consumer 配置项，对应 KafkaConsumerProperties 类
+            consumer:
+              enable-dlq: true # 是否开启死信队列，默认为 false 关闭
+              dlq-name: # 死信队列名，默认为 `errors.{topicName}.{consumerGroup}`
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者
