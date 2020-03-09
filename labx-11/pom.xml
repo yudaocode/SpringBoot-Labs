@@ -33,6 +33,9 @@
 
         <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
         <module>labx-11-sc-stream-kafka-consumer-filter</module>
+
+        <module>labx-11-sc-stream-kafka-producer-transaction</module>
+        <module>labx-11-sc-stream-kafka-consumer-transaction</module>
     </modules>
 
 </project>
