@@ -23,7 +23,7 @@ public class Demo01Controller {
     private MySource mySource;
 
     @GetMapping("/send_batch")
-    public boolean sendTag() {
+    public boolean sendBatch() {
         for (int i = 0; i < 3; i++) {
             // 创建 Message
             int id = new Random().nextInt();
@@ -34,7 +34,7 @@ public class Demo01Controller {
                     .build();
             // 发送消息
             mySource.demo01Output().send(springMessage);
-            logger.info("[send_transaction][发送编号：[{}] 发送成功]", id);
+            logger.info("[send_batch][发送编号：[{}] 发送成功]", id);
         }
         return true;
     }
