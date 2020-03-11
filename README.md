@@ -175,6 +175,7 @@
 
 * [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05)
 * [《芋道 Spring Cloud 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Cloud/Apollo/?github) 对应 [labx-09](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-09)
+* [《芋道 Spring Cloud 配置中心 Spring Cloud Config 入门》](http://www.iocoder.cn/Spring-Cloud/Config/?github) 对应 [labx-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-12)
 
 ## 消息队列
 

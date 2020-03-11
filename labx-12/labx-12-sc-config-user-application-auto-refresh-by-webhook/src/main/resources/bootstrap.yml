@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: user-application
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      name: ${spring.application.name}
+      fail-fast: true # TODO

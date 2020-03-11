@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo-config-server
+  profiles:
+    active: git # TODO 采用的方案
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YunaiV/demo-config-server.git
+          search-paths: /
+#          username: ${CODING_USERNAME}
+#          password: ${CODING_PASSWORD}
+      label: master
