@@ -203,18 +203,21 @@
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
 * [《芋道 RocketMQ 源码解析系列》](http://www.iocoder.cn/categories/RocketMQ/?github)
 * [《性能测试 —— RocketMQ 基准测试》](http://www.iocoder.cn/Performance-Testing/RocketMQ-benchmark/?github)
+* [《RocketMQ 书单整理》](http://www.iocoder.cn/Books/RocketMQ-books-recommended/?github)
 
 ## RabbitMQ
 
 * [《RabbitMQ 安装部署》](http://www.iocoder.cn/RabbitMQ/install/?github)
 * [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04)
 * [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
+* [《RabbitMQ 书单整理》](http://www.iocoder.cn/Books/RabbitMQ-books-recommended/?github)
 
 ## Kafka
 
 * [《Kafka 安装部署》](http://www.iocoder.cn/Kafka/install/?github)
 * [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03)
 * [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
+* [《Kafka 书单整理》](http://www.iocoder.cn/Books/Kafka-books-recommended/?github)
 
 ## ActiveMQ
 
@@ -223,7 +226,6 @@
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
 
 ---------
-
 
 如下是草稿目录，未来需要整理下
 
