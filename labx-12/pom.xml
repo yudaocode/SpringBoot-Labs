@@ -14,11 +14,12 @@
 
     <modules>
         <module>labx-12-sc-config-server-demo</module>
-        <module>labx-12-sc-config-server-git</module>
-
         <module>labx-12-sc-config-user-application</module>
-        <module>labx-12-sc-config-user-application-auto-refresh-by-webhook</module>
 
+        <module>labx-12-sc-config-server-git</module>
+        <!-- 使用 <module>labx-12-sc-config-user-application</module> 作为 Client-->
+
+        <module>labx-12-sc-config-user-application-auto-refresh-by-webhook</module>
         <module>labx-12-sc-config-server-git-auto-refresh-by-webhook</module>
     </modules>
 
