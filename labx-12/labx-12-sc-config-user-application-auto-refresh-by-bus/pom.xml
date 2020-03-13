@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-12-sc-config-server-git-auto-refresh-by-webhook</artifactId>
+    <artifactId>labx-12-sc-config-user-application-auto-refresh-by-bus</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -48,16 +48,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 引入 Spring Cloud Stream Kafka 相关依赖，将 Kafka 作为消息队列，并实现对其的自动配置 -->
+        <!-- 引入 Spring Cloud Config Client 相关依赖，作为配置中心的客户端，并实现自动化配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
-        <!-- TODO 看看咋整 -->
+        <!-- 引入基于 RabbitMQ 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-monitor</artifactId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
     </dependencies>
 

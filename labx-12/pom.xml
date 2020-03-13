@@ -22,8 +22,8 @@
         <!-- 使用 <module>labx-12-sc-config-server-demo</module> 作为 Server-->
         <module>labx-12-sc-config-user-application-auto-refresh-by-actuator</module>
 
-<!--        <module>labx-12-sc-config-server-git-auto-refresh-by-webhook</module>-->
+        <module>labx-12-sc-config-server-git-auto-refresh-by-bus</module>
+        <module>labx-12-sc-config-user-application-auto-refresh-by-bus</module>
     </modules>
-
 
 </project>
