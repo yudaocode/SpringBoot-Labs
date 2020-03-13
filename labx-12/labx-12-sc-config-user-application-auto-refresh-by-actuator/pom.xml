@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-12-sc-config-user-application-auto-refresh-by-webhook</artifactId>
+    <artifactId>labx-12-sc-config-user-application-auto-refresh-by-actuator</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
