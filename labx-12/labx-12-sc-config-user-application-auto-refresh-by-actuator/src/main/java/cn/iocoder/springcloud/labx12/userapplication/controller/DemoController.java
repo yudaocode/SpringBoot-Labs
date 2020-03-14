@@ -1,6 +1,8 @@
 package cn.iocoder.springcloud.labx12.userapplication.controller;
 
 import cn.iocoder.springcloud.labx12.userapplication.config.OrderProperties;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -41,6 +43,13 @@ public class DemoController {
         result.put("payTimeoutSeconds", payTimeoutSeconds);
         result.put("createFrequencySeconds", createFrequencySeconds);
         return result;
+    }
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
+
+    @GetMapping("/logger")
+    public void logger() {
+        logger.debug("[logger][测试一下]");
     }
 
 }
