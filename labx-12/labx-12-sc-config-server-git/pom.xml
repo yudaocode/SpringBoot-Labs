@@ -49,4 +49,30 @@
         </dependency>
     </dependencies>
 
+<!--    <build>-->
+<!--        <resources>-->
+<!--            <resource>-->
+<!--                <directory>src/main/resources</directory>-->
+<!--                <filtering>false</filtering>-->
+<!--                <includes>-->
+<!--                    <include>*.keystore</include>-->
+<!--                    <include>*.yml</include>-->
+<!--                </includes>-->
+<!--            </resource>-->
+<!--        </resources>-->
+<!--    </build>-->
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resource</directory>
+                <includes>
+                    <include>**/*.yml</include> <!-- 将 .yml 后缀包含进去 -->
+                    <include>**/*.jks</include> <!-- 将 .jks 后缀包含进去 -->
+                </includes>
+                <filtering>false</filtering> <!-- 不进行过滤 -->
+            </resource>
+        </resources>
+    </build>
+
 </project>
