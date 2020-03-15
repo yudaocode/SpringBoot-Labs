@@ -41,4 +41,12 @@ public class DemoController {
         return result;
     }
 
+    @Value(value = "${order.create-frequency-seconds:''}")
+    private String xxPassword;
+
+    @GetMapping("/xx_password")
+    public String xxPassword() {
+        return xxPassword;
+    }
+
 }
