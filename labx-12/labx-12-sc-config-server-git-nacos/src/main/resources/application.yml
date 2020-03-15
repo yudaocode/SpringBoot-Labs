@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo-config-server
+
+  profiles:
+    active: git # 使用的 Spring Cloud Config Server 的存储器方案
+
+  # Spring Cloud Config 相关配置项
+  cloud:
+    config:
+      server:
+        # Spring Cloud Config Server 的 Git 存储器的配置项，对应 MultipleJGitEnvironmentProperties 类
+        git:
+          uri: https://github.com/YunaiV/demo-config-server.git # Git 仓库地址
+          search-paths: / # 读取文件的根地址
+          default-label: master # 使用的默认分支，默认为 master
+#          username: ${CODING_USERNAME} # 账号
+#          password: ${CODING_PASSWORD} # 密码
+
+    # Spring Cloud Nacos Discovery 相关配置项
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+        service: ${spring.application.name} # 注册到 Nacos 的服务名。默认值为 ${spring.application.name}。
