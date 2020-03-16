@@ -73,6 +73,7 @@
         <module>labx-10</module>
         <module>labx-11</module>
         <module>labx-12</module>
+        <module>labx-13</module>
 
         <!-- Dubbo 示例 -->
     </modules>
