@@ -145,7 +145,7 @@
 * [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
-* 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
+* [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocodere.cn/Spring-Cloud/SkyWalking/?github) 对应 [labx-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-14)
 * TODO 监控
 
 # Spring Cloud 专栏
@@ -186,8 +186,8 @@
 
 ## 链路追踪
 
-* 《芋道 Spring Cloud 链路追踪 Sleuth 入门》
-* 《芋道 Spring Cloud 链路追踪 SkyWalking 入门》
+* [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocodere.cn/Spring-Cloud/SkyWalking/?github) 对应 [labx-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-14)
+* [《芋道 Spring Cloud 链路追踪 Spring Cloud Sleuth》](http://www.iocodere.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github) 对应 [labx-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-13)
 
 # Dubbo 专栏
 
