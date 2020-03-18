@@ -18,6 +18,8 @@
         <module>labx-13-sc-sleuth-feign</module>
         <module>labx-13-sc-sleuth-springcloudgateway</module>
         <module>labx-13-sc-sleuth-dubbo</module>
+
+        <module>labx-13-sc-sleuth-db-mysql</module>
     </modules>
 
 
