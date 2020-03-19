@@ -22,6 +22,7 @@
         <module>labx-13-sc-sleuth-db-mysql</module>
         <module>labx-13-sc-sleuth-db-redis</module>
         <module>labx-13-sc-sleuth-db-mongodb</module>
+        <module>labx-13-sc-sleuth-db-elasticsearch</module>
     </modules>
 
 
