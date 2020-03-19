@@ -23,6 +23,9 @@
         <module>labx-13-sc-sleuth-db-redis</module>
         <module>labx-13-sc-sleuth-db-mongodb</module>
         <module>labx-13-sc-sleuth-db-elasticsearch</module>
+
+        <module>labx-13-sc-sleuth-mq-rabbitmq</module>
+        <module>labx-13-sc-sleuth-mq-kafka</module>
     </modules>
 
 

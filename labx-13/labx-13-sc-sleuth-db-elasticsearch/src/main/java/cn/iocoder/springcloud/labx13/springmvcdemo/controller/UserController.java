@@ -17,7 +17,7 @@ public class UserController {
 
     @GetMapping("/get")
     public String get(@RequestParam("id") Integer id) {
-        this.findById(1);
+        this.findById(id);
         return "success";
     }
 
