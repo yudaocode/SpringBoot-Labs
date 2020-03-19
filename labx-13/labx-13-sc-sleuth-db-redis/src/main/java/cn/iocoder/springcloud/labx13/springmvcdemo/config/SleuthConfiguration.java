@@ -10,7 +10,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 
 @Configuration
-public class ZipkinConfiguration {
+public class SleuthConfiguration {
 
     // ==================== Redis 相关 ====================
     @Bean
