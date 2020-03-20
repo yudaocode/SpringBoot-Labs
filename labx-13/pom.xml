@@ -26,6 +26,7 @@
 
         <module>labx-13-sc-sleuth-mq-rabbitmq</module>
         <module>labx-13-sc-sleuth-mq-kafka</module>
+        <module>labx-13-sc-sleuth-mq-activemq</module>
     </modules>
 
 

@@ -25,7 +25,7 @@ spring:
   # Spring Cloud Sleuth 配置项
   sleuth:
     messaging:
-      # Spring Cloud Sleuth 针对 kafka 组件的配置项，例如说 SpringMVC
+      # Spring Cloud Sleuth 针对 kafka 组件的配置项kafka
       kafka:
         enabled: true # 是否开启
         remote-service-name: kafka # 远程服务名，默认为 kafka
