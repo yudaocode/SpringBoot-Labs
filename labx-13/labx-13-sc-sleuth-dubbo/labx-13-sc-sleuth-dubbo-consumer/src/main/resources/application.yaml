@@ -16,7 +16,7 @@ dubbo:
   # Dubbo 服务注册中心配置，对应 RegistryConfig 类
   registry:
     address: spring-cloud://127.0.0.1:8848 # 指定 Dubbo 服务注册中心的地址
-  # Dubbo 服务提供者的配置，对应 ProviderConfig 类
+  # Dubbo 服务提供者的配置，对应 ConsumerConfig 类
   consumer:
     filter: tracing
   # Spring Cloud Alibaba Dubbo 专属配置项，对应 DubboCloudProperties 类
