@@ -191,9 +191,18 @@
 
 # Dubbo 专栏
 
+## 基础入门
+
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 * [《性能测试 —— Dubbo 基准测试》](http://www.iocoder.cn/Performance-Testing/Dubbo-benchmark/?github)
+
+## 链路追踪
+
+* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-39)
+* [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github)的[「TODO. Dubbo 示例」](#)小节
+* [《芋道 Spring Boot 链路追踪 Zipkin》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「TODO. Dubbo 示例」](#)小节
+* [《芋道 Spring Cloud 链路追踪 Spring Cloud Sleuth》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「7. Dubbo 示例」](#)小节
 
 # 消息队列 MQ 专栏
 
