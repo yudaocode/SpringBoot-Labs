@@ -13,5 +13,5 @@ spring:
       enabled: true # 是否开启，默认为 true
     # Spring Cloud Sleuth 针对抽样收集的配置项
     sampler:
-      probability: 0.1 # 采样百分比，默认为 1.0 全部采样。
-      rate: # 限流采样，即每秒可收集链路的数量，默认为 10。
+      probability: 0.1 # 采样百分比，默认为空。
+#      rate: 1 # 限流采样，即每秒可收集链路的数量，默认为 10。
