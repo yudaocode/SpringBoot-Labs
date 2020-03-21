@@ -11,6 +11,7 @@ spring:
     # Spring Cloud Sleuth 针对 Web 组件的配置项，例如说 SpringMVC
     web:
       enabled: true # 是否开启，默认为 true
-    # Spring Cloud Sleuth 针对 OpenTracing 组件的配置项
-    opentracing:
-      enabled: true # 是否开启，默认为 true
+    # Spring Cloud Sleuth 针对抽样收集的配置项
+    sampler:
+      probability: 0.1 # 采样百分比，默认为 1.0 全部采样。
+      rate: # 限流采样，即每秒可收集链路的数量，默认为 10。
