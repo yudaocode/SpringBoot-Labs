@@ -29,6 +29,7 @@
         <module>labx-13-sc-sleuth-mq-activemq</module>
 
         <module>labx-13-sc-sleuth-logback</module>
+        <module>labx-13-sc-sleuth-opentracing</module>
     </modules>
 
 
