@@ -199,9 +199,14 @@
 
 ## 链路追踪
 
+**[SkyWalking](http://www.iocoder.cn/SkyWalking/install/?github)**
+
 * [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-39)
 * [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github)的[「TODO. Dubbo 示例」](#)小节
-* [《芋道 Spring Boot 链路追踪 Zipkin》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「TODO. Dubbo 示例」](#)小节
+
+**[Zipkin](http://www.iocoder.cn/Zipkin/install/?github)**
+
+* [《芋道 Spring Boot 链路追踪 Zipkin》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「13. Dubbo 示例」](#)小节
 * [《芋道 Spring Cloud 链路追踪 Spring Cloud Sleuth》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「7. Dubbo 示例」](#)小节
 
 # 消息队列 MQ 专栏
