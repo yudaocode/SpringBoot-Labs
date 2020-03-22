@@ -1,6 +1,6 @@
-package cn.iocoder.springcloud.labx14.rocketmqdemo.consumerdemo.listener;
+package cn.iocoder.springcloud.labx14.rabbitmqdemo.consumerdemo.listener;
 
-import cn.iocoder.springcloud.labx14.rocketmqdemo.consumerdemo.message.Demo01Message;
+import cn.iocoder.springcloud.labx14.rabbitmqdemo.consumerdemo.message.Demo01Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.stream.annotation.StreamListener;

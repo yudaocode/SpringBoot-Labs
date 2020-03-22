@@ -18,6 +18,8 @@
         <module>labx-14-sc-skywalking-dubbo</module>
 
         <module>labx-14-sc-skywalking-mq-rocketmq</module>
+        <module>labx-14-sc-skywalking-mq-rabbitmq</module>
+        <module>labx-14-sc-skywalking-mq-kafka</module>
     </modules>
 
 </project>

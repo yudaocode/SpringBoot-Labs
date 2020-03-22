@@ -1,7 +1,7 @@
-package cn.iocoder.springcloud.labx14.rocketmqdemo.producerdemo.controller;
+package cn.iocoder.springcloud.labx14.kafkademo.producerdemo.controller;
 
-import cn.iocoder.springcloud.labx14.rocketmqdemo.producerdemo.message.Demo01Message;
-import cn.iocoder.springcloud.labx14.rocketmqdemo.producerdemo.message.MySource;
+import cn.iocoder.springcloud.labx14.kafkademo.producerdemo.message.Demo01Message;
+import cn.iocoder.springcloud.labx14.kafkademo.producerdemo.message.MySource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
