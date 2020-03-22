@@ -13,6 +13,7 @@
 
     <modules>
         <module>labx-14-sc-skywalking-springmvc</module>
+        <module>labx-14-sc-skywalking-feign</module>
     </modules>
 
 </project>
