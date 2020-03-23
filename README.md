@@ -197,17 +197,28 @@
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 * [《性能测试 —— Dubbo 基准测试》](http://www.iocoder.cn/Performance-Testing/Dubbo-benchmark/?github)
 
+## 注册中心
+
+**[Zookeeper](http://www.iocoder.cn/Zookeeper/install/?github)**
+* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「2. XML 配置」](#)和[「3. 注解配置」](#)小节
+
+**[Nacos](http://www.iocoder.cn/Nacos/install/?github)**
+* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「2. 快速入门」](#)小节
+
+## 服务保障
+
+**[Sentinel](http://www.iocoder.cn/Sentinel/install/?github)**
+* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「6. 整合 Sentinel」](#)小节
+
 ## 链路追踪
 
 **[SkyWalking](http://www.iocoder.cn/SkyWalking/install/?github)**
-
-* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 对应 [lab-39](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-39)
-* [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github)的[「TODO. Dubbo 示例」](#)小节
+* [《芋道 Spring Boot 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Boot/SkyWalking/?github) 的[「16. Dubbo 示例」](#)小节
+* [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github) 的[「7. Dubbo 示例」](#)小节
 
 **[Zipkin](http://www.iocoder.cn/Zipkin/install/?github)**
-
-* [《芋道 Spring Boot 链路追踪 Zipkin》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「13. Dubbo 示例」](#)小节
-* [《芋道 Spring Cloud 链路追踪 Spring Cloud Sleuth》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github)的[「7. Dubbo 示例」](#)小节
+* [《芋道 Spring Boot 链路追踪 Zipkin》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github) 的[「13. Dubbo 示例」](#)小节
+* [《芋道 Spring Cloud 链路追踪 Spring Cloud Sleuth》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github) 的[「7. Dubbo 示例」](#)小节
 
 # 消息队列 MQ 专栏
 
