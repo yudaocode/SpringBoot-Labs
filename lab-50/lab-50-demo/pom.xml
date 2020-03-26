@@ -10,19 +10,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-34-actuator-test</artifactId>
+    <artifactId>lab-50-demo</artifactId>
 
     <dependencies>
-        <!-- 实现对 Spring MVC 的自动化配置 -->
+        <!-- 实现对 Java Mail 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
 
-        <!-- 实现对 Actuator 的自动化配置 -->
+        <!-- 方便等会写单元测试 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

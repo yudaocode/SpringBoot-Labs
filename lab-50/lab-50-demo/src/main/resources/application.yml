@@ -1,0 +1,30 @@
+#spring:
+#  mail: # 配置发送告警的邮箱
+#    host: smtp.163.com
+#    port: 465
+#    protocol: smtps
+#    username: yudaoyuanma@163.com
+#    password: '***'
+#    default-encoding: UTF-8
+##    properties:
+##      smtp:
+##        auth: true
+##        starttls:
+##          enable: true
+##          required: true
+
+
+spring:
+  mail: # 配置发送告警的邮箱
+    host: smtp.exmail.qq.com
+    port: 465
+    protocol: smtps
+    username: yunai.wang@medcloud.cn
+    password: '***'
+    default-encoding: UTF-8
+    properties:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+          required: true

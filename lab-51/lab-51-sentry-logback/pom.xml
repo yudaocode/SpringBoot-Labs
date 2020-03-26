@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-34-actuator-test</artifactId>
+    <artifactId>lab-51-sentry-logback</artifactId>
 
     <dependencies>
         <!-- 实现对 Spring MVC 的自动化配置 -->
@@ -19,10 +19,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 实现对 Actuator 的自动化配置 -->
+        <!-- Sentry 对 Logback 的拓展，实现通过打日志的方式，来上传日志到 Sentry 服务 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <groupId>io.sentry</groupId>
+            <artifactId>sentry-logback</artifactId>
+            <version>1.7.30</version>
         </dependency>
     </dependencies>
 
