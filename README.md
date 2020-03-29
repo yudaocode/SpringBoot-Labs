@@ -111,6 +111,7 @@
 
 ## 监控管理
 
+* [《芋道 Spring Boot 异常管理平台 Sentry 入门》](http://www.iocoder.cn/Spring-Boot/Sentry/?github) 对应 [lab-51](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-51)
 * [《芋道 Spring Boot 监控端点 Actuator 入门》](http://www.iocoder.cn/Spring-Boot/Actuator/?github) 对应 [lab-34](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-34)
 * [《芋道 Spring Boot 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Boot/Admin/?github) 对应 [lab-35](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-35)
 * [《芋道 Spring Boot 监控平台 Prometheus + Grafana 入门》](http://www.iocoder.cn/Spring-Boot/Prometheus-and-Grafana/?github) 对应 [lab-36](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-36)
@@ -120,7 +121,6 @@
 
 * [《芋道 Spring Boot 日志集成 Logging 入门》](http://www.iocoder.cn/Spring-Boot/Logging/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37)
 * [《芋道 Spring Boot 日志平台 ELK + Filebeat 入门》](http://www.iocoder.cn/Spring-Boot/ELK/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38)
-* [《芋道 Spring Boot 异常管理平台 Sentry 入门》](http://www.iocoder.cn/Spring-Boot/Sentry/?github) 对应 [lab-51](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-51)
 
 ## 链路追踪
 
@@ -184,6 +184,14 @@
 * [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
 * [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
+
+## 监控管理
+
+* [《芋道 Spring Cloud 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Cloud/SB-Admin/?github) 对应 [labx-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-15)
+
+## 持续交付
+
+
 
 ## 链路追踪
 
