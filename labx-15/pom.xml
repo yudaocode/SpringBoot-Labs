@@ -16,6 +16,7 @@
         <module>labx-15-admin-02-demo-application</module>
 
         <module>labx-15-admin-03-adminserver</module>
+        <module>labx-15-admin-03-demo-application</module>
     </modules>
 
 </project>
