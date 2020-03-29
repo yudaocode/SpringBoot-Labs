@@ -19,6 +19,7 @@
         <module>labx-15-admin-03-demo-application</module>
 
         <module>labx-15-admin-04-adminserver-mail</module>
+        <module>labx-15-admin-04-adminserver-custom</module>
     </modules>
 
 </project>
