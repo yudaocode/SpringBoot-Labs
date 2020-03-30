@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>labx-11</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>labx-11-sc-stream-kafka-producer-demo</module>
@@ -28,7 +29,7 @@
         <module>labx-11-sc-stream-kafka-consumer-concurrency</module>
 
         <module>labx-11-sc-stream-kafka-producer-partitioning</module>
-        <module>labx-11-sc-stream-kafka-consumer-concurrency</module>
+        <!--搭配 <module>labx-11-sc-stream-kafka-consumer-concurrency</module> 作为消费者-->
         <module>labx-11-sc-stream-kafka-consumer-partitioning</module> <!-- 暂时没用到 -->
 
         <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
@@ -43,7 +44,7 @@
         <module>labx-11-sc-stream-kafka-producer-batch</module>
         <!--搭配 <module>labx-11-sc-stream-kafka-consumer-demo</module> 作为消费者-->
 
-        <module>labx-11-sc-stream-kafka-producer-demo</module>
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
         <module>labx-11-sc-stream-kafka-consumer-batch</module>
 
         <module>labx-11-sc-stream-kafka-producer-actuator</module>

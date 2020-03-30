@@ -11,6 +11,7 @@
 
     <artifactId>labx-13</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>labx-13-sc-sleuth-zipkin-server-demo-in-memory</module>
 

@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>labx-02</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>labx-02-scn-ribbon-demo01-provider</module>

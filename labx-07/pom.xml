@@ -17,7 +17,6 @@
         <module>labx-07-sca-dubbo-demo03-validation</module>
         <module>labx-07-sca-dubbo-demo04-filter</module>
         <module>labx-07-sca-dubbo-demo05-sentinel</module>
-        <module>labx-07-sca-dubbo-demo06-actuator</module>
     </modules>
 
 
