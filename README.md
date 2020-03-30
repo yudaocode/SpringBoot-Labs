@@ -108,6 +108,7 @@
 
 * [《芋道 Spring Boot 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Boot/Sentinel/?github) 对应 [lab-46](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-46)
 * 《芋道 Spring Boot 服务容错 Hystrix 入门》计划中...
+* 《芋道 Spring Boot 服务容错 Resilience4j 入门》计划中...
 
 ## 监控管理
 
@@ -153,6 +154,10 @@
 ## 注册中心
 
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
+* 《芋道 Spring Cloud Netflix 注册中心 Eureka 入门》计划中...
+* 《芋道 Spring Cloud 注册中心 Zookeeper 入门》计划中...
+* 《芋道 Spring Cloud 注册中心 Consul 入门》计划中...
+* 《芋道 Spring Cloud 注册中心 Etcd 入门》计划中...
 
 ## 服务调用
 
@@ -163,12 +168,13 @@
 ## 服务容错
 
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
-* 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》
+* 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》计划中...
+* 《芋道 Spring Cloud 服务容错 Resilience4j 入门》计划中...
 
 ## API 网关
 
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
-* 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》
+* 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》计划中...
 * [《性能测试 —— Spring Cloud Gateway、Zuul 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringCloudGateway-Zuul-benchmark/?github) 对应 [lab-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-07)
 
 ## 配置中心
@@ -179,10 +185,16 @@
 
 ## 消息队列
 
+**Spring Cloud Stream**
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
 * [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
 * [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
+
+**Spring Cloud Bus**
+* 《芋道 Spring Cloud Alibaba 消息总线 RocketMQ 入门》计划中...
+* 《芋道 Spring Cloud Alibaba 消息总线 RabbitMQ 入门》计划中...
+* 《芋道 Spring Cloud Alibaba 消息总线 Kafka 入门》计划中...
 
 ## 监控管理
 
@@ -193,7 +205,9 @@
 
 ## 持续交付
 
-TODO Jenkins
+* [《芋道 Spring Cloud 持续交付 Jenkins 入门》](http://www.iocoder.cn/Spring-Cloud/Jenkins/?github) 对应 [labx-16](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-16)
+* [《芋道 Spring Boot 单元测试 Test 入门》](http://www.iocoder.cn/Spring-Boot/Unit-Test/?github) 对应 [lab-42](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-42)
+* 《芋道 Spring Cloud 容器 Docker 入门》计划中...
 
 ## 链路追踪
 
