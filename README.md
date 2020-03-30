@@ -147,7 +147,6 @@
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
 * [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github) 对应 [labx-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-14)
-* TODO 监控
 
 # Spring Cloud 专栏
 
@@ -187,11 +186,14 @@
 
 ## 监控管理
 
+* [《芋道 Spring Boot 异常管理平台 Sentry 入门》](http://www.iocoder.cn/Spring-Boot/Sentry/?github) 对应 [lab-51](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-51)
+* [《芋道 Spring Boot 监控端点 Actuator 入门》](http://www.iocoder.cn/Spring-Boot/Actuator/?github) 对应 [lab-34](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-34)
 * [《芋道 Spring Cloud 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Cloud/SB-Admin/?github) 对应 [labx-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-15)
+* [《芋道 Spring Boot 监控平台 Prometheus + Grafana 入门》](http://www.iocoder.cn/Spring-Boot/Prometheus-and-Grafana/?github) 对应 [lab-36](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-36)
 
 ## 持续交付
 
-
+TODO Jenkins
 
 ## 链路追踪
 
