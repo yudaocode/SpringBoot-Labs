@@ -134,7 +134,7 @@
 
 ## Spring Cloud Alibaba 全家桶
 
-* 《芋道 Spring Cloud Alibaba 介绍》
+* [《芋道 Spring Cloud Alibaba 介绍》](http://www.iocoder.cn/Spring-Cloud-Alibaba/intro/?github)
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
@@ -193,8 +193,8 @@
 
 **Spring Cloud Bus**
 * 《芋道 Spring Cloud Alibaba 消息总线 RocketMQ 入门》计划中...
-* 《芋道 Spring Cloud Alibaba 消息总线 RabbitMQ 入门》计划中...
-* 《芋道 Spring Cloud Alibaba 消息总线 Kafka 入门》计划中...
+* 《芋道 Spring Cloud 消息总线 RabbitMQ 入门》计划中...
+* 《芋道 Spring Cloud 消息总线 Kafka 入门》计划中...
 
 ## 监控管理
 
