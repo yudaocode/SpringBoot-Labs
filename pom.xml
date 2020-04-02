@@ -80,6 +80,7 @@
         <module>labx-15</module>
         <module>labx-16</module>
         <module>lab-52</module>
+        <module>lab-53</module>
 
         <!-- Dubbo 示例 -->
     </modules>

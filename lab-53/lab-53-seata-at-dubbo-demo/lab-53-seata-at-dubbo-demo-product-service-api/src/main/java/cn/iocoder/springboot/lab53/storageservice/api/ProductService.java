@@ -1,9 +1,9 @@
-package cn.iocoder.springboot.lab52.seatademo.service;
+package cn.iocoder.springboot.lab53.storageservice.api;
 
 /**
- * 库存 Service
+ * 商品 Service
  */
-public interface StorageService {
+public interface ProductService {
 
     /**
      * 扣减库存

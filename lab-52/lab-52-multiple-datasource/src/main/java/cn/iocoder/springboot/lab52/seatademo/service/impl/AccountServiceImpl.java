@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class AmountServiceImpl implements AccountService {
+public class AccountServiceImpl implements AccountService {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -20,7 +20,7 @@ public class AmountServiceImpl implements AccountService {
     private AccountDao accountDao;
 
     @Override
-    @DS(value = "pay-ds")
+    @DS(value = "account-ds")
     @Transactional(propagation = Propagation.REQUIRES_NEW) // 开启新事物
     public void reduceBalance(Long userId, Integer price) throws Exception {
         logger.info("[reduceBalance] 当前 XID: {}", RootContext.getXID());

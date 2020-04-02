@@ -1,19 +1,18 @@
-package cn.iocoder.springboot.lab52.seatademo.service.impl;
+package cn.iocoder.springboot.lab53.orderservice.service;
 
-import cn.iocoder.springboot.lab52.seatademo.dao.OrderDao;
-import cn.iocoder.springboot.lab52.seatademo.entity.OrderDO;
-import cn.iocoder.springboot.lab52.seatademo.service.OrderService;
-import cn.iocoder.springboot.lab52.seatademo.service.AccountService;
-import cn.iocoder.springboot.lab52.seatademo.service.ProductService;
-import com.baomidou.dynamic.datasource.annotation.DS;
+import cn.iocoder.springboot.lab53.accountservice.api.AccountService;
+import cn.iocoder.springboot.lab53.orderservice.api.OrderService;
+import cn.iocoder.springboot.lab53.orderservice.dao.OrderDao;
+import cn.iocoder.springboot.lab53.orderservice.entity.OrderDO;
+import cn.iocoder.springboot.lab53.storageservice.api.ProductService;
 import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;
+import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
+@org.apache.dubbo.config.annotation.Service
 public class OrderServiceImpl implements OrderService {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
@@ -21,15 +20,14 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderDao orderDao;
 
-    @Autowired
+    @Reference
     private AccountService accountService;
 
-    @Autowired
+    @Reference
     private ProductService productService;
 
-    @GlobalTransactional
     @Override
-    @DS(value = "order-ds")
+    @GlobalTransactional
     public Integer createOrder(Long userId, Long productId, Integer price) throws Exception {
         Integer amount = 1; // 购买数量，暂时设置为 1。
 

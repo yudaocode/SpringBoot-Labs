@@ -17,14 +17,14 @@ spring:
           username: root
           password:
         # 账户 pay 数据源配置
-        amount-ds:
-          url: jdbc:mysql://127.0.0.1:3306/seata_pay?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        account-ds:
+          url: jdbc:mysql://127.0.0.1:3306/seata_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.jdbc.Driver
           username: root
           password:
-        # 库存 storage 数据源配置
-        storage-ds:
-          url: jdbc:mysql://127.0.0.1:3306/seata_storage?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        # 商品 product 数据源配置
+        product-ds:
+          url: jdbc:mysql://127.0.0.1:3306/seata_product?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.jdbc.Driver
           username: root
           password:

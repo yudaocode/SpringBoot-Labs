@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab52.seatademo.service.impl;
 
 import cn.iocoder.springboot.lab52.seatademo.dao.ProductDao;
-import cn.iocoder.springboot.lab52.seatademo.service.StorageService;
+import cn.iocoder.springboot.lab52.seatademo.service.ProductService;
 import com.baomidou.dynamic.datasource.annotation.DS;
 import io.seata.core.context.RootContext;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class StorageServiceImpl implements StorageService {
+public class ProductServiceImpl implements ProductService {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -20,7 +20,7 @@ public class StorageServiceImpl implements StorageService {
     private ProductDao productDao;
 
     @Override
-    @DS(value = "storage-ds")
+    @DS(value = "product-ds")
     @Transactional(propagation = Propagation.REQUIRES_NEW) // 开启新事物
     public void reduceStock(Long productId, Integer amount) throws Exception {
         logger.info("[reduceStock] 当前 XID: {}", RootContext.getXID());
@@ -33,11 +33,11 @@ public class StorageServiceImpl implements StorageService {
         int updateCount = productDao.reduceStock(productId, amount);
         // 扣除成功
         if (updateCount == 0) {
-            logger.warn("[reduceStock] 扣除 {} 库存成功", productId);
+            logger.warn("[reduceStock] 扣除 {} 库存失败", productId);
             throw new Exception("库存不足");
         }
         // 扣除失败
-        logger.info("[reduceStock] 扣除 {} 库存失败", productId);
+        logger.info("[reduceStock] 扣除 {} 库存成功", productId);
     }
 
     private void checkStock(Long productId, Integer requiredAmount) throws Exception {
