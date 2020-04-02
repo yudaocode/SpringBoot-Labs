@@ -22,7 +22,7 @@ public class OrderController {
     public Integer createOrder(@RequestParam("userId") Long userId,
                                @RequestParam("productId") Long productId,
                                @RequestParam("price") Integer price) throws Exception {
-        logger.info("收到下单请求,用户:{}, 商品:{}, 价格:{}", userId, productId, price);
+        logger.info("[createOrder] 收到下单请求,用户:{}, 商品:{}, 价格:{}", userId, productId, price);
         return orderService.createOrder(userId, productId, price);
     }
 

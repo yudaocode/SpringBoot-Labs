@@ -5,12 +5,6 @@ spring:
   application:
     name: multi-datasource-service  # 应用名
 
-#  cloud:
-#    alibaba:
-#      # Seata 配置项，对应 SpringCloudAlibabaConfiguration 类
-#      seata:
-#        tx-service-group: my_test_tx_group
-
   datasource:
     # dynamic-datasource-spring-boot-starter 动态数据源的配配项，对应 DynamicDataSourceProperties 类
     dynamic:
@@ -22,8 +16,8 @@ spring:
           driver-class-name: com.mysql.jdbc.Driver
           username: root
           password:
-        # 支付 pay 数据源配置
-        pay-ds:
+        # 账户 pay 数据源配置
+        amount-ds:
           url: jdbc:mysql://127.0.0.1:3306/seata_pay?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.jdbc.Driver
           username: root

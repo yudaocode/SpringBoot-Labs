@@ -1,9 +1,9 @@
 package cn.iocoder.springboot.lab52.seatademo.service;
 
 /**
- * 支付 Service
+ * 账户 Service
  */
-public interface PayService {
+public interface AccountService {
 
     /**
      * 扣除余额

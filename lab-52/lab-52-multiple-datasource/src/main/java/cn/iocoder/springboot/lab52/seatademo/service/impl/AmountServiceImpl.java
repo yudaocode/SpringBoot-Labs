@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab52.seatademo.service.impl;
 
 import cn.iocoder.springboot.lab52.seatademo.dao.AccountDao;
-import cn.iocoder.springboot.lab52.seatademo.service.PayService;
+import cn.iocoder.springboot.lab52.seatademo.service.AccountService;
 import com.baomidou.dynamic.datasource.annotation.DS;
 import io.seata.core.context.RootContext;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class PayServiceImpl implements PayService {
+public class AmountServiceImpl implements AccountService {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 

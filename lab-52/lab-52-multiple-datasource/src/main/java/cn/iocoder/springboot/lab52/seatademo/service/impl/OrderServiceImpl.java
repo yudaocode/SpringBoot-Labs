@@ -3,7 +3,7 @@ package cn.iocoder.springboot.lab52.seatademo.service.impl;
 import cn.iocoder.springboot.lab52.seatademo.dao.OrderDao;
 import cn.iocoder.springboot.lab52.seatademo.entity.OrderDO;
 import cn.iocoder.springboot.lab52.seatademo.service.OrderService;
-import cn.iocoder.springboot.lab52.seatademo.service.PayService;
+import cn.iocoder.springboot.lab52.seatademo.service.AccountService;
 import cn.iocoder.springboot.lab52.seatademo.service.StorageService;
 import com.baomidou.dynamic.datasource.annotation.DS;
 import io.seata.core.context.RootContext;
@@ -22,7 +22,7 @@ public class OrderServiceImpl implements OrderService {
     private OrderDao orderDao;
 
     @Autowired
-    private PayService payService;
+    private AccountService payService;
 
     @Autowired
     private StorageService storageService;
