@@ -27,9 +27,9 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private ProductService productService;
 
-    @GlobalTransactional
     @Override
     @DS(value = "order-ds")
+    @GlobalTransactional
     public Integer createOrder(Long userId, Long productId, Integer price) throws Exception {
         Integer amount = 1; // 购买数量，暂时设置为 1。
 
