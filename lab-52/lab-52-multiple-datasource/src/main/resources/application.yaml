@@ -28,6 +28,7 @@ spring:
           driver-class-name: com.mysql.jdbc.Driver
           username: root
           password:
+      seata: true # 是否启动对 Seata 的集成
 
 # Seata 配置项，对应 SeataProperties 类
 seata:

@@ -4,6 +4,7 @@
 * [《Spring Cloud 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-cloud-%E4%B8%93%E6%A0%8F)
 * [《Dubbo 专栏》](https://github.com/YunaiV/SpringBoot-Labs#Dubbo-%E4%B8%93%E6%A0%8F)
 * [《消息队列 MQ 专栏》](https://github.com/YunaiV/SpringBoot-Labs#%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-mq-%E4%B8%93%E6%A0%8F)
+* [《分布式事务专栏》](https://github.com/YunaiV/SpringBoot-Labs#分布式事务专栏)
 
 作为一个热爱**深夜**撸码的 18 岁头发茂密的可爱小男孩，希望大佬能够**一键三连**。
 
@@ -275,6 +276,35 @@
 * [《ActiveMQ 安装部署》](http://www.iocoder.cn/ActiveMQ/install/?github)
 * [《芋道 Spring Boot 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Boot/ActiveMQ/?github) 对应 [lab-32](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-32)
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
+
+# 分布式事务专栏
+
+目前分布式事务的解决方案有 AT、TCC、Saga、MQ、XA、BED 六种。
+
+## AT 方案
+
+* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self) 的[「2. AT 模式 + 多数据源」](#)小节，实现单体 Spring Boot 项目在多数据源下的分布式事务
+* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self) 的[「AT 模式 + HttpClient 远程调用」](#)小节，实现多个 Spring Boot 项目的分布事务
+
+## TCC 方案
+
+* [《TCC-Transaction 源码解析系列》](http://www.iocoder.cn/categories/TCC-Transaction/?github)
+
+## Saga 方案
+
+## MQ 方案
+
+* [《芋道 Spring Boot 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 的[「9. 事务消息」](#)小节
+* [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 的[「10. 事务消息」](#)小节
+* [《RocketMQ 源码分析 —— 事务消息》](http://www.iocoder.cn/RocketMQ/message-transaction/?github)
+
+## XA 方案
+
+* [《MyCAT 源码分析 —— XA分布式事务》](http://www.iocoder.cn/MyCAT/xa-distributed-transaction/?github)
+
+## BED 方案
+
+* [《Sharding-JDBC 源码分析 —— 分布式事务（一）之最大努力型》](http://www.iocoder.cn/Sharding-JDBC/transaction-bed/?github)
 
 ---------
 
