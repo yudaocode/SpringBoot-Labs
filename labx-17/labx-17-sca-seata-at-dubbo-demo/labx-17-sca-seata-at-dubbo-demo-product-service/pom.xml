@@ -91,6 +91,11 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-seata</artifactId>
         </dependency>
+        <dependency> <!-- 主要想使用 seata 1.1.0 版本 -->
+            <groupId>io.seata</groupId>
+            <artifactId>seata-spring-boot-starter</artifactId>
+            <version>1.1.0</version>
+        </dependency>
 
         <!-- 引入 Spring Cloud Alibaba Nacos Discovery 相关依赖，将 Nacos 作为注册中心，并实现对其的自动配置 -->
         <dependency>
