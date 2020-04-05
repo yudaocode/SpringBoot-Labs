@@ -1,10 +1,10 @@
-package cn.iocoder.springboot.lab53.orderservice.service;
+package cn.iocoder.springcloudalibaba.labx17.orderservice.service;
 
-import cn.iocoder.springboot.lab53.accountservice.api.AccountService;
-import cn.iocoder.springboot.lab53.orderservice.api.OrderService;
-import cn.iocoder.springboot.lab53.orderservice.dao.OrderDao;
-import cn.iocoder.springboot.lab53.orderservice.entity.OrderDO;
-import cn.iocoder.springboot.lab53.productservice.api.ProductService;
+import cn.iocoder.springcloudalibaba.labx17.accountservice.api.AccountService;
+import cn.iocoder.springcloudalibaba.labx17.orderservice.api.OrderService;
+import cn.iocoder.springcloudalibaba.labx17.orderservice.dao.OrderDao;
+import cn.iocoder.springcloudalibaba.labx17.orderservice.entity.OrderDO;
+import cn.iocoder.springcloudalibaba.labx17.producctservice.api.ProductService;
 import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.apache.dubbo.config.annotation.Reference;

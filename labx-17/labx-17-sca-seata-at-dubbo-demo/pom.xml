@@ -14,6 +14,10 @@
     <modules>
         <module>labx-17-sca-seata-at-dubbo-demo-account-service-api</module>
         <module>labx-17-sca-seata-at-dubbo-demo-account-service</module>
+        <module>labx-17-sca-seata-at-dubbo-demo-product-service-api</module>
+        <module>labx-17-sca-seata-at-dubbo-demo-product-service</module>
+        <module>labx-17-sca-seata-at-dubbo-demo-order-service-api</module>
+        <module>labx-17-sca-seata-at-dubbo-demo-order-service</module>
     </modules>
 
 </project>

@@ -1,9 +1,12 @@
+server:
+  port: 8081 # 端口
+
 spring:
   application:
-    name: account-service
+    name: order-service
 
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/seata_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3306/seata_order?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password:
@@ -25,10 +28,10 @@ dubbo:
     name: dubbo # 使用 `dubbo://` 协议。更多协议，可见 http://dubbo.apache.org/zh-cn/docs/user/references/protocol/introduction.html 文档
   # 配置扫描 Dubbo 自定义的 @Service 注解，暴露成 Dubbo 服务提供者
   scan:
-    base-packages: cn.iocoder.springcloudalibaba.labx17.accountservice.service
+    base-packages: cn.iocoder.springcloudalibaba.labx17.orderservice.service
   # Spring Cloud Alibaba Dubbo 专属配置项，对应 DubboCloudProperties 类
   cloud:
-    subscribed-services: '' # 设置订阅的应用列表，默认为 * 订阅所有应用。
+    subscribed-services: account-service, product-service # 设置订阅的应用列表，默认为 * 订阅所有应用。
 
 # Seata 配置项，对应 SeataProperties 类
 seata:
@@ -38,7 +41,7 @@ seata:
   service:
     # 虚拟组和分组的映射
     vgroup-mapping:
-      account-service-group: default
+      order-service-group: default
     # 分组和 Seata 服务的映射
     grouplist:
       default: 127.0.0.1:8091
