@@ -22,7 +22,6 @@ public class OrderServiceImpl implements OrderService {
 
     @Reference
     private AccountService accountService;
-
     @Reference
     private ProductService productService;
 

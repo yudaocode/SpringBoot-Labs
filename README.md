@@ -236,6 +236,11 @@
 **[Sentinel](http://www.iocoder.cn/Sentinel/install/?github)**
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「6. 整合 Sentinel」](#)小节
 
+## 分布式事务
+
+**[Seata](http://www.iocoder.cn/Seata/install/?github)**
+* [《芋道 Dubbo 分布式事务 Seata 入门》](http://www.iocoder.cn/Dubbo/Seata/?self) 对应 [lab-53](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-53)
+
 ## 链路追踪
 
 **[SkyWalking](http://www.iocoder.cn/SkyWalking/install/?github)**
@@ -283,8 +288,9 @@
 
 ## AT 方案
 
-* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self) 的[「2. AT 模式 + 多数据源」](#)小节，实现单体 Spring Boot 项目在多数据源下的分布式事务
-* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self) 的[「AT 模式 + HttpClient 远程调用」](#)小节，实现多个 Spring Boot 项目的分布事务
+* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self)的[「2. AT 模式 + 多数据源」](#)小节，实现单体 Spring Boot 项目在多数据源下的分布式事务
+* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self)的[「AT 模式 + HttpClient 远程调用」](#)小节，实现多个 Spring Boot 项目的分布式事务
+* [《芋道 Dubbo 分布式事务 Seata 入门》](http://www.iocoder.cn/Dubbo/Seata/?self) 的[「2. AT 模式」](#)小节，实现多个 Dubbo 服务的分布式事务。
 
 ## TCC 方案
 
