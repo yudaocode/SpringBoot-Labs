@@ -1,11 +1,9 @@
 package cn.iocoder.springcloud.labx17.orderservice.service.impl;
 
 import cn.iocoder.springcloud.labx17.orderservice.dao.OrderDao;
-import cn.iocoder.springcloud.labx17.orderservice.dto.AccountReduceBalanceDTO;
-import cn.iocoder.springcloud.labx17.orderservice.dto.ProductReduceStockDTO;
 import cn.iocoder.springcloud.labx17.orderservice.entity.OrderDO;
-import cn.iocoder.springcloud.labx17.orderservice.feign.AccountServiceFeignClient;
-import cn.iocoder.springcloud.labx17.orderservice.feign.ProductServiceFeignClient;
+import cn.iocoder.springcloud.labx17.orderservice.feign.*;
+import cn.iocoder.springcloud.labx17.orderservice.feign.dto.*;
 import cn.iocoder.springcloud.labx17.orderservice.service.OrderService;
 import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;
@@ -29,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @GlobalTransactional
-    public Integer createOrder(Long userId, Long productId, Integer price) throws Exception {
+    public Integer createOrder(Long userId, Long productId, Integer price) {
         Integer amount = 1; // 购买数量，暂时设置为 1。
 
         logger.info("[createOrder] 当前 XID: {}", RootContext.getXID());

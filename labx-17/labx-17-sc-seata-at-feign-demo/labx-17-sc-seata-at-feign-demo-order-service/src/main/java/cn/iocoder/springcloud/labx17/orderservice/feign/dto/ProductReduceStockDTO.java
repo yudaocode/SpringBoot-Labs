@@ -1,4 +1,4 @@
-package cn.iocoder.springcloud.labx17.orderservice.dto;
+package cn.iocoder.springcloud.labx17.orderservice.feign.dto;
 
 /**
  * 商品减少库存 DTO

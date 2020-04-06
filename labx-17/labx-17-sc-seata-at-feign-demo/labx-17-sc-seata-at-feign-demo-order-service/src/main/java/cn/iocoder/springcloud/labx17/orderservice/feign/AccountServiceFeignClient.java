@@ -1,6 +1,6 @@
 package cn.iocoder.springcloud.labx17.orderservice.feign;
 
-import cn.iocoder.springcloud.labx17.orderservice.dto.AccountReduceBalanceDTO;
+import cn.iocoder.springcloud.labx17.orderservice.feign.dto.AccountReduceBalanceDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
