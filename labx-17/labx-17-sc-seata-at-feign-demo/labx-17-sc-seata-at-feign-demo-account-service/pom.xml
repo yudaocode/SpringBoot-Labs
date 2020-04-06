@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-17-sca-seata-at-dubbo-demo</artifactId>
+        <artifactId>labx-17-sc-seata-at-feign-demo</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-17-sca-seata-at-dubbo-demo-order-service</artifactId>
+    <artifactId>labx-17-sc-seata-at-feign-demo-account-service</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -50,23 +50,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.iocoder.springboot.labs</groupId>
-            <artifactId>labx-17-sca-seata-at-dubbo-demo-order-service-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.iocoder.springboot.labs</groupId>
-            <artifactId>labx-17-sca-seata-at-dubbo-demo-account-service-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.iocoder.springboot.labs</groupId>
-            <artifactId>labx-17-sca-seata-at-dubbo-demo-product-service-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <!-- 实现对 Spring MVC 的自动化配置 -->
+        <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -110,12 +94,6 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <!-- 引入 Spring Cloud Alibaba Dubbo 相关依赖，实现呢 Dubbo 进行远程调用，并实现对其的自动配置 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
     </dependencies>
 
