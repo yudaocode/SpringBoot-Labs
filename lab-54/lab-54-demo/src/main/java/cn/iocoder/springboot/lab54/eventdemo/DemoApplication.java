@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
-@EnableAsync
+@EnableAsync // 开启 Spring 异步的功能
 public class DemoApplication {
 
     public static void main(String[] args) {

@@ -83,6 +83,7 @@
         <module>lab-53</module>
         <module>labx-17</module>
         <module>lab-54</module>
+        <module>labx-18</module>
 
         <!-- Dubbo 示例 -->
     </modules>
