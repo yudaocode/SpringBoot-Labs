@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-19-sc-bus-rabbitmq-demo-publisher-actuator</artifactId>
+    <artifactId>labx-19-sc-bus-kafka-demo-listener-actuator</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -48,10 +48,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 引入基于 RabbitMQ 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
+        <!-- 引入基于 Kafka 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+            <artifactId>spring-cloud-starter-bus-kafka</artifactId>
         </dependency>
 
         <!-- 实现对 Actuator 的自动化配置 -->
