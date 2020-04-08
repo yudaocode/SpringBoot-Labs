@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: listener-demo
+
+  # RabbitMQ 相关配置项
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 18080 # 随机端口，方便启动多个消费者
+
+management:
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
