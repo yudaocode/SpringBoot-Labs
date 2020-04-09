@@ -17,6 +17,9 @@
 
         <module>labx-20-sca-bus-rocketmq-demo-publisher-actuator</module>
         <module>labx-20-sca-bus-rocketmq-demo-listener-actuator</module>
+
+        <module>labx-20-sc-config-server-git-auto-refresh-by-bus</module>
+        <module>labx-20-sc-config-user-application-auto-refresh-by-bus</module>
     </modules>
 
 </project>

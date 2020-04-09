@@ -19,6 +19,6 @@ spring:
   #          username: ${CODING_USERNAME} # 账号
   #          password: ${CODING_PASSWORD} # 密码
 
-  # Kafka 配置项，对应 KafkaProperties 配置类
-  rocketmq:
-    bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  name-server: 127.0.0.1:9876 # RocketMQ Namesrv

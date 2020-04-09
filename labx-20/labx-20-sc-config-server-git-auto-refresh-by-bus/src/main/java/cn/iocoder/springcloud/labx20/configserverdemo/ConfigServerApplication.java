@@ -1,4 +1,4 @@
-package cn.iocoder.springcloud.labx19.configserverdemo;
+package cn.iocoder.springcloud.labx20.configserverdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

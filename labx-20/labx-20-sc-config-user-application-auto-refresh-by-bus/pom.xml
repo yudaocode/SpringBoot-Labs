@@ -9,13 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-20-sca-config-user-application-auto-refresh-by-bus</artifactId>
+    <artifactId>labx-20-sc-config-user-application-auto-refresh-by-bus</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
         <spring.cloud.version>Hoxton.SR1</spring.cloud.version>
+        <spring.cloud.alibaba.version>2.2.0.RELEASE</spring.cloud.alibaba.version>
     </properties>
 
     <!--
@@ -38,6 +39,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -54,9 +62,9 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
-        <!-- 引入基于 Kafka 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
+        <!-- 引入基于 RocketMQ 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
+            <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-rocketmq</artifactId>
         </dependency>
     </dependencies>
