@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo-config-server
+
+  profiles:
+    active: git # 使用的 Spring Cloud Config Server 的存储器方案
+  # Spring Cloud Config 相关配置项
+  cloud:
+    config:
+      server:
+        # Spring Cloud Config Server 的 Git 存储器的配置项，对应 MultipleJGitEnvironmentProperties 类
+        git:
+          uri: https://github.com/YunaiV/demo-config-server.git # Git 仓库地址
+          search-paths: / # 读取文件的根地址
+          default-label: master # 使用的默认分支，默认为 master
+  #          username: ${CODING_USERNAME} # 账号
+  #          password: ${CODING_PASSWORD} # 密码
+
+  # Kafka 配置项，对应 KafkaProperties 配置类
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔

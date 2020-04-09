@@ -17,6 +17,9 @@
 
         <module>labx-19-sc-bus-kafka-demo-listener-actuator</module>
         <module>labx-19-sc-bus-kafka-demo-publisher-actuator</module>
+
+        <module>labx-19-sc-config-server-git-auto-refresh-by-bus</module>
+        <module>labx-19-sc-config-user-application-auto-refresh-by-bus</module>
     </modules>
 
 
