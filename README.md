@@ -145,6 +145,7 @@
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
+* [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
 * [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05)
 * [《芋道 Spring Cloud Alibaba 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Seata/?github) 对应 [labx-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-17)
 
@@ -198,9 +199,9 @@
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
 
 **Spring Cloud Bus**
-* 《芋道 Spring Cloud Alibaba 消息总线 RocketMQ 入门》计划中...
-* 《芋道 Spring Cloud 消息总线 RabbitMQ 入门》计划中...
-* 《芋道 Spring Cloud 消息总线 Kafka 入门》计划中...
+* [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
+* [《芋道 Spring Cloud 事件总线 Bus RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-RabbitMQ/?github) 对应 [labx-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-19)
+* [《芋道 Spring Cloud 事件总线 Bus Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Kafka/?github) 对应 [labx-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-18)
 
 ## 分布式事务
 
@@ -268,6 +269,7 @@
 * [《RocketMQ 安装部署》](http://www.iocoder.cn/RocketMQ/install/?github)
 * [《芋道 Spring Boot 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 对应 [lab-31](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-31)
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
+* [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
 * [《芋道 RocketMQ 源码解析系列》](http://www.iocoder.cn/categories/RocketMQ/?github)
 * [《性能测试 —— RocketMQ 基准测试》](http://www.iocoder.cn/Performance-Testing/RocketMQ-benchmark/?github)
 * [《RocketMQ 书单整理》](http://www.iocoder.cn/Books/RocketMQ-books-recommended/?github)
@@ -277,6 +279,7 @@
 * [《RabbitMQ 安装部署》](http://www.iocoder.cn/RabbitMQ/install/?github)
 * [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04)
 * [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
+* [《芋道 Spring Cloud 事件总线 Bus RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-RabbitMQ/?github) 对应 [labx-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-19)
 * [《RabbitMQ 书单整理》](http://www.iocoder.cn/Books/RabbitMQ-books-recommended/?github)
 
 ## Kafka
@@ -284,6 +287,7 @@
 * [《Kafka 安装部署》](http://www.iocoder.cn/Kafka/install/?github)
 * [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03)
 * [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
+* [《芋道 Spring Cloud 事件总线 Bus Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Kafka/?github) 对应 [labx-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-18)
 * [《Kafka 书单整理》](http://www.iocoder.cn/Books/Kafka-books-recommended/?github)
 
 ## ActiveMQ
