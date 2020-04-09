@@ -14,6 +14,9 @@
     <modules>
         <module>labx-20-sca-bus-rocketmq-demo-publisher</module>
         <module>labx-20-sca-bus-rocketmq-demo-listener</module>
+
+        <module>labx-20-sca-bus-rocketmq-demo-publisher-actuator</module>
+        <module>labx-20-sca-bus-rocketmq-demo-listener-actuator</module>
     </modules>
 
 </project>
