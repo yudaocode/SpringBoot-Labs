@@ -66,6 +66,7 @@
 * [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13)
 * [《芋道 Spring Boot JdbcTemplate 入门》](http://www.iocoder.cn/Spring-Boot/JdbcTemplate/?github) 对应 [lab-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-14)
 * [《芋道 Spring Boot Elasticsearch 入门》](http://www.iocoder.cn/Spring-Boot/Elasticsearch/?github) 对应 [lab-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-15)
+* 《芋道 Spring Boot Solr 入门》计划中...
 * [《芋道 Spring Boot MongoDB 入门》](http://www.iocoder.cn/Spring-Boot/MongoDB/?github) 对应 [lab-16](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-16)
 * [《芋道 Spring Boot 多数据源（读写分离）入门》](http://www.iocoder.cn/Spring-Boot/dynamic-datasource/?github) 对应 [lab-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-17)
 * [《芋道 Spring Boot 分库分表入门》](http://www.iocoder.cn/Spring-Boot/sharding-datasource/?github) 对应 [lab-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-18)
@@ -302,10 +303,10 @@
 
 ## AT 方案
 
-* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self)的[「2. AT 模式 + 多数据源」](#)小节，实现单体 Spring Boot 项目在多数据源下的分布式事务
-* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?self)的[「AT 模式 + HttpClient 远程调用」](#)小节，实现多个 Spring Boot 项目的分布式事务
-* [《芋道 Dubbo 分布式事务 Seata 入门》](http://www.iocoder.cn/Dubbo/Seata/?self) 的[「2. AT 模式」](#)小节，实现多个 Dubbo 服务的分布式事务。
-* [《芋道 Spring Cloud Alibaba 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Seata/?self)的[「3. AT 模式 + Feign」](#)小节，实现多个 Spring Cloud 服务下的分布式事务。
+* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?github)的[「2. AT 模式 + 多数据源」](#)小节，实现单体 Spring Boot 项目在多数据源下的分布式事务
+* [《芋道 Spring Boot 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Boot/Seata/?github)的[「AT 模式 + HttpClient 远程调用」](#)小节，实现多个 Spring Boot 项目的分布式事务
+* [《芋道 Dubbo 分布式事务 Seata 入门》](http://www.iocoder.cn/Dubbo/Seata/?github) 的[「2. AT 模式」](#)小节，实现多个 Dubbo 服务的分布式事务。
+* [《芋道 Spring Cloud Alibaba 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Seata/?github)的[「3. AT 模式 + Feign」](#)小节，实现多个 Spring Cloud 服务下的分布式事务。
 
 ## TCC 方案
 
