@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-application # 应用名
+
+logging:
+  # 日志级别
+  level:
+    cn:
+      iocoder:
+        springboot:
+          lab37:
+            loggingdemo: DEBUG

@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/seata_product?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+
+# dubbo 配置项，对应 DubboConfigurationProperties 配置类
+dubbo:
+  # Dubbo 应用配置
+  application:
+    name: ${spring.application.name} # 应用名
+  # Dubbo 注册中心配
+  registry:
+    address: nacos://127.0.0.1:8848 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
+  # Dubbo 服务提供者协议配置
+  protocol:
+    port: -1 # 协议端口。使用 -1 表示随机端口。
+    name: dubbo # 使用 `dubbo://` 协议。更多协议，可见 http://dubbo.apache.org/zh-cn/docs/user/references/protocol/introduction.html 文档
+  # 配置扫描 Dubbo 自定义的 @Service 注解，暴露成 Dubbo 服务提供者
+  scan:
+    base-packages: cn.iocoder.springboot.lab53.productservice.service
+
+# Seata 配置项，对应 SeataProperties 类
+seata:
+  application-id: ${spring.application.name} # Seata 应用编号，默认为 ${spring.application.name}
+  tx-service-group: ${spring.application.name}-group # Seata 事务组编号，用于 TC 集群名
+  # 服务配置项，对应 ServiceProperties 类
+  service:
+    # 虚拟组和分组的映射
+    vgroup-mapping:
+      product-service-group: default
+    # 分组和 Seata 服务的映射
+    grouplist:
+      default: 127.0.0.1:8091

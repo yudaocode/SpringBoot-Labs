@@ -1,0 +1,11 @@
+nacos:
+  # Nacos 配置中心的配置项，对应 NacosConfigProperties 配置类
+  config:
+    server-addr: 127.0.0.1:18848 # Nacos 服务器地址
+    bootstrap:
+      enable: true # 是否开启 Nacos 配置预加载功能。默认为 false。
+      log-enable: true # 是否开启 Nacos 支持日志级别的加载时机。默认为 false。
+    data-id: example # 使用的 Nacos 配置集的 dataId。
+    type: YAML # 使用的 Nacos 配置集的配置格式。默认为 PROPERTIES。
+    group: DEFAULT_GROUP # 使用的 Nacos 配置分组，默认为 DEFAULT_GROUP。
+    namespace: 14226a0d-799f-424d-8905-162f6a8bf409  # 使用的 Nacos 的命名空间，默认为 null。

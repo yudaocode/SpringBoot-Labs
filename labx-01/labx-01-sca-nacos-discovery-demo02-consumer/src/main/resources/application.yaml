@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo-consumer # Spring 应用名
+
+server:
+  port: 28080 # 服务器端口。默认为 8080

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: demo-producer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+#      binders:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-output:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 Kafka Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+      # Spring Cloud Stream Kafka 配置项
+      kafka:
+        # Kafka Binder 配置项，对应 KafkaBinderConfigurationProperties 类
+        binder:
+          brokers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+        # Kafka 自定义 Binding 配置项，对应 KafkaBindingProperties Map
+        bindings:
+          demo01-output:
+            # Kafka Producer 配置项，对应 KafkaProducerProperties 类
+            producer:
+              batch-timeout: 30000 # 批处理延迟时间上限。这里配置为 30 * 1000 ms 过后，不管是否消息数量是否到达 batch-size 或者消息大小到达 buffer-memory 后，都直接发送一次请求
+              buffer-size: 33554432 # 每次批量发送消息的最大内存
+
+server:
+  port: 18080

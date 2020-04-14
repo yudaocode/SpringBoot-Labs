@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- 引入 Spring Boot 默认的 logback XML 配置文件  -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <!-- 控制台 Appender -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 日志的格式化 -->
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <!-- 从 Spring Boot 配置文件中，读取 spring.application.name 应用名 -->
+    <springProperty name="applicationName" scope="context" source="spring.application.name" />
+    <!-- 日志文件的路径 -->
+    <property name="LOG_FILE" value="/Users/yunai/logs/${applicationName}.log"/>​
+    <!-- 日志文件 Appender -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE}</file>
+        <!--滚动策略，基于时间 + 大小的分包策略 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>10MB</maxFileSize>
+        </rollingPolicy>
+        <!-- 日志的格式化 -->
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <!-- 测试环境，独有的配置 -->
+    <springProfile name="dev">
+        <!-- 设置 Appender -->
+        <root level="INFO">
+            <appender-ref ref="console"/>
+        </root>
+
+        <!-- 设置 "cn.iocoder.springboot.lab37.loggingdemo" 的 Logger 的日志级别为 DEBUG -->
+        <logger name="cn.iocoder.springboot.lab37.loggingdemo" level="DEBUG"/>
+    </springProfile>
+
+    <!-- 生产环境，独有的配置 -->
+    <springProfile name="prod">
+        <!-- 设置 Appender -->
+        <root level="INFO">
+            <appender-ref ref="console"/>
+            <appender-ref ref="file"/>
+        </root>
+    </springProfile>
+
+</configuration>

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-application
+
+  cloud:
+    # Spring Cloud Config Client 配置项，对应 ConfigClientProperties 类
+    config:
+      uri: http://127.0.0.1:8888 # Spring Cloud Config Server 的地址
+      name: ${spring.application.name} # 读取的配置文件的名字，默认为 ${spring.application.name}

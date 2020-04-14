@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: publisher-demo
+
+  # RabbitMQ 相关配置项
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  # Bus 相关配置项，对应 BusProperties
+  cloud:
+    bus:
+      enabled: true # 是否开启，默认为 true
+      destination: springCloudBus # 目标消息队列，默认为 springCloudBus

@@ -1,0 +1,40 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+        - id: yudaoyuanma # 路由的编号
+          uri: http://www.iocoder.cn # 路由到的目标地址
+          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+            - Path=/**
+
+    sentinel:
+      eager: true # 是否饥饿加载。默认为 false 关闭
+      transport:
+        dashboard: localhost:7070 # 是否饥饿加载。默认为 false 关闭
+#      # 数据源的配置项
+#      datasource:
+#        ds1.file:
+#          file: "classpath: sentinel-gw-flow.json"
+#          ruleType: gw-flow
+#        ds2.file:
+#          file: "classpath: sentinel-gw-api-group.json"
+#          ruleType: gw-api-group
+      # Sentinel 对 Spring Cloud Gateway 的专属配置项，对应 SentinelGatewayProperties 类
+      scg:
+        order: -2147483648 # 过滤器顺序，默认为 -2147483648 最高优先级
+        fallback:
+          mode: # fallback 模式，目前有三种：response、redirect、空
+          # 专属 response 模式
+          response-status: 429 # 响应状态码，默认为 429
+          response-body: 你被 block 了... # 响应内容，默认为空
+          content-type: application/json # 内容类型，默认为 application/json
+          # 专属 redirect 模式
+          redirect: http://www.baidu.com

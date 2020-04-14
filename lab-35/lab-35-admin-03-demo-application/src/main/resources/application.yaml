@@ -1,0 +1,31 @@
+management:
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+
+spring:
+  application:
+    name: demo-application # 应用名
+
+  # Spring Security 配置项，对应 SecurityProperties 配置类
+  security:
+    # 配置默认的 InMemoryUserDetailsManager 的用户账号与密码。
+    user:
+      name: test # 账号
+      password: test # 密码
+
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8080 # Spring Boot Admin Server 地址
+        username: user # Spring Boot Admin Server 的认证账号
+        password: user # Spring Boot Admin Server 的认证密码
+        instance:
+          metadata:
+            user.name: ${spring.security.user.name} # Actuator 端点的认证账号
+            user.password: ${spring.security.user.password} # Actuator 端点的认证密码
+
+server:
+  port: 18080 # 设置自定义 Server 端口，避免和 Spring Boot Admin Server 端口冲突。

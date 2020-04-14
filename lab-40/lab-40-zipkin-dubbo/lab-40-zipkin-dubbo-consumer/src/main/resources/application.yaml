@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: user-service-consumer
+
+# dubbo 配置项，对应 DubboConfigurationProperties 配置类
+dubbo:
+  # Dubbo 应用配置
+  application:
+    name: ${spring.application.name} # 应用名
+  # Dubbo 注册中心配置
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
+  # Dubbo 服务提供者的配置，对应 ConsumerConfig 类
+  consumer:
+    filter: tracing

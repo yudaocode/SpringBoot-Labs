@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: listener-demo
+
+  # Kafka 配置项，对应 KafkaProperties 配置类
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者

@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: demo-producer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-output:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 RocketMQ Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+      # Spring Cloud Stream RocketMQ 配置项
+      rocketmq:
+        # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
+        binder:
+          name-server: 127.0.0.1:9876 # RocketMQ Namesrv 地址
+        # RocketMQ 自定义 Binding 配置项，对应 RocketMQBindingProperties Map
+        bindings:
+          demo01-output:
+            # RocketMQ Producer 配置项，对应 RocketMQProducerProperties 类
+            producer:
+              group: test # 生产者分组
+              sync: true # 是否同步发送消息，默认为 false 异步。
+
+server:
+  port: 18080

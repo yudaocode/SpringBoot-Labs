@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: publisher-demo
+
+  # RabbitMQ 相关配置项
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。

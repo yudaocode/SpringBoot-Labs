@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labx-14</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-14-sc-skywalking-mq-rocketmq</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>labx-14-sc-skywalking-mq-rocketmq-producer</module>
+        <module>labx-14-sc-skywalking-mq-rocketmq-consumer</module>
+    </modules>
+
+</project>

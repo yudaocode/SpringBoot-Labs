@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lab-44</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-44-nacos-config-demo</module>
+        <module>lab-44-nacos-config-demo-profiles</module>
+        <module>lab-44-nacos-config-demo-auto-refresh</module>
+        <module>lab-44-nacos-config-demo-jasypt</module>
+        <module>lab-44-nacos-config-demo-actuator</module>
+        <module>lab-44-nacos-config-demo-multi</module>
+        <module>lab-44-nacos-discovery-demo</module>
+    </modules>
+
+
+</project>

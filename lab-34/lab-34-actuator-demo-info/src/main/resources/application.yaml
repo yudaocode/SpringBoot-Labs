@@ -1,0 +1,33 @@
+management:
+  endpoint:
+    # Info 端点配置项
+    info:
+      enabled: true # 是否开启。默认为 true 开启。
+  info:
+    # EnvironmentInfoContributor 的配置项
+    env:
+      enabled: true
+    # BuildInfoContributor 的配置属性
+    build:
+      enabled: true
+    # GitInfoContributor 的配置属性
+    git:
+      enabled: true
+      mode: SIMPLE # Git 信息展示模式。SIMPLE 默认，只展示精简的 Git 版本信息；FULL 模式，展示完整的 Git 版本信息。
+
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      base-path: /actuator # Actuator 提供的 API 接口的根目录。默认为 /actuator
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+        exclude: # 在 include 的基础上，需要排除的端点。通过设置 * ，可以排除所有端点。
+
+# info 配置项
+info:
+  app:
+    java:
+      source: @java.version@
+      target: @java.version@
+    encoding: UTF-8
+    version: @project.version@

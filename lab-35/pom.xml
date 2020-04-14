@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lab-35</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-35-admin-01-adminserver</module>
+        <module>lab-35-admin-01-demo-application</module>
+
+        <module>lab-35-admin-02-adminserver</module>
+        <module>lab-35-admin-02-demo-application</module>
+        <module>lab-35-admin-02-eurekaserver</module>
+
+        <module>lab-35-admin-03-adminserver</module>
+        <module>lab-35-admin-03-demo-application</module>
+
+        <module>lab-35-admin-04-adminserver</module>
+        <module>lab-35-admin-05-adminserver</module>
+    </modules>
+
+
+</project>

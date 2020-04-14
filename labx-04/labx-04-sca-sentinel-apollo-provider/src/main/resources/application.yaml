@@ -1,0 +1,38 @@
+server:
+  port: 18080 # 服务器端口，设置为 18080 避免和本地的 Apollo 端口冲突
+
+# Apollo 相关配置项
+app:
+  id: ${spring.application.name} # 使用的 Apollo 的项目（应用）编号
+apollo:
+  meta: http://127.0.0.1:8080 # Apollo Meta Server 地址
+  bootstrap:
+    enabled: true # 是否开启 Apollo 配置预加载功能。默认为 false。
+    eagerLoad:
+      enable: true # 是否开启 Apollo 支持日志级别的加载时机。默认为 false。
+    namespaces: application # 使用的 Apollo 的命名空间，默认为 application。
+
+spring:
+  application:
+    name: demo-provider
+
+  cloud:
+    # Sentinel 配置项，对应 SentinelProperties 配置属性类
+    sentinel:
+      enabled: true # 是否开启。默认为 true 开启
+      eager: true # 是否饥饿加载。默认为 false 关闭
+      transport:
+        dashboard: 127.0.0.1:7070 # Sentinel 控制台地址
+      filter:
+        url-patterns: /** # 拦截请求的地址。默认为 /*
+      # Sentinel 规则的数据源，是一个 Map 类型。key 为数据源名，可自定义；value 为数据源的具体配置
+      datasource:
+        ds1:
+          # 对应 DataSourcePropertiesConfiguration 类
+          apollo:
+            namespaceName: application # Apollo 命名空间
+            flowRulesKey: sentinel.flow-rule # Apollo 配置 key
+            data-type: json # 数据格式
+            rule-type: FLOW # 规则类型
+
+

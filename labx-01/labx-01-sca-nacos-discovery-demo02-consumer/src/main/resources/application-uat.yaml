@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+        namespace: bc8c8c2d-bd85-42bb-ada3-1a8f940ceb20 # Nacos 命名空间 uat 的编号

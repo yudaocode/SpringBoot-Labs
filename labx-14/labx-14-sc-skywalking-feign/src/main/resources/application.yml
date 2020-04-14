@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: feign-service # 服务名

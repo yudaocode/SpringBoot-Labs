@@ -1,0 +1,9 @@
+server:
+  port: 8079
+
+spring:
+  data:
+    # Elasticsearch 配置项
+    elasticsearch:
+      cluster-name: elasticsearch2 # 集群名
+      cluster-nodes: 127.0.0.1:9301 # 集群节点

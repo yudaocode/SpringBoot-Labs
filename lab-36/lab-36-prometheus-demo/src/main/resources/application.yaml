@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-application # 应用名
+
+management:
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+
+  metrics:
+    tags: # 通用标签
+      application: ${spring.application.name}

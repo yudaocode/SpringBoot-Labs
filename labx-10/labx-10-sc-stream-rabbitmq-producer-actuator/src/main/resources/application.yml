@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: demo-producer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+      binders:
+        rabbit001:
+          type: rabbit # 设置 Binder 的类型
+          environment: # 设置 Binder 的环境配置
+            # 如果是 RabbitMQ 类型的时候，则对应的是 RabbitProperties 类
+            spring:
+              rabbitmq:
+                host: 127.0.0.1 # RabbitMQ 服务的地址
+                port: 5672 # RabbitMQ 服务的端口
+                username: guest # RabbitMQ 服务的账号
+                password: guest # RabbitMQ 服务的密码
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-output:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 RabbitMQ Exchange
+          content-type: application/json # 内容格式。这里使用 JSON
+          binder: rabbit001 # 设置使用的 Binder 名字
+
+server:
+  port: 18080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+  endpoint:
+    # Health 端点配置项，对应 HealthProperties 配置类
+    health:
+      enabled: true # 是否开启。默认为 true 开启。
+      show-details: ALWAYS # 何时显示完整的健康信息。默认为 NEVER 都不展示。可选 WHEN_AUTHORIZED 当经过授权的用户；可选 ALWAYS 总是展示。

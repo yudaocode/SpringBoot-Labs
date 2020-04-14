@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lab-37</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-37-logging-demo</module>
+        <module>lab-37-logging-actuator</module>
+        <module>lab-37-logging-logback</module>
+        <module>lab-37-logging-debug</module>
+        <module>lab-37-logging-multi-env</module>
+        <module>lab-37-logging-log4j2</module>
+        <module>lab-37-logging-aop</module>
+    </modules>
+
+
+</project>

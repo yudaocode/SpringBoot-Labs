@@ -1,0 +1,7 @@
+# Sentry 配置项，对应 SentryProperties 配置类
+sentry:
+  dsn: http://b10468b71cd945358ff88ed975287194@47.56.150.64:9000/3 # DSN
+  timeout: 60000 # HTTP 请求建立连接超时时间
+
+server:
+  port: 18080

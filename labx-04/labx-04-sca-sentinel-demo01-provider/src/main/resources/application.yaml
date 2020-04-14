@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-provider
+
+  cloud:
+    # Sentinel 配置项，对应 SentinelProperties 配置属性类
+    sentinel:
+      enabled: true # 是否开启。默认为 true 开启
+      eager: true # 是否饥饿加载。默认为 false 关闭
+      transport:
+        dashboard: 127.0.0.1:7070 # Sentinel 控制台地址
+      filter:
+        url-patterns: /** # 拦截请求的地址。默认为 /*

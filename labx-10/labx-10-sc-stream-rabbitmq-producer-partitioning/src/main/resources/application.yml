@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: demo-producer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+      binders:
+        rabbit001:
+          type: rabbit # 设置 Binder 的类型
+          environment: # 设置 Binder 的环境配置
+            # 如果是 RabbitMQ 类型的时候，则对应的是 RabbitProperties 类
+            spring:
+              rabbitmq:
+                host: 127.0.0.1 # RabbitMQ 服务的地址
+                port: 5672 # RabbitMQ 服务的端口
+                username: guest # RabbitMQ 服务的账号
+                password: guest # RabbitMQ 服务的密码
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-output:
+          destination: DEMO-TOPIC-03 # 目的地。这里使用 RabbitMQ Exchange
+          content-type: application/json # 内容格式。这里使用 JSON
+          binder: rabbit001 # 设置使用的 Binder 名字
+          # Producer 配置项，对应 ProducerProperties 类
+          producer:
+            partition-key-expression: payload['id'] # 分区 key 表达式。该表达式基于 Spring EL，从消息中获得分区 key。
+            partition-count: 2 # 分区大小，默认为 1 分区
+#            required-groups: demo01-consumer-group-DEMO-TOPIC-01 #only applicable for rabbit
+
+server:
+  port: 18080

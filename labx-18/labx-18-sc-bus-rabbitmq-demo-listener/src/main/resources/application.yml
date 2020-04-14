@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: listener-demo
+
+  # RabbitMQ 相关配置项
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者

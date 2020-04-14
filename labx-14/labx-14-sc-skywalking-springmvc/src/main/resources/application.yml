@@ -1,0 +1,6 @@
+server:
+  port: 8079
+
+spring:
+  application:
+    name: user-service # 服务名

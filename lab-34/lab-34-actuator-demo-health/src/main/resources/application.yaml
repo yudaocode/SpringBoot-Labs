@@ -1,0 +1,24 @@
+management:
+  endpoint:
+    # Health 端点配置项，对应 HealthProperties 配置类
+    health:
+      enabled: true # 是否开启。默认为 true 开启。
+      show-details: ALWAYS # 何时显示完整的健康信息。默认为 NEVER 都不展示。可选 WHEN_AUTHORIZED 当经过授权的用户；可选 ALWAYS 总是展示。
+      status:
+        http-mapping: # 设置不同健康状态对应的响应状态码
+          DOWN: 503
+        order: DOWN, OUT_OF_SERVICE, UP, UNKNOWN # 状态排序。
+  health:
+    # DiskSpaceHealthIndicator 配置项，对应 DiskSpaceHealthIndicatorProperties
+    diskspace:
+      enabled: true # 是否开启。默认为 true 开启。
+      path: . # 目录。默认为 . 当前目录。
+      threshold: # 剩余空间的阀值。默认为 10M 。
+  endpoints:
+    # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+    web:
+      base-path: /actuator # Actuator 提供的 API 接口的根目录。默认为 /actuator
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+        exclude: # 在 include 的基础上，需要排除的端点。通过设置 * ，可以排除所有端点。
+

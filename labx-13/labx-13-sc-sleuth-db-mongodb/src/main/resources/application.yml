@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-service # 服务名
+
+  # Zipkin 配置项，对应 ZipkinProperties 类
+  zipkin:
+    base-url: http://127.0.0.1:9411 # Zipkin 服务的地址
+
+  # Spring Cloud Sleuth 配置项
+  sleuth:
+    # Spring Cloud Sleuth 针对 Web 组件的配置项，例如说 SpringMVC
+    web:
+      enabled: true # 是否开启，默认为 true
+
+  data:
+    # MongoDB 配置项，对应 MongoProperties 类
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: yourdatabase
+      username: test01
+      password: password01
+      # 上述属性，也可以只配置 uri

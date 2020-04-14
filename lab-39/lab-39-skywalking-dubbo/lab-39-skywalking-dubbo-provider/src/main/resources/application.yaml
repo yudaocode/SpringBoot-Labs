@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user-service-provider
+
+# dubbo 配置项，对应 DubboConfigurationProperties 配置类
+dubbo:
+  # Dubbo 应用配置
+  application:
+    name: ${spring.application.name} # 应用名
+  # Dubbo 注册中心配
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
+  # Dubbo 服务提供者协议配置
+  protocol:
+    port: -1 # 协议端口。使用 -1 表示随机端口。
+    name: dubbo # 使用 `dubbo://` 协议。更多协议，可见 http://dubbo.apache.org/zh-cn/docs/user/references/protocol/introduction.html 文档
+  # 配置扫描 Dubbo 自定义的 @Service 注解，暴露成 Dubbo 服务提供者
+  scan:
+    base-packages: cn.iocoder.springboot.lab39.skywalkingdemo.providerdemo.service

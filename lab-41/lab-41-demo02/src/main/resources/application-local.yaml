@@ -1,0 +1,15 @@
+server:
+  port: 8079
+
+management:
+  server:
+    port: 8078 # 自定义端口，避免 Nginx 暴露出去
+
+  endpoint:
+    health:
+      show-details: always # 配置展示明细，这样自定义的 ServerHealthIndicator 才可以被访问
+
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+
