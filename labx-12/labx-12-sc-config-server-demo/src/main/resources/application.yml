@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo-config-server
+  profiles:
+    active: native # TODO 采用的方案
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared

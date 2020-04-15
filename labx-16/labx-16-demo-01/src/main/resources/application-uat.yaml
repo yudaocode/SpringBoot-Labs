@@ -1,0 +1,21 @@
+server:
+  port: 8079
+
+management:
+  server:
+    port: 8078 # 自定义端口，避免 Nginx 暴露出去
+
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+
+spring:
+  application:
+    name: demo-service
+
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址

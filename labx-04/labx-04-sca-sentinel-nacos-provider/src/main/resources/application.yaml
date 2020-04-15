@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: demo-provider
+
+  cloud:
+    # Sentinel 配置项，对应 SentinelProperties 配置属性类
+    sentinel:
+      enabled: true # 是否开启。默认为 true 开启
+      eager: true # 是否饥饿加载。默认为 false 关闭
+      transport:
+        dashboard: 127.0.0.1:7070 # Sentinel 控制台地址
+      filter:
+        url-patterns: /** # 拦截请求的地址。默认为 /*
+      # Sentinel 规则的数据源，是一个 Map 类型。key 为数据源名，可自定义；value 为数据源的具体配置
+      datasource:
+        ds1:
+          # 对应 DataSourcePropertiesConfiguration 类
+          nacos:
+            server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+#            data-id: demo-application-flow-rule
+#            data-id: demo-provider-flow-rule
+            namespace: # Nacos 命名空间
+            group-id: DEFAULT_GROUP # Nacos 分组
+            data-id: ${spring.application.name}-flow-rule # Nacos 配置集编号
+            data-type: json # 数据格式
+            rule-type: FLOW # 规则类型

@@ -1,0 +1,12 @@
+# 加密配置项，对应 KeyProperties 类
+encrypt:
+  # 对称加密
+#  key: yudaoyuanma # 对称加密 key
+#  salt: dfaad7761f0729b35ec3b3543604eda7 # 对称加密 salt，默认为 "deadbeef"，必须是 16 进制
+
+  # 非对应加密
+  key-store:
+    location: classpath:/configserver.jks # jks 文件所在的路径
+    password: buzhidao # 对应 storepass 参数
+    alias: mytestkey # 对应 alias 参数
+    secret: nicainicai # 对应 keypass 参数

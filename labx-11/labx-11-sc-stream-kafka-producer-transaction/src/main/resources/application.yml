@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: demo-producer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+#      binders:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-output:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 Kafka Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+      # Spring Cloud Stream Kafka 配置项
+      kafka:
+        # Kafka Binder 配置项，对应 KafkaBinderConfigurationProperties 类
+        binder:
+          brokers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+          transaction:
+            transaction-id-prefix: demo. # 事务编号前缀
+            producer:
+              configuration:
+                retries: 1 # 发送失败时，重试发送的次数
+                acks: all # 0-不应答。1-leader 应答。all-所有 leader 和 follower 应答。
+        # Kafka 自定义 Binding 配置项，对应 KafkaBindingProperties Map
+        bindings:
+          demo01-output:
+            # Kafka Producer 配置项，对应 KafkaProducerProperties 类
+            producer:
+              sync: true # 是否同步发送消息，默认为 false 异步。
+
+server:
+  port: 18080

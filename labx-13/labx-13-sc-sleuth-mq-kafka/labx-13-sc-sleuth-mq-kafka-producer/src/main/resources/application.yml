@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: demo-producer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+      #      binders:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-output:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 Kafka Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+      # Spring Cloud Stream Kafka 配置项
+      kafka:
+        # Kafka Binder 配置项，对应 KafkaBinderConfigurationProperties 类
+        binder:
+          brokers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+        # Kafka 自定义 Binding 配置项，对应 KafkaBindingProperties Map
+        bindings:
+          demo01-output:
+            # Kafka Producer 配置项，对应 KafkaProducerProperties 类
+            producer:
+              sync: true # 是否同步发送消息，默认为 false 异步。
+
+  # Zipkin 配置项，对应 ZipkinProperties 类
+  zipkin:
+    base-url: http://127.0.0.1:9411 # Zipkin 服务的地址
+
+  # Spring Cloud Sleuth 配置项
+  sleuth:
+    messaging:
+      # Spring Cloud Sleuth 针对 Kafka 组件的配置项
+      kafka:
+        enabled: true # 是否开启
+        remote-service-name: kafka # 远程服务名，默认为 kafka
+
+server:
+  port: 18080

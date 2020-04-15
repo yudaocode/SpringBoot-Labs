@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+  # Zipkin 配置项，对应 ZipkinProperties 类
+  zipkin:
+    base-url: http://127.0.0.1:9411 # Zipkin 服务的地址
+
+  # Spring Cloud Sleuth 配置项
+  sleuth:
+    # Spring Cloud Sleuth 针对 Web 组件的配置项，例如说 SpringMVC
+    web:
+      enabled: true # 是否开启，默认为 true
+
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+        - id: feign-service-route
+          uri: http://127.0.0.1:8081
+          predicates:
+            - Path=/**

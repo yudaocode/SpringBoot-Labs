@@ -1,0 +1,35 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+#  cloud:
+#    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+#    gateway:
+#      # 路由配置项，对应 RouteDefinition 数组
+#      routes:
+#        - id: yudaoyuanma # 路由的编号
+#          uri: http://www.iocoder.cn # 路由到的目标地址
+#          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+#            - Path=/blog
+#          filters:
+#            - StripPrefix=1
+#        - id: oschina # 路由的编号
+#          uri: https://www.oschina.net # 路由的目标地址
+#          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+#            - Path=/oschina
+#          filters: # 过滤器，对请求进行拦截，实现自定义的功能，对应 FilterDefinition 数组
+#            - StripPrefix=1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
+  endpoint:
+    # Health 端点配置项，对应 HealthProperties 配置类
+    health:
+      enabled: true # 是否开启。默认为 true 开启。
+      show-details: ALWAYS # 何时显示完整的健康信息。默认为 NEVER 都不展示。可选 WHEN_AUTHORIZED 当经过授权的用户；可选 ALWAYS 总是展示。

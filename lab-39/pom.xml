@@ -27,6 +27,7 @@
         <module>lab-39-trace-annotations</module>
         <module>lab-39-opentracing</module>
         <module>lab-39-async</module>
+        <module>lab-39-skywalking-dubbo</module>
     </modules>
 
 </project>

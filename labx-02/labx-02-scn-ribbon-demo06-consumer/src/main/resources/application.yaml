@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: demo-consumer # Spring 应用名
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+    loadbalancer:
+      # Spring Cloud Loadbalancer 重启配置，对应 LoadBalancerRetryProperties 配置类
+      retry:
+        enabled: true # 是否开启重启，默认为 false 关闭重试。
+
+server:
+  port: 28080 # 服务器端口。默认为 8080
+
+ribbon:
+  restclient:
+    enabled: true # 设置使用 Jersey Client，对应 RestClientRibbonConfiguration 配置类
+
+demo-provider:
+  ribbon:
+    ConnectTimeout: 1000 # 请求的连接超时时间，单位：毫秒。默认为 1000
+    ReadTimeout: 1 # 请求的读取超时时间，单位：毫秒。默认为 1000
+    OkToRetryOnAllOperations: true # 是否对所有操作都进行重试，默认为 false。
+    MaxAutoRetries: 0 # 对当前服务的重试次数，默认为 0 次。
+    MaxAutoRetriesNextServer: 1 # 重新选择服务实例的次数，默认为 1 次。注意，不包含第 1 次哈。

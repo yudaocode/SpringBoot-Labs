@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo-consumer # Spring 应用名
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+
+server:
+  port: 28080 # 服务器端口。默认为 8080
+
+feign:
+  # Feign Apache HttpClient 配置项，对应 FeignHttpClientProperties 配置属性类
+  httpclient:
+    enabled: true # 是否开启。默认为 true
+    max-connections: 200 # 最大连接数。默认为 200
+    max-connections-per-route: 50 # 每个路由的最大连接数。默认为 50。router = host + port
+

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: listener-demo
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者
+
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  name-server: 127.0.0.1:9876 # RocketMQ Namesrv

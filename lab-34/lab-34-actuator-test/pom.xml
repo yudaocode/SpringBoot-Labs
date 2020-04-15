@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-34-acturator-test</artifactId>
+    <artifactId>lab-34-actuator-test</artifactId>
 
     <dependencies>
         <!-- 实现对 Spring MVC 的自动化配置 -->

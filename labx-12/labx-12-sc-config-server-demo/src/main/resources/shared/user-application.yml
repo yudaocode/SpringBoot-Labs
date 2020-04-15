@@ -1,0 +1,3 @@
+order:
+  pay-timeout-seconds: 60 # 订单支付超时时长，单位：秒。
+  create-frequency-seconds: 120 # 订单创建频率，单位：秒

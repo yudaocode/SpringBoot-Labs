@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: demo-application-activemq
+
+  # ActiveMQ 配置项，对应 ActiveMQProperties 配置类
+  activemq:
+    broker-url: tcp://127.0.0.1:61616 # Activemq Broker 的地址
+    user: admin # 账号
+    password: admin # 密码
+    packages:
+      trust-all: true # 可信任的反序列化包
+
+  # Zipkin 配置项，对应 ZipkinProperties 类
+  zipkin:
+    base-url: http://127.0.0.1:9411 # Zipkin 服务的地址
+
+  # Spring Cloud Sleuth 配置项
+  sleuth:
+    messaging:
+      # Spring Cloud Sleuth 针对 JMS 组件的配置项
+      jms:
+        enabled: true # 是否开启
+        remote-service-name: jms # 远程服务名，默认为 jms

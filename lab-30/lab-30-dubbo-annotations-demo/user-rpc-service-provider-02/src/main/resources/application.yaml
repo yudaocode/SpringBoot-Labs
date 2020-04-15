@@ -14,7 +14,7 @@ dubbo:
   provider:
     timeout: 1000 # 【重要】远程服务调用超时时间，单位：毫秒。默认为 1000 毫秒，胖友可以根据自己业务修改
     UserRpcService:
-      version: 1.0.
+      version: 1.0.0
   # 配置扫描 Dubbo 自定义的 @Service 注解，暴露成 Dubbo 服务提供者
   scan:
     base-packages: cn.iocoder.springboot.lab30.rpc.service

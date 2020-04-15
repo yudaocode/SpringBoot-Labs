@@ -14,6 +14,8 @@
     <modules>
         <module>lab-40-demo</module>
         <module>lab-40-springmvc</module>
+        <module>lab-40-zipkin-dubbo</module>
+
         <module>lab-40-mysql</module>
         <module>lab-40-redis</module>
         <module>lab-40-mongodb</module>
@@ -22,8 +24,10 @@
         <module>lab-40-kafka</module>
         <module>lab-40-rabbitmq</module>
         <module>lab-40-activemq</module>
+
         <module>lab-40-logback</module>
         <module>lab-40-opentracing</module>
+
     </modules>
 
 

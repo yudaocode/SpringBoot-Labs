@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: user-service # 服务名
+
+  # Zipkin 配置项，对应 ZipkinProperties 类
+  zipkin:
+    base-url: http://127.0.0.1:9411 # Zipkin 服务的地址
+
+  # Spring Cloud Sleuth 配置项
+  sleuth:
+    # Spring Cloud Sleuth 针对 Web 组件的配置项，例如说 SpringMVC
+    web:
+      enabled: true # 是否开启，默认为 true
+    # Spring Cloud Sleuth 针对抽样收集的配置项
+    sampler:
+      probability: 0.1 # 采样百分比，默认为空。
+#      rate: 1 # 限流采样，即每秒可收集链路的数量，默认为 10。

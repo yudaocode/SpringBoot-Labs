@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: demo-consumer-application
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binder 配置项，对应 BinderProperties Map
+#      binders:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        demo01-input:
+          destination: DEMO-TOPIC-01 # 目的地。这里使用 Kafka Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+          group: demo01-consumer-group # 消费者分组
+          # Consumer 配置项，对应 ConsumerProperties 类
+          consumer:
+            batch-mode: true # 是否批量消费默认，默认为 false
+      # Spring Cloud Stream Kafka 配置项
+      kafka:
+        # Kafka Binder 配置项，对应 KafkaBinderConfigurationProperties 类
+        binder:
+          brokers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+          configuration:
+            fetch.max.wait.ms: 10000 # poll 一次拉取的阻塞的最大时长，单位：毫秒。这里指的是阻塞拉取需要满足至少 fetch-min-size 大小的消息
+            fetch.min.bytes: 1024 # poll 一次消息拉取的最小数据量，单位：字节
+            max.poll.records: 100 # poll 一次消息拉取的最大数量
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo-consumer # Spring 应用名
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+
+server:
+  port: 28080 # 服务器端口。默认为 8080
+
+ribbon:
+#  okhttp:
+#    enabled: true # 设置使用 OkHttp，对应 OkHttpRibbonConfiguration 配置类
+  restclient:
+    enabled: true # 设置使用 Jersey Client，对应 RestClientRibbonConfiguration 配置类
+#  httpclient:
+#    enabled: true # 设置使用 Apache HttpClient，对应 HttpClientRibbonConfiguration 配置类
+#  ConnectTimeout: 1 # 请求的连接超时时间，单位：毫秒。默认为 1000
+#  ReadTimeout: 1 # 请求的读取超时时间，单位：毫秒。默认为 1000
+

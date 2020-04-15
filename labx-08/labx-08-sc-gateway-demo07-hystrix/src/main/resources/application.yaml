@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-application
+
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+        - id: hystrix_test
+          uri: http://127.0.0.1:18181
+          predicates:
+            - Path=/**
+          filters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd # 对应的 Hystrix Command 名字
+                fallbackUri: forward:/fallback # 处理 Hystrix fallback 的情况，重定向到指定地址
