@@ -4,7 +4,7 @@ import cn.iocoder.springboot.lab55.mapstructdemo.bo.UserBO;
 import cn.iocoder.springboot.lab55.mapstructdemo.convert.UserConvert;
 import cn.iocoder.springboot.lab55.mapstructdemo.dataobject.UserDO;
 
-public class Test {
+public class UserBOTest {
 
     public static void main(String[] args) {
         // 创建 UserDO 对象
