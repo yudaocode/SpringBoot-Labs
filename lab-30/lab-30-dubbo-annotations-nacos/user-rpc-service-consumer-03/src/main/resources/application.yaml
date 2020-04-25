@@ -1,0 +1,13 @@
+# dubbo 配置项，对应 DubboConfigurationProperties 配置类
+dubbo:
+  # Dubbo 应用配置
+  application:
+    name: user-service-consumer # 应用名
+  # Dubbo 注册中心配置
+  registry:
+    address: nacos://127.0.0.1:8848 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
+  # Dubbo 消费者配置
+  consumer:
+    timeout: 1000 # 【重要】远程服务调用超时时间，单位：毫秒。默认为 1000 毫秒，胖友可以根据自己业务修改
+    UserRpcService:
+      version: 1.0.0
