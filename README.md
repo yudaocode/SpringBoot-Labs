@@ -240,11 +240,13 @@
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「2. XML 配置」](#)和[「3. 注解配置」](#)小节
 
 **[Nacos](http://www.iocoder.cn/Nacos/install/?github)**
+* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「6. 整合 Nacos」](#)小节
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「2. 快速入门」](#)小节
 
 ## 服务保障
 
 **[Sentinel](http://www.iocoder.cn/Sentinel/install/?github)**
+* [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「7. 整合 Sentinel」](#)小节
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「6. 整合 Sentinel」](#)小节
 
 ## 分布式事务
@@ -252,6 +254,9 @@
 **[Seata](http://www.iocoder.cn/Seata/install/?github)**
 * [《芋道 Dubbo 分布式事务 Seata 入门》](http://www.iocoder.cn/Dubbo/Seata/?github) 对应 [lab-53](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-53)
 * [《芋道 Spring Cloud Alibaba 分布式事务 Seata 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Seata/?github)的[「2. AT 模式 + Dubbo」](#)小节
+
+**[TCC Transaction](http://www.iocoder.cn/categories/TCC-Transaction/?github)**
+* [《TCC-Transaction 源码分析 —— Dubbo 支持》](http://www.iocoder.cn/TCC-Transaction/dubbo-support/?self)
 
 ## 链路追踪
 
