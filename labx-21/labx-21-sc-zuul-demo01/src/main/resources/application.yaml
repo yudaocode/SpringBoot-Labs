@@ -5,10 +5,10 @@ spring:
   application:
     name: zuul-application
 
-# Zuul 配置项
+# Zuul 配置项，对应 ZuulProperties 配置类
 zuul:
-  servlet-path: /zuul # ZuulServlet 匹配的路径，默认为 /zuul
-  # 路由配置项，对应 ZuulRoute 数组
+  servlet-path: / # ZuulServlet 匹配的路径，默认为 /zuul
+  # 路由配置项，对应 ZuulRoute Map
   routes:
     route_yudaoyuanma:
       path: /blog/**

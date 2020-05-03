@@ -65,6 +65,8 @@
         <module>lab-52</module>
         <module>lab-53</module>
         <module>lab-54</module>
+        <module>lab-55</module>
+        <module>lab-56</module>
 
         <!-- Spring Cloud 示例 -->
         <module>labx-01</module>
@@ -87,8 +89,6 @@
         <module>labx-18</module>
         <module>labx-19</module>
         <module>labx-20</module>
-        <module>lab-55</module>
-        <module>lab-56</module>
         <module>labx-21</module>
 
     </modules>
