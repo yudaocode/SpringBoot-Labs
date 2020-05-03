@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>labx-21-sc-zuul-demo01</module>
+        <module>labx-21-sc-zuul-demo02-registry</module>
+        <module>labx-21-sc-user-service</module>
     </modules>
 
 
