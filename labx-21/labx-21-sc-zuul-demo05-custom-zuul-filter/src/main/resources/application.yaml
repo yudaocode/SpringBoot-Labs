@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: zuul-application
+
+# Zuul 配置项，对应 ZuulProperties 配置类
+zuul:
+  servlet-path: / # ZuulServlet 匹配的路径，默认为 /zuul
+  # 路由配置项，对应 ZuulRoute Map
+  routes:
+    route_yudaoyuanma:
+      path: /blog/**
+      url: http://www.iocoder.cn
+    route_oschina:
+      path: /oschina/**
+      url: https://www.oschina.net
