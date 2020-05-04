@@ -22,6 +22,6 @@ zuul:
     route_oschina:
       path: /oschina/**
       url: https://www.oschina.net
-    route_user_service:
-      path: /user-serevice/**
+    route_users:
+      path: /users/**
       service-id: user-service

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-21-sc-zuul-demo03-config-apollo</artifactId>
+    <artifactId>labx-21-sc-zuul-demo03-config-nacos</artifactId>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -62,11 +62,10 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
-        <!--  引入 Apollo 客户端，内置对 Apollo 的自动化配置 -->
+        <!-- 引入 Spring Cloud Alibaba Nacos Config 相关依赖，将 Nacos 作为配置中心，并实现对其的自动配置 -->
         <dependency>
-            <groupId>com.ctrip.framework.apollo</groupId>
-            <artifactId>apollo-client</artifactId>
-            <version>1.5.1</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
     </dependencies>
 
