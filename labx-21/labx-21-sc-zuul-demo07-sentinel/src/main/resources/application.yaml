@@ -14,7 +14,7 @@ spring:
     sentinel:
       eager: true # 是否饥饿加载。默认为 false 关闭
       transport:
-        dashboard: localhost:7070 # 是否饥饿加载。默认为 false 关闭
+        dashboard: localhost:7070 # 是否饥饿加载。
       #      # 数据源的配置项
       #      datasource:
       #        ds1.file:
@@ -35,7 +35,7 @@ zuul:
   servlet-path: / # ZuulServlet 匹配的路径，默认为 /zuul
   # 路由配置项，对应 ZuulRoute Map
   routes:
-    route_yudaoyuanma:
+    yudaoyuanma: # 这是一个 Route 编号
       path: /**
       url: http://www.iocoder.cn
 

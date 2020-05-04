@@ -19,6 +19,7 @@
         <module>labx-21-sc-zuul-demo05-custom-zuul-filter</module>
         <module>labx-21-sc-zuul-demo07-hystrix</module>
         <module>labx-21-sc-zuul-demo07-sentinel</module>
+        <module>labx-21-sc-zuul-demo09-actuator</module>
 
         <module>labx-21-sc-user-service</module>
     </modules>

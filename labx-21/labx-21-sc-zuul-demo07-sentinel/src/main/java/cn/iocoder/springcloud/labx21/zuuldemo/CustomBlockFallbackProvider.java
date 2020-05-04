@@ -13,7 +13,7 @@ public class CustomBlockFallbackProvider implements ZuulBlockFallbackProvider {
 
     @PostConstruct
     public void init() {
-        ZuulBlockFallbackManager.registerProvider(this);
+        ZuulBlockFallbackManager.registerProvider(this); // 注册到 ZuulBlockFallbackManager
     }
 
     public String getRoute() {
