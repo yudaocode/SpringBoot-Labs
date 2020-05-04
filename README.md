@@ -1,3 +1,7 @@
+> 友情提示：因为提供了 50000+ 行示例代码，所以艿艿默认注释了所有 Maven Module。
+>
+> 胖友可以根据自己的需要，修改 [`pom.xml`](https://github.com/YunaiV/SpringBoot-Labs/blob/master/pom.xml) 即可。
+
 一个涵盖六个主流技术栈的**正经**仓库：
 * [《Spring Boot 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-boot-%E4%B8%93%E6%A0%8F)
 * [《Spring Cloud Alibaba 专栏》](https://github.com/YunaiV/SpringBoot-Labs#spring-cloud-alibaba-%E4%B8%93%E6%A0%8F)
@@ -182,7 +186,7 @@
 ## API 网关
 
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
-* 《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》计划中...
+* [《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》](http://www.iocoder.cn/Spring-Cloud/Zuul/?github) 对应 对应 [labx-21](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-21)
 * [《性能测试 —— Spring Cloud Gateway、Zuul 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringCloudGateway-Zuul-benchmark/?github) 对应 [lab-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-07)
 
 > 如下非 Spring Cloud 网关，先放在这里...
