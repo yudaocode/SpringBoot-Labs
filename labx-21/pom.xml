@@ -17,6 +17,7 @@
         <module>labx-21-sc-zuul-demo03-config-apollo</module>
         <module>labx-21-sc-zuul-demo03-config-nacos</module>
         <module>labx-21-sc-zuul-demo05-custom-zuul-filter</module>
+        <module>labx-21-sc-zuul-demo07-hystrix</module>
 
         <module>labx-21-sc-user-service</module>
     </modules>

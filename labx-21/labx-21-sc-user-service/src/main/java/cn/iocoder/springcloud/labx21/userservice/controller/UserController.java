@@ -20,4 +20,9 @@ public class UserController {
         return (int) (System.currentTimeMillis() / 1000); // 嘿嘿，随便返回一个 id
     }
 
+    @GetMapping("/sleep")
+    public void sleep() throws InterruptedException {
+        Thread.sleep(10 * 1000L);
+    }
+
 }

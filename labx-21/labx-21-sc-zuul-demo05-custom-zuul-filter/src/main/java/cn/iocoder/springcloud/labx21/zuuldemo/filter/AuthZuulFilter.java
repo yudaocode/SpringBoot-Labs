@@ -4,6 +4,7 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
@@ -62,7 +63,7 @@ public class AuthZuulFilter extends ZuulFilter {
         // 通过 token 获取不到 userId，说明认证不通过
         if (userId == null) {
             ctx.setSendZuulResponse(false);
-            ctx.setResponseStatusCode(401); // 响应 401 状态码
+            ctx.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value()); // 响应 401 状态码
             return null;
         }
 
