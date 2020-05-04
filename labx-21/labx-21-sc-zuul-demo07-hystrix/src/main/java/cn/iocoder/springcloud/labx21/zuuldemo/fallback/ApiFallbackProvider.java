@@ -8,7 +8,6 @@ import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 
 @Component
@@ -21,26 +20,26 @@ public class ApiFallbackProvider implements FallbackProvider {
     public ClientHttpResponse fallbackResponse(String route, final Throwable cause) {
         return new ClientHttpResponse() {
 
-            public HttpStatus getStatusCode() throws IOException {
+            public HttpStatus getStatusCode() {
                 return HttpStatus.OK;
             }
 
-            public int getRawStatusCode() throws IOException {
+            public int getRawStatusCode() {
                 return HttpStatus.OK.value();
             }
 
-            public String getStatusText() throws IOException {
-                return "OK";
+            public String getStatusText() {
+                return HttpStatus.OK.getReasonPhrase();
             }
 
             public void close() {}
 
-            public InputStream getBody() throws IOException {
+            public InputStream getBody() { // 响应内容
                 String bodyText = String.format("{\"code\": 500,\"message\": \"Service unavailable:%s\"}", cause.getMessage());
                 return new ByteArrayInputStream(bodyText.getBytes());
             }
 
-            public HttpHeaders getHeaders() {
+            public HttpHeaders getHeaders() { // 响应头
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_JSON); // json 返回
                 return headers;
