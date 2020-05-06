@@ -186,7 +186,7 @@
 ## API 网关
 
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
-* [《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》](http://www.iocoder.cn/Spring-Cloud/Zuul/?github) 对应 对应 [labx-21](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-21)
+* [《芋道 Spring Cloud Netflix 服务网关 Zuul 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Zuul/?github) 对应 对应 [labx-21](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-21)
 * [《性能测试 —— Spring Cloud Gateway、Zuul 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringCloudGateway-Zuul-benchmark/?github) 对应 [lab-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-07)
 
 > 如下非 Spring Cloud 网关，先放在这里...
