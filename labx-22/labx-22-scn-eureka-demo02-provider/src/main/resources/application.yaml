@@ -10,4 +10,4 @@ eureka:
     register-with-eureka: true # 注册到 Eureka-Server，默认为 true
     fetch-registry: true # 从 Eureka-Server 获取注册表，默认为 true
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/ # Eureka-Server 地址
+      defaultZone: http://eureka-node01:18761/eureka/, http://eureka-node02:28761/eureka/
