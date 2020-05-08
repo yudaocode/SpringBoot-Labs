@@ -20,6 +20,9 @@
         <module>labx-22-scn-eureka-demo02-provider</module>
         <module>labx-22-scn-eureka-demo02-consumer</module>
 
+        <module>labx-22-scn-eureka-server-security</module>
+        <module>labx-22-scn-eureka-demo03-provider</module>
+        <module>labx-22-scn-eureka-demo03-consumer</module>
     </modules>
 
 
