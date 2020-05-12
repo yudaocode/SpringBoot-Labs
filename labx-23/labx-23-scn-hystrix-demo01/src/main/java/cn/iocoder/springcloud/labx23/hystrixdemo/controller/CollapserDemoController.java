@@ -31,4 +31,16 @@ public class CollapserDemoController {
         logger.info("[test][user({}) 的结果为({})]", 2, user02.get());
     }
 
+
+    @GetMapping("/test_02")
+    public void test02() throws ExecutionException, InterruptedException {
+        logger.info("[test][准备获取用户信息]");
+        Future<String> user01 = collapserDemoService.getUserFuture(2);
+        Future<String> user02 = collapserDemoService.getUserFuture(1);
+        logger.info("[test][提交获取用户信息]");
+
+        logger.info("[test][user({}) 的结果为({})]", 1, user01.get());
+        logger.info("[test][user({}) 的结果为({})]", 2, user02.get());
+    }
+
 }
