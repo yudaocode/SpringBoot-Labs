@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @SpringBootApplication
 public class UserServiceApplication {
 
@@ -17,6 +20,11 @@ public class UserServiceApplication {
         @GetMapping("/get")
         public String get(@RequestParam("id") Integer id) {
             return "User:" + id;
+        }
+
+        @GetMapping("/batch_get")
+        public List<String> batchGet(@RequestParam("ids") List<Integer> ids) {
+            return ids.stream().map(id -> "User:" + id).collect(Collectors.toList());
         }
 
     }
