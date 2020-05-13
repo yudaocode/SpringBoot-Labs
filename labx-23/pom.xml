@@ -12,11 +12,15 @@
     <artifactId>labx-23</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>labx-23-scn-hystrix-demo01</module>
         <module>labx-23-user-service</module>
+
+        <module>labx-23-scn-hystrix-demo01</module>
 
         <module>labx-23-scn-hystrix-actuator</module>
         <module>labx-23-scn-hystrix-dashboard</module>
+
+        <module>labx-23-scn-hystrix-demo01-cluster</module>
+        <module>labx-23-scn-hystrix-dashboard-turbine</module>
     </modules>
 
 </project>

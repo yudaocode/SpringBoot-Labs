@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/ # Eureka-Server 地址
+
+turbine:
+  app-config: hystrix-demo
+  combine-host-port: true
+  cluster-name-expression: new String('default')
