@@ -14,7 +14,9 @@
     <modules>
         <module>labx-23-scn-hystrix-demo01</module>
         <module>labx-23-user-service</module>
-    </modules>
 
+        <module>labx-23-scn-hystrix-actuator</module>
+        <module>labx-23-scn-hystrix-dashboard</module>
+    </modules>
 
 </project>
