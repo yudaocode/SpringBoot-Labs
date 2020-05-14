@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-23-scn-hystrix-dashboard-turbine</artifactId>
+    <artifactId>labx-23-scn-hystrix-feign</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -48,22 +48,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 实现对 Hystrix Dashboard 的自动配置 -->
+        <!-- 引入 Spring Cloud Netflix Hystrix 相关依赖，将 Hystrix 作为服务保障组件，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
-        <!-- 实现对 Turbine 的自动配置 -->
+        <!-- 引入 Spring Cloud OpenFeign 相关依赖，使用 OpenFeign 提供声明式调用，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
-        </dependency>
-
-        <!-- 引入 Spring Cloud Netflix Eureka Client 相关依赖，将 Eureka 作为注册中心的客户端，并实现对其的自动配置 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

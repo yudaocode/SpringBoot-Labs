@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @SpringBootApplication
-@EnableHystrixDashboard
-@EnableTurbine
+@EnableHystrixDashboard // 声明开启 Hystrix Dashboard 功能
+@EnableTurbine // 声明开启 Turbine 功能
 public class HystrixDashboardApplication {
 
     public static void main(String[] args) {
