@@ -180,7 +180,7 @@
 ## 服务容错
 
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
-* 《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》计划中...
+* [《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Hystrix/?github) 对应 [labx-23](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-23)
 * 《芋道 Spring Cloud 服务容错 Resilience4j 入门》计划中...
 
 ## API 网关
