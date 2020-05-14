@@ -23,6 +23,8 @@
         <module>labx-23-scn-hystrix-dashboard-turbine</module>
 
         <module>labx-23-scn-hystrix-feign</module>
+
+        <module>labx-23-scn-hystrix-dubbo-demo</module>
     </modules>
 
 </project>
