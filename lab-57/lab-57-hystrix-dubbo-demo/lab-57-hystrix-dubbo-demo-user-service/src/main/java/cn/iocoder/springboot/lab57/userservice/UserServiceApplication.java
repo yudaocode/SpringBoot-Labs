@@ -1,4 +1,4 @@
-package cn.iocoder.springcloud.labx23.userservice;
+package cn.iocoder.springboot.lab57.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
 package cn.iocoder.springcloud.labx23.demo.controller;
 
-import cn.iocoder.springcloud.labx23.userservice.api.UserService;
+import cn.iocoder.springboot.lab57.userservice.api.UserService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
