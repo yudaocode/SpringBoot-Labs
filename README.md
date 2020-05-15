@@ -118,7 +118,7 @@
 ## 服务容错
 
 * [《芋道 Spring Boot 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Boot/Sentinel/?github) 对应 [lab-46](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-46)
-* 《芋道 Spring Boot 服务容错 Hystrix 入门》计划中...
+* [《芋道 Spring Boot 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Boot/Hystrix/?github) 对应 [lab-57](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-57)
 * 《芋道 Spring Boot 服务容错 Resilience4j 入门》计划中...
 
 ## 监控管理
@@ -256,6 +256,10 @@
 **[Sentinel](http://www.iocoder.cn/Sentinel/install/?github)**
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「7. 整合 Sentinel」](#)小节
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「6. 整合 Sentinel」](#)小节
+
+**[Hystrix](http://www.iocoder.cn/categories/Hystrix/?github)**
+* [《芋道 Spring Boot 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Boot/Hystrix/?github)的[「6. 集成到 Dubbo」](#)小节
+* [《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Hystrix/?github)的[「10. 集成到 Dubbo」](#)小节
 
 ## 分布式事务
 
