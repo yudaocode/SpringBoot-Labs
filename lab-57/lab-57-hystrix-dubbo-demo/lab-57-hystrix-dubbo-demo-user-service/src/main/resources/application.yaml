@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    # Nacos 作为注册中心的配置项
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+
+# Dubbo 配置项，对应 DubboConfigurationProperties 类
+dubbo:
+  scan:
+    base-packages: cn.iocoder.springcloud.labx23.userservice.service # 指定 Dubbo 服务实现类的扫描基准包
+  # Dubbo 服务暴露的协议配置，对应 ProtocolConfig Map
+  protocols:
+    dubbo:
+      name: dubbo # 协议名称
+      port: -1 # 协议端口，-1 表示自增端口，从 20880 开始
+  # Dubbo 服务注册中心配置，对应 RegistryConfig 类
+  registry:
+    address: spring-cloud://127.0.0.1:8848 # 指定 Dubbo 服务注册中心的地址
+  # Spring Cloud Alibaba Dubbo 专属配置项，对应 DubboCloudProperties 类
+  cloud:
+    subscribed-services: '' # 设置订阅的应用列表，默认为 * 订阅所有应用。

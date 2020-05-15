@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy // 开启 AOP 代理的支持
 public class HystrixConfig {
 
     @Bean
