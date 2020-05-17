@@ -1,5 +1,8 @@
 package cn.iocoder.springboot.lab58.userservice.response;
 
+/**
+ * User 信息 Response
+ */
 public class UserResponse {
 
     private Integer id;

@@ -42,9 +42,16 @@
             <artifactId>feign-core</artifactId>
             <version>11.0</version>
         </dependency>
+        <!-- 引入 Feign GSON 拓展的依赖 -->
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-gson</artifactId>
+            <version>11.0</version>
+        </dependency>
+        <!-- 引入 Feign SpringMVC 拓展的依赖 -->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-spring4</artifactId>
             <version>11.0</version>
         </dependency>
     </dependencies>

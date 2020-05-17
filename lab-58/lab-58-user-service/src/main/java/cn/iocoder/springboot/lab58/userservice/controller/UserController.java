@@ -1,10 +1,8 @@
 package cn.iocoder.springboot.lab58.userservice.controller;
 
+import cn.iocoder.springboot.lab58.userservice.request.UserAddRequest;
 import cn.iocoder.springboot.lab58.userservice.response.UserResponse;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +26,13 @@ public class UserController {
                 .setName(name + "_" + id).setGender(gender));
         }
         return users;
+    }
+
+    @PostMapping("/add")
+    public Integer add(@RequestBody UserAddRequest request) {
+        System.out.println("昵称：" + request.getName());
+        System.out.println("性别：" + request.getGender());
+        return 1;
     }
 
 }

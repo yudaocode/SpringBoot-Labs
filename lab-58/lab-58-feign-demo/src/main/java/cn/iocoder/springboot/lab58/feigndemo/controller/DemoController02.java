@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab58.feigndemo.controller;
 
-import cn.iocoder.springboot.lab58.feigndemo.feign.UserServiceFeignClient;
+import cn.iocoder.springboot.lab58.feigndemo.feign.UserServiceFeignClient02;
 import cn.iocoder.springboot.lab58.feigndemo.feign.request.UserAddRequest;
 import cn.iocoder.springboot.lab58.feigndemo.feign.response.UserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,16 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
-@RequestMapping("/demo")
-public class DemoController {
+@RequestMapping("/demo02")
+public class DemoController02 {
 
     @Autowired
-    private UserServiceFeignClient userServiceFeignClient;
+    private UserServiceFeignClient02 userServiceFeignClient;
 
     @GetMapping("/test01")
     public UserResponse test01() {
@@ -29,15 +27,15 @@ public class DemoController {
 
     @GetMapping("/test02A")
     public List<UserResponse> test02A() {
-        return userServiceFeignClient.list("你猜", 1);
+        return userServiceFeignClient.list("你猜", null);
     }
 
-    @GetMapping("/test02B")
-    public List<UserResponse> test02B() {
-        Map<String, Object> queryMap = new HashMap<>();
-        queryMap.put("name", "昵称");
-        return userServiceFeignClient.list(queryMap);
-    }
+//    @GetMapping("/test02B")
+//    public List<UserResponse> test02B() {
+//        Map<String, Object> queryMap = new HashMap<>();
+//        queryMap.put("name", "昵称");
+//        return userServiceFeignClient.list(queryMap);
+//    }
 
     @GetMapping("/test03")
     public Integer test03() {
