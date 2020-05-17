@@ -20,12 +20,12 @@ public class UserController {
     }
 
     @GetMapping("/list")
-    public List<UserResponse> list(@RequestParam("name") String name,
-                                   @RequestParam("gender") Integer gender) {
+    public List<UserResponse> list(@RequestParam(value = "name", required = false) String name,
+                                   @RequestParam(value = "gender", required = false) Integer gender) {
         List<UserResponse> users = new ArrayList<>();
         for (int id = 1; id <= 3; id++) {
             users.add(new UserResponse().setId(id)
-                .setName(name).setGender(gender));
+                .setName(name + "_" + id).setGender(gender));
         }
         return users;
     }
