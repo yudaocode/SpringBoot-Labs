@@ -18,4 +18,10 @@ public class UserDao {
                 id);
     }
 
+    public UserDO selectByUsername(String username) {
+        return new UserDO().setId(1)
+                .setUsername(username)
+                .setPassword(null);
+    }
+
 }

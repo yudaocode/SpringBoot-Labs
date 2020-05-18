@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+/**
+ * 基于 SpringContract 拓展契约
+ */
 public interface UserServiceFeignClient02 {
 
     // 获得用户详情

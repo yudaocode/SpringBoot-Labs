@@ -20,7 +20,7 @@ public class UserService {
     }
 
     public Integer add(String username, String password) {
-        if (exists(username)) {
+        if (userDao.selectByUsername(username) != null) {
             return null;
         }
         return 1;
