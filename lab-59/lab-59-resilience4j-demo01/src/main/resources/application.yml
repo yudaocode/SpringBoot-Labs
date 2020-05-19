@@ -1,0 +1,11 @@
+resilience4j:
+  # Resilience4j 的断路器配置项，对应 CircuitBreakerProperties 属性类
+  circuitbreaker:
+    instances:
+      backendA:
+        ring-buffer-size-in-closed-state: 5 # 熔断器关闭状态的缓冲区大小，不会限制线程的并发量，在熔断器发生状态转换前所有请求都会调用后端服务。
+        ring-buffer-size-in-half-open-state: 5 # 熔断器半开状态的缓冲区大小，会限制线程的并发量。例如，缓冲区为 10 则每次只会允许 10 个请求调用后端服务。
+        wait-duration-in-open-state : 5000 # 熔断器从打开状态转变为半开状态等待的时间，单位：毫秒
+        failure-rate-threshold: 50 # 熔断器关闭状态和半开状态使用的同一个失败率阈值，单位：百分比
+
+        register-health-indicator: true # 是否注册到健康监测
