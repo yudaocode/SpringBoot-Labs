@@ -3,9 +3,16 @@ resilience4j:
   circuitbreaker:
     instances:
       backendA:
-        ring-buffer-size-in-closed-state: 5 # 熔断器关闭状态的缓冲区大小，不会限制线程的并发量，在熔断器发生状态转换前所有请求都会调用后端服务。
-        ring-buffer-size-in-half-open-state: 5 # 熔断器半开状态的缓冲区大小，会限制线程的并发量。例如，缓冲区为 10 则每次只会允许 10 个请求调用后端服务。
-        wait-duration-in-open-state : 5000 # 熔断器从打开状态转变为半开状态等待的时间，单位：毫秒
-        failure-rate-threshold: 50 # 熔断器关闭状态和半开状态使用的同一个失败率阈值，单位：百分比
-
+        failure-rate-threshold: 50 # 熔断器关闭状态和半开状态使用的同一个失败率阈值，单位：百分比。默认为 50
+        ring-buffer-size-in-closed-state: 5 # 熔断器关闭状态的缓冲区大小，不会限制线程的并发量，在熔断器发生状态转换前所有请求都会调用后端服务。默认为 100
+        ring-buffer-size-in-half-open-state: 5 # 熔断器半开状态的缓冲区大小，会限制线程的并发量。例如，缓冲区为 10 则每次只会允许 10 个请求调用后端服务。默认为 10
+        wait-duration-in-open-state : 5000 # 熔断器从打开状态转变为半开状态等待的时间，单位：微秒
+        automatic-transition-from-open-to-half-open-enabled: true # 如果置为 true，当等待时间结束会自动由打开变为半开；若置为 false，则需要一个请求进入来触发熔断器状态转换。默认为 true
         register-health-indicator: true # 是否注册到健康监测
+  # Resilience4j 的限流器配置项，对应 RateLimiterProperties 属性类
+  ratelimiter:
+    instances:
+      backendB:
+        limit-for-period: 1 # 每个周期内，允许的请求数。默认为 50
+        limit-refresh-period: 10s # 每个周期的时长，单位：微秒。默认为 500
+        timeout-duration: 5s # 被限流时，阻塞等待的时长，单位：微秒。默认为 5s
