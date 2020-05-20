@@ -9,6 +9,7 @@ resilience4j:
         wait-duration-in-open-state : 5000 # 熔断器从打开状态转变为半开状态等待的时间，单位：微秒
         automatic-transition-from-open-to-half-open-enabled: true # 如果置为 true，当等待时间结束会自动由打开变为半开；若置为 false，则需要一个请求进入来触发熔断器状态转换。默认为 true
         register-health-indicator: true # 是否注册到健康监测
+
   # Resilience4j 的限流器配置项，对应 RateLimiterProperties 属性类
   ratelimiter:
     instances:
@@ -16,3 +17,19 @@ resilience4j:
         limit-for-period: 1 # 每个周期内，允许的请求数。默认为 50
         limit-refresh-period: 10s # 每个周期的时长，单位：微秒。默认为 500
         timeout-duration: 5s # 被限流时，阻塞等待的时长，单位：微秒。默认为 5s
+        register-health-indicator: true # 是否注册到健康监测
+
+  # Resilience4j 的信号量 Bulkhead 配置项，对应 BulkheadConfigurationProperties 属性类
+  bulkhead:
+    instances:
+      backendC:
+        max-concurrent-calls: 1 # 并发调用数。默认为 25
+        max-wait-duration: 5s # 并发调用到达上限时，阻塞等待的时长，单位：微秒。默认为 0
+  # Resilience4j 的线程池 Bulkhead 配置项，对应 ThreadPoolBulkheadProperties 属性类
+  thread-pool-bulkhead:
+    instances:
+      backendD:
+        max-thread-pool-size: 1 # 线程池的最大大小。默认为 Runtime.getRuntime().availableProcessors()
+        core-thread-pool-size: 1 # 线程池的核心大小。默认为 Runtime.getRuntime().availableProcessors() - 1
+        queue-capacity: 100 # 线程池的队列大小。默认为 100
+        keep-alive-duration: 100s # 超过核心大小的线程，空闲存活时间。默认为 20 毫秒
