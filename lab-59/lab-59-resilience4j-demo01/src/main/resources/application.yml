@@ -31,5 +31,14 @@ resilience4j:
       backendD:
         max-thread-pool-size: 1 # 线程池的最大大小。默认为 Runtime.getRuntime().availableProcessors()
         core-thread-pool-size: 1 # 线程池的核心大小。默认为 Runtime.getRuntime().availableProcessors() - 1
-        queue-capacity: 100 # 线程池的队列大小。默认为 100
+        queue-capacity: 200 # 线程池的队列大小。默认为 100
         keep-alive-duration: 100s # 超过核心大小的线程，空闲存活时间。默认为 20 毫秒
+
+  # Resilience4j 的重试 Retry 配置项，对应 RetryProperties 属性类
+  retry:
+    instances:
+      backendE:
+        max-retry-Attempts: 3 # 最大重试次数。默认为 3
+        wait-duration: 5s # 下次重试的间隔，单位：微秒。默认为 500 毫秒
+        retry-exceptions: # 需要重试的异常列表。默认为空
+        ingore-exceptions: # 需要忽略的异常列表。默认为空
