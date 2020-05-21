@@ -1,0 +1,51 @@
+resilience4j:
+  # Resilience4j 的断路器配置项，对应 CircuitBreakerProperties 属性类
+  circuitbreaker:
+    instances:
+      backendA:
+        failure-rate-threshold: 50 # 熔断器关闭状态和半开状态使用的同一个失败率阈值，单位：百分比。默认为 50
+        ring-buffer-size-in-closed-state: 5 # 熔断器关闭状态的缓冲区大小，不会限制线程的并发量，在熔断器发生状态转换前所有请求都会调用后端服务。默认为 100
+        ring-buffer-size-in-half-open-state: 5 # 熔断器半开状态的缓冲区大小，会限制线程的并发量。例如，缓冲区为 10 则每次只会允许 10 个请求调用后端服务。默认为 10
+        wait-duration-in-open-state : 5000 # 熔断器从打开状态转变为半开状态等待的时间，单位：微秒
+        automatic-transition-from-open-to-half-open-enabled: true # 如果置为 true，当等待时间结束会自动由打开变为半开；若置为 false，则需要一个请求进入来触发熔断器状态转换。默认为 true
+        register-health-indicator: true # 是否注册到健康监测
+
+  # Resilience4j 的限流器配置项，对应 RateLimiterProperties 属性类
+  ratelimiter:
+    instances:
+      backendB:
+        limit-for-period: 1 # 每个周期内，允许的请求数。默认为 50
+        limit-refresh-period: 10s # 每个周期的时长，单位：微秒。默认为 500
+        timeout-duration: 5s # 被限流时，阻塞等待的时长，单位：微秒。默认为 5s
+        register-health-indicator: true # 是否注册到健康监测
+
+  # Resilience4j 的信号量 Bulkhead 配置项，对应 BulkheadConfigurationProperties 属性类
+  bulkhead:
+    instances:
+      backendC:
+        max-concurrent-calls: 1 # 并发调用数。默认为 25
+        max-wait-duration: 5s # 并发调用到达上限时，阻塞等待的时长，单位：微秒。默认为 0
+  # Resilience4j 的线程池 Bulkhead 配置项，对应 ThreadPoolBulkheadProperties 属性类
+  thread-pool-bulkhead:
+    instances:
+      backendD:
+        max-thread-pool-size: 1 # 线程池的最大大小。默认为 Runtime.getRuntime().availableProcessors()
+        core-thread-pool-size: 1 # 线程池的核心大小。默认为 Runtime.getRuntime().availableProcessors() - 1
+        queue-capacity: 200 # 线程池的队列大小。默认为 100
+        keep-alive-duration: 100s # 超过核心大小的线程，空闲存活时间。默认为 20 毫秒
+
+  # Resilience4j 的重试 Retry 配置项，对应 RetryProperties 属性类
+  retry:
+    instances:
+      backendE:
+        max-retry-Attempts: 3 # 最大重试次数。默认为 3
+        wait-duration: 5s # 下次重试的间隔，单位：微秒。默认为 500 毫秒
+        retry-exceptions: # 需要重试的异常列表。默认为空
+        ingore-exceptions: # 需要忽略的异常列表。默认为空
+
+  # Resilience4j 的超时限制器 TimeLimiter 配置项，对应 TimeLimiterProperties 属性类
+  timelimiter:
+    instances:
+      backendF:
+        timeout-duration: 1s # 等待超时时间，单位：微秒。默认为 1 秒
+        cancel-running-future: true # 当等待超时时，是否关闭取消线程。默认为 true
