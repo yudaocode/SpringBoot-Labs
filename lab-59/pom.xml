@@ -15,6 +15,7 @@
     <modules>
         <module>lab-59-user-service</module>
         <module>lab-59-resilience4j-demo01</module>
+        <module>lab-59-resilience4j-actuator</module>
     </modules>
 
 </project>
