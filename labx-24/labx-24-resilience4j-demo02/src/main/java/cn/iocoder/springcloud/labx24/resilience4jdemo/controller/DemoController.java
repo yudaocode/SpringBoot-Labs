@@ -27,7 +27,7 @@ public class DemoController {
 
     @GetMapping("/get_user")
     public String getUser(@RequestParam("id") Integer id) {
-        return circuitBreakerFactory.create("backendA").run(new Supplier<String>() {
+        return circuitBreakerFactory.create("slow").run(new Supplier<String>() {
 
             @Override
             public String get() {
