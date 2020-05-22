@@ -32,14 +32,16 @@ public class DemoController {
             @Override
             public String get() {
                 logger.info("[getUser][准备调用 user-service 获取用户({})详情]", id);
-                return restTemplate.getForEntity("http://127.0.0.1:18080/user/get?id=" + id, String.class).getBody();
+                return restTemplate.getForEntity("http://127.0.0.1:18080/user/get?id="
+                        + id, String.class).getBody();
             }
 
         }, new Function<Throwable, String>() {
 
             @Override
             public String apply(Throwable throwable) {
-                logger.info("[getUserFallback][id({}) exception({})]", id, throwable.getClass().getSimpleName());
+                logger.info("[getUserFallback][id({}) exception({})]", id,
+                        throwable.getClass().getSimpleName());
                 return "mock:User:" + id;
             }
 
