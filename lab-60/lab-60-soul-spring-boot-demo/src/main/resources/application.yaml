@@ -1,0 +1,7 @@
+soul:
+  # Soul 针对 SpringMVC 的配置项，对应 SoulHttpConfig 配置类
+  http:
+    admin-url: http://127.0.0.1:9095
+    context-path: /demo-api
+    app-name: demo-service
+    zookeeper-url: 127.0.0.1:2181

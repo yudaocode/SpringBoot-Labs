@@ -263,6 +263,9 @@
 * [《芋道 Spring Boot 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Boot/Hystrix/?github)的[「6. 集成到 Dubbo」](#)小节
 * [《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Hystrix/?github)的[「10. 集成到 Dubbo」](#)小节
 
+**[Resilience4j](http://www.iocoder.cn/categories/Resilience4j/?github)**
+* [《芋道 Spring Boot 服务容错 Resilience4j 入门》](http://www.iocoder.cn/Spring-Boot/Resilience4j/?github)的[「10. 集成到 Dubbo」](#)小节
+
 ## 分布式事务
 
 **[Seata](http://www.iocoder.cn/Seata/install/?github)**
