@@ -193,7 +193,7 @@
 
 > 如下非 Spring Cloud 网关，先放在这里...
 
-* [《芋道 APISIX 极简入门（国产微服务网关）》](http://www.iocoder.cn/iocoder.cn/APISIX/install/?github) 对应 [lab-56](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-56)
+* [《芋道 APISIX 极简入门（国产微服务网关）》](http://www.iocoder.cn/APISIX/install/?github) 对应 [lab-56](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-56)
 
 ## 配置中心
 
