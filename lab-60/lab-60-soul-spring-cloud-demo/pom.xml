@@ -62,7 +62,7 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
-        <!-- 引入 Soul 针对 SpringMVC 的集成的依赖 -->
+        <!-- 引入 Soul 针对 Spring Cloud 的集成的依赖 -->
         <dependency>
             <groupId>org.dromara</groupId>
             <artifactId>soul-client-springcloud</artifactId>

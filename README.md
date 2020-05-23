@@ -194,6 +194,7 @@
 > 如下非 Spring Cloud 网关，先放在这里...
 
 * [《芋道 APISIX 极简入门（国产微服务网关）》](http://www.iocoder.cn/APISIX/install/?github) 对应 [lab-56](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-56)
+* [《芋道 Soul 极简入门（国产微服务网关）》](http://www.iocoder.cn/Soul/install/?github) 对应 [lab-60](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-60)
 
 ## 配置中心
 
@@ -253,7 +254,7 @@
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「6. 整合 Nacos」](#)小节
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github)的[「2. 快速入门」](#)小节
 
-## 服务保障
+## 服务容错
 
 **[Sentinel](http://www.iocoder.cn/Sentinel/install/?github)**
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github)的[「7. 整合 Sentinel」](#)小节
@@ -265,6 +266,10 @@
 
 **[Resilience4j](http://www.iocoder.cn/categories/Resilience4j/?github)**
 * [《芋道 Spring Boot 服务容错 Resilience4j 入门》](http://www.iocoder.cn/Spring-Boot/Resilience4j/?github)的[「10. 集成到 Dubbo」](#)小节
+
+## API 网关
+
+* [《芋道 Soul 极简入门（国产微服务网关）》](http://www.iocoder.cn/Soul/install/?github)的[「3. 接入 Dubbo 应用」](#)小节
 
 ## 分布式事务
 
