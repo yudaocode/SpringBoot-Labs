@@ -195,6 +195,7 @@
 
 * [《芋道 APISIX 极简入门（国产微服务网关）》](http://www.iocoder.cn/APISIX/install/?github) 对应 [lab-56](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-56)
 * [《芋道 Soul 极简入门（国产微服务网关）》](http://www.iocoder.cn/Soul/install/?github) 对应 [lab-60](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-60)
+* [《芋道 Kong 极简入门（微服务网关）》](http://www.iocoder.cn/Kong/install/?github) 对应 [lab-56](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-56)
 
 ## 配置中心
 
