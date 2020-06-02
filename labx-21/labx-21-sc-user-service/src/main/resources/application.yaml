@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service # Spring 应用名
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+
+server:
+  port: ${random.int[10000,19999]}  # 服务器端口。默认为 8080
+#  port: 18080  # 服务器端口。默认为 8080

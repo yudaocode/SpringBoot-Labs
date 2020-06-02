@@ -1,0 +1,11 @@
+server:
+  port: 8761 # 设置 Eureka-Server 的端口
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false # 不注册到 Eureka-Server，默认为 true
+    fetch-registry: false # 不从 Eureka-Server 获取注册表，默认为 true

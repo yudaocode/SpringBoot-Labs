@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-21</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>labx-21-sc-zuul-demo01</module>
+        <module>labx-21-sc-zuul-demo02-registry</module>
+        <module>labx-21-sc-zuul-demo03-config-apollo</module>
+        <module>labx-21-sc-zuul-demo03-config-nacos</module>
+        <module>labx-21-sc-zuul-demo05-custom-zuul-filter</module>
+        <module>labx-21-sc-zuul-demo07-hystrix</module>
+        <module>labx-21-sc-zuul-demo07-sentinel</module>
+        <module>labx-21-sc-zuul-demo09-actuator</module>
+
+        <module>labx-21-sc-user-service</module>
+    </modules>
+
+
+</project>

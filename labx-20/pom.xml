@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>labx-20</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>labx-20-sca-bus-rocketmq-demo-publisher</module>

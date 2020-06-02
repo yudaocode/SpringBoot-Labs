@@ -1,0 +1,42 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: zuul-application
+
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+
+    sentinel:
+      eager: true # 是否饥饿加载。默认为 false 关闭
+      transport:
+        dashboard: localhost:7070 # 是否饥饿加载。
+      #      # 数据源的配置项
+      #      datasource:
+      #        ds1.file:
+      #          file: "classpath: sentinel-gw-flow.json"
+      #          ruleType: gw-flow
+      #        ds2.file:
+      #          file: "classpath: sentinel-gw-api-group.json"
+      #          ruleType: gw-api-group
+      # Sentinel 对 Zuul 的专属配置项，对应 SentinelZuulProperties 类
+      zuul:
+        order:
+          pre: 10000 # 前置过滤器 SentinelZuulPreFilter 的顺序
+          post: 1000 # 后置过滤器 SentinelZuulPostFilter 的顺序
+          error: -1 # 错误过滤器 SentinelZuulErrorFilter 的顺序
+
+# Zuul 配置项，对应 ZuulProperties 配置类
+zuul:
+  servlet-path: / # ZuulServlet 匹配的路径，默认为 /zuul
+  # 路由配置项，对应 ZuulRoute Map
+  routes:
+    yudaoyuanma: # 这是一个 Route 编号
+      path: /**
+      url: http://www.iocoder.cn
+
+
