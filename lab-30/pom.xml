@@ -14,8 +14,6 @@
     <modules>
         <module>lab-30-dubbo-xml-demo</module>
         <module>lab-30-dubbo-annotations-demo</module>
-        <module>lab-30-dubbo-annotations-nacos</module>
-        <module>lab-30-dubbo-annotations-sentinel</module>
     </modules>
 
 
