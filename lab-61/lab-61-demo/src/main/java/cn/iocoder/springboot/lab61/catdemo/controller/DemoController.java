@@ -17,7 +17,7 @@ public class DemoController {
     @GetMapping("/transaction")
     public String transaction() {
         // 创建 Transaction 对象
-        Transaction t = Cat.newTransaction("URL", "pageName");
+        Transaction t = Cat.newTransaction("URL", "/demo/transaction");
         try {
             // ... yourBusiness(); 业务逻辑
 
@@ -39,7 +39,7 @@ public class DemoController {
     @GetMapping("/event-01")
     public String event01() {
         // Cat.logEvent("URL.Server", "127.0.0.1");
-        Cat.logEvent("URL.Server2", "127.0.0.1", Event.SUCCESS, "data");
+        Cat.logEvent("URL.Server", "127.0.0.1", Event.SUCCESS, "data");
         return "success";
     }
 
