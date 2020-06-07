@@ -14,6 +14,7 @@
     <modules>
         <module>lab-61-demo</module>
         <module>lab-61-logback</module>
+        <module>lab-61-springmvc</module>
     </modules>
 
 </project>
