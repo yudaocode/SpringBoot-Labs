@@ -129,7 +129,7 @@
 * [《芋道 Spring Boot 监控端点 Actuator 入门》](http://www.iocoder.cn/Spring-Boot/Actuator/?github) 对应 [lab-34](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-34)
 * [《芋道 Spring Boot 监控工具 Admin 入门》](http://www.iocoder.cn/Spring-Boot/Admin/?github) 对应 [lab-35](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-35)
 * [《芋道 Spring Boot 监控平台 Prometheus + Grafana 入门》](http://www.iocoder.cn/Spring-Boot/Prometheus-and-Grafana/?github) 对应 [lab-36](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-36)
-* 《芋道 Spring Boot 监控平台 CAT 入门》计划中...
+* [《芋道 Spring Boot 监控平台 CAT 入门》](http://www.iocoder.cn/Spring-Boot/CAT/?github) 对应 [lab-61](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-61)
 
 ## 日志管理
 
@@ -291,6 +291,15 @@
 **[Zipkin](http://www.iocoder.cn/Zipkin/install/?github)**
 * [《芋道 Spring Boot 链路追踪 Zipkin》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github) 的[「13. Dubbo 示例」](#)小节
 * [《芋道 Spring Cloud 链路追踪 Spring Cloud Sleuth》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Sleuth/?github) 的[「7. Dubbo 示例」](#)小节
+
+## 监控管理
+
+**[CAT](http://www.iocoder.cn/CAT/install/?github)**
+* [《芋道 Spring Boot 监控平台 CAT 入门》](http://www.iocoder.cn/Spring-Boot/CAT/?github) 的[「13. Dubbo 集成」](#)小节
+
+TODO Dubbo-Admin
+
+****
 
 # 消息队列 MQ 专栏
 
