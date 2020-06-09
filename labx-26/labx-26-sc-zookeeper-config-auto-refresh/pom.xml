@@ -12,6 +12,8 @@
     <artifactId>labx-26-sc-zookeeper-config-auto-refresh</artifactId>
 
     <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
         <spring.cloud.version>Hoxton.SR1</spring.cloud.version>
     </properties>
