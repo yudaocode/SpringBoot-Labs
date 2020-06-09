@@ -13,6 +13,7 @@
 
     <modules>
         <module>labx-26-sc-zookeeper-config-demo</module>
+        <module>labx-26-sc-zookeeper-config-auto-refresh</module>
     </modules>
 
 </project>
