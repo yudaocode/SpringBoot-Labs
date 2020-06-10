@@ -14,7 +14,7 @@
     <modules>
         <module>lab-63-motan-xml-demo-user-rpc-service-api</module>
         <module>lab-63-motan-xml-demo-user-rpc-service-provider</module>
-<!--        <module>lab-63-sofarpc-xml-demo-user-rpc-service-consumer</module>-->
+        <module>lab-63-motan-xml-demo-user-rpc-service-consumer</module>
     </modules>
 
 </project>

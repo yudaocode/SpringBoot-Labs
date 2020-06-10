@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:motan="http://api.weibo.com/schema/motan"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
+
+    <!-- 使用 Zookeeper 作为注册中心 -->
+    <motan:registry name="registry" regProtocol="zookeeper" address="127.0.0.1:2181" connectTimeout="2000"/>
+
+    <!-- motan2 with hessian serialization -->
+    <motan:protocol id="motan2" name="motan2" haStrategy="failover"
+                    loadbalance="roundrobin" maxClientConnection="10" minClientConnection="2"/>
+
+    <motan:referer id="userRpcService" interface="cn.iocoder.springboot.lab63.rpc.api.UserRpcService" />
+
+</beans>
