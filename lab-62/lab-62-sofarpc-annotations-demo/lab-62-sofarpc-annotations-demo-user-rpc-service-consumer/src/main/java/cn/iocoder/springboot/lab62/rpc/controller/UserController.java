@@ -3,14 +3,18 @@ package cn.iocoder.springboot.lab62.rpc.controller;
 import cn.iocoder.springboot.lab62.rpc.api.UserRpcService;
 import cn.iocoder.springboot.lab62.rpc.dto.UserAddDTO;
 import cn.iocoder.springboot.lab62.rpc.dto.UserDTO;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import com.alipay.sofa.runtime.api.annotation.SofaReference;
+import com.alipay.sofa.runtime.api.annotation.SofaReferenceBinding;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
-    @Autowired
+    @SofaReference(binding = @SofaReferenceBinding(bindingType = "bolt"))
     private UserRpcService userRpcService;
 
     @GetMapping("/get")

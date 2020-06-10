@@ -9,12 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-62</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>lab-63</artifactId>
 
     <modules>
-        <module>lab-62-sofarpc-xml-demo</module>
-        <module>lab-62-sofarpc-annotations-demo</module>
+        <module>lab-63-motan-xml-demo</module>
     </modules>
 
 </project>

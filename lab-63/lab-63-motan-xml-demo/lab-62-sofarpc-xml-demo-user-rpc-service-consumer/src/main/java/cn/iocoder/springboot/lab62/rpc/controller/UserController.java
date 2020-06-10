@@ -1,8 +1,8 @@
-package cn.iocoder.springboot.lab62.rpc.controller;
+package cn.iocoder.springboot.lab63.rpc.controller;
 
-import cn.iocoder.springboot.lab62.rpc.api.UserRpcService;
-import cn.iocoder.springboot.lab62.rpc.dto.UserAddDTO;
-import cn.iocoder.springboot.lab62.rpc.dto.UserDTO;
+import cn.iocoder.springboot.lab63.rpc.api.UserRpcService;
+import cn.iocoder.springboot.lab63.rpc.dto.UserAddDTO;
+import cn.iocoder.springboot.lab63.rpc.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
