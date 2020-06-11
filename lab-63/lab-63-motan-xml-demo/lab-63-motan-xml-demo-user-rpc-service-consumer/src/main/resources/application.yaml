@@ -1,3 +1,0 @@
-spring:
-  application:
-    name: user-service-consumer # 应用名

@@ -4,19 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
        http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
 
-    <!-- 使用 Zookeeper 作为注册中心 -->
-    <motan:registry name="registry" regProtocol="zookeeper" address="127.0.0.1:2181" connectTimeout="2000"/>
+    <!-- 注册中心配置。 -->
+    <motan:registry name="registry" regProtocol="zookeeper" address="127.0.0.1:2181" connectTimeout="2000" />
 
-    <!--    <motan:service ref="userRpcServiceImpl" interface="cn.iocoder.springboot.lab63.rpc.service.UserRpcServiceImpl"-->
-    <!--                   export="motan2:8001">-->
-    <!--    </motan:service>-->
-
-    <!-- 协议配置。为防止多个业务配置冲突，推荐使用id表示具体协议。-->
-    <!-- motan2 with hessian2 serialization -->
-    <motan:protocol id="motan2" default="true" name="motan2"
+    <!-- Motan 协议配置。-->
+    <motan:protocol name="motan2" default="true"
                     maxServerConnection="80000" maxContentLength="1048576"
                     maxWorkerThread="800" minWorkerThread="20" />
 
+    <!-- Motan 服务提供方配置。 -->
     <motan:service ref="userRpcServiceImpl" interface="cn.iocoder.springboot.lab63.rpc.api.UserRpcService" export="motan2:8001" />
 
 </beans>

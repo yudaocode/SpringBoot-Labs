@@ -13,6 +13,6 @@
                     maxClientConnection="10" minClientConnection="2"/>
 
     <!-- Motan 服务调用方配置。 -->
-    <motan:referer id="userRpcService" interface="cn.iocoder.springboot.lab63.rpc.api.UserRpcService" />
+<!--    <motan:referer id="userRpcService" interface="cn.iocoder.springboot.lab63.rpc.api.UserRpcService" />-->
 
 </beans>
