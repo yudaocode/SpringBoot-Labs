@@ -9,6 +9,7 @@ spring:
       # Spring Cloud Consul Discovery 配置项，对应 ConsulDiscoveryProperties 类
       discovery:
         service-name: ${spring.application.name} # 注册到 Consul 的服务名，默认为 `spring.application.name` 配置项
+        health-check-path: /actuator/health # 健康检查的接口，默认为 /actuator/health，由 Spring Boot Actuator 提供
 
 server:
   port: 18080 # 服务器端口。默认为 8080
