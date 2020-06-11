@@ -15,4 +15,6 @@
     <!-- Motan 服务调用方配置。 -->
 <!--    <motan:referer id="userRpcService" interface="cn.iocoder.springboot.lab63.rpc.api.UserRpcService" />-->
 
+    <motan:annotation />
+
 </beans>
