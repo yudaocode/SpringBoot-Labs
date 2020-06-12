@@ -170,8 +170,8 @@
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
 * [《芋道 Spring Cloud Netflix 注册中心 Eureka 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Eureka?github) 对应 [labx-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-22)
 * [《芋道 Spring Cloud 注册中心 Zookeeper 入门》](http://www.iocoder.cn/Spring-Cloud/ZooKeeper-Discovery/?github) 对应 [labx-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-25)
-* 《芋道 Spring Cloud 注册中心 Consul 入门》计划中...
-* 《芋道 Spring Cloud 注册中心 Etcd 入门》计划中...
+* [《芋道 Spring Cloud 注册中心 Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Consul-Discovery/?github) 对应 [labx-27](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-27)
+* [《芋道 Spring Cloud 注册中心 Etcd 入门》](http://www.iocoder.cn/Spring-Cloud/Etcd/?github)
 
 ## 服务调用
 
@@ -204,6 +204,8 @@
 * [《芋道 Spring Cloud 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Cloud/Apollo/?github) 对应 [labx-09](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-09)
 * [《芋道 Spring Cloud 配置中心 Spring Cloud Config 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Config/?github) 对应 [labx-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-12)
 * [《芋道 Spring Cloud 配置中心 Zookeeper 入门》](http://www.iocoder.cn/Spring-Cloud/ZooKeeper-Config/?github) 对应 [labx-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-26)
+* [《芋道 Spring Cloud 配置中心 Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Consul-Config/?github) 对应 [labx-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-28)
+* [《芋道 Spring Cloud 配置中心 Etcd 入门》](http://www.iocoder.cn/Spring-Cloud/Etcd/?github)
 
 ## 消息队列
 
@@ -217,6 +219,7 @@
 * [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
 * [《芋道 Spring Cloud 事件总线 Bus RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-RabbitMQ/?github) 对应 [labx-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-19)
 * [《芋道 Spring Cloud 事件总线 Bus Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Kafka/?github) 对应 [labx-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-18)
+* [《芋道 Spring Cloud 事件总线 Bus Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Consul/?github) 对应 [labx-29](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-29)
 
 ## 分布式事务
 
