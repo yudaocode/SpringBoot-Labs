@@ -14,6 +14,7 @@
     <modules>
         <module>labx-29-sc-bus-consul-demo-publisher</module>
         <module>labx-29-sc-bus-consul-demo-listener</module>
+        <module>labx-29-sc-bus-consul-demo-listener-actuator</module>
     </modules>
 
 
