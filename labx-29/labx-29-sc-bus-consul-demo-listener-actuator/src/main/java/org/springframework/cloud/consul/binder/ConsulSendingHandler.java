@@ -1,4 +1,4 @@
-package cn.iocoder.springcloud.labx29.listenerdemo.binder;
+package org.springframework.cloud.consul.binder;
 
 import com.ecwid.consul.v1.ConsulClient;
 import com.ecwid.consul.v1.QueryParams;
