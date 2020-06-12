@@ -1,4 +1,4 @@
-package cn.iocoder.springcloud.labx20.userapplication;
+package cn.iocoder.springcloud.labx29.userapplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

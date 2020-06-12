@@ -15,6 +15,9 @@
         <module>labx-29-sc-bus-consul-demo-publisher</module>
         <module>labx-29-sc-bus-consul-demo-listener</module>
         <module>labx-29-sc-bus-consul-demo-listener-actuator</module>
+
+        <module>labx-29-sc-config-server-git-auto-refresh-by-bus</module>
+        <module>labx-29-sc-config-user-application-auto-refresh-by-bus</module>
     </modules>
 
 

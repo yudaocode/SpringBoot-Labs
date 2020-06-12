@@ -1,4 +1,4 @@
-package cn.iocoder.springcloud.labx20.userapplication.config;
+package cn.iocoder.springcloud.labx29.userapplication.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

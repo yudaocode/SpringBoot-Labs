@@ -1,6 +1,6 @@
-package cn.iocoder.springcloud.labx20.userapplication.controller;
+package cn.iocoder.springcloud.labx29.userapplication.controller;
 
-import cn.iocoder.springcloud.labx20.userapplication.config.OrderProperties;
+import cn.iocoder.springcloud.labx29.userapplication.config.OrderProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

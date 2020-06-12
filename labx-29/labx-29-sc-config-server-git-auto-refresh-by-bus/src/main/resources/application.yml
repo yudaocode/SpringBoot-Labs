@@ -19,6 +19,7 @@ spring:
   #          username: ${CODING_USERNAME} # 账号
   #          password: ${CODING_PASSWORD} # 密码
 
-# rocketmq 配置项，对应 RocketMQProperties 配置类
-rocketmq:
-  name-server: 127.0.0.1:9876 # RocketMQ Namesrv
+    # Consul
+    consul:
+      host: 127.0.0.1
+      port: 8500
