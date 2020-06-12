@@ -12,6 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/demo")
+@RefreshScope
 public class DemoController {
 
     @Autowired

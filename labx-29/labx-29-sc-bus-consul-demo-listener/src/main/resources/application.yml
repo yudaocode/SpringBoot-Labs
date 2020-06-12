@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: listener-demo
+
+  cloud:
+    # Consul
+    consul:
+      host: 127.0.0.1
+      port: 8500
+
+server:
+  port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者

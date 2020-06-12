@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-28</artifactId>
+    <artifactId>labx-29</artifactId>
     <packaging>pom</packaging>
-
     <modules>
-        <module>labx-28-sc-consul-config-demo</module>
-        <module>labx-28-sc-consul-config-auto-refresh</module>
+        <module>labx-29-sc-bus-consul-demo-publisher</module>
+        <module>labx-29-sc-bus-consul-demo-listener</module>
     </modules>
+
 
 </project>
