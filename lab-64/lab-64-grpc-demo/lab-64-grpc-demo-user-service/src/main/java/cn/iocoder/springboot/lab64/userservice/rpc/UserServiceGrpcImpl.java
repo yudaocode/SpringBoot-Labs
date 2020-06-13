@@ -2,7 +2,9 @@ package cn.iocoder.springboot.lab64.userservice.rpc;
 
 import cn.iocoder.springboot.lab64.userservice.api.*;
 import io.grpc.stub.StreamObserver;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserServiceGrpcImpl extends UserServiceGrpc.UserServiceImplBase {
 
     @Override
@@ -14,6 +16,7 @@ public class UserServiceGrpcImpl extends UserServiceGrpc.UserServiceImplBase {
                 .setGender(request.getId() % 2 + 1);
         // 返回响应
         responseObserver.onNext(builder.build());
+        responseObserver.onCompleted();
     }
 
     @Override
@@ -23,6 +26,7 @@ public class UserServiceGrpcImpl extends UserServiceGrpc.UserServiceImplBase {
         builder.setId((int) (System.currentTimeMillis() / 1000));
         // 返回响应
         responseObserver.onNext(builder.build());
+        responseObserver.onCompleted();
     }
 
 }

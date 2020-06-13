@@ -14,6 +14,7 @@
     <modules>
         <module>lab-64-grpc-demo-user-service</module>
         <module>lab-64-grpc-demo-user-service-api</module>
+        <module>lab-64-grpc-demo-application</module>
     </modules>
 
 
