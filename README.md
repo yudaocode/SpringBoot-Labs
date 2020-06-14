@@ -57,9 +57,9 @@
 
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * [《芋道 Spring Boot 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Boot/Feign/?github) 对应 [lab-58](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-58)
+* [《芋道 Spring Boot gRPC 入门》](http://www.iocoder.cn/Spring-Boot/gRPC/?github) 对应 [lab-64](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-64)
 * [《芋道 Spring Boot SOFARPC 入门》](http://www.iocoder.cn/Spring-Boot/SOFARPC/?github) 对应 [lab-62](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-62)
 * [《芋道 Spring Boot Motan 入门》](http://www.iocoder.cn/Spring-Boot/Motan/?github) 对应 [lab-63](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-63)
-* 《芋道 Spring Boot WebService 入门》计划中...
 * 《芋道 Spring Boot gRPC 入门》计划中...
 * 《芋道 Spring Boot RSocket 入门》计划中...
 
@@ -178,6 +178,7 @@
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 * [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02)
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
+* [《芋道 Spring Cloud 服务调用 gRPC 入门》](http://www.iocoder.cn/Spring-Cloud/gRPC/?github) 对应 [labx-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-30)
 
 ## 服务容错
 
