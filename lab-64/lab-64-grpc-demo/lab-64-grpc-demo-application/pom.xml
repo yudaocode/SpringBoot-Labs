@@ -33,6 +33,7 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- 引入 API 项目 -->
         <dependency>
             <groupId>cn.iocoder.springboot.labs</groupId>
             <artifactId>lab-64-grpc-demo-user-service-api</artifactId>
@@ -45,6 +46,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- 引入 gRPC Netty 依赖，因为使用它作为网络库 -->
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty</artifactId>

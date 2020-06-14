@@ -15,6 +15,9 @@ public class GrpcConfig {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
+    /**
+     * gRPC Server 端口
+     */
     private static final Integer GRPC_PORT = 8888;
 
     @Bean
