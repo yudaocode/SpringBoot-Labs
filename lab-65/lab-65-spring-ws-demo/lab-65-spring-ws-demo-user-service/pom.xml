@@ -32,12 +32,50 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- 引入 Spring Boot 基础 Starter 依赖 -->
+<!--        &lt;!&ndash; 实现对 SpringMVC 的自动化配置 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- 实现对 Spring WebService 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web-services</artifactId>
         </dependency>
+
+        <!-- tag::springws[] -->
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+        </dependency>
+        <!-- end::springws[] -->
     </dependencies>
 
+    <build>
+        <plugins>
+            <!-- tag::xsd[] -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>2.5.0</version>
+                <executions>
+                    <execution>
+                        <id>xjc</id>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sources>
+                        <source>${project.basedir}/src/main/resources/users.xsd</source>
+                    </sources>
+                    <packageName>cn.iocoder.springboot.lab65.userservice.model</packageName>
+                </configuration>
+            </plugin>
+            <!-- end::xsd[] -->
+        </plugins>
+    </build>
 
 </project>

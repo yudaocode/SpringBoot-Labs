@@ -1,0 +1,3 @@
+spring:
+  webservices:
+    path: /ws
