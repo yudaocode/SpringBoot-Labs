@@ -32,29 +32,22 @@
     </dependencyManagement>
 
     <dependencies>
-<!--        &lt;!&ndash; 实现对 SpringMVC 的自动化配置 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-web</artifactId>-->
-<!--        </dependency>-->
-
         <!-- 实现对 Spring WebService 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web-services</artifactId>
         </dependency>
 
-        <!-- tag::springws[] -->
+        <!-- Java WSDL 实现库 -->
         <dependency>
             <groupId>wsdl4j</groupId>
             <artifactId>wsdl4j</artifactId>
         </dependency>
-        <!-- end::springws[] -->
     </dependencies>
 
     <build>
         <plugins>
-            <!-- tag::xsd[] -->
+            <!-- jaxb2-maven-plugin 插件，用于实现将 XML 生成目标类 -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
@@ -68,13 +61,14 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <!-- 源文件地址 -->
                     <sources>
                         <source>${project.basedir}/src/main/resources/users.xsd</source>
                     </sources>
+                    <!-- 生成代码目标包 -->
                     <packageName>cn.iocoder.springboot.lab65.userservice.model</packageName>
                 </configuration>
             </plugin>
-            <!-- end::xsd[] -->
         </plugins>
     </build>
 

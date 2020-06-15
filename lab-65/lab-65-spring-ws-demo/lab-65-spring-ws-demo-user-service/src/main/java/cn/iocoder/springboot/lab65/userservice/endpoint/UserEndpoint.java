@@ -1,6 +1,8 @@
 package cn.iocoder.springboot.lab65.userservice.endpoint;
 
 import cn.iocoder.springboot.lab65.userservice.config.WebServiceConfig;
+import cn.iocoder.springboot.lab65.userservice.model.UserCreateRequest;
+import cn.iocoder.springboot.lab65.userservice.model.UserCreateResponse;
 import cn.iocoder.springboot.lab65.userservice.model.UserGetRequest;
 import cn.iocoder.springboot.lab65.userservice.model.UserGetResponse;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -20,5 +22,13 @@ public class UserEndpoint {
         response.setGender(request.getId() % 2 + 1);
 		return response;
 	}
+
+    @PayloadRoot(namespace = WebServiceConfig.NAMESPACE_URI, localPart = "UserCreateRequest")
+    @ResponsePayload
+    public UserCreateResponse create(@RequestPayload UserCreateRequest request) {
+        UserCreateResponse response = new UserCreateResponse();
+        response.setId((int) (System.currentTimeMillis() / 1000));
+        return response;
+    }
 
 }
