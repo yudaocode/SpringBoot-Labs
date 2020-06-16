@@ -42,6 +42,7 @@
 
     <build>
         <plugins>
+            <!-- cxf-codegen-plugin 插件，用于实现将 WSDL 生成目标类 -->
             <plugin>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-codegen-plugin</artifactId>
@@ -51,13 +52,15 @@
                         <id>generate-sources</id>
                         <phase>generate-sources</phase>
                         <configuration>
-                            <sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>
+                            <!-- WSDL 源文件地址 -->
                             <wsdlOptions>
                                 <wsdlOption>
                                     <wsdl>src/main/resources/wsdl/user.wsdl</wsdl>
                                     <wsdlLocation>classpath:wsdl/user.wsdl</wsdlLocation>
                                 </wsdlOption>
                             </wsdlOptions>
+                            <!-- 生成 Java 代码目录 -->
+                            <sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>
                         </configuration>
                         <goals>
                             <goal>wsdl2java</goal>
@@ -65,30 +68,6 @@
                     </execution>
                 </executions>
             </plugin>
-<!--            &lt;!&ndash; maven-jaxb2-plugin 插件，用于实现将 WSDL 生成目标类 &ndash;&gt;-->
-<!--            <plugin>-->
-<!--                <groupId>org.jvnet.jaxb2.maven2</groupId>-->
-<!--                <artifactId>maven-jaxb2-plugin</artifactId>-->
-<!--                <version>0.14.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>generate</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash; WSDL 源文件地址 &ndash;&gt;-->
-<!--                    <schemaLanguage>WSDL</schemaLanguage>-->
-<!--                    <schemas>-->
-<!--                        <schema>-->
-<!--                            <url>http://127.0.0.1:8080/ws/users.wsdl</url>-->
-<!--                        </schema>-->
-<!--                    </schemas>-->
-<!--                    &lt;!&ndash; 生成代码目标包 &ndash;&gt;-->
-<!--                    <generatePackage>cn.iocoder.springboot.lab65.demo.wsdl</generatePackage>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
         </plugins>
     </build>
 

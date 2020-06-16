@@ -6,13 +6,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class WebServicesConfig {
+public class CXFConfig {
 
     @Bean
     public UserService userService() {
         JaxWsProxyFactoryBean jaxWsProxyFactoryBean = new JaxWsProxyFactoryBean();
+        // 设置 UserService 接口
         jaxWsProxyFactoryBean.setServiceClass(UserService.class);
-        jaxWsProxyFactoryBean.setAddress("http://127.0.0.1:8080/ws/user");
+        // 设置 Web Services 地址
+        jaxWsProxyFactoryBean.setAddress("http://127.0.0.1:9090/ws/user");
+        // 创建
         return (UserService) jaxWsProxyFactoryBean.create();
     }
 

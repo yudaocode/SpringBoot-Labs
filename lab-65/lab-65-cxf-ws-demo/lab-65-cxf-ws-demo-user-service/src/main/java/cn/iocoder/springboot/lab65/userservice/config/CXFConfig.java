@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.xml.ws.Endpoint;
 
 @Configuration
-public class WebServicesConfig {
+public class CXFConfig {
 
     public static final String NAMESPACE_URI = "https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-spring-ws-demo";
 
@@ -19,7 +19,7 @@ public class WebServicesConfig {
     }
 
     @Bean
-    public Endpoint endpoint(UserService userService) {
+    public Endpoint userServiceEndpoint(UserService userService) {
         Endpoint endpoint = Endpoint.create(userService);
         endpoint.publish("/user");//发布地址
         return endpoint;

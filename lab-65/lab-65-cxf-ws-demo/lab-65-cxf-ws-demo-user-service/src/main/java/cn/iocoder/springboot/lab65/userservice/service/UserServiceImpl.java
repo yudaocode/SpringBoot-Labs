@@ -1,20 +1,19 @@
 package cn.iocoder.springboot.lab65.userservice.service;
 
-import cn.iocoder.springboot.lab65.userservice.config.WebServicesConfig;
+import cn.iocoder.springboot.lab65.userservice.config.CXFConfig;
+import cn.iocoder.springboot.lab65.userservice.request.UserCreateRequest;
 import cn.iocoder.springboot.lab65.userservice.request.UserGetRequest;
+import cn.iocoder.springboot.lab65.userservice.response.UserCreateResponse;
 import cn.iocoder.springboot.lab65.userservice.response.UserGetResponse;
 import org.springframework.stereotype.Service;
 
 import javax.jws.WebService;
 
+@Service
 @WebService(
         serviceName = "userService", // 服务名称
-        targetNamespace = WebServicesConfig.NAMESPACE_URI, // WSDL 命名空间
-        endpointInterface = "cn.iocoder.springboot.lab65.userservice.service.UserService" // Web Services 对应接口
-//        name = "userPortType", // portType 名称，作为客户端生成代码时的接口名称 TODO
-//        portName = "userPortName"  // port 名称 TODO
+        targetNamespace = CXFConfig.NAMESPACE_URI // WSDL 命名空间
 )
-@Service
 public class UserServiceImpl implements UserService {
 
     @Override
@@ -26,12 +25,11 @@ public class UserServiceImpl implements UserService {
         return response;
     }
 
-//    @PayloadRoot(namespace = WebServicesConfig.NAMESPACE_URI, localPart = "UserCreateRequest")
-//    @ResponsePayload
-//    public UserCreateResponse create(@RequestPayload UserCreateRequest request) {
-//        UserCreateResponse response = new UserCreateResponse();
-//        response.setId((int) (System.currentTimeMillis() / 1000));
-//        return response;
-//    }
+    @Override
+    public UserCreateResponse create(UserCreateRequest request) {
+        UserCreateResponse response = new UserCreateResponse();
+        response.setId((int) (System.currentTimeMillis() / 1000));
+        return response;
+    }
 
 }
