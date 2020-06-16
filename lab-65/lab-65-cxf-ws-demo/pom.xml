@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-65-cxf-ws-demo-user-service</module>
-<!--        <module>lab-65-spring-ws-demo-application</module>-->
+        <module>lab-65-cxf-ws-demo-application</module>
     </modules>
 
 

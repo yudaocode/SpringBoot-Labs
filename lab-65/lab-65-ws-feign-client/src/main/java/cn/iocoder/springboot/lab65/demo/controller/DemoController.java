@@ -20,6 +20,7 @@ public class DemoController {
 
     @GetMapping("/get")
     public String get(@RequestParam("id") Integer id) {
+        // 请求
         UserGetRequest request = new UserGetRequest();
         request.setId(id);
         // 执行 Web Services 请求
@@ -31,7 +32,7 @@ public class DemoController {
     @GetMapping("/create") // 为了方便测试，实际使用 @PostMapping
     public Integer create(@RequestParam("name") String name,
                           @RequestParam("gender") Integer gender) {
-        // 创建
+        // 请求
         UserCreateRequest request = new UserCreateRequest();
         request.setName(name);
         request.setGender(gender);
