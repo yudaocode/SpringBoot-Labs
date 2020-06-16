@@ -13,7 +13,7 @@ import org.springframework.xml.xsd.XsdSchema;
 
 @Configuration
 @EnableWs // 开启 Web Services 服务
-public class WebServiceConfig {
+public class WebServicesConfig {
 
     public static final String NAMESPACE_URI = "https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-spring-ws-demo";
 

@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab65.userservice.endpoint;
 
-import cn.iocoder.springboot.lab65.userservice.config.WebServiceConfig;
+import cn.iocoder.springboot.lab65.userservice.config.WebServicesConfig;
 import cn.iocoder.springboot.lab65.userservice.model.UserCreateRequest;
 import cn.iocoder.springboot.lab65.userservice.model.UserCreateResponse;
 import cn.iocoder.springboot.lab65.userservice.model.UserGetRequest;
@@ -13,7 +13,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 @Endpoint
 public class UserEndpoint {
 
-	@PayloadRoot(namespace = WebServiceConfig.NAMESPACE_URI, localPart = "UserGetRequest")
+	@PayloadRoot(namespace = WebServicesConfig.NAMESPACE_URI, localPart = "UserGetRequest")
 	@ResponsePayload
 	public UserGetResponse get(@RequestPayload UserGetRequest request) {
         UserGetResponse response = new UserGetResponse();
@@ -23,7 +23,7 @@ public class UserEndpoint {
 		return response;
 	}
 
-    @PayloadRoot(namespace = WebServiceConfig.NAMESPACE_URI, localPart = "UserCreateRequest")
+    @PayloadRoot(namespace = WebServicesConfig.NAMESPACE_URI, localPart = "UserCreateRequest")
     @ResponsePayload
     public UserCreateResponse create(@RequestPayload UserCreateRequest request) {
         UserCreateResponse response = new UserCreateResponse();
