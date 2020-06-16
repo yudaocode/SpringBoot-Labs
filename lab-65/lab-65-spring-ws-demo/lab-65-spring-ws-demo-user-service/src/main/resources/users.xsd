@@ -2,6 +2,7 @@
            targetNamespace="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-spring-ws-demo"
            elementFormDefault="qualified">
 
+    <!-- 获得用户请求 -->
     <xs:element name="UserGetRequest">
         <xs:complexType>
             <xs:sequence>
@@ -9,7 +10,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
+    <!-- 获得用户响应 -->
     <xs:element name="UserGetResponse">
         <xs:complexType>
             <xs:sequence>
@@ -20,6 +21,7 @@
         </xs:complexType>
     </xs:element>
 
+    <!-- 创建用户请求 -->
     <xs:element name="UserCreateRequest">
         <xs:complexType>
             <xs:sequence>
@@ -28,7 +30,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
+    <!-- 创建用户响应 -->
     <xs:element name="UserCreateResponse">
         <xs:complexType>
             <xs:sequence>

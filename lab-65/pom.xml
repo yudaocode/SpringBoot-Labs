@@ -12,7 +12,8 @@
     <artifactId>lab-65</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab4-64-spring-ws-demo</module>
+        <module>lab-65-spring-ws-demo</module>
+        <module>lab-65-ws-feign-client</module>
     </modules>
 
 </project>

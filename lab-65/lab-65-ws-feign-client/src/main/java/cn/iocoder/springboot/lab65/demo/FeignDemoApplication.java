@@ -1,14 +1,13 @@
-package cn.iocoder.springboot.lab65.userservice;
+package cn.iocoder.springboot.lab65.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserServiceApplication {
+public class FeignDemoApplication {
 
     public static void main(String[] args) {
-        // 启动 Spring Boot 应用
-        SpringApplication.run(UserServiceApplication.class, args);
+        SpringApplication.run(FeignDemoApplication.class, args);
     }
 
 }

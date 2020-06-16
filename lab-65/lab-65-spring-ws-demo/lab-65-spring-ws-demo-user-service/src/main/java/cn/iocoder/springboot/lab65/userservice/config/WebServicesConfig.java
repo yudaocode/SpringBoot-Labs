@@ -6,14 +6,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.ws.config.annotation.EnableWs;
+import org.springframework.ws.config.annotation.WsConfigurerAdapter;
+import org.springframework.ws.server.EndpointInterceptor;
 import org.springframework.ws.transport.http.MessageDispatcherServlet;
 import org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition;
 import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
 
+import java.util.List;
+
 @Configuration
 @EnableWs // 开启 Web Services 服务
-public class WebServicesConfig {
+public class WebServicesConfig extends WsConfigurerAdapter {
 
     public static final String NAMESPACE_URI = "https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-spring-ws-demo";
 
@@ -38,6 +42,11 @@ public class WebServicesConfig {
         wsdl11Definition.setSchema(usersSchema);
         wsdl11Definition.setPortTypeName("UsersPort");
         return wsdl11Definition;
+    }
+
+    @Override
+    public void addInterceptors(List<EndpointInterceptor> interceptors) {
+        // 可自定义附加拦截器
     }
 
 }

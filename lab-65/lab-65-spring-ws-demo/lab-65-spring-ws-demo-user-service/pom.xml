@@ -32,7 +32,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- 实现对 Spring WebService 的自动化配置 -->
+        <!-- 实现对 Spring Web Services 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web-services</artifactId>
