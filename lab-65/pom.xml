@@ -14,6 +14,7 @@
     <modules>
         <module>lab-65-spring-ws-demo</module>
         <module>lab-65-ws-feign-client</module>
+        <module>lab-65-cxf-ws-demo</module>
     </modules>
 
 </project>

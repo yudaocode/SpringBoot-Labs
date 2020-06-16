@@ -1,0 +1,3 @@
+# CXF 配置项，对应 CxfProperties 配置类
+cxf:
+  path: /ws/ # CXF CXFServlet 的匹配路径
