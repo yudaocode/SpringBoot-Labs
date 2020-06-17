@@ -39,12 +39,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 引入 Feign 相关依赖 -->
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-core</artifactId>
-            <version>11.0</version>
-        </dependency>
         <!-- 引入 Feign SOAP 拓展的依赖 -->
         <dependency>
             <groupId>io.github.openfeign</groupId>

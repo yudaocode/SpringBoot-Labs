@@ -11,7 +11,7 @@ import javax.xml.ws.Endpoint;
 @Configuration
 public class CXFConfig {
 
-    public static final String NAMESPACE_URI = "https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-spring-ws-demo";
+    public static final String NAMESPACE_URI = "https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-cxf-ws-demo";
 
     @Bean(name = Bus.DEFAULT_BUS_ID)
     public SpringBus springBus() {

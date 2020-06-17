@@ -58,9 +58,9 @@
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * [《芋道 Spring Boot 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Boot/Feign/?github) 对应 [lab-58](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-58)
 * [《芋道 Spring Boot gRPC 入门》](http://www.iocoder.cn/Spring-Boot/gRPC/?github) 对应 [lab-64](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-64)
+* [《芋道 Spring Boot Web Services 入门》](http://www.iocoder.cn/Spring-Boot/Web-Services/?github) 对应 [lab-65](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65)
 * [《芋道 Spring Boot SOFARPC 入门》](http://www.iocoder.cn/Spring-Boot/SOFARPC/?github) 对应 [lab-62](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-62)
 * [《芋道 Spring Boot Motan 入门》](http://www.iocoder.cn/Spring-Boot/Motan/?github) 对应 [lab-63](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-63)
-* 《芋道 Spring Boot gRPC 入门》计划中...
 * 《芋道 Spring Boot RSocket 入门》计划中...
 
 ## 数据访问

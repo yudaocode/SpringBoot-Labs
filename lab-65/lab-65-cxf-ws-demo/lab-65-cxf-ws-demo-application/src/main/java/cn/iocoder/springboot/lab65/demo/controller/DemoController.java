@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab65.demo.controller;
 
-import https.github_com.yunaiv.springboot_labs.tree.master.lab_65.lab_65_spring_ws_demo.*;
+import https.github_com.yunaiv.springboot_labs.tree.master.lab_65.lab_65_cxf_ws_demo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

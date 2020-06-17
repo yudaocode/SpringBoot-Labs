@@ -12,7 +12,7 @@ import javax.jws.WebService;
 @Service
 @WebService(
         serviceName = "userService", // 服务名称
-        targetNamespace = CXFConfig.NAMESPACE_URI // WSDL 命名空间
+        targetNamespace = CXFConfig.NAMESPACE_URI // Namespace 命名空间
 )
 public class UserServiceImpl implements UserService {
 

@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab65.demo.config;
 
-import https.github_com.yunaiv.springboot_labs.tree.master.lab_65.lab_65_spring_ws_demo.UserService;
+import https.github_com.yunaiv.springboot_labs.tree.master.lab_65.lab_65_cxf_ws_demo.UserService;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
