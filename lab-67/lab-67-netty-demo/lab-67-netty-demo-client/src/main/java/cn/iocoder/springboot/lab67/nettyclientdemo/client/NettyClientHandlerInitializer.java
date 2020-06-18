@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab67.nettyserverdemo.server;
+package cn.iocoder.springboot.lab67.nettyclientdemo.client;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.InvocationDecoder;
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.InvocationEncoder;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NettyServerHandlerInitializer extends ChannelInitializer<Channel> {
+public class NettyClientHandlerInitializer extends ChannelInitializer<Channel> {
 
     @Autowired
     private MessageDispatcher messageDispatcher;
@@ -23,7 +23,7 @@ public class NettyServerHandlerInitializer extends ChannelInitializer<Channel> {
                 .addLast(new InvocationEncoder())
                 // 解码器
                 .addLast(new InvocationDecoder())
-                // 服务端处理器
+                // 客户端处理器
                 .addLast(messageDispatcher)
         ;
     }
