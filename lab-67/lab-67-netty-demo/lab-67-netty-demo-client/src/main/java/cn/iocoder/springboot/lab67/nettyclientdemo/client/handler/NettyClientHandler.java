@@ -1,5 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.client.handler;
 
+import cn.iocoder.springboot.lab67.nettyclientdemo.client.NettyClient;
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
 import cn.iocoder.springboot.lab67.nettycommondemo.heartbeat.HeartbeatRequest;
 import io.netty.channel.ChannelFutureListener;
@@ -8,12 +9,16 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleStateEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Autowired
+    private NettyClient nettyClient;
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object event) throws Exception {
@@ -26,6 +31,14 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
         } else {
             super.userEventTriggered(ctx, event);
         }
+    }
+
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        // 发起重连
+        nettyClient.reconnect();
+        // 继续触发事件
+        super.channelInactive(ctx);
     }
 
     @Override
