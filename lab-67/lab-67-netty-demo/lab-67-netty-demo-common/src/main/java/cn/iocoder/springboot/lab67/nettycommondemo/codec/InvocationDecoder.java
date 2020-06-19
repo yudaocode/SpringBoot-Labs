@@ -29,9 +29,9 @@ public class InvocationDecoder extends ByteToMessageDecoder {
             return;
         }
         // 读取内容
-        ByteBuf byteBuf = in.readRetainedSlice(length);
+        byte[] content = new byte[length];
+        in.readBytes(content);
         // 解析成 Invocation
-        byte[] content = byteBuf.array();
         Invocation invocation = JSON.parseObject(content, Invocation.class);
         out.add(invocation);
     }

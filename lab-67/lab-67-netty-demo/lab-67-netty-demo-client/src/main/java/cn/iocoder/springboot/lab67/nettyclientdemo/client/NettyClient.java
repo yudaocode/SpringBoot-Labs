@@ -1,5 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.client;
 
+import cn.iocoder.springboot.lab67.nettyclientdemo.client.handler.NettyClientHandlerInitializer;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
@@ -55,7 +56,7 @@ public class NettyClient {
         ChannelFuture future = bootstrap.connect().sync();
         if (future.isSuccess()) {
             channel = future.channel();
-            logger.info("[start][Netty Client 链接服务器({}:{}) 成功]", serverHost, serverPort);
+            logger.info("[start][Netty Client 连接服务器({}:{}) 成功]", serverHost, serverPort);
         }
     }
 

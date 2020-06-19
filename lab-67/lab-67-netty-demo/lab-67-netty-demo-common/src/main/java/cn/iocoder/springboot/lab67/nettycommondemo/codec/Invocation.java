@@ -1,15 +1,9 @@
 package cn.iocoder.springboot.lab67.nettycommondemo.codec;
 
-public class Invocation {
+import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
+import com.alibaba.fastjson.JSON;
 
-    /**
-     * 类型 - 心跳请求
-     */
-    public static final String TYPE_HEARTBEAT_REQUEST = "HEARTBEAT_REQUEST";
-    /**
-     * 类型 - 心跳响应
-     */
-    public static final String TYPE_HEARTBEAT_RESPONSE = "HEARTBEAT_RESPONSE";
+public class Invocation {
 
     /**
      * 类型
@@ -19,6 +13,14 @@ public class Invocation {
      * 消息
      */
     private String message;
+
+    public Invocation() {
+    }
+
+    public Invocation(String type, Message message) {
+        this.type = type;
+        this.message = JSON.toJSONString(message);
+    }
 
     public String getType() {
         return type;

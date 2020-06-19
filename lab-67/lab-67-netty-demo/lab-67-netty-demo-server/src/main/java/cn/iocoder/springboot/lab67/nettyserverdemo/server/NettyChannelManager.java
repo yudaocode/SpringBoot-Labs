@@ -18,12 +18,12 @@ public class NettyChannelManager {
 
     public void add(Channel channel) {
         channels.put(channel.id(), channel);
-        logger.info("[add][一个新的连接({})加入]", channel.id());
+        logger.info("[add][一个连接({})加入]", channel.id());
     }
 
     public void remove(Channel channel) {
         channels.remove(channel.id());
-        logger.info("[add][一个连接({})离开]", channel.id());
+        logger.info("[remove][一个连接({})离开]", channel.id());
     }
 
 }
