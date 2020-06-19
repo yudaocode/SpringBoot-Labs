@@ -17,6 +17,11 @@ public class Invocation {
     public Invocation() {
     }
 
+    public Invocation(String type, String message) {
+        this.type = type;
+        this.message = message;
+    }
+
     public Invocation(String type, Message message) {
         this.type = type;
         this.message = JSON.toJSONString(message);
@@ -40,4 +45,11 @@ public class Invocation {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "Invocation{" +
+                "type='" + type + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }

@@ -2,8 +2,9 @@ package cn.iocoder.springboot.lab67.nettyclientdemo.client.handler;
 
 import cn.iocoder.springboot.lab67.nettyclientdemo.client.NettyClient;
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
-import cn.iocoder.springboot.lab67.nettycommondemo.heartbeat.HeartbeatRequest;
+import cn.iocoder.springboot.lab67.nettyclientdemo.message.heartbeat.HeartbeatRequest;
 import io.netty.channel.ChannelFutureListener;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleStateEvent;
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@ChannelHandler.Sharable
 public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
     private Logger logger = LoggerFactory.getLogger(getClass());

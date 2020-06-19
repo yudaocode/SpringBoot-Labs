@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab67.nettycommondemo.heartbeat;
+package cn.iocoder.springboot.lab67.nettyserverdemo.message.heartbeat;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
 
@@ -11,5 +11,10 @@ public class HeartbeatRequest implements Message {
      * 类型 - 心跳请求
      */
     public static final String TYPE = "HEARTBEAT_REQUEST";
+
+    @Override
+    public String toString() {
+        return "HeartbeatRequest{}";
+    }
 
 }

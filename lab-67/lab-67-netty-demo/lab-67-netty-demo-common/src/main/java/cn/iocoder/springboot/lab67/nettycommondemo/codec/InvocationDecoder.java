@@ -5,10 +5,14 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
 import io.netty.handler.codec.CorruptedFrameException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 public class InvocationDecoder extends ByteToMessageDecoder {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) {
@@ -34,6 +38,7 @@ public class InvocationDecoder extends ByteToMessageDecoder {
         // 解析成 Invocation
         Invocation invocation = JSON.parseObject(content, Invocation.class);
         out.add(invocation);
+        logger.info("[decode][连接({}) 解析到一条消息({})]", ctx.channel().id(), invocation.toString());
     }
 
 }

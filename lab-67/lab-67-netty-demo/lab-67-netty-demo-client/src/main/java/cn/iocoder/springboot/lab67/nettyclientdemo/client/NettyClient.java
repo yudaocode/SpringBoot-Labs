@@ -1,6 +1,7 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.client;
 
 import cn.iocoder.springboot.lab67.nettyclientdemo.client.handler.NettyClientHandlerInitializer;
+import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -86,6 +87,7 @@ public class NettyClient {
                 }
             }
         }, RECONNECT_SECONDS, TimeUnit.SECONDS);
+        logger.info("[reconnect][{} 秒后将发起重连]", RECONNECT_SECONDS);
     }
 
     /**
@@ -99,6 +101,24 @@ public class NettyClient {
         }
         // 优雅关闭一个 EventLoopGroup 对象
         eventGroup.shutdownGracefully();
+    }
+
+    /**
+     * 发送消息
+     *
+     * @param invocation 消息体
+     */
+    public void send(Invocation invocation) {
+        if (channel == null) {
+            logger.error("[send][连接不存在]");
+            return;
+        }
+        if (!channel.isActive()) {
+            logger.error("[send][连接({})未激活]", channel.id());
+            return;
+        }
+        // 发送消息
+        channel.writeAndFlush(invocation);
     }
 
 }

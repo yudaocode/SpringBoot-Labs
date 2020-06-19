@@ -15,7 +15,7 @@ public class NettyClientHandlerInitializer extends ChannelInitializer<Channel> {
     /**
      * 心跳超时时间
      */
-    private static final Integer WRITE_TIMEOUT_SECONDS = 3;
+    private static final Integer READ_TIMEOUT_SECONDS = 60;
 
     @Autowired
     private MessageDispatcher messageDispatcher;
@@ -24,15 +24,15 @@ public class NettyClientHandlerInitializer extends ChannelInitializer<Channel> {
     private NettyClientHandler nettyClientHandler;
 
     @Override
-    protected void initChannel(Channel ch) throws Exception {
+    protected void initChannel(Channel ch) {
         ch.pipeline()
                 // 空闲检测
-                .addLast(new IdleStateHandler(WRITE_TIMEOUT_SECONDS, 0, 0))
+                .addLast(new IdleStateHandler(READ_TIMEOUT_SECONDS, 0, 0))
                 // 编码器
                 .addLast(new InvocationEncoder())
                 // 解码器
                 .addLast(new InvocationDecoder())
-                // 客户端处理器
+                // 消息分发器
                 .addLast(messageDispatcher)
                 // 客户端处理器
                 .addLast(nettyClientHandler)
