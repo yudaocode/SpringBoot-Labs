@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab67.nettycommondemo.dispacher;
+package cn.iocoder.springboot.lab67.nettycommondemo.dispatcher;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

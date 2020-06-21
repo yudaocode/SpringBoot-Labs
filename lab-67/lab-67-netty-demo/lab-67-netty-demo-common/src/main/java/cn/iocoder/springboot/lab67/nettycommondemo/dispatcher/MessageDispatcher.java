@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab67.nettycommondemo.dispacher;
+package cn.iocoder.springboot.lab67.nettycommondemo.dispatcher;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
 import com.alibaba.fastjson.JSON;
