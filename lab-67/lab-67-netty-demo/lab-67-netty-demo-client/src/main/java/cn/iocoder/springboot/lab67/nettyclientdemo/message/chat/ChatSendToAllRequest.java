@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.message.chat;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.Message;
 
 /**
  * 发送给所有人的群聊消息的 Message

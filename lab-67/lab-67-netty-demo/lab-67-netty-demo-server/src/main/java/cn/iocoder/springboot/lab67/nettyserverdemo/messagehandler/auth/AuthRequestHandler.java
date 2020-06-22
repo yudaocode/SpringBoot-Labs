@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab67.nettyserverdemo.messagehandler.auth;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageHandler;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageHandler;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.auth.AuthRequest;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.auth.AuthResponse;
 import cn.iocoder.springboot.lab67.nettyserverdemo.server.NettyChannelManager;

@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab67.nettyserverdemo.config;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageDispatcher;
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageHandlerContainer;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageDispatcher;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageHandlerContainer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

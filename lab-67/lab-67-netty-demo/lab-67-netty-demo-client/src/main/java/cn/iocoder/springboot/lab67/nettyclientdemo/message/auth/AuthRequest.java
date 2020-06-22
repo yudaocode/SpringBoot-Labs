@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.message.auth;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.Message;
 
 /**
  * 用户认证请求

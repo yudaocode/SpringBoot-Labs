@@ -1,8 +1,11 @@
 package cn.iocoder.springboot.lab67.nettycommondemo.codec;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.Message;
 import com.alibaba.fastjson.JSON;
 
+/**
+ * 通信协议的消息体
+ */
 public class Invocation {
 
     /**
@@ -10,10 +13,11 @@ public class Invocation {
      */
     private String type;
     /**
-     * 消息
+     * 消息，JSON 格式
      */
     private String message;
 
+    // 空构造方法
     public Invocation() {
     }
 
@@ -52,4 +56,5 @@ public class Invocation {
                 ", message='" + message + '\'' +
                 '}';
     }
+
 }

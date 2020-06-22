@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.messagehandler.heartbeat;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageHandler;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageHandler;
 import cn.iocoder.springboot.lab67.nettyclientdemo.message.heartbeat.HeartbeatResponse;
 import io.netty.channel.Channel;
 import org.slf4j.Logger;

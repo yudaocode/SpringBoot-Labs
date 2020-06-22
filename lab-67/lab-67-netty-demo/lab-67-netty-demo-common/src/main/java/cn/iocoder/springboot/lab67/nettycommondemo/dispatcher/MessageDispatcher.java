@@ -17,8 +17,9 @@ public class MessageDispatcher extends SimpleChannelInboundHandler<Invocation> {
     protected void channelRead0(ChannelHandlerContext ctx, Invocation invocation) {
         // 获得 type 对应的 MessageHandler 处理器
         MessageHandler messageHandler = messageHandlerContainer.getMessageHandler(invocation.getType());
-        // 解析消息
+        // 获得  MessageHandler 处理器 的消息类
         Class<? extends Message> messageClass = MessageHandlerContainer.getMessageClass(messageHandler);
+        // 解析消息
         Message message = JSON.parseObject(invocation.getMessage(), messageClass);
         // 执行逻辑
         // noinspection unchecked

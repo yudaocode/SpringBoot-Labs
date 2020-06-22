@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab67.nettyserverdemo.messagehandler.heartbeat;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageHandler;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageHandler;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.heartbeat.HeartbeatRequest;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.heartbeat.HeartbeatResponse;
 import io.netty.channel.Channel;

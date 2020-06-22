@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyserverdemo.message.heartbeat;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.Message;
 
 /**
  * 消息 - 心跳响应

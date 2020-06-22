@@ -2,10 +2,11 @@ package cn.iocoder.springboot.lab67.nettyclientdemo.client.handler;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.InvocationDecoder;
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.InvocationEncoder;
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageDispatcher;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageDispatcher;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
 import io.netty.handler.timeout.IdleStateHandler;
+import io.netty.handler.timeout.ReadTimeoutHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +29,7 @@ public class NettyClientHandlerInitializer extends ChannelInitializer<Channel> {
         ch.pipeline()
                 // 空闲检测
                 .addLast(new IdleStateHandler(READ_TIMEOUT_SECONDS, 0, 0))
+                .addLast(new ReadTimeoutHandler(3 * READ_TIMEOUT_SECONDS))
                 // 编码器
                 .addLast(new InvocationEncoder())
                 // 解码器

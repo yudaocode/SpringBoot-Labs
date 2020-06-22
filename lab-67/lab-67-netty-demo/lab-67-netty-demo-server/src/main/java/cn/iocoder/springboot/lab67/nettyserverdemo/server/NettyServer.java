@@ -28,8 +28,6 @@ public class NettyServer {
 
     @Autowired
     private NettyServerHandlerInitializer nettyServerHandlerInitializer;
-    @Autowired
-    private NettyChannelManager nettyChannelManager;
 
     /**
      * boss 线程组，用于服务端接受客户端的连接
@@ -51,6 +49,7 @@ public class NettyServer {
     public void start() throws InterruptedException {
         // 创建 ServerBootstrap 对象，用于 Netty Server 启动
         ServerBootstrap bootstrap = new ServerBootstrap();
+        // 设置 ServerBootstrap 的各种属性
         bootstrap.group(bossGroup, workerGroup) // 设置两个 EventLoopGroup 对象
                 .channel(NioServerSocketChannel.class)  // 指定 Channel 为服务端 NioServerSocketChannel
                 .localAddress(new InetSocketAddress(port)) // 设置 Netty Server 的端口

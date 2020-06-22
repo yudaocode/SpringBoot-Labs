@@ -1,6 +1,6 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.message.chat;
 
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.Message;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.Message;
 
 /**
  * 转发消息给一个用户的 Message

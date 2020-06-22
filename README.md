@@ -55,6 +55,7 @@
 
 ## RPC 开发
 
+* [《芋道 Spring Boot Netty 入门》](http://www.iocoder.cn/Spring-Boot/Netty/?github) 对应 [lab-67](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-67)
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * [《芋道 Spring Boot 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Boot/Feign/?github) 对应 [lab-58](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-58)
 * [《芋道 Spring Boot gRPC 入门》](http://www.iocoder.cn/Spring-Boot/gRPC/?github) 对应 [lab-64](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-64)

@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab67.nettyclientdemo.messagehandler.auth;
 
 import cn.iocoder.springboot.lab67.nettyclientdemo.message.auth.AuthResponse;
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageHandler;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageHandler;
 import io.netty.channel.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

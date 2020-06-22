@@ -10,6 +10,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
+/**
+ * {@link Invocation} 解码器
+ */
 public class InvocationDecoder extends ByteToMessageDecoder {
 
     private Logger logger = LoggerFactory.getLogger(getClass());

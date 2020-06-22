@@ -7,6 +7,9 @@ import io.netty.handler.codec.MessageToByteEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * {@link Invocation} 编码器
+ */
 public class InvocationEncoder extends MessageToByteEncoder<Invocation> {
 
     private Logger logger = LoggerFactory.getLogger(getClass());

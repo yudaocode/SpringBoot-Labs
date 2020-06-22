@@ -1,7 +1,7 @@
 package cn.iocoder.springboot.lab67.nettyserverdemo.messagehandler.chat;
 
 import cn.iocoder.springboot.lab67.nettycommondemo.codec.Invocation;
-import cn.iocoder.springboot.lab67.nettycommondemo.dispacher.MessageHandler;
+import cn.iocoder.springboot.lab67.nettycommondemo.dispatcher.MessageHandler;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.chat.ChatSendResponse;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.chat.ChatSendToOneRequest;
 import cn.iocoder.springboot.lab67.nettyserverdemo.message.chat.ChatRedirectToUserRequest;

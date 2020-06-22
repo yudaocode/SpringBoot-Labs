@@ -44,12 +44,13 @@ public class NettyClient {
     private volatile Channel channel;
 
     /**
-     * 启动 Netty Server
+     * 启动 Netty Client
      */
     @PostConstruct
     public void start() throws InterruptedException {
         // 创建 Bootstrap 对象，用于 Netty Client 启动
         Bootstrap bootstrap = new Bootstrap();
+        // 设置 Bootstrap 的各种属性。
         bootstrap.group(eventGroup) // 设置一个 EventLoopGroup 对象
                 .channel(NioSocketChannel.class)  // 指定 Channel 为客户端 NioSocketChannel
                 .remoteAddress(serverHost, serverPort) // 指定链接服务器的地址

@@ -33,7 +33,13 @@ public class MessageHandlerContainer implements InitializingBean {
         logger.info("[afterPropertiesSet][消息处理器数量：{}]", handlers.size());
     }
 
-    protected MessageHandler getMessageHandler(String type) {
+    /**
+     * 获得类型对应的 MessageHandler
+     *
+     * @param type 类型
+     * @return MessageHandler
+     */
+    MessageHandler getMessageHandler(String type) {
         MessageHandler handler = handlers.get(type);
         if (handler == null) {
             throw new IllegalArgumentException(String.format("类型(%s) 找不到匹配的 MessageHandler 处理器", type));
@@ -41,7 +47,13 @@ public class MessageHandlerContainer implements InitializingBean {
         return handler;
     }
 
-    public static Class<? extends Message> getMessageClass(MessageHandler handler) {
+    /**
+     * 获得 MessageHandler 处理的消息类
+     *
+     * @param handler 处理器
+     * @return 消息类
+     */
+    static Class<? extends Message> getMessageClass(MessageHandler handler) {
         // 获得 Bean 对应的 Class 类名。因为有可能被 AOP 代理过。
         Class<?> targetClass = AopProxyUtils.ultimateTargetClass(handler);
         // 获得接口的 Type 数组
