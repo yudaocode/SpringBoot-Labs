@@ -22,7 +22,7 @@ public class InvocationEncoder extends MessageToByteEncoder<Invocation> {
         out.writeInt(content.length);
         // 写入内容
         out.writeBytes(content);
-        logger.info("[decode][连接({}) 编码了一条消息({})]", ctx.channel().id(), invocation.toString());
+        logger.info("[encode][连接({}) 编码了一条消息({})]", ctx.channel().id(), invocation.toString());
     }
 
 }

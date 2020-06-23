@@ -168,7 +168,8 @@
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03)
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08)
 * [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github) 对应 [labx-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-14)
-
+* [《芋道 Dubbo Admin 快速入门》](http://www.iocoder.cn/Dubbo/Admin/?github)
+ 
 # Spring Cloud 专栏
 
 ## 注册中心
@@ -308,9 +309,8 @@
 **[CAT](http://www.iocoder.cn/CAT/install/?github)**
 * [《芋道 Spring Boot 监控平台 CAT 入门》](http://www.iocoder.cn/Spring-Boot/CAT/?github) 的[「13. Dubbo 集成」](#)小节
 
-TODO Dubbo-Admin
-
-****
+**[Dubbo Admin](http://www.iocoder.cn/Dubbo/Admin/?github)**
+* [《芋道 Dubbo Admin 快速入门》](http://www.iocoder.cn/Dubbo/Admin/?github)
 
 # 消息队列 MQ 专栏
 

@@ -25,11 +25,13 @@ public class AuthRequestHandler implements MessageHandler<AuthRequest> {
             return;
         }
 
-        // 添加到 WebSocketUtil 中
+        // ... 此处应有一段
+
+        // 将用户和 Channel 绑定
         // 考虑到代码简化，我们先直接使用 accessToken 作为 User
         nettyChannelManager.addUser(channel, authRequest.getAccessToken());
 
-        // 判断是否认证成功。这里，假装直接成功
+        // 响应认证成功
         AuthResponse authResponse = new AuthResponse().setCode(0);
         channel.writeAndFlush(new Invocation(AuthResponse.TYPE, authResponse));
     }

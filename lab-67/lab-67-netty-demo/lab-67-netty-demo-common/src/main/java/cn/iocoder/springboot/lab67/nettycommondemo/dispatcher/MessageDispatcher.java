@@ -7,11 +7,16 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 @ChannelHandler.Sharable
 public class MessageDispatcher extends SimpleChannelInboundHandler<Invocation> {
 
     @Autowired
     private MessageHandlerContainer messageHandlerContainer;
+
+    private final ExecutorService executor =  Executors.newFixedThreadPool(200);
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Invocation invocation) {
@@ -22,8 +27,15 @@ public class MessageDispatcher extends SimpleChannelInboundHandler<Invocation> {
         // 解析消息
         Message message = JSON.parseObject(invocation.getMessage(), messageClass);
         // 执行逻辑
-        // noinspection unchecked
-        messageHandler.execute(ctx.channel(), message);
+        executor.submit(new Runnable() {
+
+            @Override
+            public void run() {
+                // noinspection unchecked
+                messageHandler.execute(ctx.channel(), message);
+            }
+
+        });
     }
 
 }
