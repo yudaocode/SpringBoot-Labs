@@ -15,18 +15,11 @@ public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter 
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+            // 设置 /login 无需权限访问
             .antMatchers("/login").permitAll()
+            // 设置其它请求，需要认证后访问
             .anyRequest().authenticated()
             ;
     }
-
-//
-//    @Bean
-//    public OAuth2RestTemplate oauth2RestTemplate(OAuth2ProtectedResourceDetails details) {
-//        OAuth2RestTemplate oAuth2RestTemplate = new OAuth2RestTemplate(details);
-//
-//        /* To validate if required configurations are in place during startup */
-//        return oAuth2RestTemplate;
-//    }
 
 }
