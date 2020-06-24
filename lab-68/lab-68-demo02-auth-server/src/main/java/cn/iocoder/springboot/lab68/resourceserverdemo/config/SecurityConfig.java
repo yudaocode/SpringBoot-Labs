@@ -41,7 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 // 对所有 URL 都进行认证
                 .anyRequest()
-                .authenticated();
+                .permitAll();
     }
 
 }

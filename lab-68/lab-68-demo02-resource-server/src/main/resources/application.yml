@@ -7,4 +7,4 @@ security:
       client-id: clientapp
       client-secret: 112233
     resource:
-      token-info-uri:
+      token-info-uri: http://127.0.0.1:8080/oauth/check_token
