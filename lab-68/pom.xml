@@ -12,7 +12,8 @@
     <artifactId>lab-68</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-68-demo01-resource-server</module>
+        <module>lab-68-demo01-resource-owner-password-credentials-server</module>
+        <module>lab-68-demo02-resource-server</module>
     </modules>
 
 

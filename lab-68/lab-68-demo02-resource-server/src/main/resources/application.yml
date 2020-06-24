@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+security:
+  oauth2:
+    client:
+      client-id: clientapp
+      client-secret: 112233
+    resource:
+      token-info-uri:
