@@ -1,4 +1,4 @@
-package cn.iocoder.springboot.lab68.resourceserverdemo.config;
+package cn.iocoder.springboot.lab68.authorizationserverdemo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,9 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 @EnableAuthorizationServer
 public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
-    // 用户认证
+    /**
+     * 用户认证 Manager
+     */
     @Autowired
     private AuthenticationManager authenticationManager;
 
@@ -27,8 +29,10 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
+//        oauthServer.tokenKeyAccess("isAuthenticated()")
+//                .checkTokenAccess("isAuthenticated()");
         oauthServer.tokenKeyAccess("permitAll()")
-                .checkTokenAccess("isAuthenticated()");
+                .checkTokenAccess("permitAll()");
     }
 
     @Override

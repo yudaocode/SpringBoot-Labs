@@ -3,8 +3,10 @@ server:
 
 security:
   oauth2:
+    # OAuth2 Client 配置
     client:
       client-id: clientapp
       client-secret: 112233
+    # OAuth2 Resource 配置
     resource:
-      token-info-uri: http://127.0.0.1:8080/oauth/check_token
+      token-info-uri: http://127.0.0.1:8080/oauth/check_token # 获得 Token 信息的 URL
