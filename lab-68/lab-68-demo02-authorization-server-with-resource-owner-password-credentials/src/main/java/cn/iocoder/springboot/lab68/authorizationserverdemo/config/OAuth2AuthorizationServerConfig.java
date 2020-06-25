@@ -29,8 +29,9 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
-        oauthServer.tokenKeyAccess("isAuthenticated()")
-                .checkTokenAccess("isAuthenticated()");
+        oauthServer.checkTokenAccess("isAuthenticated()");
+//        oauthServer.tokenKeyAccess("isAuthenticated()")
+//                .checkTokenAccess("isAuthenticated()");
 //        oauthServer.tokenKeyAccess("permitAll()")
 //                .checkTokenAccess("permitAll()");
     }
