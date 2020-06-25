@@ -20,6 +20,7 @@
         <module>lab-68-demo02-authorization-server-with-resource-owner-password-credentials</module>
         <module>lab-68-demo02-authorization-server-with-authorization-code</module>
         <module>lab-68-demo02-authorization-server-with-implicit</module>
+        <module>lab-68-demo02-authorization-server-with-client-credentials</module>
     </modules>
 
 
