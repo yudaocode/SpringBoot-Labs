@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-68-demo01-resource-owner-password-credentials-server</artifactId>
+    <artifactId>lab-68-demo01-authorization-code</artifactId>
 
     <properties>
         <!-- 依赖相关配置 -->
