@@ -15,6 +15,7 @@
         <module>lab-68-demo01-resource-owner-password-credentials-server</module>
         <module>lab-68-demo02-resource-server</module>
         <module>lab-68-demo02-authorization-server-with-resource-owner-password-credentials</module>
+        <module>lab-68-demo02-authorization-server-with-authorization-code</module>
     </modules>
 
 
