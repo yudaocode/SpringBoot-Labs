@@ -27,6 +27,7 @@
 
         <module>lab-68-demo11-authorization-server-by-jdbc-store</module>
         <module>lab-68-demo11-authorization-server-by-redis-store</module>
+        <module>lab-68-demo11-authorization-server-by-jwt-store</module>
     </modules>
 
 
