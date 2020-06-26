@@ -13,8 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>lab-68-demo01-resource-owner-password-credentials-server</module>
-        <module>lab-68-demo01-authorization-code</module>
-        <module>lab-68-demo01-implicit</module>
+        <module>lab-68-demo01-authorization-code-server</module>
+        <module>lab-68-demo01-implicit-server</module>
+        <module>lab-68-demo01-client-credentials-server</module>
 
         <module>lab-68-demo02-resource-server</module>
         <module>lab-68-demo02-authorization-server-with-resource-owner-password-credentials</module>
