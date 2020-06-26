@@ -1,1 +1,1 @@
-<http://www.iocoder.cn/Dubbo/Admin/github>
+<http://www.iocoder.cn/Dubbo/Admin/?github>

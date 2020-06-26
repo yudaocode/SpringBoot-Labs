@@ -24,6 +24,7 @@
         <module>lab-68-demo02-authorization-server-with-client-credentials</module>
 
         <module>lab-68-demo03-authorization-server-with-resource-owner-password-credentials</module>
+        <module>lab-68-demo11-authorization-server-by-jdbc-store</module>
     </modules>
 
 
