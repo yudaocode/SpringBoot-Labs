@@ -28,6 +28,9 @@
         <module>lab-68-demo11-authorization-server-by-jdbc-store</module>
         <module>lab-68-demo11-authorization-server-by-redis-store</module>
         <module>lab-68-demo11-authorization-server-by-jwt-store</module>
+
+        <module>lab-68-demo21-authorization-server-on-sso</module>
+        <module>lab-68-demo21-resource-server-on-sso</module>
     </modules>
 
 
