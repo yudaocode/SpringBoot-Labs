@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-16</artifactId>
+    <artifactId>lab-16-spring-data-mongo</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>lab-16-spring-data-mongodb</module>
