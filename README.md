@@ -158,7 +158,7 @@
 ## Spring Cloud Alibaba 全家桶
 
 * [《芋道 Spring Cloud Alibaba 介绍》](http://www.iocoder.cn/Spring-Cloud-Alibaba/intro/?github)
-* [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
+* [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01-spring-cloud-alibaba-nacos-discovery](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01-spring-cloud-alibaba-nacos-discovery)
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
@@ -178,7 +178,7 @@
 
 ## 注册中心
 
-* [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01)
+* [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01-spring-cloud-alibaba-nacos-discovery](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01-spring-cloud-alibaba-nacos-discovery)
 * [《芋道 Spring Cloud Netflix 注册中心 Eureka 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Eureka?github) 对应 [labx-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-22)
 * [《芋道 Spring Cloud 注册中心 Zookeeper 入门》](http://www.iocoder.cn/Spring-Cloud/ZooKeeper-Discovery/?github) 对应 [labx-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-25)
 * [《芋道 Spring Cloud 注册中心 Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Consul-Discovery/?github) 对应 [labx-27](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-27)

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-01</artifactId>
+    <artifactId>labx-01-spring-cloud-alibaba-nacos-discovery</artifactId>
     <packaging>pom</packaging>
 
     <modules>
