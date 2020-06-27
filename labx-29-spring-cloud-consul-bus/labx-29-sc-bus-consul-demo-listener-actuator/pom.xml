@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-29</artifactId>
+        <artifactId>labx-29-spring-cloud-consul-bus</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-29-sc-config-server-git-auto-refresh-by-bus</artifactId>
+    <artifactId>labx-29-sc-bus-consul-demo-listener-actuator</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -48,22 +48,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 引入 Spring Cloud Stream Kafka 相关依赖，将 Kafka 作为消息队列，并实现对其的自动配置 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
-
         <!-- 引入基于 Consul 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-bus</artifactId>
         </dependency>
 
-        <!-- 引入 Spring Cloud Config Monitor 依赖，提供 `/monitor` 接口，用于刷新配置 -->
+        <!-- 实现对 Actuator 的自动化配置 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-monitor</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 

@@ -231,7 +231,7 @@
 * [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
 * [《芋道 Spring Cloud 事件总线 Bus RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-RabbitMQ/?github) 对应 [labx-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-19)
 * [《芋道 Spring Cloud 事件总线 Bus Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Kafka/?github) 对应 [labx-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-18)
-* [《芋道 Spring Cloud 事件总线 Bus Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Consul/?github) 对应 [labx-29](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-29)
+* [《芋道 Spring Cloud 事件总线 Bus Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Consul/?github) 对应 [labx-29-spring-cloud-consul-bus](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-29-spring-cloud-consul-bus)
 
 ## 分布式事务
 

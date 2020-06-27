@@ -110,7 +110,7 @@
 <!--        <module>labx-27</module>-->
 <!--        <module>labx-28</module>-->
 <!--        <module>labx-28</module>-->
-<!--        <module>labx-29</module>-->
+        <module>labx-29-spring-cloud-consul-bus</module>
 <!--        <module>labx-30-spring-cloud-grpc</module>-->
     </modules>
 
