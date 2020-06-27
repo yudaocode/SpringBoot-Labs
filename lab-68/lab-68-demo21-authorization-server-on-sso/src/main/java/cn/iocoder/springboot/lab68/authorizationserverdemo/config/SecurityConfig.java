@@ -1,5 +1,6 @@
 package cn.iocoder.springboot.lab68.authorizationserverdemo.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -9,9 +10,17 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 
+import javax.sql.DataSource;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    /**
+     * 数据源 DataSource
+     */
+    @Autowired
+    private DataSource dataSource;
 
     @Override
     @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
@@ -26,13 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.
-                // 使用内存中的 InMemoryUserDetailsManager
-                inMemoryAuthentication()
-                // 不使用 PasswordEncoder 密码编码器
-                .passwordEncoder(passwordEncoder())
-                // 配置 yunai 用户
-                .withUser("yunai").password("1024").roles("USER");
+        auth.jdbcAuthentication()
+                .dataSource(dataSource);
     }
 
 //    @Override

@@ -1,5 +1,6 @@
 package cn.iocoder.springboot.lab68.resourceserverdemo.controller;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @RequestMapping("/info")
-    public String hello() {
-        return "world";
+    public Authentication info(Authentication authentication) {
+        return authentication;
     }
 
 }
