@@ -4,4 +4,4 @@ INSERT INTO oauth_client_details
 	refresh_token_validity, additional_information, autoapprove)
 VALUES
 	('clientapp', '112233', 'read_userinfo,read_contacts',
-	'password,refresh_token', null, null, 3600, 864000, null, true);
+	'password,authorization_code,refresh_token', 'http://127.0.0.1:9090/login', null, 3600, 864000, null, true);
