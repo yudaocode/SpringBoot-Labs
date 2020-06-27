@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping("/admin-list")
-    @PreAuthorize("hasAuthority('admin')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String adminList() {
         return "管理员列表";
     }
 
     @GetMapping("/user-list")
-    @PreAuthorize("hasAuthority('user')")
+    @PreAuthorize("hasRole('USER')")
     public String userList() {
         return "用户列表";
     }

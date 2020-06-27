@@ -4,10 +4,10 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 资源服务器配置
+ * SSO 配置
  */
 @Configuration
-@EnableOAuth2Sso
-public class OAuth2ResourceServerConfig {
+@EnableOAuth2Sso // 开启 Sso 功能
+public class OAuthSsoConfig {
 
 }
