@@ -11,8 +11,8 @@
     <modules>
 
         <!-- Spring Boot 示例 -->
-        <module>lab-01-spring-security</module>
-<!--        <module>lab-02</module>-->
+<!--        <module>lab-01-spring-security</module>-->
+        <module>lab-02-spring-security-oauth</module>
 <!--        <module>lab-03</module>-->
 <!--        <module>lab-04</module>-->
 <!--        <module>lab-05</module>-->
