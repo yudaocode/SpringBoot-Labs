@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-03</artifactId>
+    <artifactId>lab-03-kafka</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>lab-03-kafka-native</module>

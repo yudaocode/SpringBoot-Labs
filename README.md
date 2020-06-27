@@ -70,7 +70,7 @@
 
 * [《芋道 Spring Boot 数据库连接池入门》](http://www.iocoder.cn/Spring-Boot/datasource-pool/?github) 对应 [lab-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-19)
 * [《芋道 Spring Boot MyBatis 入门》](http://www.iocoder.cn/Spring-Boot/MyBatis/?github) 对应 [lab-12-mybatis](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-12-mybatis)
-* [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13)
+* [《芋道 Spring Boot JPA 入门》](http://www.iocoder.cn/Spring-Boot/JPA/?github) 对应 [lab-13-spring-data-jpa](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-13-spring-data-jpa)
 * [《芋道 Spring Boot JdbcTemplate 入门》](http://www.iocoder.cn/Spring-Boot/JdbcTemplate/?github) 对应 [lab-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-14)
 * [《芋道 Spring Boot 多数据源（读写分离）入门》](http://www.iocoder.cn/Spring-Boot/dynamic-datasource/?github) 对应 [lab-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-17)
 * [《芋道 Spring Boot 分库分表入门》](http://www.iocoder.cn/Spring-Boot/sharding-datasource/?github) 对应 [lab-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-18)

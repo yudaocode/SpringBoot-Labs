@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-13</artifactId>
+    <artifactId>lab-13-spring-data-jpa</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>lab-13-jpa</module>

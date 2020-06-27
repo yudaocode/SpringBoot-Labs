@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-02</artifactId>
+    <artifactId>lab-02-spring-security-oauth</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>authorization-code-server</module>
