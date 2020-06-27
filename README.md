@@ -107,7 +107,7 @@
 
 * [《芋道 Spring Boot 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Boot/RocketMQ/?github) 对应 [lab-31](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-31)
 * [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03-kafka](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03-kafka)
-* [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04)
+* [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04-rabbitmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04-rabbitmq)
 * [《芋道 Spring Boot 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Boot/ActiveMQ/?github) 对应 [lab-32](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-32)
 * [《芋道 Spring Boot 事件机制 Event 入门》](http://www.iocoder.cn/Spring-Boot/Event/?github) 对应 对应 [lab-54](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-54)
 
