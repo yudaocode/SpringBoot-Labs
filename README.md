@@ -90,7 +90,7 @@
 
 ## 安全控制
 
-* [《芋道 Spring Boot 安全框架 Spring Security 入门》](http://www.iocoder.cn/Spring-Boot/Spring-Security/?github) 对应 [lab-01](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-01)
+* [《芋道 Spring Boot 安全框架 Spring Security 入门》](http://www.iocoder.cn/Spring-Boot/Spring-Security/?github) 对应 [lab-01-spring-security](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-01-spring-security)
 * [《芋道 Spring Boot 安全框架 Shiro 入门》](http://www.iocoder.cn/Spring-Boot/Shiro/?github) 对应 [lab-33](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-33)
 
 **OAuth 2.0**
