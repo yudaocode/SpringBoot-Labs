@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-02</artifactId>
+    <artifactId>labx-02-spring-cloud-netflix-ribbon</artifactId>
     <packaging>pom</packaging>
 
     <modules>

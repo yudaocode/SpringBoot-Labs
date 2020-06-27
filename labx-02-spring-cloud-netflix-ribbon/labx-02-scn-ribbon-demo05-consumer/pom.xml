@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-02</artifactId>
+        <artifactId>labx-02-spring-cloud-netflix-ribbon</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-02-scn-ribbon-demo01-provider</artifactId>
+    <artifactId>labx-02-scn-ribbon-demo05-consumer</artifactId>
 
     <properties>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
@@ -59,6 +59,13 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+<!--            <version>4.3.1</version>-->
+        </dependency>
+
     </dependencies>
 
 </project>
