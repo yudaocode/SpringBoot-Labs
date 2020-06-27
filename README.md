@@ -78,7 +78,7 @@
 
 **非关系数据库**
 
-* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11)
+* [《芋道 Spring Boot Redis 入门》](http://www.iocoder.cn/Spring-Boot/Redis/?github) 对应 [lab-11-spring-data-redis](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-11-spring-data-redis)
 * [《芋道 Spring Boot 缓存 Cache 入门》](http://www.iocoder.cn/Spring-Boot/Cache/?github) 对应 [lab-21](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-21)
 * [《芋道 Spring Boot MongoDB 入门》](http://www.iocoder.cn/Spring-Boot/MongoDB/?github) 对应 [lab-16](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-16)
 * [《芋道 Spring Boot Elasticsearch 入门》](http://www.iocoder.cn/Spring-Boot/Elasticsearch/?github) 对应 [lab-15](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-15)

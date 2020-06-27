@@ -14,14 +14,14 @@
 <!--        <module>lab-01-spring-security</module>-->
 <!--        <module>lab-02-spring-security-oauth</module>-->
 <!--        <module>lab-03-kafka</module>-->
-        <module>lab-04-rabbitmq</module>
+<!--        <module>lab-04-rabbitmq</module>-->
 <!--        <module>lab-05</module>-->
 <!--        <module>lab-06</module>-->
 <!--        <module>lab-07</module>-->
 <!--        <module>lab-08</module>-->
 <!--        <module>lab-09</module>-->
 <!--        <module>lab-10</module>-->
-<!--        <module>lab-11</module>-->
+        <module>lab-11-spring-data-redis</module>
 <!--        <module>lab-12</module>-->
 <!--        <module>lab-13</module>-->
 <!--        <module>lab-14</module>-->
