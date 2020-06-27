@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-12</artifactId>
+    <artifactId>lab-12-mybatis</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>lab-12-mybatis-xml</module>

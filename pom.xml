@@ -21,8 +21,8 @@
 <!--        <module>lab-08</module>-->
 <!--        <module>lab-09</module>-->
 <!--        <module>lab-10</module>-->
-        <module>lab-11-spring-data-redis</module>
-<!--        <module>lab-12</module>-->
+<!--        <module>lab-11-spring-data-redis</module>-->
+        <module>lab-12-mybatis</module>
 <!--        <module>lab-13</module>-->
 <!--        <module>lab-14</module>-->
 <!--        <module>lab-15</module>-->
