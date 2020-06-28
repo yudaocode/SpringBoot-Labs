@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-08</artifactId>
+        <artifactId>labx-08-spring-cloud-gateway</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-08-sc-gateway-demo10-troubleshooting</artifactId>
+    <artifactId>labx-08-sc-gateway-demo07-hystrix</artifactId>
 
     <properties>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
@@ -52,6 +52,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <!-- 引入 Hystrix 相关依赖，使用它实现服务容错，并实现对其的自动配置 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-08</artifactId>
+    <artifactId>labx-08-spring-cloud-gateway</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>labx-08-sc-gateway-demo01</module>

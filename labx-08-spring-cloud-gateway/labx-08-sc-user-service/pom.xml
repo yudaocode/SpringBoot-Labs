@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-08</artifactId>
+        <artifactId>labx-08-spring-cloud-gateway</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-08-sc-gateway-demo02-registry</artifactId>
+    <artifactId>labx-08-sc-user-service</artifactId>
 
     <properties>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
@@ -48,10 +48,10 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- 引入 Spring Cloud Gateway 相关依赖，使用它作为网关，并实现对其的自动配置 -->
+        <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- 引入 Spring Cloud Alibaba Nacos Discovery 相关依赖，将 Nacos 作为注册中心，并实现对其的自动配置 -->
