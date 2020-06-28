@@ -85,8 +85,8 @@
 <!--        <module>labx-02-spring-cloud-netflix-ribbon</module>-->
 <!--        <module>labx-03-spring-cloud-feign</module>-->
 <!--        <module>labx-04-spring-cloud-alibaba-sentinel</module>-->
-        <module>labx-05-spring-cloud-alibaba-nacos-config</module>
-<!--        <module>labx-06</module>-->
+<!--        <module>labx-05-spring-cloud-alibaba-nacos-config</module>-->
+        <module>labx-06-spring-cloud-stream-rocketmq</module>
 <!--        <module>labx-07</module>-->
 <!--        <module>labx-08</module>-->
 <!--        <module>labx-09</module>-->

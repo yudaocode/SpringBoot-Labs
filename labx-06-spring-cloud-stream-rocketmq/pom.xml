@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-06</artifactId>
+    <artifactId>labx-06-spring-cloud-stream-rocketmq</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>labx-06-sca-stream-rocketmq-consumer-demo</module>
