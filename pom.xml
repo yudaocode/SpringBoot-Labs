@@ -15,7 +15,7 @@
 <!--        <module>lab-02-spring-security-oauth</module>-->
 <!--        <module>lab-03-kafka</module>-->
 <!--        <module>lab-04-rabbitmq</module>-->
-        <module>lab-05-benchmark-tomcat-jetty-undertow</module>
+<!--        <module>lab-05-benchmark-tomcat-jetty-undertow</module>-->
 <!--        <module>lab-06</module>-->
 <!--        <module>lab-07</module>-->
 <!--        <module>lab-08</module>-->
@@ -78,7 +78,7 @@
 <!--        <module>lab-65</module>-->
 <!--        <module>lab-66</module>-->
 <!--        <module>lab-67</module>-->
-<!--        <module>lab-68</module>-->
+<!--        <module>lab-68-spring-security-oauth</module>-->
 
         <!-- Spring Cloud 示例 -->
 <!--        <module>labx-01-spring-cloud-alibaba-nacos-discovery</module>-->

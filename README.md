@@ -50,7 +50,7 @@
 * [《芋道 Spring Boot API 接口文档 Swagger 入门》](http://www.iocoder.cn/Spring-Boot/Swagger/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
 * [《芋道 Spring Boot 参数校验 Validation 入门》](http://www.iocoder.cn/Spring-Boot/Validation/?github) 对应 [lab-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-22)
 * [《芋道 Spring Boot WebSocket 入门》](http://www.iocoder.cn/Spring-Boot/WebSocket/?github) 对应 [lab-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-25)
-* [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05)
+* [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05-benchmark-tomcat-jetty-undertow](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05-benchmark-tomcat-jetty-undertow)
 * [《性能测试 —— SpringMVC、Webflux 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringMVC-Webflux-benchmark/?github) 对应 [lab-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-06)
 
 ## RPC 开发
@@ -94,9 +94,9 @@
 * [《芋道 Spring Boot 安全框架 Shiro 入门》](http://www.iocoder.cn/Spring-Boot/Shiro/?github) 对应 [lab-33](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-33)
 
 **OAuth 2.0**
-* [《芋道 Spring Security OAuth2 入门》](http://www.iocoder.cn/Spring-Security/OAuth2-learning/?github) 对应 [lab-68](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-68)
-* [《芋道 Spring Security OAuth2 存储器》](http://www.iocoder.cn/Spring-Security/OAuth2-learning-store/?github) 对应 [lab-68](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-68)
-* [《芋道 Spring Security OAuth2 单点登陆》](http://www.iocoder.cn/Spring-Security/OAuth2-learning-sso/?github) 对应 [lab-68](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-68)
+* [《芋道 Spring Security OAuth2 入门》](http://www.iocoder.cn/Spring-Security/OAuth2-learning/?github) 对应 [lab-68-spring-security-oauth](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-68-spring-security-oauth)
+* [《芋道 Spring Security OAuth2 存储器》](http://www.iocoder.cn/Spring-Security/OAuth2-learning-store/?github) 对应 [lab-68-spring-security-oauth](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-68-spring-security-oauth)
+* [《芋道 Spring Security OAuth2 单点登陆》](http://www.iocoder.cn/Spring-Security/OAuth2-learning-sso/?github) 对应 [lab-68-spring-security-oauth](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-68-spring-security-oauth)
 
 ## 定时任务与异步任务
 
