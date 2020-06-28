@@ -214,7 +214,7 @@
 
 * [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05-spring-cloud-alibaba-nacos-config](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05-spring-cloud-alibaba-nacos-config)
 * [《芋道 Spring Cloud 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Cloud/Apollo/?github) 对应 [labx-09-spring-cloud-apollo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-09-spring-cloud-apollo)
-* [《芋道 Spring Cloud 配置中心 Spring Cloud Config 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Config/?github) 对应 [labx-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-12)
+* [《芋道 Spring Cloud 配置中心 Spring Cloud Config 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Config/?github) 对应 [labx-12-spring-cloud-config](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-12-spring-cloud-config)
 * [《芋道 Spring Cloud 配置中心 Zookeeper 入门》](http://www.iocoder.cn/Spring-Cloud/ZooKeeper-Config/?github) 对应 [labx-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-26)
 * [《芋道 Spring Cloud 配置中心 Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Consul-Config/?github) 对应 [labx-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-28)
 * [《芋道 Spring Cloud 配置中心 Etcd 入门》](http://www.iocoder.cn/Spring-Cloud/Etcd/?github)

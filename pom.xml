@@ -92,7 +92,7 @@
 <!--        <module>labx-09-spring-cloud-apollo</module>-->
 <!--        <module>labx-10-spring-cloud-stream-rabbitmq</module>-->
 <!--        <module>labx-11-spring-cloud-stream-kafka</module>-->
-<!--        <module>labx-12</module>-->
+        <module>labx-12-spring-cloud-config</module>
 <!--        <module>labx-13</module>-->
 <!--        <module>labx-14</module>-->
 <!--        <module>labx-15</module>-->

@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-12</artifactId>
+        <artifactId>labx-12-spring-cloud-config</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-12-sc-config-server-git-auto-refresh-by-bus</artifactId>
+    <artifactId>labx-12-sc-config-server-git</artifactId>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -42,29 +42,37 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- 引入 Spring Cloud Stream Kafka 相关依赖，将 Kafka 作为消息队列，并实现对其的自动配置 -->
+        <!-- 引入 Spring Cloud Config Server 相关依赖，实现配置中心的服务端，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
-
-        <!-- 引入基于 RabbitMQ 的 Spring Cloud Bus 的实现的依赖，并实现对其的自动配置 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-        </dependency>
-
-        <!-- 引入 Spring Cloud Config Monitor 依赖，提供 `/monitor` 接口，用于刷新配置 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-monitor</artifactId>
-        </dependency>
     </dependencies>
+
+<!--    <build>-->
+<!--        <resources>-->
+<!--            <resource>-->
+<!--                <directory>src/main/resources</directory>-->
+<!--                <filtering>false</filtering>-->
+<!--                <includes>-->
+<!--                    <include>*.keystore</include>-->
+<!--                    <include>*.yml</include>-->
+<!--                </includes>-->
+<!--            </resource>-->
+<!--        </resources>-->
+<!--    </build>-->
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resource</directory>
+                <includes>
+                    <include>**/*.yml</include> <!-- 将 .yml 后缀包含进去 -->
+                    <include>**/*.jks</include> <!-- 将 .jks 后缀包含进去 -->
+                </includes>
+                <filtering>false</filtering> <!-- 不进行过滤 -->
+            </resource>
+        </resources>
+    </build>
 
 </project>
