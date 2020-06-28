@@ -224,7 +224,7 @@
 **Spring Cloud Stream**
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06-spring-cloud-stream-rocketmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06-spring-cloud-stream-rocketmq)
 * [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10-spring-cloud-stream-rabbitmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10-spring-cloud-stream-rabbitmq)
-* [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
+* [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11-spring-cloud-stream-kafka](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11-spring-cloud-stream-kafka)
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
 
 **Spring Cloud Bus**
@@ -340,7 +340,7 @@
 
 * [《Kafka 极简入门》](http://www.iocoder.cn/Kafka/install/?github)
 * [《芋道 Spring Boot 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Boot/Kafka/?github) 对应 [lab-03](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03)
-* [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
+* [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11-spring-cloud-stream-kafka](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11-spring-cloud-stream-kafka)
 * [《芋道 Spring Cloud 事件总线 Bus Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-Kafka/?github) 对应 [labx-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-18)
 * [《Kafka 书单整理》](http://www.iocoder.cn/Books/Kafka-books-recommended/?github)
 
