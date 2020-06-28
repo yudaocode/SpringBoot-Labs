@@ -159,7 +159,7 @@
 
 * [《芋道 Spring Cloud Alibaba 介绍》](http://www.iocoder.cn/Spring-Cloud-Alibaba/intro/?github)
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01-spring-cloud-alibaba-nacos-discovery](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01-spring-cloud-alibaba-nacos-discovery)
-* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
+* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07-spring-cloud-alibaba-dubbo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07-spring-cloud-alibaba-dubbo)
 * [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04-spring-cloud-alibaba-sentinel](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04-spring-cloud-alibaba-sentinel)
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06-spring-cloud-stream-rocketmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06-spring-cloud-stream-rocketmq)
 * [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
@@ -186,7 +186,7 @@
 
 ## 服务调用
 
-* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
+* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07-spring-cloud-alibaba-dubbo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07-spring-cloud-alibaba-dubbo)
 * [《芋道 Spring Cloud Netflix 负载均衡 Ribbon 入门》](http://www.iocoder.cn/Spring-Cloud-Netflix/Ribbon/?github) 对应 [labx-02-spring-cloud-netflix-ribbon](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-02-spring-cloud-netflix-ribbon)
 * [《芋道 Spring Cloud 声明式调用 Feign 入门》](http://www.iocoder.cn/Spring-Cloud/Feign/?github) 对应 [labx-03-spring-cloud-feign](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-03-spring-cloud-feign)
 * [《芋道 Spring Cloud 服务调用 gRPC 入门》](http://www.iocoder.cn/Spring-Cloud/gRPC/?github) 对应 [labx-30-spring-cloud-grpc](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-30-spring-cloud-grpc)
@@ -260,7 +260,7 @@
 ## 基础入门
 
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
-* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
+* [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07-spring-cloud-alibaba-dubbo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07-spring-cloud-alibaba-dubbo)
 * [《性能测试 —— Dubbo 基准测试》](http://www.iocoder.cn/Performance-Testing/Dubbo-benchmark/?github)
 
 ## 注册中心
