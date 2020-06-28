@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labx-03</artifactId>
+        <artifactId>labx-03-spring-cloud-feign</artifactId>
         <groupId>cn.iocoder.springboot.labs</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labx-03-sc-feign-demo06B-consumer</artifactId>
+    <artifactId>labx-03-sc-feign-demo03-consumer</artifactId>
 
     <properties>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
@@ -48,6 +48,13 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- 引入 DemoProvider API 包 -->
+        <dependency>
+            <groupId>cn.iocoder.springboot.labs</groupId>
+            <artifactId>labx-03-sc-feign-demo03-provider-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -65,13 +72,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-
-        <!-- 引入 Feign OkHttp 依赖 -->
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-okhttp</artifactId>
-        </dependency>
-
     </dependencies>
 
 </project>
