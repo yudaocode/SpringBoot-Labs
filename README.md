@@ -213,7 +213,7 @@
 ## 配置中心
 
 * [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05-spring-cloud-alibaba-nacos-config](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05-spring-cloud-alibaba-nacos-config)
-* [《芋道 Spring Cloud 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Cloud/Apollo/?github) 对应 [labx-09](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-09)
+* [《芋道 Spring Cloud 配置中心 Apollo 入门》](http://www.iocoder.cn/Spring-Cloud/Apollo/?github) 对应 [labx-09-spring-cloud-apollo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-09-spring-cloud-apollo)
 * [《芋道 Spring Cloud 配置中心 Spring Cloud Config 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Config/?github) 对应 [labx-12](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-12)
 * [《芋道 Spring Cloud 配置中心 Zookeeper 入门》](http://www.iocoder.cn/Spring-Cloud/ZooKeeper-Config/?github) 对应 [labx-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-26)
 * [《芋道 Spring Cloud 配置中心 Consul 入门》](http://www.iocoder.cn/Spring-Cloud/Consul-Config/?github) 对应 [labx-28](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-28)
@@ -223,7 +223,7 @@
 
 **Spring Cloud Stream**
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06-spring-cloud-stream-rocketmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06-spring-cloud-stream-rocketmq)
-* [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
+* [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10-spring-cloud-stream-rabbitmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10-spring-cloud-stream-rabbitmq)
 * [《芋道 Spring Cloud 消息队列 Kafka 入门》](http://www.iocoder.cn/Spring-Cloud/Kafka/?github) 对应 [labx-11](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-11)
 * [《芋道 Spring Cloud 消息队列 ActiveMQ 入门》](http://www.iocoder.cn/Spring-Cloud/ActiveMQ/?github)
 
@@ -331,8 +331,8 @@
 ## RabbitMQ
 
 * [《RabbitMQ 极简入门》](http://www.iocoder.cn/RabbitMQ/install/?github)
-* [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04)
-* [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10)
+* [《芋道 Spring Boot 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Boot/RabbitMQ/?github) 对应 [lab-04-rabbitmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-04-rabbitmq)
+* [《芋道 Spring Cloud 消息队列 RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/RabbitMQ/?github) 对应 [labx-10-spring-cloud-stream-rabbitmq](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-10-spring-cloud-stream-rabbitmq)
 * [《芋道 Spring Cloud 事件总线 Bus RabbitMQ 入门》](http://www.iocoder.cn/Spring-Cloud/Bus-RabbitMQ/?github) 对应 [labx-19](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-19)
 * [《RabbitMQ 书单整理》](http://www.iocoder.cn/Books/RabbitMQ-books-recommended/?github)
 

@@ -90,7 +90,7 @@
 <!--        <module>labx-07-spring-cloud-alibaba-dubbo</module>-->
 <!--        <module>labx-08-spring-cloud-gateway</module>-->
 <!--        <module>labx-09-spring-cloud-apollo</module>-->
-<!--        <module>labx-10</module>-->
+        <module>labx-10-spring-cloud-stream-rabbitmq</module>
 <!--        <module>labx-11</module>-->
 <!--        <module>labx-12</module>-->
 <!--        <module>labx-13</module>-->
