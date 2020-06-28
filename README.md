@@ -160,7 +160,7 @@
 * [《芋道 Spring Cloud Alibaba 介绍》](http://www.iocoder.cn/Spring-Cloud-Alibaba/intro/?github)
 * [《芋道 Spring Cloud Alibaba 注册中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Discovery/?github) 对应 [labx-01-spring-cloud-alibaba-nacos-discovery](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-01-spring-cloud-alibaba-nacos-discovery)
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07)
-* [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
+* [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04-spring-cloud-alibaba-sentinel](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04-spring-cloud-alibaba-sentinel)
 * [《芋道 Spring Cloud Alibaba 消息队列 RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/RocketMQ/?github) 对应 [labx-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-06)
 * [《芋道 Spring Cloud Alibaba 事件总线 Bus RocketMQ 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Bus-RocketMQ/?github) 对应 [labx-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-20)
 * [《芋道 Spring Cloud Alibaba 配置中心 Nacos 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Nacos-Config/?github) 对应 [labx-05](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-05)
@@ -193,7 +193,7 @@
 
 ## 服务容错
 
-* [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04)
+* [《芋道 Spring Cloud Alibaba 服务容错 Sentinel 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Sentinel/?github) 对应 [labx-04-spring-cloud-alibaba-sentinel](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-04-spring-cloud-alibaba-sentinel)
 * [《芋道 Spring Cloud Netflix 服务容错 Hystrix 入门》](http://www.iocoder.cn/Spring-Cloud/Netflix-Hystrix/?github) 对应 [labx-23](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-23)
 * [《芋道 Spring Cloud 服务容错 Resilience4j 入门》](http://www.iocoder.cn/Spring-Cloud/Resilience4j/?github) 对应 [lab-59](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-59)
 * 《芋道 Spring Cloud 服务容错 Spring Cloud CircuitBreaker》计划中...

@@ -83,8 +83,8 @@
         <!-- Spring Cloud 示例 -->
 <!--        <module>labx-01-spring-cloud-alibaba-nacos-discovery</module>-->
 <!--        <module>labx-02-spring-cloud-netflix-ribbon</module>-->
-        <module>labx-03-spring-cloud-feign</module>
-<!--        <module>labx-04</module>-->
+<!--        <module>labx-03-spring-cloud-feign</module>-->
+        <module>labx-04-spring-cloud-alibaba-sentinel</module>
 <!--        <module>labx-05</module>-->
 <!--        <module>labx-06</module>-->
 <!--        <module>labx-07</module>-->
