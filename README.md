@@ -38,7 +38,7 @@
 
 ## 开发工具
 
-* [《芋道 Spring Boot 热部署入门》](http://www.iocoder.cn/Spring-Boot/hot-swap/?github) 对应 [lab-48](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-48)
+* [《芋道 Spring Boot 热部署入门》](http://www.iocoder.cn/Spring-Boot/hot-swap/?github) 对应 [lab-48-hot-swap](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-48-hot-swap)
 * [《芋道 Spring Boot 消除冗余代码 Lombok 入门》](http://www.iocoder.cn/Spring-Boot/Lombok/?github) 对应 [lab-49](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-49)
 * [《芋道 Spring Boot 对象转换 MapStruct 入门》](http://www.iocoder.cn/Spring-Boot/MapStruct/?github) 对应 [lab-55](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-55)
 

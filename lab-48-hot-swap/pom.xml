@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-48</artifactId>
+    <artifactId>lab-48-hot-swap</artifactId>
     <packaging>pom</packaging>
 
     <modules>
