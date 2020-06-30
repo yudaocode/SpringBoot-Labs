@@ -11,22 +11,19 @@
     <modules>
 
         <!-- Spring Boot 示例 -->
-<!--        <module>lab-01</module>-->
-<!--        <module>lab-02</module>-->
-<!--        <module>lab-03</module>-->
-<!--        <module>lab-04</module>-->
-<!--        <module>lab-05</module>-->
+<!--        <module>lab-01-spring-security</module>-->
+<!--        <module>lab-02-spring-security-oauth</module>-->
+<!--        <module>lab-03-kafka</module>-->
+<!--        <module>lab-04-rabbitmq</module>-->
+<!--        <module>lab-05-benchmark-tomcat-jetty-undertow</module>-->
 <!--        <module>lab-06</module>-->
 <!--        <module>lab-07</module>-->
-<!--        <module>lab-08</module>-->
-<!--        <module>lab-09</module>-->
-<!--        <module>lab-10</module>-->
-<!--        <module>lab-11</module>-->
-<!--        <module>lab-12</module>-->
-<!--        <module>lab-13</module>-->
-<!--        <module>lab-14</module>-->
-<!--        <module>lab-15</module>-->
-<!--        <module>lab-16</module>-->
+<!--        <module>lab-11-spring-data-redis</module>-->
+<!--        <module>lab-12-mybatis</module>-->
+<!--        <module>lab-13-spring-data-jpa</module>-->
+<!--        <module>lab-14-spring-jdbc-template</module>-->
+<!--        <module>lab-15-spring-data-es</module>-->
+<!--        <module>lab-16-spring-data-mongo</module>-->
 <!--        <module>lab-17</module>-->
 <!--        <module>lab-18</module>-->
 <!--        <module>lab-19</module>-->
@@ -58,7 +55,7 @@
 <!--        <module>lab-45</module>-->
 <!--        <module>lab-46</module>-->
 <!--        <module>lab-47</module>-->
-<!--        <module>lab-48</module>-->
+<!--        <module>lab-48-hot-swap</module>-->
 <!--        <module>lab-49</module>-->
 <!--        <module>lab-50</module>-->
 <!--        <module>lab-51</module>-->
@@ -67,20 +64,32 @@
 <!--        <module>lab-54</module>-->
 <!--        <module>lab-55</module>-->
 <!--        <module>lab-56</module>-->
+<!--        <module>lab-57</module>-->
+<!--        <module>lab-58</module>-->
+<!--        <module>lab-59</module>-->
+<!--        <module>lab-60</module>-->
+<!--        <module>lab-61</module>-->
+<!--        <module>lab-62</module>-->
+<!--        <module>lab-63</module>-->
+<!--        <module>lab-64</module>-->
+<!--        <module>lab-65</module>-->
+<!--        <module>lab-66</module>-->
+<!--        <module>lab-67</module>-->
+<!--        <module>lab-68-spring-security-oauth</module>-->
 
         <!-- Spring Cloud 示例 -->
-<!--        <module>labx-01</module>-->
-<!--        <module>labx-02</module>-->
-<!--        <module>labx-03</module>-->
-<!--        <module>labx-04</module>-->
-<!--        <module>labx-05</module>-->
-<!--        <module>labx-06</module>-->
-<!--        <module>labx-07</module>-->
-<!--        <module>labx-08</module>-->
-<!--        <module>labx-09</module>-->
-<!--        <module>labx-10</module>-->
-<!--        <module>labx-11</module>-->
-<!--        <module>labx-12</module>-->
+<!--        <module>labx-01-spring-cloud-alibaba-nacos-discovery</module>-->
+<!--        <module>labx-02-spring-cloud-netflix-ribbon</module>-->
+<!--        <module>labx-03-spring-cloud-feign</module>-->
+<!--        <module>labx-04-spring-cloud-alibaba-sentinel</module>-->
+<!--        <module>labx-05-spring-cloud-alibaba-nacos-config</module>-->
+<!--        <module>labx-06-spring-cloud-stream-rocketmq</module>-->
+<!--        <module>labx-07-spring-cloud-alibaba-dubbo</module>-->
+<!--        <module>labx-08-spring-cloud-gateway</module>-->
+<!--        <module>labx-09-spring-cloud-apollo</module>-->
+<!--        <module>labx-10-spring-cloud-stream-rabbitmq</module>-->
+<!--        <module>labx-11-spring-cloud-stream-kafka</module>-->
+<!--        <module>labx-12-spring-cloud-config</module>-->
 <!--        <module>labx-13</module>-->
 <!--        <module>labx-14</module>-->
 <!--        <module>labx-15</module>-->
@@ -90,8 +99,16 @@
 <!--        <module>labx-19</module>-->
 <!--        <module>labx-20</module>-->
 <!--        <module>labx-21</module>-->
-
-        <module>labx-22</module>
+<!--        <module>labx-22</module>-->
+<!--        <module>labx-23</module>-->
+<!--        <module>labx-24</module>-->
+<!--        <module>labx-25</module>-->
+<!--        <module>labx-26</module>-->
+<!--        <module>labx-27</module>-->
+<!--        <module>labx-28</module>-->
+<!--        <module>labx-28</module>-->
+<!--        <module>labx-29-spring-cloud-consul-bus</module>-->
+<!--        <module>labx-30-spring-cloud-grpc</module>-->
     </modules>
 
 </project>

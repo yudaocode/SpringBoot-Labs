@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo-consumer
+  cloud:
+    # Nacos 作为注册中心的配置项
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+# Dubbo 配置项，对应 DubboConfigurationProperties 类
+dubbo:
+  # Dubbo 服务注册中心配置，对应 RegistryConfig 类
+  registry:
+    address: spring-cloud://127.0.0.1:8848 # 指定 Dubbo 服务注册中心的地址
+  # Spring Cloud Alibaba Dubbo 专属配置项，对应 DubboCloudProperties 类
+  cloud:
+    subscribed-services: user-service # 设置订阅的应用列表，默认为 * 订阅所有应用。

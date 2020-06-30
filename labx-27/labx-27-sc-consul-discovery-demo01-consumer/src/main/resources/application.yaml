@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo-consumer # Spring 应用名
+
+  cloud:
+    # Spring Cloud Consul 通用配置项，对应 ConsulProperties 类
+    consul:
+      host: 127.0.0.1 # Consul 主机
+      port: 8500 # Consul 端口
+      # Spring Cloud Consul Discovery 配置项，对应 ConsulDiscoveryProperties 类
+      discovery:
+        service-name: ${spring.application.name} # 注册到 Consul 的服务名，默认为 `spring.application.name` 配置项
+        health-check-path: /actuator/health # 健康检查的接口，默认为 /actuator/health，由 Spring Boot Actuator 提供
+
+server:
+  port: 28080 # 服务器端口。默认为 8080

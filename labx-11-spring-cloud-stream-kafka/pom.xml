@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-11-spring-cloud-stream-kafka</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>labx-11-sc-stream-kafka-producer-demo</module>
+        <module>labx-11-sc-stream-kafka-consumer-demo</module>
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-retry</module>
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-error-handler</module>
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-broadcasting</module>
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-concurrency</module>
+
+        <module>labx-11-sc-stream-kafka-producer-partitioning</module>
+        <!--搭配 <module>labx-11-sc-stream-kafka-consumer-concurrency</module> 作为消费者-->
+        <module>labx-11-sc-stream-kafka-consumer-partitioning</module> <!-- 暂时没用到 -->
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-filter</module>
+
+        <module>labx-11-sc-stream-kafka-producer-transaction</module>
+        <module>labx-11-sc-stream-kafka-consumer-transaction</module>
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-ack</module>
+
+        <module>labx-11-sc-stream-kafka-producer-batch</module>
+        <!--搭配 <module>labx-11-sc-stream-kafka-consumer-demo</module> 作为消费者-->
+
+        <!--搭配 <module>labx-11-sc-stream-kafka-producer-demo</module> 作为生产者-->
+        <module>labx-11-sc-stream-kafka-consumer-batch</module>
+
+        <module>labx-11-sc-stream-kafka-producer-actuator</module>
+        <module>labx-11-sc-stream-kafka-consumer-actuator</module>
+    </modules>
+
+</project>

@@ -1,0 +1,26 @@
+# dubbo 配置项，对应 DubboConfigurationProperties 配置类
+dubbo:
+  # Dubbo 应用配置
+  application:
+    name: user-service # 应用名
+  # Dubbo 注册中心配
+  registry:
+      address: nacos://127.0.0.1:8848 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
+  # Dubbo 服务提供者协议配置
+  protocol:
+    port: -1 # 协议端口。使用 -1 表示随机端口。
+    name: dubbo # 使用 `dubbo://` 协议。更多协议，可见 http://dubbo.apache.org/zh-cn/docs/user/references/protocol/introduction.html 文档
+  # Dubbo 服务提供者配置
+  provider:
+    timeout: 1000 # 【重要】远程服务调用超时时间，单位：毫秒。默认为 1000 毫秒，胖友可以根据自己业务修改
+  # 配置扫描 Dubbo 自定义的 @Service 注解，暴露成 Dubbo 服务提供者
+  scan:
+    base-packages: cn.iocoder.springboot.lab60.userservice.service
+
+soul:
+  # Soul 针对 Dubbo 的配置项，对应 DubboConfig 配置类
+  dubbo:
+    admin-url: http://127.0.0.1:9095 # Soul Admin 地址
+    context-path: /user-api # 设置在 Soul 网关的路由前缀，例如说 /order、/product 等等。
+                            # 后续，网关会根据该 context-path 来进行路由
+    app-name: user-service # 应用名。未配置情况下，默认使用 Dubbo 的应用名

@@ -1,0 +1,8 @@
+soul:
+  # Soul 针对 SpringMVC 的配置项，对应 SoulHttpConfig 配置类
+  http:
+    admin-url: http://127.0.0.1:9095 # Soul Admin 地址
+    context-path: /sb-demo-api # 设置在 Soul 网关的路由前缀，例如说 /order、/product 等等。
+                               # 后续，网关会根据该 context-path 来进行路由
+    app-name: sb-demo-service # 应用名。未配置情况下，默认使用 `spring.application.name` 配置项
+    zookeeper-url: 127.0.0.1:2181 # 使用 Zookeeper 作为注册中心的地址

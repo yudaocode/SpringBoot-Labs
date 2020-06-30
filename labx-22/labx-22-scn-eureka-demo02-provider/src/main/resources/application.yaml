@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-provider # Spring 应用名
+
+server:
+  port: 18080 # 服务器端口。默认为 8080
+
+eureka:
+  client:
+    register-with-eureka: true # 注册到 Eureka-Server，默认为 true
+    fetch-registry: true # 从 Eureka-Server 获取注册表，默认为 true
+    service-url:
+      defaultZone: http://eureka-node01:18761/eureka/, http://eureka-node02:28761/eureka/

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lab-03-kafka</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-03-kafka-native</module>
+        <module>lab-03-kafka-demo</module>
+        <module>lab-03-kafka-demo-batch</module>
+        <module>lab-03-kafka-demo-batch-consume</module>
+        <module>lab-03-kafka-demo-broadcast</module>
+        <module>lab-03-kafka-demo-concurrency</module>
+        <module>lab-03-kafka-demo-transaction</module>
+        <module>lab-03-kafka-demo-ack</module>
+    </modules>
+
+</project>
