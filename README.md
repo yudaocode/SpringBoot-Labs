@@ -14,7 +14,17 @@
 
 ![一间三连](http://static.iocoder.cn/github-star.jpg)
 
-> ~~交流~~**装逼群**，请点击[传送门](http://www.iocoder.cn/mall-user-group/?vip&gitee)，进行引导加入。**亲，一键三连啊**
+> **亲，一键三连啊**
+
+# 交流群
+
+扫码如下**二维码**，回复「艿艿」关键字。
+
+可以添加 18 岁的我为好友，并拉你进一个~~交流~~**装逼群**。
+
+![骚气的二维码](http://www.iooder.cn/images/common/erweima.jpg)
+
+😈 等后面，艿艿**头发**重新长一点出来，给旁友们录制点视频哈！
 
 # Spring Boot 专栏
 
