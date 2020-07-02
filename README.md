@@ -22,7 +22,7 @@
 
 可以添加 18 岁的我为好友，并拉你进一个~~交流~~**装逼群**。
 
-![骚气的二维码](http://www.iooder.cn/images/common/erweima.jpg)
+![骚气的二维码](http://www.iocoder.cn/images/common/erweima.jpg)
 
 😈 等后面，艿艿**头发**重新长一点出来，给旁友们录制点视频哈！
 
