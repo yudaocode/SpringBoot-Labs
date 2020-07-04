@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/ # Eureka-Server 地址
+
+# Turbine 配置项，对应 TurbineProperties 配置类
+turbine:
+  app-config: hystrix-demo # 配置需要 Turbine 聚合的服务名；如果有多个，使用逗号分隔。
+  combine-host-port: true # 服务是否以 host + port 进行区分，默认为 true。如果设置为 false，则只以 host 进行区分，这样会导致相同主机部署了相同服务的多个实例，会被认为是一个
+  cluster-name-expression:  new String('default') # 指定集群名，设置为 `default` 表示默认集群。

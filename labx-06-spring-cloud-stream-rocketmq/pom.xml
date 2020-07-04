@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-06-spring-cloud-stream-rocketmq</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>labx-06-sca-stream-rocketmq-consumer-demo</module>
+        <module>labx-06-sca-stream-rocketmq-producer-demo</module>
+
+        <module>labx-06-sca-stream-rocketmq-consumer-retry</module>
+        <module>labx-06-sca-stream-rocketmq-consumer-error-handler</module>
+
+        <module>labx-06-sca-stream-rocketmq-consumer-broadcasting</module>
+
+        <module>labx-06-sca-stream-rocketmq-producer-orderly</module>
+        <module>labx-06-sca-stream-rocketmq-consumer-orderly</module>
+
+        <module>labx-06-sca-stream-rocketmq-consumer-filter</module>
+
+        <module>labx-06-sca-stream-rocketmq-producer-transaction</module>
+
+        <module>labx-06-sca-stream-rocketmq-producer-actuator</module>
+        <module>labx-06-sca-stream-rocketmq-consumer-actuator</module>
+
+        <module>labx-06-sca-stream-rocketmq-producer-aliyun</module>
+        <module>labx-06-sca-stream-rocketmq-consumer-aliyun</module>
+    </modules>
+
+
+</project>

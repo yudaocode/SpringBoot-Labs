@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    # Consul
+    consul:
+      host: 127.0.0.1
+      port: 8500
+
+server:
+  port: 8081

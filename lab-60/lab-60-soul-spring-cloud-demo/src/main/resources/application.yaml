@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: sc-user-service # Spring 应用名
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+
+soul:
+  # Soul 针对 SpringMVC 的配置项，对应 SoulSpringCloudConfig 配置类
+  springcloud:
+    admin-url: http://127.0.0.1:9095 # Soul Admin 地址
+    context-path: /sc-user-service-api # 设置在 Soul 网关的路由前缀，例如说 /order、/product 等等。
+                               # 后续，网关会根据该 context-path 来进行路由
+    app-name: sc-user-service # 应用名。未配置情况下，默认使用 `spring.application.name` 配置项

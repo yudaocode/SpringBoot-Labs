@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-admin-server # Spring 应用名
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+        service: ${spring.application.name} # 注册到 Nacos 的服务名。默认值为 ${spring.application.name}。
+        metadata:
+          user.name: user # Spring Security 安全认证的账号
+          user.password: user # Spring Security 安全认证的密码

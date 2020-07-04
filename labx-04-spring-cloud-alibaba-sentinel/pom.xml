@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-04-spring-cloud-alibaba-sentinel</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>labx-04-sca-sentinel-demo01-provider</module>
+
+        <module>labx-04-sca-sentinel-nacos-provider</module>
+        <module>labx-04-sca-sentinel-apollo-provider</module>
+        <module>labx-04-sca-sentinel-file-provider</module>
+
+        <module>labx-04-sca-sentinel-feign-consumer</module>
+        <module>labx-04-sca-sentinel-resttemplate-consumer</module>
+
+        <module>labx-04-sca-sentinel-actuator-provider</module>
+    </modules>
+
+
+</project>

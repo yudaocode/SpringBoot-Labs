@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: publisher-demo
+
+  # Kafka 配置项，对应 KafkaProperties 配置类
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+
+  # Bus 相关配置项，对应 BusProperties
+  cloud:
+    bus:
+      enabled: true # 是否开启，默认为 true
+      destination: springCloudBus # 目标消息队列，默认为 springCloudBus

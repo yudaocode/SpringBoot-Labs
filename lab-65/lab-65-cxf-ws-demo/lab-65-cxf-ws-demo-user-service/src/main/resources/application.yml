@@ -1,0 +1,6 @@
+# CXF 配置项，对应 CxfProperties 配置类
+cxf:
+  path: /ws/ # CXF CXFServlet 的匹配路径
+
+server:
+  port: 9090 # 设置服务器端口为 9090

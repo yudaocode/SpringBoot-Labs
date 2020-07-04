@@ -1,0 +1,101 @@
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-cxf-ws-demo" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="userService" targetNamespace="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-cxf-ws-demo">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-cxf-ws-demo" elementFormDefault="unqualified" targetNamespace="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-65/lab-65-cxf-ws-demo" version="1.0">
+            <xs:element name="create" type="tns:create"/>
+            <xs:element name="createResponse" type="tns:createResponse"/>
+            <xs:element name="get" type="tns:get"/>
+            <xs:element name="getResponse" type="tns:getResponse"/>
+            <xs:complexType name="create">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:userCreateRequest"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="userCreateRequest">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="gender" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="createResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:userCreateResponse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="userCreateResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="id" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="get">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:userGetRequest"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="userGetRequest">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="id" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:userGetResponse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="userGetResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="gender" type="xs:int"/>
+                    <xs:element minOccurs="0" name="id" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="create">
+        <wsdl:part element="tns:create" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="createResponse">
+        <wsdl:part element="tns:createResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="get">
+        <wsdl:part element="tns:get" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getResponse">
+        <wsdl:part element="tns:getResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="UserService">
+        <wsdl:operation name="create">
+            <wsdl:input message="tns:create" name="create"> </wsdl:input>
+            <wsdl:output message="tns:createResponse" name="createResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="get">
+            <wsdl:input message="tns:get" name="get"> </wsdl:input>
+            <wsdl:output message="tns:getResponse" name="getResponse"> </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="userServiceSoapBinding" type="tns:UserService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="create">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="create">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="createResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="get">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="get">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="userService">
+        <wsdl:port binding="tns:userServiceSoapBinding" name="UserServiceImplPort">
+            <soap:address location="http://127.0.0.1:9090/ws/user"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

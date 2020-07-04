@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-20</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>labx-20-sca-bus-rocketmq-demo-publisher</module>
+        <module>labx-20-sca-bus-rocketmq-demo-listener</module>
+
+        <module>labx-20-sca-bus-rocketmq-demo-publisher-actuator</module>
+        <module>labx-20-sca-bus-rocketmq-demo-listener-actuator</module>
+
+        <module>labx-20-sc-config-server-git-auto-refresh-by-bus</module>
+        <module>labx-20-sc-config-user-application-auto-refresh-by-bus</module>
+    </modules>
+
+</project>

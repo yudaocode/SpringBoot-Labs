@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:motan="http://api.weibo.com/schema/motan"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
+
+    <!-- 注册中心配置。 -->
+    <motan:registry name="registry" regProtocol="zookeeper" address="127.0.0.1:2181" connectTimeout="2000"/>
+
+    <!-- Motan 协议配置。-->
+    <motan:protocol name="motan2" default="true"
+                    haStrategy="failover" loadbalance="roundrobin"
+                    maxClientConnection="10" minClientConnection="2"/>
+
+    <!-- Motan 服务调用方配置。 -->
+<!--    <motan:referer id="userRpcService" interface="cn.iocoder.springboot.lab63.rpc.api.UserRpcService" />-->
+
+    <motan:annotation />
+
+</beans>
