@@ -73,6 +73,7 @@
 * [《芋道 Spring Boot SOFARPC 入门》](http://www.iocoder.cn/Spring-Boot/SOFARPC/?github) 对应 [lab-62](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-62)
 * [《芋道 Spring Boot Motan 入门》](http://www.iocoder.cn/Spring-Boot/Motan/?github) 对应 [lab-63](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-63)
 * 《芋道 Spring Boot RSocket 入门》计划中...
+* 《芋道 Spring Boot Tars 入门》计划中...
 
 ## 数据访问
 
@@ -155,6 +156,7 @@
 
 * [《芋道 Spring Boot 日志集成 Logging 入门》](http://www.iocoder.cn/Spring-Boot/Logging/?github) 对应 [lab-37](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-37)
 * [《芋道 Spring Boot 日志平台 ELK + Filebeat 入门》](http://www.iocoder.cn/Spring-Boot/ELK/?github) 对应 [lab-38](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-38)
+* 《芋道 Spring Boot 日志平台 Loki 入门》计划中...
 
 ## 链路追踪
 

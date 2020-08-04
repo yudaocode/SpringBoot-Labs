@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-68-demo21-resource-server</artifactId>
+    <artifactId>lab-68-demo21-resource-server-on-sso</artifactId>
 
     <properties>
         <!-- 依赖相关配置 -->
