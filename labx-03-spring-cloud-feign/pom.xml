@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-03-spring-cloud-feign</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>labx-03-sc-feign-demo01-provider</module>
+        <module>labx-03-sc-feign-demo01-consumer</module>
+
+        <module>labx-03-sc-feign-demo02A-consumer</module>
+        <module>labx-03-sc-feign-demo02B-consumer</module>
+
+        <module>labx-03-sc-feign-demo03-provider-api</module>
+        <module>labx-03-sc-feign-demo03-provider</module>
+        <module>labx-03-sc-feign-demo03-consumer</module>
+
+        <module>labx-03-sc-feign-demo04-provider</module>
+        <module>labx-03-sc-feign-demo04-consumer</module>
+
+        <module>labx-03-sc-feign-demo05-consumer</module>
+
+        <module>labx-03-sc-feign-demo06A-consumer</module>
+        <module>labx-03-sc-feign-demo06B-consumer</module>
+
+        <module>labx-03-sc-feign-demo07-consumer</module>
+    </modules>
+
+</project>

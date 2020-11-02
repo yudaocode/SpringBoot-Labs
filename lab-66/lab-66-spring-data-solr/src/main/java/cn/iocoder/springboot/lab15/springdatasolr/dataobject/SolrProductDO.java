@@ -11,27 +11,28 @@ public class SolrProductDO {
      * ID 主键
      */
     @Id
+    @Indexed(name = "id", type = "int")
     private Integer id;
 
     /**
      * SPU 名字
      */
-    @Indexed(value = "name")
+    @Indexed(name = "name", type = "string")
     private String name;
     /**
      * 描述
      */
-    @Indexed(value = "description")
+    @Indexed(name = "description", type = "string")
     private String description;
     /**
      * 分类编号
      */
-    @Indexed(value = "cid")
+    @Indexed(name = "cid", type = "cid")
     private Integer cid;
     /**
      * 分类名
      */
-    @Indexed(value = "category_name")
+    @Indexed(name = "category_name", type = "string")
     private String categoryName;
 
     public Integer getId() {
