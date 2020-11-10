@@ -11,21 +11,21 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
         jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
-        password:
+        password: 123456
       # 订单 orders 从库数据源配置
       ds-slave-1:
         type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
         driver-class-name: com.mysql.jdbc.Driver
         jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders_01?useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
-        password:
+        password: 123456
       # 订单 orders 从库数据源配置
       ds-slave-2:
         type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
         driver-class-name: com.mysql.jdbc.Driver
         jdbc-url: jdbc:mysql://127.0.0.1:3306/test_orders_02?useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
-        password:
+        password: 123456
     # 读写分离配置，对应 YamlMasterSlaveRuleConfiguration 配置类
     masterslave:
       name: ms # 名字，任意，需要保证唯一

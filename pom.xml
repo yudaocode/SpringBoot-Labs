@@ -25,7 +25,7 @@
 <!--        <module>lab-12</module>-->
 <!--        <module>lab-13</module>-->
 <!--        <module>lab-14</module>-->
-<!--        <module>lab-15</module>-->
+        <module>lab-15</module>
 <!--        <module>lab-16</module>-->
 <!--        <module>lab-17</module>-->
 <!--        <module>lab-18</module>-->
@@ -35,6 +35,8 @@
 <!--        <module>lab-22</module>-->
 <!--        <module>lab-23</module>-->
 <!--        <module>lab-24</module>-->
+
+            <!--springboot webSocket入门-->
 <!--        <module>lab-25</module>-->
 <!--        <module>lab-26</module>-->
 <!--        <module>lab-27</module>-->
@@ -93,7 +95,7 @@
 <!--        <module>labx-22</module>-->
 
 
-        <module>labx-23</module>
+<!--        <module>labx-23</module>-->
     </modules>
 
 </project>

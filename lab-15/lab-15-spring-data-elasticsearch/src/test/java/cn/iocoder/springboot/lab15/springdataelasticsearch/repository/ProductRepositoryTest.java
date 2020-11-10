@@ -43,13 +43,15 @@ public class ProductRepositoryTest {
 
     @Test // 根据 ID 编号，删除一条记录
     public void testDelete() {
-        productRepository.deleteById(1);
+//        productRepository.deleteById(1);
+        productRepository.deleteAll();
     }
 
     @Test // 根据 ID 编号，查询一条记录
     public void testSelectById() {
         Optional<ESProductDO> userDO = productRepository.findById(1);
         System.out.println(userDO.isPresent());
+        System.out.println(userDO.get());
     }
 
     @Test // 根据 ID 编号数组，查询多条记录

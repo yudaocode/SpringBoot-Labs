@@ -7,17 +7,17 @@ spring:
       # 订单 orders 数据源配置 00
       ds-orders-0:
         type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
-        driver-class-name: com.mysql.jdbc.Driver
-        jdbc-url: jdbc:mysql://127.0.0.1:3306/lab18_orders_0?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        driver-class-name: org.mariadb.jdbc.Driver
+        jdbc-url: jdbc:mariadb://127.0.0.1:3306/lab18_orders_0?useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
-        password:
+        password: 123456
       # 订单 orders 数据源配置 01
       ds-orders-1:
         type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
-        driver-class-name: com.mysql.jdbc.Driver
-        jdbc-url: jdbc:mysql://127.0.0.1:3306/lab18_orders_1?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        driver-class-name: org.mariadb.jdbc.Driver
+        jdbc-url: jdbc:mariadb://127.0.0.1:3306/lab18_orders_1?useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
-        password:
+        password: 123456
     # 分片规则
     sharding:
       tables:
@@ -38,8 +38,8 @@ spring:
               algorithm-expression: orders_$->{user_id % 8}
               sharding-column: user_id
         # order_config 表配置
-        order_config:
-          actualDataNodes: ds-orders-0.order_config # 仅映射到 ds-orders-0 数据源的 order_config 表
+#        order_config:
+#          actualDataNodes: ds-orders-0.order_config # 仅映射到 ds-orders-0 数据源的 order_config 表
     # 拓展属性配置
     props:
       sql:

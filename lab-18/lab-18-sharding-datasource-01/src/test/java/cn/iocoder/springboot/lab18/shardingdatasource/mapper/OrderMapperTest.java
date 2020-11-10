@@ -26,14 +26,19 @@ public class OrderMapperTest {
     @Test
     public void testSelectListByUserId() {
         List<OrderDO> orders = orderMapper.selectListByUserId(1);
-        System.out.println(orders.size());
+        for (OrderDO order : orders) {
+            System.out.println(order);
+        }
     }
 
     @Test
     public void testInsert() {
-        OrderDO order = new OrderDO();
-        order.setUserId(1);
-        orderMapper.insert(order);
+        for (int i = 0; i < 10; i++) {
+            OrderDO order = new OrderDO();
+            order.setUserId(i+1);
+            orderMapper.insert(order);
+        }
+
     }
 
 }

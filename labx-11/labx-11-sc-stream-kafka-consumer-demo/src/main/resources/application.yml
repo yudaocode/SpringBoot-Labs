@@ -11,7 +11,7 @@ spring:
         demo01-input:
           destination: DEMO-TOPIC-01 # 目的地。这里使用 Kafka Topic
           content-type: application/json # 内容格式。这里使用 JSON
-          group: demo01-consumer-group # 消费者分组
+          group: demo02-consumer-group # 消费者分组
       # Spring Cloud Stream Kafka 配置项
       kafka:
         # Kafka Binder 配置项，对应 KafkaBinderConfigurationProperties 类

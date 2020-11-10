@@ -17,7 +17,10 @@
         SELECT
             <include refid="FIELDS" />
         FROM orders
-        WHERE user_id = #{userId}
+
+        order by id
+        limit 5
+<!--        WHERE user_id = #{userId}-->
     </select>
 
     <insert id="insert" parameterType="OrderDO" useGeneratedKeys="true" keyProperty="id">

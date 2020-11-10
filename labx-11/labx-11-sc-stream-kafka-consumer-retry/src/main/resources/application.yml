@@ -29,7 +29,8 @@ spring:
             # Kafka Consumer 配置项，对应 KafkaConsumerProperties 类
             consumer:
               enable-dlq: true # 是否开启死信队列，默认为 false 关闭
-              dlq-name: # 死信队列名，默认为 `errors.{topicName}.{consumerGroup}`
+              # 死信队列名，默认为 `errors.{topicName}.{consumerGroup}`
+              dlq-name:
 
 server:
   port: ${random.int[10000,19999]} # 随机端口，方便启动多个消费者
