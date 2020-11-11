@@ -12,6 +12,7 @@
 
     <artifactId>lab-15-spring-data-elasticsearch</artifactId>
 
+
     <dependencies>
         <!-- 自动化配置 Spring Data Elasticsearch -->
         <dependency>
