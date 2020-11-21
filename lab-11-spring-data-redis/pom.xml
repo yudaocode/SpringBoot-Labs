@@ -14,6 +14,7 @@
     <modules>
         <module>lab-07-spring-data-redis-with-jedis</module>
         <module>lab-07-spring-data-redis-with-redisson</module>
+        <module>lab-07-spring-data-redis-unit-test</module>
     </modules>
 
 

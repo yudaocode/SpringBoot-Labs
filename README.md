@@ -185,6 +185,7 @@
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08-spring-cloud-gateway](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08-spring-cloud-gateway)
 * [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github) 对应 [labx-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-14)
 * [《芋道 Dubbo Admin 快速入门》](http://www.iocoder.cn/Dubbo/Admin/?github)
+* [《芋道 Dubbo Swagger 快速入门》](http://www.iocoder.cn/Dubbo/Swagger/?github) 对应 [swagger-dubbo](https://github.com/YunaiV/swagger-dubbo)
  
 # Spring Cloud 专栏
 
@@ -274,6 +275,7 @@
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07-spring-cloud-alibaba-dubbo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07-spring-cloud-alibaba-dubbo)
 * [《性能测试 —— Dubbo 基准测试》](http://www.iocoder.cn/Performance-Testing/Dubbo-benchmark/?github)
+* [《芋道 Dubbo Swagger 快速入门》](http://www.iocoder.cn/Dubbo/Swagger/?github) 对应 [swagger-dubbo](https://github.com/YunaiV/swagger-dubbo)
 
 ## 注册中心
 
