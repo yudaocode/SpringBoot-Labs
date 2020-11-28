@@ -58,6 +58,7 @@
 * [《芋道 Spring Boot WebFlux 入门》](http://www.iocoder.cn/Spring-Boot/WebFlux/?github) 对应 [lab-27](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-27)
 * [《芋道 Spring Boot 分布式 Session 入门》](http://www.iocoder.cn/Spring-Boot/Distributed-Session/?github) 对应 [lab-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-26)
 * [《芋道 Spring Boot API 接口文档 Swagger 入门》](http://www.iocoder.cn/Spring-Boot/Swagger/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
+* [《芋道 Spring Boot API 接口文档 Swagger Starter 入门》](http://www.iocoder.cn/Spring-Boot/Swagger-Starter/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
 * [《芋道 Spring Boot 参数校验 Validation 入门》](http://www.iocoder.cn/Spring-Boot/Validation/?github) 对应 [lab-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-22)
 * [《芋道 Spring Boot WebSocket 入门》](http://www.iocoder.cn/Spring-Boot/WebSocket/?github) 对应 [lab-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-25)
 * [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05-benchmark-tomcat-jetty-undertow](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05-benchmark-tomcat-jetty-undertow)
