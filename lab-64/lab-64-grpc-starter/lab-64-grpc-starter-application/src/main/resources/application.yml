@@ -1,0 +1,6 @@
+grpc:
+  # gRPC 客户端配置，对应 GrpcChannelsProperties 配置类的映射
+  client:
+    userService:
+      address: 'static://127.0.0.1:8888' # 用户服务的地址
+      negotiation-type: plaintext

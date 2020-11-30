@@ -1,0 +1,5 @@
+spring:
+  # 对应 RedisProperties 类
+  redis:
+    host: 127.0.0.1
+    port: 6379

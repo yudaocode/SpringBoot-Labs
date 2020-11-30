@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-service-consumer # 应用名
+
+com.alipay.sofa.rpc.registry.address: zookeeper://127.0.0.1:2181 # SOFARPC 注解中心

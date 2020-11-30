@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-parent</artifactId>
+        <groupId>cn.iocoder.springboot.labs</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labx-10-spring-cloud-stream-rabbitmq</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>labx-10-sc-stream-rabbitmq-producer-demo</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-demo</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-delay</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-delay</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-retry</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-error-handler</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-broadcasting</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-partitioning</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-partitioning</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-concurrency</module>
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-filter</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-transaction</module>
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-consumer-demo</module> 作为消费者-->
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-demo</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-ack</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-confirm</module>
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-consumer-demo</module> 作为消费者-->
+
+        <module>labx-10-sc-stream-rabbitmq-producer-batch</module>
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-consumer-demo</module> 作为消费者-->
+
+        <!--搭配 <module>labx-10-sc-stream-rabbitmq-producer-batch</module> 作为生产者-->
+        <module>labx-10-sc-stream-rabbitmq-consumer-batch</module>
+
+        <module>labx-10-sc-stream-rabbitmq-producer-actuator</module>
+        <module>labx-10-sc-stream-rabbitmq-consumer-actuator</module>
+    </modules>
+
+
+</project>

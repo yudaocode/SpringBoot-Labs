@@ -1,0 +1,31 @@
+syntax = "proto3";
+option java_multiple_files = true;
+
+package cn.iocoder.springboot.lab64.userservice.api;
+
+message UserGetRequest {
+    int32 id = 1;
+}
+
+message UserGetResponse {
+    int32 id = 1;
+    string name = 2;
+    int32 gender = 3;
+}
+
+message UserCreateRequest {
+    string name = 1;
+    int32 gender = 2;
+}
+
+message UserCreateResponse {
+    int32 id = 1;
+}
+
+service UserService {
+
+    rpc get(UserGetRequest) returns (UserGetResponse);
+
+    rpc create(UserCreateRequest) returns (UserCreateResponse);
+
+}
