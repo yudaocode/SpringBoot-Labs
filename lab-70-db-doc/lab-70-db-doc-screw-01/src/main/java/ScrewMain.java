@@ -19,7 +19,7 @@ public class ScrewMain {
     private static final String DB_PASSWORD = "3WLiVUBEwTbvAfsh";
 
     private static final String FILE_OUTPUT_DIR = "/Users/yunai/screw_test";
-    private static final EngineFileType FILE_OUTPUT_TYPE = EngineFileType.HTML; // 可以设置 WORD 或者 Markdown 格式
+    private static final EngineFileType FILE_OUTPUT_TYPE = EngineFileType.HTML; // 可以设置 Word 或者 Markdown 格式
     private static final String DOC_FILE_NAME = "数据库文档";
     private static final String DOC_VERSION = "1.0.0";
     private static final String DOC_DESCRIPTION = "文档描述";

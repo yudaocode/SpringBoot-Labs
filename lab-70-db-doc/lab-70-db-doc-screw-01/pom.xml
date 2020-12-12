@@ -11,8 +11,6 @@
 
     <artifactId>lab-70-db-doc-screw-01</artifactId>
 
-
-
     <dependencies>
         <!-- screw 库，简洁好用的数据库表结构文档生成器 -->
         <dependency>

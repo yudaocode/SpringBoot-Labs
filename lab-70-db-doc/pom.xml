@@ -14,6 +14,7 @@
 
     <modules>
         <module>lab-70-db-doc-screw-01</module>
+        <module>lab-70-db-doc-screw-02</module>
     </modules>
 
 </project>
