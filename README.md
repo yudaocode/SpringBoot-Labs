@@ -88,6 +88,7 @@
 * [《芋道 Spring Boot 多数据源（读写分离）入门》](http://www.iocoder.cn/Spring-Boot/dynamic-datasource/?github) 对应 [lab-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-17)
 * [《芋道 Spring Boot 分库分表入门》](http://www.iocoder.cn/Spring-Boot/sharding-datasource/?github) 对应 [lab-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-18)
 * [《芋道 Spring Boot 数据库版本管理入门》](http://www.iocoder.cn/Spring-Boot/database-version-control/?github) 对应 [lab-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-20)
+* [《芋道 Spring Boot 数据表结构文档》](http://www.iocoder.cn/Spring-Boot/DB-Doc-screw/?github) 对应 [lab-70-db-doc](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-70-db-doc)
 
 **非关系数据库**
 
