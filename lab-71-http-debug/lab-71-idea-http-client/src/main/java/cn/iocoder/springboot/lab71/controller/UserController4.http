@@ -4,16 +4,10 @@ Content-Type: application/x-www-form-urlencoded
 
 username=yudaoyuanma&password=123456
 
+> {%
+client.global.set("token_from_server", response.body.token)
+%}
+
 ### 测试 /user/get-current：获取成功
 GET http://127.0.0.1:8080/user/get-current?full=true
-Authorization: token001
-
-### 测试 /user/update：更新成功
-POST http://127.0.0.1:8080/user/update
-Content-Type: application/json
-
-{
-  "nickname": "我是昵称",
-  "gender": 1
-}
-
+Authorization: {{token_from_server}}

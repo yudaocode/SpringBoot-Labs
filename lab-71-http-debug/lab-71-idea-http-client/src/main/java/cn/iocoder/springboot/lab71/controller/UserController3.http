@@ -1,0 +1,25 @@
+### 001 测试 /user/login：登陆成功
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+> {%
+client.test("验证登陆成功", function (){
+  client.assert(response.status === 200, "响应状态应该是 200，结果是 " + response.status)
+  client.assert(response.body.userId === 1, "响应的 userId 应该是 1，结果是 " + response.body.userId)
+  client.assert(response.body.token === "token001", "响应的 token 应该是 token001，记过是 " + response.body.token)
+});
+%}
+
+### 002 测试 /user/login：登陆失败，密码不正确
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+> {%
+client.test("验证登陆失败", function (){
+  client.assert(response.status === 200, "响应状态应该是 200，结果是 " + response.status)
+});
+%}

@@ -31,11 +31,16 @@ public class UserController {
     }
 
     @GetMapping("/user/get-current")
-    public Map<String, Object> getCurrentUser(@RequestHeader("Authorization") String authorization) {
+    public Map<String, Object> getCurrentUser(@RequestHeader("Authorization") String authorization,
+                                              @RequestParam("full") boolean full) {
         if ("token001".equals(authorization)) {
             Map<String, Object> userInfo = new HashMap<>();
             userInfo.put("id", 1);
-            userInfo.put("gender", 1);
+            // full 为 true 时，获得完整信息
+            if (full) {
+                userInfo.put("nickname", "芋道源码");
+                userInfo.put("gender", 1);
+            }
             return userInfo;
         }
         throw new RuntimeException("小朋友，你没有登录哟！");
