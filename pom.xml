@@ -76,6 +76,8 @@
 <!--        <module>lab-66</module>-->
 <!--        <module>lab-67</module>-->
 <!--        <module>lab-68-spring-security-oauth</module>-->
+<!--        <module>lab-69-proxy</module>-->
+<!--        <module>lab-70-db-doc</module>-->
 
         <!-- Spring Cloud 示例 -->
 <!--        <module>labx-01-spring-cloud-alibaba-nacos-discovery</module>-->
@@ -109,6 +111,7 @@
 <!--        <module>labx-28</module>-->
 <!--        <module>labx-29-spring-cloud-consul-bus</module>-->
 <!--        <module>labx-30-spring-cloud-grpc</module>-->
+        <module>lab-71-http-debug</module>
     </modules>
 
 </project>

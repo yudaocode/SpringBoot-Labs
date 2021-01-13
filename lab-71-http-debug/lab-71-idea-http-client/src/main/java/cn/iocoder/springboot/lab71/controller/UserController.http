@@ -1,0 +1,19 @@
+### 测试 /user/login：登陆成功
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+### 测试 /user/get-current：获取成功
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+### 测试 /user/update：更新成功
+POST http://127.0.0.1:8080/user/update
+Content-Type: application/json
+
+{
+  "nickname": "我是昵称",
+  "gender": 1
+}
+

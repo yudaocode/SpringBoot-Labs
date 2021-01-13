@@ -1,0 +1,410 @@
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T021415.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T014019.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T013845.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: 1
+
+<> 2020-12-20T013558.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T013552.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T013544.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T012710.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T012708.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: {{token_from_server}}
+
+<> 2020-12-20T012703.500.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: {{token_from_server}}
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T012544.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+
+<> 2020-12-20T012540.400.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T012527.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T012510.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T012507.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: 1
+
+<> 2020-12-20T011847.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T011843.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T011818.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: 0
+
+<> 2020-12-20T011653.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T011650.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T011646.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T011628-1.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T011628.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T011556.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: {{token_from_server1}}
+
+<> 2020-12-20T011551.500.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+
+<> 2020-12-20T011541.400.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token001
+
+<> 2020-12-20T011530.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T011526.200.json
+
+###
+
+GET http://127.0.0.1:8080/user/get-current?full=true
+Authorization: token002
+
+<> 2020-12-20T011347.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T011020.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T010840.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T010823.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T010809.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T010738.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T010724.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004813.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004809.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004645.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004638.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004547.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004538.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004401.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004401.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004358.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004358.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004347.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004347.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004337.200.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=buzhidao
+
+<> 2020-12-20T004328.500.json
+
+###
+
+POST http://127.0.0.1:8080/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username=yudaoyuanma&password=123456
+
+<> 2020-12-20T004250.200.json
+
+###
+
