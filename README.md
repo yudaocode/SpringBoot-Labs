@@ -58,10 +58,13 @@
 * [《芋道 Spring Boot WebFlux 入门》](http://www.iocoder.cn/Spring-Boot/WebFlux/?github) 对应 [lab-27](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-27)
 * [《芋道 Spring Boot 分布式 Session 入门》](http://www.iocoder.cn/Spring-Boot/Distributed-Session/?github) 对应 [lab-26](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-26)
 * [《芋道 Spring Boot API 接口文档 Swagger 入门》](http://www.iocoder.cn/Spring-Boot/Swagger/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
+* [《芋道 Spring Boot API 接口文档 Swagger Starter 入门》](http://www.iocoder.cn/Spring-Boot/Swagger-Starter/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
 * [《芋道 Spring Boot 参数校验 Validation 入门》](http://www.iocoder.cn/Spring-Boot/Validation/?github) 对应 [lab-22](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-22)
 * [《芋道 Spring Boot WebSocket 入门》](http://www.iocoder.cn/Spring-Boot/WebSocket/?github) 对应 [lab-25](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-25)
 * [《性能测试 —— Tomcat、Jetty、Undertow 基准测试》](http://www.iocoder.cn/Performance-Testing/Tomcat-Jetty-Undertow-benchmark/?github) 对应 [lab-05-benchmark-tomcat-jetty-undertow](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-05-benchmark-tomcat-jetty-undertow)
 * [《性能测试 —— SpringMVC、Webflux 基准测试》](http://www.iocoder.cn/Performance-Testing/SpringMVC-Webflux-benchmark/?github) 对应 [lab-06](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-06)
+* [《芋道 Spring Boot API 接口文档 JApiDocs 入门》](http://www.iocoder.cn/Spring-Boot/JApiDocs/?github) 对应 [lab-24](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-24)
+* [《芋道 Spring Boot API 接口调试 IDEA HTTP Client》](http://www.iocoder.cn/Spring-Boot/IDEA-HTTP-Client/?github) 对应 [lab-71-http-debug](https://github.com/YunaiV/SpringBoot-Labs/blob/master/lab-71-http-debug/)
 
 ## RPC 开发
 
@@ -86,6 +89,7 @@
 * [《芋道 Spring Boot 多数据源（读写分离）入门》](http://www.iocoder.cn/Spring-Boot/dynamic-datasource/?github) 对应 [lab-17](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-17)
 * [《芋道 Spring Boot 分库分表入门》](http://www.iocoder.cn/Spring-Boot/sharding-datasource/?github) 对应 [lab-18](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-18)
 * [《芋道 Spring Boot 数据库版本管理入门》](http://www.iocoder.cn/Spring-Boot/database-version-control/?github) 对应 [lab-20](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-20)
+* [《芋道 Spring Boot 数据表结构文档》](http://www.iocoder.cn/Spring-Boot/DB-Doc-screw/?github) 对应 [lab-70-db-doc](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-70-db-doc)
 
 **非关系数据库**
 
@@ -185,6 +189,7 @@
 * [《芋道 Spring Cloud 服务网关 Spring Cloud Gateway 入门》](http://www.iocoder.cn/Spring-Cloud/Spring-Cloud-Gateway/?github) 对应 [labx-08-spring-cloud-gateway](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-08-spring-cloud-gateway)
 * [《芋道 Spring Cloud 链路追踪 SkyWalking 入门》](http://www.iocoder.cn/Spring-Cloud/SkyWalking/?github) 对应 [labx-14](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-14)
 * [《芋道 Dubbo Admin 快速入门》](http://www.iocoder.cn/Dubbo/Admin/?github)
+* [《芋道 Dubbo Swagger 快速入门》](http://www.iocoder.cn/Dubbo/Swagger/?github) 对应 [swagger-dubbo](https://github.com/YunaiV/swagger-dubbo)
  
 # Spring Cloud 专栏
 
@@ -274,6 +279,7 @@
 * [《芋道 Spring Boot Dubbo 入门》](http://www.iocoder.cn/Spring-Boot/Dubbo/?github) 对应 [lab-30](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-30)
 * [《芋道 Spring Cloud Alibaba 服务调用 Dubbo 入门》](http://www.iocoder.cn/Spring-Cloud-Alibaba/Dubbo/?github) 对应 [labx-07-spring-cloud-alibaba-dubbo](https://github.com/YunaiV/SpringBoot-Labs/tree/master/labx-07-spring-cloud-alibaba-dubbo)
 * [《性能测试 —— Dubbo 基准测试》](http://www.iocoder.cn/Performance-Testing/Dubbo-benchmark/?github)
+* [《芋道 Dubbo Swagger 快速入门》](http://www.iocoder.cn/Dubbo/Swagger/?github) 对应 [swagger-dubbo](https://github.com/YunaiV/swagger-dubbo)
 
 ## 注册中心
 
@@ -397,10 +403,10 @@
 
 如下是草稿目录，未来需要整理下
 
-# lab-9
-
-记录阅读极客时间《数据结构与算法之美》的题目。
-
 # lab-50
 
 Email 示例
+
+# lab-69-proxy
+
+动态代理

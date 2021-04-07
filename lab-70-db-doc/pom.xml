@@ -9,13 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-11-spring-data-redis</artifactId>
+    <artifactId>lab-70-db-doc</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>lab-07-spring-data-redis-with-jedis</module>
-        <module>lab-07-spring-data-redis-with-redisson</module>
-        <module>lab-07-spring-data-redis-unit-test</module>
-    </modules>
 
+    <modules>
+        <module>lab-70-db-doc-screw-01</module>
+        <module>lab-70-db-doc-screw-02</module>
+        <module>lab-70-db-doc-screw-03</module>
+    </modules>
 
 </project>

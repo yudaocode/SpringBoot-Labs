@@ -1,0 +1,5 @@
+# 对应 SpringfoxConfigurationProperties 配置类
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true # 是否开启 Swagger UI 功能。默认为 true

@@ -10,14 +10,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-04-rabbitmq-native</artifactId>
+    <artifactId>lab-71-idea-http-client</artifactId>
 
     <dependencies>
-        <!-- 引入 RabbitMQ 客户端依赖 -->
+        <!-- 实现对 Spring MVC 的自动化配置 -->
         <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>5.7.3</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 
