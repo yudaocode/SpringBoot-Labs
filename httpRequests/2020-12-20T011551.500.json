@@ -1,0 +1,7 @@
+{
+  "timestamp": "2020-12-19T17:15:51.919+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "小朋友，你没有登录哟！",
+  "path": "/user/get-current"
+}

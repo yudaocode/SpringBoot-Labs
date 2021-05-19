@@ -14,6 +14,8 @@
     <modules>
         <module>lab-24-apidoc-swagger</module>
         <module>lab-24-apidoc-swagger-knife4j</module>
+        <module>lab-24-apidoc-japidocs</module>
+        <module>lab-24-apidoc-swagger-starter</module>
     </modules>
 
 

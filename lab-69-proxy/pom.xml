@@ -9,12 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-11-spring-data-redis</artifactId>
+    <artifactId>lab-69</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-07-spring-data-redis-with-jedis</module>
-        <module>lab-07-spring-data-redis-with-redisson</module>
-        <module>lab-07-spring-data-redis-unit-test</module>
+        <module>lab-69-proxy-jdk</module>
+        <module>lab-69-proxy-cglib</module>
     </modules>
 
 

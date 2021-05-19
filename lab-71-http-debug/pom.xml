@@ -9,13 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab-11-spring-data-redis</artifactId>
+    <artifactId>lab-71-http-debug</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lab-07-spring-data-redis-with-jedis</module>
-        <module>lab-07-spring-data-redis-with-redisson</module>
-        <module>lab-07-spring-data-redis-unit-test</module>
+        <module>lab-71-idea-http-client</module>
     </modules>
-
 
 </project>

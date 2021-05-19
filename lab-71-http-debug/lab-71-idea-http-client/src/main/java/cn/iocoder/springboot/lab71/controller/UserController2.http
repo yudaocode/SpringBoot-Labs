@@ -1,0 +1,19 @@
+### 测试 /user/login：登陆成功
+POST {{baseUrl}}/user/login
+Content-Type: application/x-www-form-urlencoded
+
+username={{username}}&password={{password}}
+
+### 测试 /user/get-current：获取成功
+GET {{baseUrl}}/user/get-current?full=true
+Authorization: {{token}}
+
+### 测试 /user/update：更新成功
+POST {{baseUrl}}/user/update
+Content-Type: application/json
+
+{
+  "nickname": "我是昵称",
+  "gender": 1
+}
+
