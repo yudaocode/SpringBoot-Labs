@@ -1,3 +1,5 @@
+[![Maintainability](https://cloud.quality-gate.com/dashboard/api/badge?projectName=YunaiV_SpringBoot-Labs&branchName=master)](https://cloud.quality-gate.com/dashboard/branches/396002#overview)
+
 > 友情提示：因为提供了 50000+ 行示例代码，所以艿艿默认注释了所有 Maven Module。
 >
 > 胖友可以根据自己的需要，修改 [`pom.xml`](https://github.com/YunaiV/SpringBoot-Labs/blob/master/pom.xml) 即可。
