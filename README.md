@@ -10,6 +10,8 @@
 * [《消息队列 MQ 专栏》](https://github.com/YunaiV/SpringBoot-Labs#%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-mq-%E4%B8%93%E6%A0%8F)
 * [《分布式事务专栏》](https://github.com/YunaiV/SpringBoot-Labs#分布式事务专栏)
 
+[![Maintainability](https://cloud.quality-gate.com/dashboard/api/badge?projectName=YunaiV_SpringBoot-Labs&branchName=master)](https://cloud.quality-gate.com/dashboard/branches/396002#overview)
+
 作为一个热爱**深夜**撸码的 18 岁头发茂密的可爱小男孩，希望大佬能够**一键三连**。
 
 ![一间三连](http://static.iocoder.cn/github-star.jpg)
