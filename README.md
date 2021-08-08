@@ -44,7 +44,8 @@
 
 * [《芋道 Spring Boot 快速入门》](http://www.iocoder.cn/Spring-Boot/quick-start/?github)
 * [《芋道 Spring Boot 自动配置原理》](http://www.iocoder.cn/Spring-Boot/autoconfigure/?github) 对应 [lab-47](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-47)
-* [《芋道 Spring Boot 芋道 Spring Boot Jar 启动原理》](http://www.iocoder.cn/Spring-Boot/jar/?github)
+* [《芋道 Spring Boot Jar 启动原理》](http://www.iocoder.cn/Spring-Boot/jar/?github)
+* [《芋道 Spring Boot 调试环境》](http://www.iocoder.cn/Spring-Boot/build-debugging-environment-2-6-0/?github)
 
 ## 开发工具
 
