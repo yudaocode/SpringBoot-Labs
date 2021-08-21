@@ -2,6 +2,9 @@ package cn.iocoder.springboot.lab24.apidoc.controller.vo;
 
 public class UserLoginReqVO {
 
+    /**
+     * 用户名
+     */
     private String username;
 
     private String password;
