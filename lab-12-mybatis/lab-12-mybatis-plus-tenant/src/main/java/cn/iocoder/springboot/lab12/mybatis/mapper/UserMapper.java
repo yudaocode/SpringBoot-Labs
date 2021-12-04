@@ -1,6 +1,7 @@
 package cn.iocoder.springboot.lab12.mybatis.mapper;
 
 import cn.iocoder.springboot.lab12.mybatis.dataobject.UserDO;
+import cn.iocoder.springboot.lab12.mybatis.vo.UserDetailVO;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -26,5 +27,9 @@ public interface UserMapper extends BaseMapper<UserDO> {
 //                new QueryWrapper<UserDO>().like("username", "46683d9d")
         );
     }
+
+    List<UserDetailVO> selectListA();
+
+    List<UserDetailVO> selectListB();
 
 }

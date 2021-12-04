@@ -16,4 +16,19 @@
             </foreach>
     </select>
 
+    <select id="selectListA" resultType="cn.iocoder.springboot.lab12.mybatis.vo.UserDetailVO">
+        SELECT
+            u.id, u.username, u.password, u.create_time, p.gender
+        FROM users u
+        JOIN user_profile p
+        ON u.id = p.user_id
+    </select>
+
+    <select id="selectListB" resultType="cn.iocoder.springboot.lab12.mybatis.vo.UserDetailVO">
+        SELECT
+            u.id, u.username, u.password, u.create_time, p.gender
+        FROM users u, user_profile p
+        WHERE u.id = p.user_id
+    </select>
+
 </mapper>
