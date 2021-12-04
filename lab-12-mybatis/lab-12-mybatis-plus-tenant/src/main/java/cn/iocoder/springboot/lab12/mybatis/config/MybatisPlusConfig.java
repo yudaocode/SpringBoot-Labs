@@ -1,5 +1,6 @@
 package cn.iocoder.springboot.lab12.mybatis.config;
 
+import cn.iocoder.springboot.lab12.mybatis.context.TenantHolder;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.handler.TenantLineHandler;
 import com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor;
@@ -21,7 +22,8 @@ public class MybatisPlusConfig {
 
             @Override
             public Expression getTenantId() {
-                return new LongValue(10);
+                Integer tenantId = TenantHolder.getTenantId();
+                return new LongValue(tenantId);
             }
 
             // 这是 default 方法,默认返回 false 表示所有表都需要拼多租户条件
