@@ -16,6 +16,7 @@
         <module>lab-12-mybatis-annotation</module>
         <module>lab-12-mybatis-plus</module>
         <module>lab-12-mybatis-tk</module>
+        <module>lab-12-mybatis-plus-tenant</module>
     </modules>
 
 
