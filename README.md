@@ -80,6 +80,10 @@
 * 《芋道 Spring Boot RSocket 入门》计划中...
 * 《芋道 Spring Boot Tars 入门》计划中...
 
+## 文件存储
+
+* [《芋道 Spring Boot 对象存储 MinIO 入门》](https://www.iocoder.cn/Spring-Boot/MinIO/?github) 对应 [lab-72-minio](https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-72-minio)
+
 ## 数据访问
 
 **关系数据库**

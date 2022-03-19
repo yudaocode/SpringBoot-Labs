@@ -1,16 +1,10 @@
 package cn.iocoder.springboot.lab72.controller;
 
-import io.minio.MinioClient;
-import io.minio.PutObjectArgs;
-import io.minio.RemoveObjectArgs;
-import io.minio.errors.*;
+import io.minio.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
-import java.io.IOException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 
 @RestController
@@ -24,6 +18,9 @@ public class FileController {
     private String endpoint = "http://127.0.0.1:9000";
     private String bucket = "yudaoyuanma";
 
+    /**
+     * 上传文件
+     */
     @PostMapping("/upload")
     public String upload(@RequestParam("file") MultipartFile file) throws Exception {
         // 上传
@@ -38,6 +35,9 @@ public class FileController {
         return String.format("%s/%s/%s", endpoint, bucket, path);
     }
 
+    /**
+     * 删除文件
+     */
     @DeleteMapping("/delete")
     public void delete(@RequestParam("path") String path) throws Exception {
         minioClient.removeObject(RemoveObjectArgs.builder()
