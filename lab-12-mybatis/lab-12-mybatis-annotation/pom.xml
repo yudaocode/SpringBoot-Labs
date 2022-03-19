@@ -21,7 +21,7 @@
         <dependency> <!-- 本示例，我们使用 MySQL -->
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.48</version>
+            <version>8.0.16</version>
         </dependency>
 
         <!-- 实现对 MyBatis 的自动化配置 -->
