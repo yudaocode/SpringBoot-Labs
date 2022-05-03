@@ -23,7 +23,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.10.1</version>
+            <version>2.9.10.8</version>
         </dependency>
 
         <!-- 方便等会写单元测试 -->
