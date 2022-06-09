@@ -416,3 +416,8 @@ Email 示例
 # lab-69-proxy
 
 动态代理
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=YunaiV/SpringBoot-Labs&type=Date)](https://star-history.com/#YunaiV/SpringBoot-Labs&Date)
+
